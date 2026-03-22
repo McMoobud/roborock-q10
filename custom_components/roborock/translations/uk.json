@@ -1,0 +1,164 @@
+{
+    "config": {
+        "error": {
+            "invalid_code": "Ви ввели неправильний код, будь ласка, перевірте його і спробуйте ще раз.",
+            "invalid_email": "Немає жодного облікового запису, пов’язаного з електронною адресою, яку ви ввели, спробуйте ще раз.",
+            "invalid_email_format": "Виникла проблема з форматуванням вашої електронної пошти – спробуйте ще раз.",
+            "unknown": "Неочікувана помилка"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Код підтвердження"
+                },
+                "description": "Введіть код підтвердження, надісланий на вашу електронну пошту"
+            },
+            "user": {
+                "data": {
+                    "username": "Адреса електронної пошти"
+                },
+                "description": "Введіть свою електронну адресу Roborock."
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mop_intensity": {
+                "name": "Інтенсивність швабри",
+                "state": {
+                    "custom": "Особливий",
+                    "intense": "Інтенсивний",
+                    "max": "Максимум",
+                    "mild": "Помірний",
+                    "moderate": "Помірний",
+                    "off": "Вимкнено"
+                }
+            },
+            "mop_mode": {
+                "name": "Режим швабри",
+                "state": {
+                    "custom": "Особливий",
+                    "deep": "Глибокий",
+                    "deep_plus": "Глибокий+",
+                    "fast": "Швидко",
+                    "standard": "Стандартний"
+                }
+            }
+        },
+        "sensor": {
+            "cleaning_area": {
+                "name": "Площа прибирання"
+            },
+            "cleaning_time": {
+                "name": "Час прибирання"
+            },
+            "filter_time_left": {
+                "name": "Залишок часу роботи фільтра"
+            },
+            "main_brush_time_left": {
+                "name": "Залишок часу роботи основної щітки"
+            },
+            "sensor_time_left": {
+                "name": "Залишок часу роботи датчика"
+            },
+            "side_brush_time_left": {
+                "name": "Залишок часу роботи бічної щітки"
+            },
+            "status": {
+                "name": "Статус",
+                "state": {
+                    "charger_disconnected": "Зарядний пристрій від'єднано",
+                    "charging_complete": "Заряджання завершено",
+                    "charging_problem": "Проблема з заряджанням",
+                    "cleaning": "Прибирання",
+                    "device_offline": "Пристрій офлайн",
+                    "docking": "Стиковка",
+                    "emptying_the_bin": "Випорожнення кошика",
+                    "going_to_target": "Рух до цілі",
+                    "going_to_wash_the_mop": "Збирається мити швабру",
+                    "idle": "Очікування",
+                    "manual_mode": "Ручний режим",
+                    "paused": "Призупинено",
+                    "remote_control_active": "Дистанційне керування активне",
+                    "returning_home": "Повернення додому",
+                    "segment_cleaning": "Вибіркове прибирання",
+                    "shutting_down": "Завершення роботи",
+                    "spot_cleaning": "Локальне прибирання",
+                    "starting": "Запуск",
+                    "updating": "Оновлення",
+                    "washing_the_mop": "Миття швабри",
+                    "zoned_cleaning": "Зональне прибирання"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Загальна площа прибирання"
+            },
+            "total_cleaning_time": {
+                "name": "Загальний час прибирання"
+            },
+            "vacuum_error": {
+                "name": "Помилка вакууму",
+                "state": {
+                    "battery_error": "Помилка акумулятора",
+                    "bumper_stuck": "Бампер застряг",
+                    "cannot_cross_carpet": "Не можна перетинати килим",
+                    "charging_error": "Помилка заряджання",
+                    "cliff_sensor_error": "Помилка датчика обриву",
+                    "dock_locator_error": "Помилка локатора док-станції",
+                    "fan_error": "Помилка вентилятора",
+                    "filter_blocked": "Фільтр заблоковано",
+                    "internal_error": "Внутрішня помилка",
+                    "invisible_wall_detected": "Виявлено невидиму стіну",
+                    "lidar_blocked": "Лідар заблоковано",
+                    "low_battery": "Низький заряд батареї",
+                    "main_brush_jammed": "Основна щітка заклинила",
+                    "no_dustbin": "Немає смітника",
+                    "nogo_zone_detected": "Виявлено заборонену зону",
+                    "none": "Немає",
+                    "return_to_dock_fail": "Не вдалося повернутися до док-станції",
+                    "robot_on_carpet": "Робот на килимі",
+                    "robot_tilted": "Робот нахилився",
+                    "robot_trapped": "Робот у пастці",
+                    "side_brush_error": "Помилка бічної щітки",
+                    "side_brush_jammed": "Застрягла бічна щітка",
+                    "vertical_bumper_pressed": "Вертикальний бампер притиснутий",
+                    "vibrarise_jammed": "VibraRise заклинило",
+                    "wall_sensor_dirty": "Настінний датчик забруднений",
+                    "wheels_jammed": "Колеса заклинило",
+                    "wheels_suspended": "Колеса підвішені"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Блокування від дітей"
+            },
+            "dnd_switch": {
+                "name": "Не турбувати"
+            },
+            "status_indicator": {
+                "name": "Світловий індикатор стану"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "Збалансовано",
+                            "custom": "Особливий",
+                            "gentle": "Ніжно",
+                            "max": "Максимум",
+                            "max_plus": "Максимально плюс",
+                            "off": "Вимкнено",
+                            "quiet": "Тихо",
+                            "silent": "Беззвучно",
+                            "standard": "Стандартний",
+                            "turbo": "Турбо"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
