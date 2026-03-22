@@ -1,0 +1,178 @@
+{
+    "config": {
+        "error": {
+            "invalid_code": "Ievadītais kods bija nepareizs, lūdzu, pārbaudiet to un mēģiniet vēlreiz.",
+            "invalid_email": "Ar ievadīto e-pasta adresi nav saistīts neviens konts. Mēģiniet vēlreiz.",
+            "invalid_email_format": "Jūsu e-pasta formātā ir radušās problēmas - mēģiniet vēlreiz.",
+            "unknown": "Neparedzēta kļūda"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Verifikācijas kods"
+                },
+                "description": "Ievadiet uz jūsu e-pastu nosūtīto verifikācijas kodu"
+            },
+            "user": {
+                "data": {
+                    "username": "E-pasts"
+                },
+                "description": "Ievadiet savu Roborock e-pasta adresi."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "mop_attached": {
+                "name": "Mops pievienots"
+            },
+            "mop_drying_status": {
+                "name": "Mopa žāvēšana"
+            },
+            "water_box_attached": {
+                "name": "Ūdens trauks pievienots"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Skaļums"
+            }
+        },
+        "select": {
+            "mop_intensity": {
+                "name": "Mopa intensitāte",
+                "state": {
+                    "custom": "Izvēles",
+                    "intense": "Intensīvs",
+                    "mild": "Viegls",
+                    "moderate": "Mērens"
+                }
+            },
+            "mop_mode": {
+                "name": "Mopa režīms",
+                "state": {
+                    "custom": "Izvēles",
+                    "deep": "Spēcīgi",
+                    "deep_plus": "Padziļināts+",
+                    "fast": "Ātrs",
+                    "standard": "Standarta"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Kļūda"
+            },
+            "a01_status": {
+                "name": "Statuss"
+            },
+            "clean_percent": {
+                "name": "Tīrīšanas gaita"
+            },
+            "cleaning_time": {
+                "name": "Tīrīšanas laiks"
+            },
+            "dock_error": {
+                "name": "Doka kļūda",
+                "state": {
+                    "dirty_tank_latch_open": "Netīrumu tvertnes aizbīdnis atvērts",
+                    "duct_blockage": "Cauruļu nosprostojums",
+                    "no_dustbin": "Nav atkritumu tvertnes",
+                    "ok": "Labi",
+                    "waste_water_tank_full": "Pilna notekūdeņu tvertne",
+                    "water_empty": "Ūdens tukšs"
+                }
+            },
+            "filter_time_left": {
+                "name": "Atlikušais filtra laiks"
+            },
+            "main_brush_time_left": {
+                "name": "Atlikušais galvenās birstes laiks"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Mopu atlikušais žāvēšanas laiks"
+            },
+            "q7_status": {
+                "state": {
+                    "updating": "Atjaunināšana"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Atlikušais sensora laiks"
+            },
+            "side_brush_time_left": {
+                "name": "Atlikušais sānu birstes laiks"
+            },
+            "status": {
+                "name": "Statuss",
+                "state": {
+                    "charger_disconnected": "Lādētājs ir atvienots",
+                    "charging_complete": "Uzlāde pabeigta",
+                    "charging_problem": "Uzlādes problēma",
+                    "cleaning": "Tīrīšana",
+                    "device_offline": "Ierīce bezsaistē",
+                    "emptying_the_bin": "Tvertnes iztukšošana",
+                    "going_to_target": "Došanās uz mērķi",
+                    "going_to_wash_the_mop": "Dodas mazgāt mopu",
+                    "manual_mode": "Manuālais režīms",
+                    "remote_control_active": "Aktīva tālvadības pults",
+                    "returning_home": "Atgriešanās mājās",
+                    "segment_cleaning": "Segmenta tīrīšana",
+                    "shutting_down": "Izslēgšana",
+                    "spot_cleaning": "Vietas tīrīšana",
+                    "starting": "Sākot no",
+                    "updating": "Atjaunināšana",
+                    "washing_the_mop": "Mopa mazgāšana",
+                    "zoned_cleaning": "Zonēta tīrīšana"
+                }
+            },
+            "total_cleaning_time": {
+                "name": "Kopējais tīrīšanas laiks"
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Bērnu slēdzene"
+            },
+            "status_indicator": {
+                "name": "Statusa indikatora gaisma"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Netraucēšanas režīma beigas"
+            },
+            "dnd_start_time": {
+                "name": "Netraucēšanas režīma sākums"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "Līdzsvarots",
+                            "custom": "Izvēles",
+                            "gentle": "Maigs",
+                            "max_plus": "Max plus",
+                            "quiet": "Kluss",
+                            "silent": "Pieklusināts",
+                            "standard": "Standarta",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "obstacles": "Šķēršļi",
+                    "obstacles_with_photo": "Šķēršļi ar fotogrāfiju"
+                }
+            }
+        }
+    }
+}

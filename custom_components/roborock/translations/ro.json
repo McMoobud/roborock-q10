@@ -1,0 +1,152 @@
+{
+    "config": {
+        "error": {
+            "invalid_code": "Codul pe care l-ai introdus a fost incorect, te rugăm să-l verifici și să încerci din nou.",
+            "invalid_email": "Nu există niciun cont asociat cu e-mailul pe care l-ai introdus, te rugăm să încerci din nou.",
+            "invalid_email_format": "Există o problemă cu formatarea e-mailului - te rugăm să încerci din nou.",
+            "unknown": "Eroare neașteptată"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Codul de verificare"
+                },
+                "description": "Introdu codul de verificare trimis pe adresa ta de e-mail"
+            },
+            "user": {
+                "description": "Introdu adresa de e-mail Roborock."
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mop_intensity": {
+                "name": "Intensitate mop",
+                "state": {
+                    "intense": "Intens",
+                    "mild": "Blând",
+                    "moderate": "Moderat"
+                }
+            },
+            "mop_mode": {
+                "name": "Mod mop",
+                "state": {
+                    "custom": "Personalizat",
+                    "deep": "Adânc",
+                    "deep_plus": "Adânc+",
+                    "fast": "Rapid",
+                    "standard": "Standard"
+                }
+            }
+        },
+        "sensor": {
+            "cleaning_area": {
+                "name": "Zona de curățare"
+            },
+            "cleaning_time": {
+                "name": "Timp de curățare"
+            },
+            "filter_time_left": {
+                "name": "Timp rămas pentru filtru"
+            },
+            "main_brush_time_left": {
+                "name": "Timp rămas pentru peria principală"
+            },
+            "sensor_time_left": {
+                "name": "Timp rămas pentru senzori"
+            },
+            "side_brush_time_left": {
+                "name": "Timp rămas pentru peria laterală"
+            },
+            "status": {
+                "name": "Stare",
+                "state": {
+                    "charger_disconnected": "Încărcător deconectat",
+                    "charging_complete": "Încărcare completă",
+                    "charging_problem": "Problemă la încărcare",
+                    "cleaning": "Curățare",
+                    "device_offline": "Dispozitiv offline",
+                    "docking": "În curs de andocare",
+                    "emptying_the_bin": "Golire rezervor",
+                    "going_to_target": "Deplasare spre țintă",
+                    "going_to_wash_the_mop": "Deplasare pentru a spăla mopul",
+                    "manual_mode": "Mod manual",
+                    "remote_control_active": "Control de la distanță",
+                    "returning_home": "În curs de întoarcere la doc",
+                    "segment_cleaning": "Curățarea segmentului",
+                    "shutting_down": "În curs de oprire",
+                    "spot_cleaning": "Curățare punct",
+                    "starting": "Pornește",
+                    "updating": "Actualizare",
+                    "washing_the_mop": "Spălare mop",
+                    "zoned_cleaning": "Curățare în zonă"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Suprafața totală de curățare"
+            },
+            "total_cleaning_time": {
+                "name": "Timpul total de curățare"
+            },
+            "vacuum_error": {
+                "name": "Eroare aspirator",
+                "state": {
+                    "battery_error": "Eroare baterie",
+                    "bumper_stuck": "Bara de protecție blocată",
+                    "cannot_cross_carpet": "Nu poate traversa covorul",
+                    "charging_error": "Eroare de încărcare",
+                    "cliff_sensor_error": "Eroare senzor de prăpastie",
+                    "dock_locator_error": "Eroare de localizare a docului",
+                    "fan_error": "Eroare ventilator",
+                    "filter_blocked": "Filtru blocat",
+                    "internal_error": "Eroare internă",
+                    "invisible_wall_detected": "Perete invizibil detectat",
+                    "lidar_blocked": "Lidar blocat",
+                    "low_battery": "Baterie descărcată",
+                    "main_brush_jammed": "Perie principală blocată",
+                    "no_dustbin": "Container de praf absent",
+                    "nogo_zone_detected": "Zonă de interdicție detectată",
+                    "none": "Niciuna",
+                    "return_to_dock_fail": "Întoarcerea la doc nu reușește",
+                    "robot_on_carpet": "Robot pe covor",
+                    "robot_tilted": "Robot înclinat",
+                    "robot_trapped": "Robot prins",
+                    "side_brush_error": "Eroare perie laterală",
+                    "side_brush_jammed": "Perie laterală blocată",
+                    "vertical_bumper_pressed": "Bară de protecție verticală apăsată",
+                    "vibrarise_jammed": "VibraRise blocat",
+                    "wall_sensor_dirty": "Senzor de perete murdar",
+                    "wheels_jammed": "Roți blocate",
+                    "wheels_suspended": "Roți suspendate"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Blocare pentru copii"
+            },
+            "dnd_switch": {
+                "name": "Nu deranja"
+            },
+            "status_indicator": {
+                "name": "Indicator luminos de stare"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "Echilibrat",
+                            "gentle": "Blând",
+                            "max_plus": "Max plus",
+                            "quiet": "Liniștit",
+                            "silent": "Silențios",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
