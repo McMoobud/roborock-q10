@@ -1,0 +1,740 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "帳號已經設定完成",
+            "reauth_successful": "重新認證成功",
+            "wrong_account": "錯誤帳號：請使用正確帳號進行認證。"
+        },
+        "error": {
+            "invalid_code": "所輸入的驗證碼錯誤，請檢查後再試一次。",
+            "invalid_email": "所輸入的郵件未找到相關聯帳號，請再試一次。",
+            "invalid_email_format": "Email 格式有問題 - 請再試一次。",
+            "invalid_email_or_region": "所輸入的電子郵件地址沒有相關聯的帳號，或所選地區中沒有該帳號。",
+            "too_frequent_code_requests": "嘗試請求太多代碼、請稍後再試。",
+            "unknown": "未預期錯誤",
+            "unknown_roborock": "未知 Roborock 異常 - 請參閱日誌。",
+            "unknown_url": "於確定 Roborock 帳號 URL 時出現問題 - 請參閱日誌。"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "驗證碼"
+                },
+                "data_description": {
+                    "code": "輸入郵件驗證碼。"
+                },
+                "description": "輸入郵件所收到的驗證碼"
+            },
+            "reauth_confirm": {
+                "description": "Roborock 整合需要重新認證您的帳號",
+                "title": "{name} 認證已過期"
+            },
+            "user": {
+                "data": {
+                    "region": "Roborock 伺服器地區",
+                    "username": "電子郵件"
+                },
+                "data_description": {
+                    "region": "設定應用程式時註冊 Roborock 帳戶所在的伺服器地區。除非遇到問題，\n，否則建議使用自動。",
+                    "username": "用於登入 Roborock 應用程式的電子郵件位址"
+                },
+                "description": "輸入 Roborock 電子郵件位址。"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "clean_box_empty": {
+                "name": "淨水箱"
+            },
+            "clean_fluid_empty": {
+                "name": "清潔液"
+            },
+            "detergent_empty": {
+                "name": "洗滌劑",
+                "state": {
+                    "off": "可用",
+                    "on": "耗盡"
+                }
+            },
+            "dirty_box_full": {
+                "name": "廢水箱"
+            },
+            "in_cleaning": {
+                "name": "清掃中"
+            },
+            "mop_attached": {
+                "name": "拖把已安裝"
+            },
+            "mop_drying_status": {
+                "name": "拖把乾燥中"
+            },
+            "softener_empty": {
+                "name": "柔軟精",
+                "state": {
+                    "off": "可用",
+                    "on": "耗盡"
+                }
+            },
+            "water_box_attached": {
+                "name": "水箱已安裝"
+            },
+            "water_shortage": {
+                "name": "水量不足"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "暫停"
+            },
+            "reset_air_filter_consumable": {
+                "name": "重置空氣過濾器計算"
+            },
+            "reset_main_brush_consumable": {
+                "name": "重置主刷計算"
+            },
+            "reset_sensor_consumable": {
+                "name": "重置感測器計算"
+            },
+            "reset_side_brush_consumable": {
+                "name": "重置邊刷計算"
+            },
+            "shutdown": {
+                "name": "關機"
+            },
+            "start": {
+                "name": "開始"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "體積"
+            }
+        },
+        "select": {
+            "cleaning_mode": {
+                "name": "清掃模式",
+                "state": {
+                    "mop": "僅拖地",
+                    "vac_and_mop": "清掃與拖地",
+                    "vacuum": "僅清掃"
+                }
+            },
+            "detergent_type": {
+                "name": "洗滌劑類型",
+                "state": {
+                    "empty": "耗盡",
+                    "high": "高",
+                    "low": "低",
+                    "medium": "中"
+                }
+            },
+            "drying_mode": {
+                "name": "烘乾模式",
+                "state": {
+                    "iron": "熨燙",
+                    "none": "不烘乾",
+                    "quick": "快速",
+                    "store": "儲存",
+                    "time_dry": "時間烘乾"
+                }
+            },
+            "dust_collection_mode": {
+                "name": "清空模式",
+                "state": {
+                    "balanced": "平衡",
+                    "light": "輕度",
+                    "max": "最高",
+                    "smart": "智能"
+                }
+            },
+            "mode": {
+                "name": "操作模式",
+                "state": {
+                    "drain": "排水",
+                    "dry": "烘乾",
+                    "heavy": "重度",
+                    "pre_wash": "預洗",
+                    "rinse_spin": "清洗與脫水",
+                    "spin": "脫水",
+                    "wash": "洗滌",
+                    "wash_and_dry": "洗滌並晾乾"
+                }
+            },
+            "mop_intensity": {
+                "name": "拖地強度",
+                "state": {
+                    "custom": "自訂",
+                    "custom_water_flow": "自訂水流",
+                    "extreme": "極端",
+                    "high": "高",
+                    "intense": "強",
+                    "low": "低",
+                    "max": "最高",
+                    "medium": "中",
+                    "mild": "輕",
+                    "min": "最低",
+                    "moderate": "中",
+                    "off": "關閉",
+                    "slight": "輕微",
+                    "smart_mode": "SmartPlan",
+                    "standard": "標準",
+                    "vac_followed_by_mop": "先掃地後拖地"
+                }
+            },
+            "mop_mode": {
+                "name": "拖地模式",
+                "state": {
+                    "custom": "自訂",
+                    "deep": "加強",
+                    "deep_plus": "超強",
+                    "fast": "快速",
+                    "smart_mode": "SmartPlan",
+                    "standard": "標準"
+                }
+            },
+            "program": {
+                "name": "洗滌程式",
+                "state": {
+                    "air_refresh": "空氣清新",
+                    "anti_allergen": "抗過敏原",
+                    "anti_mites": "防蟎",
+                    "baby_care": "嬰兒護理",
+                    "bedding": "寢具",
+                    "boiling_wash": "高溫清洗",
+                    "bra": "女性內衣",
+                    "cotton_linen": "棉/麻",
+                    "custom": "自訂",
+                    "down": "徹底",
+                    "down_clean": "徹底清洗",
+                    "exo_40_60": "Exo 40/60",
+                    "gentle": "溫和",
+                    "intensive": "密集",
+                    "new_clothes": "新衣服",
+                    "night": "夜間",
+                    "panties": "女性內褲",
+                    "quick": "快速",
+                    "rinse_and_spin": "清洗與脫水",
+                    "sanitize": "消毒",
+                    "season": "季節",
+                    "shirts": "襯衫",
+                    "silk": "絲綢",
+                    "socks": "襪子",
+                    "sportswear": "運動服",
+                    "stain_removal": "去除污漬",
+                    "standard": "標準",
+                    "synthetics": "合成",
+                    "t_shirts": "T 恤",
+                    "towels": "毛巾",
+                    "twenty_c": "20°C",
+                    "underwear": "內衣",
+                    "warming": "加溫",
+                    "wool": "羊毛"
+                }
+            },
+            "rinse_times": {
+                "name": "清洗時間",
+                "state": {
+                    "high": "4",
+                    "low": "2",
+                    "max": "5",
+                    "mid": "3",
+                    "min": "1",
+                    "none": "預設"
+                }
+            },
+            "selected_map": {
+                "name": "已選地圖"
+            },
+            "softener_type": {
+                "name": "柔軟精類型",
+                "state": {
+                    "empty": "耗盡",
+                    "high": "高",
+                    "low": "低",
+                    "medium": "中"
+                }
+            },
+            "spin_level": {
+                "name": "脫水等級",
+                "state": {
+                    "high": "1000 RPM",
+                    "max": "1400 RPM",
+                    "mid": "800 RPM",
+                    "none": "預設",
+                    "very_high": "1200 RPM",
+                    "very_low": "600 RPM"
+                }
+            },
+            "temperature": {
+                "name": "水溫",
+                "state": {
+                    "30": "30°C",
+                    "40": "40°C",
+                    "60": "60°C",
+                    "90": "90°C",
+                    "auto": "自動",
+                    "cold": "冷洗"
+                }
+            },
+            "water_flow": {
+                "name": "水流",
+                "state": {
+                    "high": "高",
+                    "low": "低",
+                    "medium": "中"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "錯誤",
+                "state": {
+                    "battery_temperature_protection": "電池溫度保護",
+                    "battery_temperature_protection_2": "電池溫度保護",
+                    "battery_temperature_protection_e0": "溫度保護",
+                    "battery_under_10": "電池電量低於 10%",
+                    "clean_head_entangled": "清潔頭纏繞",
+                    "clean_head_too_hot": "清潔頭過熱",
+                    "clean_tank_empty": "清潔水槽已空",
+                    "cleaning_head_blocked": "清潔頭堵塞",
+                    "dirty_charging_contacts": "清潔充電接觸點",
+                    "dirty_tank_full": "集塵槽已滿",
+                    "fan_protection_e4": "風扇保護",
+                    "fan_protection_e5": "風扇保護",
+                    "fan_protection_e9": "風扇保護",
+                    "low_battery": "低電量",
+                    "none": "無",
+                    "power_adapter_error": "電源供應器錯誤",
+                    "temperature_protection": "溫度保護",
+                    "water_level_sensor_stuck": "水位感測器故障。"
+                }
+            },
+            "a01_status": {
+                "name": "狀態",
+                "state": {
+                    "charging": "充電中",
+                    "drying": "烘乾中",
+                    "dusting_mode": "除塵模式",
+                    "fetch_failed": "獲取失敗",
+                    "fetching": "獲取中",
+                    "mop_washing": "清洗拖把",
+                    "mop_washing_paused": "拖把清洗暫停",
+                    "ready": "就緒",
+                    "reserving": "預訂",
+                    "self_clean_cleaning": "自動清潔中",
+                    "self_clean_deep_cleaning": "自動清潔深度清潔",
+                    "self_clean_dehydrating": "自動清潔烘乾",
+                    "self_clean_rinsing": "自動清潔沖洗",
+                    "unknown": "未知",
+                    "updating": "更新中",
+                    "ventilating": "風乾中",
+                    "washing": "清洗中"
+                }
+            },
+            "brush_remaining": {
+                "name": "滾輪左轉"
+            },
+            "clean_percent": {
+                "name": "清掃進度"
+            },
+            "cleaning_area": {
+                "name": "清掃區域"
+            },
+            "cleaning_brush_time_left": {
+                "name": "維護刷剩餘壽命"
+            },
+            "cleaning_time": {
+                "name": "清掃時間"
+            },
+            "countdown": {
+                "name": "倒數"
+            },
+            "current_room": {
+                "name": "目前房間"
+            },
+            "dock_error": {
+                "name": "充電座錯誤",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "集塵盒已滿或堵塞",
+                    "dirty_tank_latch_open": "廢水槽門已開啟",
+                    "duct_blockage": "管道阻塞",
+                    "no_dustbin": "集塵盒已移除",
+                    "ok": "確定",
+                    "waste_water_tank_full": "廢水箱已滿",
+                    "water_empty": "水槽已乾"
+                }
+            },
+            "filter_time_left": {
+                "name": "濾網剩餘壽命"
+            },
+            "last_clean_end": {
+                "name": "上次清掃結束"
+            },
+            "last_clean_start": {
+                "name": "上次清掃開始"
+            },
+            "main_brush_time_left": {
+                "name": "主刷剩餘壽命"
+            },
+            "mop_drying_remaining_time": {
+                "name": "拖把烘乾剩餘時間"
+            },
+            "mop_life_time_left": {
+                "name": "拖把剩餘使用壽命"
+            },
+            "q7_status": {
+                "name": "狀態",
+                "state": {
+                    "charging": "充電中",
+                    "docking": "返回充電座",
+                    "mop_airdrying": "拖把風乾中",
+                    "mop_cleaning": "拖把清潔中",
+                    "moping": "拖地中",
+                    "paused": "已暫停",
+                    "sleeping": "休眠中",
+                    "sweep_moping": "掃地拖地",
+                    "sweep_moping_2": "掃地拖地",
+                    "updating": "更新中",
+                    "waiting_for_orders": "等待命令中"
+                }
+            },
+            "sensor_time_left": {
+                "name": "感測器剩餘壽命"
+            },
+            "side_brush_time_left": {
+                "name": "邊刷剩餘壽命"
+            },
+            "status": {
+                "name": "狀態",
+                "state": {
+                    "air_drying_stopping": "風乾停止",
+                    "attaching_the_mop": "安裝拖把",
+                    "charger_disconnected": "充電器斷線",
+                    "charging": "充電中",
+                    "charging_complete": "充電完成",
+                    "charging_problem": "充電問題",
+                    "cleaning": "清掃中",
+                    "detaching_the_mop": "拆卸拖把",
+                    "device_offline": "裝置離線",
+                    "docking": "返回充電座",
+                    "egg_attack": "丘比特模式",
+                    "emptying_the_bin": "清空集塵盒",
+                    "error": "錯誤",
+                    "going_to_target": "移動至目標區",
+                    "going_to_wash_the_mop": "移動以清洗拖把",
+                    "idle": "待命",
+                    "locked": "已上鎖",
+                    "manual_mode": "手動模式",
+                    "mapping": "繪製中",
+                    "paused": "已暫停",
+                    "remote_control_active": "遠端控制已啟用",
+                    "returning_home": "返回充電",
+                    "segment_cleaning": "分段清掃",
+                    "shutting_down": "關機",
+                    "spot_cleaning": "區域清掃",
+                    "starting": "起始中",
+                    "unknown": "未知",
+                    "updating": "更新中",
+                    "washing_the_mop": "清洗拖把",
+                    "zoned_cleaning": "劃區清掃"
+                }
+            },
+            "strainer_time_left": {
+                "name": "濾網剩餘壽命"
+            },
+            "times_after_clean": {
+                "name": "清掃後時間"
+            },
+            "total_cleaning_area": {
+                "name": "總清掃區域"
+            },
+            "total_cleaning_count": {
+                "name": "總清掃次數"
+            },
+            "total_cleaning_time": {
+                "name": "總清掃時間"
+            },
+            "vacuum_error": {
+                "name": "真空誤差",
+                "state": {
+                    "battery_error": "電池錯誤",
+                    "bumper_stuck": "保險槓卡住",
+                    "cannot_cross_carpet": "不能穿越地毯",
+                    "charging_error": "充電錯誤",
+                    "clear_brush_exception": "請檢查水過濾器是否正確安裝",
+                    "clear_brush_exception_2": "定位按鈕錯誤",
+                    "clear_water_box_exception": "淨水水槽已空",
+                    "clear_water_box_hoare": "檢查淨水水槽",
+                    "cliff_sensor_error": "懸崖傳感器錯誤",
+                    "collect_dust_error_3": "清潔自動清空基座",
+                    "collect_dust_error_4": "自動清空基座電壓錯誤",
+                    "compass_error": "偵測到強磁場",
+                    "dirty_water_box_hoare": "檢查髒水水槽",
+                    "dock": "基座未連接電源",
+                    "dock_locator_error": "基站定位器錯誤",
+                    "fan_error": "風扇錯誤",
+                    "filter_blocked": "過濾器堵塞",
+                    "filter_screen_exception": "清潔基座水過濾器",
+                    "internal_error": "內部錯誤",
+                    "invisible_wall_detected": "檢測到隱形牆",
+                    "lidar_blocked": "激光雷達被阻擋",
+                    "light_touch": "牆壁傳感器錯誤",
+                    "low_battery": "低電量",
+                    "main_brush_jammed": "主刷卡住",
+                    "mopping_roller_1": "滾筒可能卡住",
+                    "mopping_roller_2": "滾筒可能卡住",
+                    "mopping_roller_error_2": "滾筒未正確降低",
+                    "no_dustbin": "沒有垃圾箱",
+                    "nogo_zone_detected": "檢測到禁區",
+                    "none": "無",
+                    "return_to_dock_fail": "返回基站失敗",
+                    "robot_on_carpet": "地毯上的機器人",
+                    "robot_tilted": "機器人傾倒",
+                    "robot_trapped": "機器人被困",
+                    "side_brush_error": "邊刷錯誤",
+                    "side_brush_jammed": "邊刷卡住",
+                    "sink_strainer_hoare": "重新安裝水過濾器",
+                    "strainer_error": "過濾器潮濕或堵塞",
+                    "temperature_protection": "機器人溫度保護",
+                    "vertical_bumper_pressed": "垂直保險槓受壓",
+                    "vibrarise_jammed": "VibraRise 卡住了",
+                    "visual_sensor": "攝影機錯誤",
+                    "wall_sensor_dirty": "牆壁傳感器髒了",
+                    "wheels_jammed": "車輪卡住",
+                    "wheels_suspended": "車輪懸掛"
+                }
+            },
+            "washing_left": {
+                "name": "清洗左"
+            },
+            "zeo_error": {
+                "name": "錯誤",
+                "state": {
+                    "communication_error": "通訊錯誤",
+                    "door_lock_error": "門鎖錯誤",
+                    "drain_error": "排水錯誤",
+                    "drying_error": "烘乾錯誤：請檢查進氣口溫度感測器",
+                    "drying_error_e_12": "烘乾錯誤：請檢查出風口溫度感測器",
+                    "drying_error_e_13": "烘乾錯誤 E13",
+                    "drying_error_e_14": "烘乾錯誤：請檢查冷凝器入口溫度感測器",
+                    "drying_error_e_15": "烘乾錯誤：請檢查制熱元件或轉盤",
+                    "drying_error_e_16": "烘乾錯誤：請檢查烘乾風扇",
+                    "drying_error_restart": "烘乾錯誤：請重新啟動清洗",
+                    "drying_error_water_flow": "烘乾錯誤：請檢查水流",
+                    "heating_error": "加熱錯誤",
+                    "inverter_error": "逆變器錯誤",
+                    "none": "無",
+                    "refill_error": "充填錯誤",
+                    "spin_error": "重新整理抹布",
+                    "temperature_error": "溫度錯誤",
+                    "water_level_error": "水位錯誤"
+                }
+            },
+            "zeo_state": {
+                "name": "狀態",
+                "state": {
+                    "aftercare": "清掃後保養",
+                    "cooling": "冷卻中",
+                    "done": "完成",
+                    "drying": "烘乾中",
+                    "rinsing": "沖洗中",
+                    "soaking": "浸泡中",
+                    "spinning": "脫水中",
+                    "standby": "待命",
+                    "under_delay_start": "延遲啟動",
+                    "waiting_for_aftercare": "等待清掃後保養",
+                    "washing": "清洗中",
+                    "weighing": "稱重"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "兒童鎖"
+            },
+            "dnd_switch": {
+                "name": "勿擾時段"
+            },
+            "off_peak_switch": {
+                "name": "離峰充電"
+            },
+            "sound_setting": {
+                "name": "音效設定"
+            },
+            "status_indicator": {
+                "name": "狀態指示燈"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "勿擾時段結束"
+            },
+            "dnd_start_time": {
+                "name": "勿擾時段開始"
+            },
+            "off_peak_end": {
+                "name": "離峰結束"
+            },
+            "off_peak_start": {
+                "name": "離峰開始"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "自動",
+                            "balanced": "平衡",
+                            "custom": "自訂",
+                            "gentle": "溫和",
+                            "max": "最高",
+                            "max_plus": "超速",
+                            "medium": "中",
+                            "off": "關閉",
+                            "off_raise_main_brush": "關閉（抬起邊刷）",
+                            "quiet": "安靜",
+                            "silent": "靜音",
+                            "smart_mode": "SmartPlan",
+                            "standard": "標準",
+                            "turbo": "增壓"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "button_press_failed": {
+            "message": "按下按鈕失敗"
+        },
+        "command_failed": {
+            "message": "當呼叫 {command} 時出現錯誤"
+        },
+        "home_data_fail": {
+            "message": "取得 Roborock home 資料時失敗"
+        },
+        "invalid_credentials": {
+            "message": "憑證無效。"
+        },
+        "invalid_user_agreement": {
+            "message": "必須再次同意使用者協議。請開啟 Roborock app 並同意使用者協議。"
+        },
+        "map_failure": {
+            "message": "於建立地圖時出現錯誤"
+        },
+        "mqtt_unauthorized": {
+            "message": "由於速率限制或憑證無效，Roborock MQTT 伺服器拒絕連線。可以嘗試重新進行身份驗證，或者等待並重新載入整合。"
+        },
+        "no_coordinators": {
+            "message": "沒有裝置能成功設定"
+        },
+        "no_user_agreement": {
+            "message": "沒有有效使用者協議紀錄。請開啟 Roborock app 並接受使用者協議。"
+        },
+        "position_not_found": {
+            "message": "找不到掃地到機器人位置"
+        },
+        "segment_id_parse_error": {
+            "message": "區段 ID 格式無效：{segment_id}"
+        },
+        "select_option_failed": {
+            "message": "設定所選選項失敗"
+        },
+        "update_data_fail": {
+            "message": "更新資料失敗"
+        },
+        "update_options_failed": {
+            "message": "無法更新 Roborock 選項"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "Roborock 整合無法直接連線至 {device_name}，正回退回雲端 API。不建議這樣做、可能會導致速率限制。請允許 Home Assistant 實例能夠於本地網路上存取掃地機器人。",
+            "title": "使用雲端 API"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "充電站",
+                    "cleaned_area": "清掃區域",
+                    "goto_path": "前進路徑",
+                    "ignored_obstacles": "忽略障礙物",
+                    "ignored_obstacles_with_photo": "忽略照片中障礙物",
+                    "mop_path": "拖地路徑",
+                    "no_carpet_zones": "無地毯區域",
+                    "no_go_zones": "禁區",
+                    "no_mopping_zones": "不拖地區域",
+                    "obstacles": "障礙物",
+                    "obstacles_with_photo": "具照片障礙物",
+                    "path": "路徑",
+                    "predicted_path": "預測路徑",
+                    "room_names": "房間名稱",
+                    "show_background": "顯示背景",
+                    "vacuum_position": "掃地機器人位置",
+                    "virtual_walls": "虛擬牆",
+                    "zones": "區域"
+                },
+                "data_description": {
+                    "charger": "於地圖上顯示充電站。",
+                    "cleaned_area": "於地圖上顯示已清掃分區。",
+                    "goto_path": "於地圖上顯示前往路徑。",
+                    "ignored_obstacles": "於地圖上顯示忽略障礙物。",
+                    "ignored_obstacles_with_photo": "於地圖上以照片顯示忽略障礙物。",
+                    "mop_path": "於地圖上顯示拖地路徑。",
+                    "no_carpet_zones": "於地圖上顯示無地毯分區。",
+                    "no_go_zones": "於地圖上顯示禁區。",
+                    "no_mopping_zones": "於地圖上顯示不拖地分區。",
+                    "obstacles": "於地圖上顯示障礙物。",
+                    "obstacles_with_photo": "於地圖上以照片顯示障礙物。",
+                    "path": "於地圖上顯示路徑。",
+                    "predicted_path": "於地圖上顯示預測路徑。",
+                    "room_names": "於地圖上顯示房間名稱。",
+                    "show_background": "為地圖新增背景。",
+                    "vacuum_position": "於地圖上顯示掃地機器人位置。",
+                    "virtual_walls": "於地圖上顯示虛擬牆。",
+                    "zones": "於地圖上顯示分區。"
+                },
+                "description": "於地圖上指定繪製功能。"
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "自動",
+                "cn": "CN",
+                "eu": "EU",
+                "ru": "RU",
+                "us": "US"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "取得裝置上的地圖和房間資訊。",
+            "name": "取得地圖"
+        },
+        "get_vacuum_current_position": {
+            "description": "取得掃地機器人目前位置。",
+            "name": "取得目前位置"
+        },
+        "set_vacuum_goto_position": {
+            "description": "掃地機器人至指定位置",
+            "fields": {
+                "x": {
+                    "description": "相對於基地台座標。x=25500、y=25500 為基地台位置。",
+                    "name": "X 座標"
+                },
+                "y": {
+                    "description": "相對於基地台座標。x=25500、y=25500 為基地台位置。",
+                    "name": "Y 座標"
+                }
+            },
+            "name": "前往位置"
+        }
+    }
+}
