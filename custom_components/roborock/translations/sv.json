@@ -1,0 +1,538 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "Kontot är redan konfigurerat",
+            "reauth_successful": "Återautentisering lyckades",
+            "wrong_account": "Fel konto: Vänligen autentisera med rätt konto."
+        },
+        "error": {
+            "invalid_code": "Koden du angav var felaktig, kontrollera den och försök igen.",
+            "invalid_email": "Det finns inget konto kopplat till e-postadressen du angav, försök igen.",
+            "invalid_email_format": "Det finns ett problem med formateringen av din e-postadress, försök igen.",
+            "too_frequent_code_requests": "Du har försökt begära för många koder. Försök igen senare.",
+            "unknown": "Oväntat fel",
+            "unknown_roborock": "Ett okänt Roborock-undantag inträffade – kontrollera dina loggar.",
+            "unknown_url": "Det uppstod ett problem med att fastställa rätt URL för ditt Roborock-konto – kontrollera dina loggar."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Verifierings kod"
+                },
+                "data_description": {
+                    "code": "Verifieringskoden som skickas till din e-post."
+                },
+                "description": "Ange verifieringskoden som skickas till din e-post"
+            },
+            "reauth_confirm": {
+                "description": "Roborock-integrationen behöver autentisera ditt konto på nytt",
+                "title": "Autentiseringen har upphört att gälla för {name}"
+            },
+            "user": {
+                "data": {
+                    "username": "E-post"
+                },
+                "data_description": {
+                    "username": "Den e-postadress som används för att logga in på Roborock-appen."
+                },
+                "description": "Ange din Roborock-e-postadress."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_cleaning": {
+                "name": "Städar"
+            },
+            "mop_attached": {
+                "name": "Mopp monterad"
+            },
+            "mop_drying_status": {
+                "name": "Torkning av mopp"
+            },
+            "water_box_attached": {
+                "name": "Vattenbehållare monterad"
+            },
+            "water_shortage": {
+                "name": "Vattenbrist"
+            }
+        },
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "Återställ förbrukning för luftfilter"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Återställ förbrukning för huvudborste"
+            },
+            "reset_sensor_consumable": {
+                "name": "Återställ förbrukning för sensor"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Återställ förbrukning för sidoborste"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Volym"
+            }
+        },
+        "select": {
+            "dust_collection_mode": {
+                "name": "Tömningsläge",
+                "state": {
+                    "balanced": "Balanserad",
+                    "light": "Lätt",
+                    "max": "Max",
+                    "smart": "Smart"
+                }
+            },
+            "mop_intensity": {
+                "name": "Moppintensitet",
+                "state": {
+                    "custom": "Anpassad",
+                    "custom_water_flow": "Anpassat vattenflöde",
+                    "extreme": "Extrem",
+                    "high": "Hög",
+                    "intense": "Intensiv",
+                    "low": "Låg",
+                    "max": "Max",
+                    "medium": "Medel",
+                    "mild": "Mild",
+                    "moderate": "Måttlig",
+                    "off": "Av",
+                    "smart_mode": "SmartPlan",
+                    "vac_followed_by_mop": "Dammsugning följt av moppning"
+                }
+            },
+            "mop_mode": {
+                "name": "Moppläge",
+                "state": {
+                    "custom": "Anpassad",
+                    "deep": "Djup",
+                    "deep_plus": "Djup+",
+                    "fast": "Snabb",
+                    "smart_mode": "SmartPlan",
+                    "standard": "Standard"
+                }
+            },
+            "selected_map": {
+                "name": "Vald karta"
+            },
+            "water_flow": {
+                "state": {
+                    "high": "Hög",
+                    "low": "Låg"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Fel",
+                "state": {
+                    "battery_temperature_protection": "Batteritemperaturskydd",
+                    "battery_temperature_protection_2": "Batteritemperaturskydd",
+                    "battery_temperature_protection_e0": "Temperaturskydd",
+                    "battery_under_10": "Batteri under 10 %",
+                    "clean_head_entangled": "Rengöringshuvud intrasslat",
+                    "clean_head_too_hot": "Rengöringshuvudet är för varmt.",
+                    "clean_tank_empty": "Vattentank tom",
+                    "cleaning_head_blocked": "Rengöringshuvudet blockerat",
+                    "dirty_charging_contacts": "Rengör laddningskontakterna",
+                    "dirty_tank_full": "Smutsvattentank full",
+                    "fan_protection_e4": "Fläktskydd",
+                    "fan_protection_e5": "Fläktskydd",
+                    "fan_protection_e9": "Fläktskydd",
+                    "low_battery": "Låg batterinivå",
+                    "none": "Inget",
+                    "power_adapter_error": "Fel på strömadaptern",
+                    "temperature_protection": "Temperaturskydd",
+                    "water_level_sensor_stuck": "Vattennivåsensorn har fastnat."
+                }
+            },
+            "a01_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Laddar",
+                    "drying": "Torkar",
+                    "dusting_mode": "Dammar",
+                    "fetch_failed": "Hämtningen misslyckades",
+                    "fetching": "Hämtar",
+                    "mop_washing": "Tvättar mopp",
+                    "mop_washing_paused": "Mopptvätt pausad",
+                    "ready": "Redo",
+                    "reserving": "Reservering",
+                    "self_clean_cleaning": "Självrengörande rengöring",
+                    "self_clean_deep_cleaning": "Självrengörande djuprengöring",
+                    "self_clean_dehydrating": "Självrengörande torkning",
+                    "self_clean_rinsing": "Självrengörande sköljning",
+                    "unknown": "Okänd",
+                    "updating": "Uppdaterar",
+                    "ventilating": "Ventilerar",
+                    "washing": "Tvättar"
+                }
+            },
+            "brush_remaining": {
+                "name": "Rulle vänster"
+            },
+            "clean_percent": {
+                "name": "Städning status"
+            },
+            "cleaning_area": {
+                "name": "Städad area"
+            },
+            "cleaning_brush_time_left": {
+                "name": "Underhållsborste tid kvar"
+            },
+            "cleaning_time": {
+                "name": "Städtid"
+            },
+            "countdown": {
+                "name": "Nedräkning"
+            },
+            "current_room": {
+                "name": "Nuvarande rum"
+            },
+            "dock_error": {
+                "name": "Dockningsfel",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "Rengöringstanken är full eller blockerad",
+                    "dirty_tank_latch_open": "Luckan till smutsvattentank öppen",
+                    "duct_blockage": "Kanal blockerad",
+                    "no_dustbin": "Ingen dammbehållare",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Smutsvattentank full",
+                    "water_empty": "Vattentank tom"
+                }
+            },
+            "filter_time_left": {
+                "name": "Filtertid kvar"
+            },
+            "last_clean_end": {
+                "name": "Sluttid för senaste städningen"
+            },
+            "last_clean_start": {
+                "name": "Starttid för senaste städningen"
+            },
+            "main_brush_time_left": {
+                "name": "Huvudborste tid kvar"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Återstående tid för mopptorkning"
+            },
+            "mop_life_time_left": {
+                "name": "Moppens kvarvarande livslängd"
+            },
+            "q7_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Laddar",
+                    "docking": "Dockar",
+                    "mop_airdrying": "Mopplufttorkning",
+                    "mop_cleaning": "Mopprengöring",
+                    "moping": "Moppar",
+                    "paused": "Pausad",
+                    "updating": "Uppdaterar"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Sensortid kvar"
+            },
+            "side_brush_time_left": {
+                "name": "Sidoborste tid kvar"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "air_drying_stopping": "Lufttorkning upphör",
+                    "attaching_the_mop": "Kopplar på moppen",
+                    "charger_disconnected": "Laddare bortkopplad",
+                    "charging": "Laddar",
+                    "charging_complete": "Laddning klar",
+                    "charging_problem": "Laddningsproblem",
+                    "cleaning": "Städar",
+                    "detaching_the_mop": "Kopplar bort moppen",
+                    "device_offline": "Enhet offline",
+                    "docking": "Dockar",
+                    "egg_attack": "Cupid-läge",
+                    "emptying_the_bin": "Tömmer behållaren",
+                    "error": "Fel",
+                    "going_to_target": "Går till målet",
+                    "going_to_wash_the_mop": "Går för att tvätta moppen",
+                    "idle": "Inaktiv",
+                    "locked": "Låst",
+                    "manual_mode": "Manuellt läge",
+                    "mapping": "Kartläggning",
+                    "paused": "Pausad",
+                    "remote_control_active": "Fjärrkontroll aktiv",
+                    "returning_home": "Återvänder hem",
+                    "segment_cleaning": "Segmentstädning",
+                    "shutting_down": "Avslutar",
+                    "spot_cleaning": "Punktrengörning",
+                    "starting": "Startar",
+                    "unknown": "Okänd",
+                    "updating": "Uppdaterar",
+                    "washing_the_mop": "Tvättar moppen",
+                    "zoned_cleaning": "Zonstädning"
+                }
+            },
+            "strainer_time_left": {
+                "name": "Tid kvar för silen"
+            },
+            "total_cleaning_area": {
+                "name": "Totalt städad area"
+            },
+            "total_cleaning_count": {
+                "name": "Totalt antal städningar"
+            },
+            "total_cleaning_time": {
+                "name": "Total städtid"
+            },
+            "vacuum_error": {
+                "name": "Fel på dammsugaren",
+                "state": {
+                    "battery_error": "Batterifel",
+                    "bumper_stuck": "Stötfångaren har fastnat",
+                    "cannot_cross_carpet": "Kan inte passera matta",
+                    "charging_error": "Laddningsfel",
+                    "clear_brush_exception": "Kontrollera att vattenfiltret har installerats korrekt",
+                    "clear_brush_exception_2": "Fel på positioneringsknappen",
+                    "clear_water_box_exception": "Renvattentanken är tom",
+                    "clear_water_box_hoare": "Kontrollera tanken för rent vatten",
+                    "cliff_sensor_error": "Fel på trappsensor(er)",
+                    "collect_dust_error_3": "Rengör dockan för automatisk tömning",
+                    "compass_error": "Starkt magnetfält upptäckt",
+                    "dirty_water_box_hoare": "Kontrollera smutsvattentanken",
+                    "dock": "Dockan är inte ansluten till strömförsörjningen",
+                    "dock_locator_error": "Kan inte hitta laddningsstationen",
+                    "fan_error": "Fel på fläkten",
+                    "filter_blocked": "Filter blockerat",
+                    "filter_screen_exception": "Rengör dockans vattenfilter",
+                    "internal_error": "Internt fel",
+                    "invisible_wall_detected": "Osynlig vägg upptäckt",
+                    "lidar_blocked": "Lidar blockerad",
+                    "light_touch": "Väggsensorfel",
+                    "low_battery": "Låg batterinivå",
+                    "main_brush_jammed": "Huvudborsten har fastnat",
+                    "mopping_roller_1": "Tvättvalsen kan ha fastnat",
+                    "mopping_roller_2": "Tvättvalsen kan ha fastnat",
+                    "mopping_roller_error_2": "Tvättvalsen inte sänkt ordentligt",
+                    "no_dustbin": "Ingen dammbehållare",
+                    "nogo_zone_detected": "No-go zon upptäckt",
+                    "none": "Inget",
+                    "return_to_dock_fail": "Kan inte återvända till laddningsstationen",
+                    "robot_on_carpet": "Roboten på matta",
+                    "robot_tilted": "Roboten har vält",
+                    "robot_trapped": "Roboten är fångad",
+                    "side_brush_error": "Fel på sidoborste",
+                    "side_brush_jammed": "Sidoborsten har fastnat",
+                    "sink_strainer_hoare": "Sätt tillbaka vattenfiltret",
+                    "strainer_error": "Filtret är vått eller igensatt",
+                    "temperature_protection": "Enhetens temperaturskydd",
+                    "vertical_bumper_pressed": "Vertikal stötfångare intryckt",
+                    "vibrarise_jammed": "VibraRise har fastnat",
+                    "visual_sensor": "Kamerafel",
+                    "wall_sensor_dirty": "Väggsensor är smutsig",
+                    "wheels_jammed": "Hjulen sitter fast",
+                    "wheels_suspended": "Hjulen är låsta"
+                }
+            },
+            "washing_left": {
+                "name": "Återstående tvättid"
+            },
+            "zeo_error": {
+                "name": "Fel",
+                "state": {
+                    "communication_error": "Kommunikationsfel",
+                    "door_lock_error": "Dörrlåsfel",
+                    "drain_error": "Dräneringsfel",
+                    "drying_error_e_13": "Torkningsfel E13",
+                    "heating_error": "Värmefel",
+                    "inverter_error": "Inverterfel",
+                    "none": "Inget",
+                    "refill_error": "Påfyllningsfel",
+                    "spin_error": "Ordna om kläderna",
+                    "temperature_error": "Temperaturfel",
+                    "water_level_error": "Vattennivåfel"
+                }
+            },
+            "zeo_state": {
+                "name": "Läge",
+                "state": {
+                    "cooling": "Kyler",
+                    "done": "Färdig",
+                    "drying": "Torkning",
+                    "rinsing": "Sköljning",
+                    "soaking": "Blötläggning",
+                    "spinning": "Snurrar",
+                    "standby": "Viloläge",
+                    "under_delay_start": "Fördröjd start",
+                    "washing": "Tvättar",
+                    "weighing": "Vägning"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Barnlås"
+            },
+            "dnd_switch": {
+                "name": "Stör inte"
+            },
+            "off_peak_switch": {
+                "name": "Off-peak laddning"
+            },
+            "status_indicator": {
+                "name": "Indikatorlampa för status"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Sluttid Stör ej-läge"
+            },
+            "dnd_start_time": {
+                "name": "Starttid Stör ej-läge"
+            },
+            "off_peak_end": {
+                "name": "Off-peak slut"
+            },
+            "off_peak_start": {
+                "name": "Off-peak start"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Auto",
+                            "balanced": "Balanserad",
+                            "custom": "Anpassad",
+                            "gentle": "Försiktig",
+                            "max": "Max",
+                            "max_plus": "Max plus",
+                            "medium": "Medel",
+                            "off": "Av",
+                            "quiet": "Lugn",
+                            "silent": "Tyst",
+                            "smart_mode": "SmartPlan",
+                            "standard": "Standard",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "command_failed": {
+            "message": "Fel vid anrop av {command}"
+        },
+        "home_data_fail": {
+            "message": "Det gick inte att få Roborocks hemdata"
+        },
+        "invalid_credentials": {
+            "message": "Ogiltiga inloggningsuppgifter."
+        },
+        "invalid_user_agreement": {
+            "message": "Användaravtalet måste godkännas igen. Öppna din Roborock-app och acceptera avtalet."
+        },
+        "map_failure": {
+            "message": "Något gick fel när kartan skapades"
+        },
+        "mqtt_unauthorized": {
+            "message": "Roborock MQTT-servrar avvisade anslutningen på grund av hastighetsbegränsning eller ogiltiga autentiseringsuppgifter. Du kan antingen försöka autentisera på nytt eller vänta och ladda om integrationen."
+        },
+        "no_coordinators": {
+            "message": "Inga enheter kunde konfigureras"
+        },
+        "no_user_agreement": {
+            "message": "Du har inte ett giltigt användaravtal. Öppna din Roborock-app och acceptera avtalet."
+        },
+        "position_not_found": {
+            "message": "Robotposition hittades inte"
+        },
+        "update_data_fail": {
+            "message": "Misslyckades med att uppdatera data"
+        },
+        "update_options_failed": {
+            "message": "Det gick inte att uppdatera Roborock-alternativen"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "Roborock integrationen kan inte ansluta direkt till {device_name} och återgår till moln API. Detta rekommenderas inte eftersom det kan leda till hastighetsbegränsning. Gör din dammsugare tillgänglig på det lokala nätverket via din Home Assistant instans.",
+            "title": "Moln-API som används"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Laddare",
+                    "cleaned_area": "Städat område",
+                    "goto_path": "Gå-till väg",
+                    "ignored_obstacles": "Ignorerade hinder",
+                    "ignored_obstacles_with_photo": "Ignorerade hinder med foto",
+                    "mop_path": "Moppa väg",
+                    "no_carpet_zones": "Inga mattzoner",
+                    "no_go_zones": "Förbudszoner",
+                    "no_mopping_zones": "Zon som inte våttorkas",
+                    "obstacles": "Hinder",
+                    "obstacles_with_photo": "Hinder med foto",
+                    "path": "Väg",
+                    "predicted_path": "Förutspådd väg",
+                    "room_names": "Namn på rum",
+                    "show_background": "Visa bakgrund",
+                    "vacuum_position": "Dammsug position",
+                    "virtual_walls": "Virtuella väggar",
+                    "zones": "Zoner"
+                },
+                "data_description": {
+                    "charger": "Visa laddaren på kartan.",
+                    "cleaned_area": "Visa det städade området på kartan.",
+                    "goto_path": "Visa gå-till-vägen på kartan.",
+                    "ignored_obstacles": "Visa ignorerade hinder på kartan.",
+                    "ignored_obstacles_with_photo": "Visa ignorerade hinder med foton på kartan.",
+                    "mop_path": "Visa moppningsvägen på kartan.",
+                    "no_carpet_zones": "Visa zonerna utan matta på kartan.",
+                    "no_go_zones": "Visa no-go-zonerna på kartan.",
+                    "no_mopping_zones": "Visa zonerna med moppningsförbud på kartan.",
+                    "obstacles": "Visa hinder på kartan.",
+                    "obstacles_with_photo": "Visa hinder med foton på kartan.",
+                    "path": "Visa vägen på kartan.",
+                    "predicted_path": "Visa den förutsedda vägen på kartan.",
+                    "room_names": "Visa rumsnamn på kartan.",
+                    "show_background": "Lägg till en bakgrund på kartan",
+                    "vacuum_position": "Visa dammsugarens position på kartan.",
+                    "virtual_walls": "Visa virtuella väggar på kartan.",
+                    "zones": "Visa zoner på kartan."
+                },
+                "description": "Ange vilka funktioner som ska ritas på kartan."
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "Hämtar kart- och rumsinformation för din enhet.",
+            "name": "Hämta kartor"
+        },
+        "get_vacuum_current_position": {
+            "description": "Hämtar dammsugarens aktuella position.",
+            "name": "Hämta aktuell position"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Skickar dammsugaren till en specifik position.",
+            "fields": {
+                "x": {
+                    "description": "Koordinaterna är i förhållande till dockan. Dockans position är x=25500, y=25500.",
+                    "name": "X-koordinat"
+                },
+                "y": {
+                    "description": "Koordinaterna är i förhållande till dockan. Dockans position är x=25500, y=25500.",
+                    "name": "Y-koordinat"
+                }
+            },
+            "name": "Gå till position"
+        }
+    }
+}
