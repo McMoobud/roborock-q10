@@ -1,0 +1,79 @@
+{
+    "entity": {
+        "select": {
+            "dust_collection_mode": {
+                "state": {
+                    "light": "Светло"
+                }
+            }
+        },
+        "sensor": {
+            "a01_status": {
+                "name": "Статус"
+            },
+            "status": {
+                "name": "Статус",
+                "state": {
+                    "manual_mode": "Рачен режим",
+                    "remote_control_active": "Активен е далечинскиот управувач"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Детска брава"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "quiet": "Тивко",
+                            "silent": "Тивко",
+                            "turbo": "Турбо"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_user_agreement": {
+            "message": "Корисничкиот договор мора повторно да се прифати. Отворете ја вашата апликација Roborock и прифатете го договорот."
+        },
+        "no_user_agreement": {
+            "message": "Немате валиден кориснички договор. Отворете ја вашата апликација Roborock и прифатете го договорот."
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "vacuum_position": "Вакуум позиција"
+                },
+                "data_description": {
+                    "vacuum_position": "Покажете ја позицијата на вакуум на картата."
+                }
+            }
+        }
+    },
+    "services": {
+        "get_vacuum_current_position": {
+            "description": "Ја добива моменталната позиција на вакуумот.",
+            "name": "Добиј моментална позиција"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Го испраќа вакуумот на одредена позиција.",
+            "fields": {
+                "x": {
+                    "name": "X-координата"
+                },
+                "y": {
+                    "name": "Y-координата"
+                }
+            },
+            "name": "Оди на позиција"
+        }
+    }
+}
