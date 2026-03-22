@@ -1,0 +1,732 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "Nalog je već konfigurisan",
+            "reauth_successful": "Ponovna prijava je uspešna",
+            "wrong_account": "Pogrešan nalog: Potvrdite identitet pomoću ispravnog naloga."
+        },
+        "error": {
+            "invalid_code": "Uneti kod nije tačan, proverite ga i pokušajte ponovo.",
+            "invalid_email": "Nalog nije povezan sa unetom adresom e‑pošte, pokušajte ponovo.",
+            "invalid_email_format": "Postoji problem sa formatiranjem vaše adrese e‑pošte – pokušajte ponovo.",
+            "invalid_email_or_region": "Either there is no account associated with the email you entered, or there is no account in the selected region.",
+            "too_frequent_code_requests": "Pokušali ste da zatražite previše kodova. Pokušajte ponovo kasnije.",
+            "unknown": "Neočekivana greška",
+            "unknown_roborock": "Došlo je do nepoznatog Roborock izuzetka – proverite zapise.",
+            "unknown_url": "Došlo je do problema pri određivanju ispravnog URL-a za vaš Roborock nalog – proverite zapise."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Verifikacioni kod"
+                },
+                "data_description": {
+                    "code": "Verifikacioni kod je poslat na vašu e‑poštu."
+                },
+                "description": "Unesite verifikacioni kod poslat na vašu adresu e‑pošte"
+            },
+            "reauth_confirm": {
+                "description": "Roborock integracija mora ponovo da prijavi vaš nalog",
+                "title": "Prijava za {name} je istekla"
+            },
+            "user": {
+                "data": {
+                    "region": "Serverski region Roborock-a",
+                    "username": "E‑pošta"
+                },
+                "data_description": {
+                    "region": "Serverski region u kojem je registrovan vaš Roborock nalog prilikom podešavanja aplikacije. Preporučuje se opcija „Automatski“, osim ako imate problema.",
+                    "username": "Adresa e‑pošte korišćena za prijavu u Roborock aplikaciju."
+                },
+                "description": "Unesite vašu Roborock adresu e‑pošte"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "clean_box_empty": {
+                "name": "Posuda za čistu vodu"
+            },
+            "clean_fluid_empty": {
+                "name": "Sredstvo za čišćenje"
+            },
+            "detergent_empty": {
+                "name": "Detergent",
+                "state": {
+                    "off": "Dostupno",
+                    "on": "Prazno"
+                }
+            },
+            "dirty_box_full": {
+                "name": "Posuda za prljavu vodu"
+            },
+            "in_cleaning": {
+                "name": "Čišćenje"
+            },
+            "mop_attached": {
+                "name": "Mop je postavljen"
+            },
+            "mop_drying_status": {
+                "name": "Sušenje mopa"
+            },
+            "softener_empty": {
+                "name": "Omekšivač",
+                "state": {
+                    "off": "Dostupno",
+                    "on": "Prazno"
+                }
+            },
+            "water_box_attached": {
+                "name": "Rezervoar za vodu je postavljen"
+            },
+            "water_shortage": {
+                "name": "Nedostatak vode"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pauza"
+            },
+            "reset_air_filter_consumable": {
+                "name": "Resetujte potrošni materijal filtera za vazduh"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Resetujte potrošni materijal glavne četke"
+            },
+            "reset_sensor_consumable": {
+                "name": "Resetujte potrošni materijal senzora"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Resetujte potrošni materijal bočne četke"
+            },
+            "shutdown": {
+                "name": "Isključivanje"
+            },
+            "start": {
+                "name": "Pokreni"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Jačina zvuka"
+            }
+        },
+        "select": {
+            "cleaning_mode": {
+                "name": "Režim čišćenja",
+                "state": {
+                    "mop": "Samo brisanje",
+                    "vac_and_mop": "Usisavanje i brisanje",
+                    "vacuum": "Samo usisavanje"
+                }
+            },
+            "detergent_type": {
+                "name": "Tip detergenta",
+                "state": {
+                    "empty": "Prazno",
+                    "high": "Visok",
+                    "low": "Nizak",
+                    "medium": "Srednji"
+                }
+            },
+            "drying_mode": {
+                "name": "Režim sušenja",
+                "state": {
+                    "iron": "Pegla",
+                    "none": "Bez sušenja",
+                    "quick": "Brzo",
+                    "store": "Odlaganje",
+                    "time_dry": "Vremensko sušenje"
+                }
+            },
+            "dust_collection_mode": {
+                "name": "Režim pražnjenja",
+                "state": {
+                    "balanced": "Uravnoteženo",
+                    "light": "Svetlo",
+                    "max": "Maksimum",
+                    "smart": "Pametno"
+                }
+            },
+            "mode": {
+                "name": "Režim rada",
+                "state": {
+                    "drain": "Ispumpavanje",
+                    "dry": "Suvo",
+                    "heavy": "Teško",
+                    "pre_wash": "Predpranje",
+                    "rinse_spin": "Ispiranje i centrifugiranje",
+                    "spin": "Centrifuga",
+                    "wash": "Pranje",
+                    "wash_and_dry": "Pranje i sušenje"
+                }
+            },
+            "mop_intensity": {
+                "name": "Intenzitet brisanja",
+                "state": {
+                    "custom": "Prilagođeno",
+                    "custom_water_flow": "Prilagođen protok vode",
+                    "extreme": "Ekstremno",
+                    "high": "Visok",
+                    "intense": "Intenzivno",
+                    "low": "Nizak",
+                    "max": "Maksimum",
+                    "medium": "Srednji",
+                    "mild": "Blago",
+                    "min": "Minimum",
+                    "moderate": "Umereno",
+                    "off": "Isključeno",
+                    "slight": "Blago",
+                    "smart_mode": "Pametni plan",
+                    "standard": "Standardno",
+                    "vac_followed_by_mop": "Usisavanje pa brisanje"
+                }
+            },
+            "mop_mode": {
+                "name": "Režim brisanja",
+                "state": {
+                    "custom": "Prilagođeno",
+                    "deep": "Duboko",
+                    "deep_plus": "Duboko+",
+                    "fast": "Brzo",
+                    "smart_mode": "Pametni plan",
+                    "standard": "Standardno"
+                }
+            },
+            "program": {
+                "name": "Program pranja",
+                "state": {
+                    "air_refresh": "Osvežavanje vazduhom",
+                    "anti_allergen": "Protiv alergena",
+                    "anti_mites": "Protiv grinja",
+                    "baby_care": "Briga o bebi",
+                    "bedding": "Posteljina",
+                    "boiling_wash": "Iskuvavanje",
+                    "bra": "Grudnjak",
+                    "cotton_linen": "Pamuk/Posteljina",
+                    "custom": "Prilagođeno",
+                    "down": "Dole",
+                    "down_clean": "Čišćenje perja",
+                    "exo_40_60": "Exo 40/60",
+                    "gentle": "Nežno",
+                    "intensive": "Intenzivno",
+                    "new_clothes": "Nova odeća",
+                    "night": "Noć",
+                    "panties": "Gaćice",
+                    "quick": "Brzo",
+                    "rinse_and_spin": "Ispiranje i centrifugiranje",
+                    "sanitize": "Dezinfekcija",
+                    "season": "Sezona",
+                    "shirts": "Majice",
+                    "silk": "Svila",
+                    "socks": "Čarape",
+                    "sportswear": "Sportska odeća",
+                    "stain_removal": "Uklanjanje mrlja",
+                    "standard": "Standardno",
+                    "synthetics": "Sintetika",
+                    "t_shirts": "Majice kratkih rukava",
+                    "towels": "Peškiri",
+                    "twenty_c": "20°C",
+                    "underwear": "Donji veš",
+                    "warming": "Održavanje toplote",
+                    "wool": "Vuna"
+                }
+            },
+            "rinse_times": {
+                "name": "Vreme ispiranja",
+                "state": {
+                    "high": "4",
+                    "low": "2",
+                    "max": "5",
+                    "mid": "3",
+                    "min": "1",
+                    "none": "Podrazumevano"
+                }
+            },
+            "selected_map": {
+                "name": "Izabrana mapa"
+            },
+            "softener_type": {
+                "name": "Tip omekšivača",
+                "state": {
+                    "empty": "Prazno",
+                    "high": "Visok",
+                    "low": "Nizak",
+                    "medium": "Srednji"
+                }
+            },
+            "spin_level": {
+                "name": "Nivo centrifuge",
+                "state": {
+                    "high": "1000 RPM",
+                    "max": "1400 RPM",
+                    "mid": "800 RPM",
+                    "none": "Podrazumevano",
+                    "very_high": "1200 RPM",
+                    "very_low": "600 RPM"
+                }
+            },
+            "temperature": {
+                "name": "Temperatura vode",
+                "state": {
+                    "30": "30°C",
+                    "40": "40°C",
+                    "60": "60°C",
+                    "90": "90°C",
+                    "auto": "Automatski",
+                    "cold": "Hladno"
+                }
+            },
+            "water_flow": {
+                "name": "Protok vode",
+                "state": {
+                    "high": "Visok",
+                    "low": "Nizak",
+                    "medium": "Srednji"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Greška",
+                "state": {
+                    "battery_temperature_protection": "Zaštita temperature baterije",
+                    "battery_temperature_protection_2": "Zaštita temperature baterije",
+                    "battery_temperature_protection_e0": "Zaštita od temperature",
+                    "battery_under_10": "Baterija ispod 10%",
+                    "clean_head_entangled": "Glava za čišćenje je zapetljana",
+                    "clean_head_too_hot": "Glava za čišćenje je previše vruća.",
+                    "clean_tank_empty": "Rezervoar za čistu vodu je prazan",
+                    "cleaning_head_blocked": "Glava za čišćenje je blokirana",
+                    "dirty_charging_contacts": "Očistite kontakte za punjenje",
+                    "dirty_tank_full": "Prljav rezervoar je pun",
+                    "fan_protection_e4": "Zaštita ventilatora",
+                    "fan_protection_e5": "Zaštita ventilatora",
+                    "fan_protection_e9": "Zaštita ventilatora",
+                    "low_battery": "Niska baterija",
+                    "none": "Nema",
+                    "power_adapter_error": "Greška adaptera za napajanje",
+                    "temperature_protection": "Zaštita od temperature",
+                    "water_level_sensor_stuck": "Senzor nivoa vode je zaglavljen."
+                }
+            },
+            "a01_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Punjenje",
+                    "drying": "Sušenje",
+                    "dusting_mode": "Režim brisanja prašine",
+                    "fetch_failed": "Preuzimanje nije uspelo",
+                    "fetching": "Preuzimanje",
+                    "mop_washing": "Pranje mopa",
+                    "mop_washing_paused": "Pranje mopa je pauzirano",
+                    "ready": "Spremno",
+                    "reserving": "Rezervisanje",
+                    "self_clean_cleaning": "Samostalno čišćenje",
+                    "self_clean_deep_cleaning": "Samostalno dubinsko čišćenje",
+                    "self_clean_dehydrating": "Samostalno sušenje",
+                    "self_clean_rinsing": "Samostalno ispiranje",
+                    "unknown": "Nepoznato",
+                    "updating": "Ažuriranje",
+                    "ventilating": "Ventilacija",
+                    "washing": "Pranje"
+                }
+            },
+            "brush_remaining": {
+                "name": "Levi valjak"
+            },
+            "clean_percent": {
+                "name": "Napredak čišćenja"
+            },
+            "cleaning_area": {
+                "name": "Zona čišćenja"
+            },
+            "cleaning_brush_time_left": {
+                "name": "Preostalo vreme četke za održavanje"
+            },
+            "cleaning_time": {
+                "name": "Vreme čišćenja"
+            },
+            "countdown": {
+                "name": "Odbrojavanje"
+            },
+            "current_room": {
+                "name": "Trenutna prostorija"
+            },
+            "dock_error": {
+                "name": "Greška baze",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "Rezervoar za čišćenje je pun ili zapušen.",
+                    "dirty_tank_latch_open": "Zatvarač prljavog rezervoara je otvoren",
+                    "duct_blockage": "Začepljenje kanala",
+                    "no_dustbin": "Nema posude za prašinu",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Rezervoar za otpadnu vodu je pun",
+                    "water_empty": "Nema vode"
+                }
+            },
+            "filter_time_left": {
+                "name": "Preostalo vreme filtera"
+            },
+            "last_clean_end": {
+                "name": "Poslednji završetak čišćenja"
+            },
+            "last_clean_start": {
+                "name": "Poslednji početak čišćenja"
+            },
+            "main_brush_time_left": {
+                "name": "Preostalo vreme glavne četke"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Preostalo vreme sušenja mopa"
+            },
+            "mop_life_time_left": {
+                "name": "Preostalo trajanje mopa"
+            },
+            "q7_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Punjenje",
+                    "docking": "Povratak na bazu",
+                    "mop_airdrying": "Sušenje krpe na vazduhu",
+                    "mop_cleaning": "Brisanje podova",
+                    "moping": "Brisanje",
+                    "paused": "Pauzirano",
+                    "sleeping": "Spava",
+                    "sweep_moping": "Usisavanje i brisanje",
+                    "sweep_moping_2": "Usisavanje i brisanje",
+                    "updating": "Ažuriranje",
+                    "waiting_for_orders": "Čeka naređenja"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Preostalo vreme senzora"
+            },
+            "side_brush_time_left": {
+                "name": "Preostalo vreme bočne četke"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "air_drying_stopping": "Zaustavljanje sušenja vazduhom",
+                    "attaching_the_mop": "Postavljanje mopa",
+                    "charger_disconnected": "Punjač je isključen",
+                    "charging": "Punjenje",
+                    "charging_complete": "Punjenje završeno",
+                    "charging_problem": "Problem sa punjenjem",
+                    "cleaning": "Čišćenje",
+                    "detaching_the_mop": "Uklanjanje mopa",
+                    "device_offline": "Uređaj je van mreže",
+                    "docking": "Povratak na bazu",
+                    "egg_attack": "Romantični režim",
+                    "emptying_the_bin": "Pražnjenje korpe",
+                    "error": "Greška",
+                    "going_to_target": "Idem ka cilju",
+                    "going_to_wash_the_mop": "Spremno za pranje mopa",
+                    "idle": "Mirovanje",
+                    "locked": "Zaključano",
+                    "manual_mode": "Ručni režim",
+                    "mapping": "Mapiranje",
+                    "paused": "Pauzirano",
+                    "remote_control_active": "Daljinsko upravljanje je aktivno",
+                    "returning_home": "Vraća se kući",
+                    "segment_cleaning": "Segmentno čišćenje",
+                    "shutting_down": "Isključivanje",
+                    "spot_cleaning": "Lokalno čišćenje",
+                    "starting": "Pokretanje",
+                    "unknown": "Nepoznato",
+                    "updating": "Ažuriranje",
+                    "washing_the_mop": "Pranje mopa",
+                    "zoned_cleaning": "Zonsko čišćenje"
+                }
+            },
+            "strainer_time_left": {
+                "name": "Preostalo vreme filtera"
+            },
+            "times_after_clean": {
+                "name": "Vreme nakon čišćenja"
+            },
+            "total_cleaning_area": {
+                "name": "Ukupna zona čišćenja"
+            },
+            "total_cleaning_count": {
+                "name": "Ukupan broj čišćenja"
+            },
+            "total_cleaning_time": {
+                "name": "Ukupno vreme čišćenja"
+            },
+            "vacuum_error": {
+                "name": "Greška usisavanja",
+                "state": {
+                    "battery_error": "Greška baterije",
+                    "bumper_stuck": "Odstojnik zaglavljen",
+                    "cannot_cross_carpet": "Ne može da pređe preko tepiha",
+                    "charging_error": "Greška pri punjenju",
+                    "clear_brush_exception": "Proverite da li je filter za vodu pravilno instaliran",
+                    "clear_brush_exception_2": "Greška pri radu dugmeta za pozicioniranje",
+                    "clear_water_box_exception": "Rezervoar za čistu vodu je prazan",
+                    "clear_water_box_hoare": "Proverite rezervoar za čistu vodu",
+                    "cliff_sensor_error": "Greška senzora za ivicu",
+                    "collect_dust_error_3": "Očistite bazu za automatsko pražnjenje",
+                    "compass_error": "Otkriveno jako magnetno polje",
+                    "dirty_water_box_hoare": "Proverite rezervoar za prljavu vodu",
+                    "dock": "Baza nije povezana na napajanje",
+                    "dock_locator_error": "Greška lokatora baze",
+                    "fan_error": "Greška ventilatora",
+                    "filter_blocked": "Filter je zapušen",
+                    "filter_screen_exception": "Očistite filter za vodu na bazi",
+                    "internal_error": "Unutrašnja greška",
+                    "invisible_wall_detected": "Otkrivena virtuelna barijera",
+                    "lidar_blocked": "Lidar je blokiran",
+                    "light_touch": "Greška pri detekciji zida",
+                    "low_battery": "Niska baterija",
+                    "main_brush_jammed": "Glavna četka je zaglavljena",
+                    "mopping_roller_1": "Valjak za pranje je možda zaglavljen",
+                    "mopping_roller_2": "Valjak za pranje je možda zaglavljen",
+                    "mopping_roller_error_2": "Valjak za pranje nije pravilno spušten",
+                    "no_dustbin": "Nema posude za prašinu",
+                    "nogo_zone_detected": "Otkrivena zabranjena zona",
+                    "none": "Nema",
+                    "return_to_dock_fail": "Neuspešan povratak na bazu",
+                    "robot_on_carpet": "Robot on carpet",
+                    "robot_tilted": "Robot je nagnut",
+                    "robot_trapped": "Robot je zaglavljen",
+                    "side_brush_error": "Greška bočne četke",
+                    "side_brush_jammed": "Bočna četka je zaglavljena",
+                    "sink_strainer_hoare": "Ponovo instalirajte filter za vodu",
+                    "strainer_error": "Filter je mokar ili zapušen",
+                    "temperature_protection": "Zaštita temperature jedinice",
+                    "vertical_bumper_pressed": "Vertikalni branik je pritisnut",
+                    "vibrarise_jammed": "VibraRise je zaglavljen",
+                    "visual_sensor": "Greška kamere",
+                    "wall_sensor_dirty": "Senzor za zid je prljav",
+                    "wheels_jammed": "Točkovi su blokirani",
+                    "wheels_suspended": "Točkovi su podignuti"
+                }
+            },
+            "washing_left": {
+                "name": "Preostalo pranje"
+            },
+            "zeo_error": {
+                "name": "Greška",
+                "state": {
+                    "communication_error": "Greška u komunikaciji",
+                    "door_lock_error": "Greška zaključavanja vrata",
+                    "drain_error": "Greška odvoda",
+                    "drying_error_e_13": "Greška sušenja E13",
+                    "heating_error": "Greška grejanja",
+                    "inverter_error": "Greška invertera",
+                    "none": "Nema",
+                    "refill_error": "Greška dopunjavanja",
+                    "spin_error": "Preuredite odeću",
+                    "temperature_error": "Greška temperature",
+                    "water_level_error": "Greška nivoa vode"
+                }
+            },
+            "zeo_state": {
+                "name": "Stanje",
+                "state": {
+                    "aftercare": "Posttretman",
+                    "cooling": "Hlađenje",
+                    "done": "Gotovo",
+                    "drying": "Sušenje",
+                    "rinsing": "Ispravljanje",
+                    "soaking": "Natapanje",
+                    "spinning": "Okretanje",
+                    "standby": "Pripravno",
+                    "under_delay_start": "Odloženi početak",
+                    "waiting_for_aftercare": "Čekanje na posttretman",
+                    "washing": "Pranje",
+                    "weighing": "Merenje"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Dečija zaštita"
+            },
+            "dnd_switch": {
+                "name": "Ne uznemiravaj"
+            },
+            "off_peak_switch": {
+                "name": "Punjenje u periodu niže tarife"
+            },
+            "sound_setting": {
+                "name": "Podešavanje zvuka"
+            },
+            "status_indicator": {
+                "name": "Lampica indikatora statusa"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Kraj režima Ne uznemiravaj"
+            },
+            "dnd_start_time": {
+                "name": "Početak režima Ne uznemiravaj"
+            },
+            "off_peak_end": {
+                "name": "Kraj van špica"
+            },
+            "off_peak_start": {
+                "name": "Pokretanje van špica"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Automatski",
+                            "balanced": "Uravnoteženo",
+                            "custom": "Prilagođeno",
+                            "gentle": "Blago",
+                            "max": "Maksimum",
+                            "max_plus": "Maksimum plus",
+                            "medium": "Srednji",
+                            "off": "Isključeno",
+                            "off_raise_main_brush": "Isključeno (podignuta četka)",
+                            "quiet": "Tiho",
+                            "silent": "Bešumno",
+                            "smart_mode": "Pametni plan",
+                            "standard": "Standardno",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "button_press_failed": {
+            "message": "Nije uspelo pritiskanje dugmeta"
+        },
+        "command_failed": {
+            "message": "Greška prilikom poziva komande {command}"
+        },
+        "home_data_fail": {
+            "message": "Nije uspelo preuzimanje Roborock podataka o domu"
+        },
+        "invalid_credentials": {
+            "message": "Nevažeći podaci."
+        },
+        "invalid_user_agreement": {
+            "message": "Korisnički ugovor mora ponovo biti prihvaćen. Otvorite Roborock aplikaciju i prihvatite ugovor."
+        },
+        "map_failure": {
+            "message": "Došlo je do greške prilikom kreiranja mape"
+        },
+        "mqtt_unauthorized": {
+            "message": "Roborock MQTT serveri su odbili vezu zbog ograničenja učestalosti ili nevažećih kredencijala. Možete pokušati ponovnu autentifikaciju ili sačekati i ponovo učitati integraciju."
+        },
+        "no_coordinators": {
+            "message": "Nijedan uređaj nije uspešno podešen"
+        },
+        "no_user_agreement": {
+            "message": "Nemate važeći korisnički ugovor. Otvorite Roborock aplikaciju i prihvatite ugovor."
+        },
+        "position_not_found": {
+            "message": "Pozicija robota nije pronađena"
+        },
+        "segment_id_parse_error": {
+            "message": "Nevažeći format ID-a segmenta: {segment_id}"
+        },
+        "select_option_failed": {
+            "message": "Nije uspelo postavljanje izabrane opcije"
+        },
+        "update_data_fail": {
+            "message": "Nije uspelo ažuriranje podataka"
+        },
+        "update_options_failed": {
+            "message": "Neuspešno ažuriranje Roborock opcija"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "Roborock integracija ne može direktno da se poveže sa {device_name} i vraća se na cloud API. Ovo se ne preporučuje jer može dovesti do ograničavanja brzine. Molimo vas da omogućite pristup vašem usisivaču na lokalnoj mreži preko vaše instance Home Assistant-a.",
+            "title": "Cloud API se koristi"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Punjač",
+                    "cleaned_area": "Očišćena površina",
+                    "goto_path": "Putanja za odlazak",
+                    "ignored_obstacles": "Ignorisane prepreke",
+                    "ignored_obstacles_with_photo": "Ignorisane prepreke sa fotografijom",
+                    "mop_path": "Putanja brisanja",
+                    "no_carpet_zones": "Zone bez tepiha",
+                    "no_go_zones": "Zone zabrane prolaza",
+                    "no_mopping_zones": "Zone bez brisanja",
+                    "obstacles": "Prepreke",
+                    "obstacles_with_photo": "Prepreke sa fotografijom",
+                    "path": "Putanja",
+                    "predicted_path": "Predviđena putanja",
+                    "room_names": "Nazivi soba",
+                    "show_background": "Prikaži pozadinu",
+                    "vacuum_position": "Pozicija usisivača",
+                    "virtual_walls": "Virtuelni zidovi",
+                    "zones": "Zone"
+                },
+                "data_description": {
+                    "charger": "Prikaži punjač na mapi.",
+                    "cleaned_area": "Prikaži očišćenu površinu na mapi.",
+                    "goto_path": "Prikaži putanju odlaska na mapi.",
+                    "ignored_obstacles": "Prikaži ignorisane prepreke na mapi.",
+                    "ignored_obstacles_with_photo": "Prikaži ignorisane prepreke sa fotografijama na mapi.",
+                    "mop_path": "Prikaži putanju brisanja na mapi.",
+                    "no_carpet_zones": "Prikaži zone bez tepiha na mapi.",
+                    "no_go_zones": "Prikaži zone zabrane kretanja na mapi.",
+                    "no_mopping_zones": "Prikaži zone bez brisanja na mapi.",
+                    "obstacles": "Prikaži prepreke na mapi.",
+                    "obstacles_with_photo": "Prikaži prepreke sa fotografijama na mapi.",
+                    "path": "Prikaži putanju na mapi.",
+                    "predicted_path": "Prikaži predviđenu putanju na mapi.",
+                    "room_names": "Prikaži nazive prostorija na mapi.",
+                    "show_background": "Dodaj pozadinu na mapu.",
+                    "vacuum_position": "Prikaži poziciju usisivača na mapi.",
+                    "virtual_walls": "Prikaži virtuelne zidove na mapi.",
+                    "zones": "Prikaži zone na mapi."
+                },
+                "description": "Navedite koje funkcije treba prikazati na mapi."
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "Automatski",
+                "cn": "CN",
+                "eu": "EU",
+                "ru": "RU",
+                "us": "US"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "Preuzima mapu i informacije o prostorijama vašeg uređaja.",
+            "name": "Preuzmi mape"
+        },
+        "get_vacuum_current_position": {
+            "description": "Preuzima trenutnu poziciju usisivača.",
+            "name": "Preuzmi trenutnu poziciju"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Šalje usisivač na određenu poziciju.",
+            "fields": {
+                "x": {
+                    "description": "Koordinate su relativne u odnosu na bazu. x=25500,y=25500 je pozicija baze.",
+                    "name": "X koordinata"
+                },
+                "y": {
+                    "description": "Koordinate su relativne u odnosu na bazu. x=25500,y=25500 je pozicija baze.",
+                    "name": "Y-coordinate"
+                }
+            },
+            "name": "Idi na poziciju"
+        }
+    }
+}
