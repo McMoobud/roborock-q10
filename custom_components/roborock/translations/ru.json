@@ -1,0 +1,531 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "Эта учётная запись уже добавлена в Home Assistant",
+            "reauth_successful": "Повторная аутентификация выполнена успешно",
+            "wrong_account": "Неправильная учётная запись: пройдите аутентификацию с правильной учётной записью."
+        },
+        "error": {
+            "invalid_code": "Вы ввели неверный код, проверьте его и повторите попытку.",
+            "invalid_email": "С указанным адресом электронной почты не связана учётная запись. Повторите попытку.",
+            "invalid_email_format": "Возникла проблема с форматированием электронной почты. Повторите попытку.",
+            "too_frequent_code_requests": "Слишком много запросов, повторите попытку позже.",
+            "unknown": "Непредвиденная ошибка",
+            "unknown_roborock": "Произошла неизвестная ошибка. Пожалуйста, проверьте журнал сервера.",
+            "unknown_url": "Возникла проблема с определением правильного URL-адреса для вашей учетной записи Roborock - пожалуйста, проверьте свои журналы."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Проверочный код"
+                },
+                "data_description": {
+                    "code": "Проверочный код отправлен на ваш адрес электронной почты."
+                },
+                "description": "Введите проверочный код, отправленный на Вашу электронную почту"
+            },
+            "reauth_confirm": {
+                "description": "Интеграция Roborock требует повторной аутентификации вашего аккаунта",
+                "title": "Истек срок аутентификации {name}"
+            },
+            "user": {
+                "data": {
+                    "username": "Адрес электронной почты"
+                },
+                "data_description": {
+                    "username": "Адрес электронной почты, используемый для входа в приложение Roborock."
+                },
+                "description": "Введите адрес электронной почты, связанный с учётной записью Roborock."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_cleaning": {
+                "name": "Уборка"
+            },
+            "mop_attached": {
+                "name": "Швабра прикреплена"
+            },
+            "mop_drying_status": {
+                "name": "Швабра сушится"
+            },
+            "water_box_attached": {
+                "name": "Бак для воды прикреплен"
+            },
+            "water_shortage": {
+                "name": "Нехватка воды"
+            }
+        },
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "Сбросить счетчик расхода воздушного фильтра"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Сбросить счетчик расхода основной щетки"
+            },
+            "reset_sensor_consumable": {
+                "name": "Сбросить счетчик расхода сенсора"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Сбросить счетчик расхода боковой щетки"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Громкость"
+            }
+        },
+        "select": {
+            "dust_collection_mode": {
+                "name": "Пустой режим",
+                "state": {
+                    "balanced": "Сбалансированная",
+                    "light": "Лёгкая",
+                    "max": "Максимальная",
+                    "smart": "Умная"
+                }
+            },
+            "mop_intensity": {
+                "name": "Интенсивность швабры",
+                "state": {
+                    "custom": "Пользовательский",
+                    "custom_water_flow": "Пользовательский поток воды",
+                    "high": "Высокий",
+                    "intense": "Сильный",
+                    "low": "Низкий",
+                    "max": "Максимальная",
+                    "medium": "Средний",
+                    "mild": "Легкий",
+                    "moderate": "Умеренный",
+                    "off": "Выключено",
+                    "smart_mode": "SmartPlan"
+                }
+            },
+            "mop_mode": {
+                "name": "Режим швабры",
+                "state": {
+                    "custom": "Пользовательский",
+                    "deep": "Сильный",
+                    "deep_plus": "Сильный+",
+                    "fast": "Быстрый",
+                    "smart_mode": "SmartPlan",
+                    "standard": "Стандартный"
+                }
+            },
+            "selected_map": {
+                "name": "Выбранная карта"
+            },
+            "water_flow": {
+                "state": {
+                    "high": "Высокий",
+                    "low": "Низкий",
+                    "medium": "Средний"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Ошибка",
+                "state": {
+                    "battery_temperature_protection": "Защита от перегрева батареи",
+                    "battery_temperature_protection_2": "Защита от перегрева батареи",
+                    "battery_temperature_protection_e0": "Защита от перегрева",
+                    "battery_under_10": "Батарея ниже 10%",
+                    "clean_head_entangled": "Чистящая головка запуталась",
+                    "clean_head_too_hot": "Чистящая головка слишком горячая",
+                    "clean_tank_empty": "Бак для чистой воды пуст",
+                    "cleaning_head_blocked": "Чистящая головка заблокирована",
+                    "dirty_charging_contacts": "Очистите зарядные контакты",
+                    "dirty_tank_full": "Бак для грязной воды полон",
+                    "fan_protection_e4": "Защита вентилятора",
+                    "fan_protection_e5": "Защита вентилятора",
+                    "fan_protection_e9": "Защита вентилятора",
+                    "low_battery": "Низкий заряд батареи",
+                    "none": "Отсутствует",
+                    "power_adapter_error": "Ошибка адаптера питания",
+                    "temperature_protection": "Защита от перегрева",
+                    "water_level_sensor_stuck": "Заклинил датчик уровня воды."
+                }
+            },
+            "a01_status": {
+                "name": "Статус",
+                "state": {
+                    "charging": "Заряжается",
+                    "drying": "Сушка",
+                    "dusting_mode": "Режим удаления пыли",
+                    "fetch_failed": "Не удалось получить",
+                    "fetching": "Получение",
+                    "mop_washing": "Мойка швабры",
+                    "mop_washing_paused": "Мойка швабры приостановлена",
+                    "ready": "Готов",
+                    "reserving": "Резервирование",
+                    "self_clean_cleaning": "Самоочистка",
+                    "self_clean_deep_cleaning": "Глубокая самоочистка",
+                    "self_clean_dehydrating": "Сушка самоочистки",
+                    "self_clean_rinsing": "Полоскание самоочистки",
+                    "unknown": "Неизвестно",
+                    "updating": "Обновление",
+                    "ventilating": "Вентиляция",
+                    "washing": "Мойка"
+                }
+            },
+            "brush_remaining": {
+                "name": "Оставшийся ресурс ролика"
+            },
+            "clean_percent": {
+                "name": "Процесс уборки"
+            },
+            "cleaning_area": {
+                "name": "Зона уборки"
+            },
+            "cleaning_time": {
+                "name": "Время уборки"
+            },
+            "countdown": {
+                "name": "Обратный отсчет"
+            },
+            "current_room": {
+                "name": "Текущая комната"
+            },
+            "dock_error": {
+                "name": "Ошибка док-станции",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "Бак для очистки полон или заблокирован",
+                    "dirty_tank_latch_open": "Открыта крыша бака для грязной воды",
+                    "duct_blockage": "Засорение воздуховода",
+                    "no_dustbin": "Нет контейнера для пыли",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Бак для грязной воды полон",
+                    "water_empty": "Резервуар для воды пустой"
+                }
+            },
+            "filter_time_left": {
+                "name": "Ресурс фильтра"
+            },
+            "last_clean_end": {
+                "name": "Конец последней уборки"
+            },
+            "last_clean_start": {
+                "name": "Начало последней уборки"
+            },
+            "main_brush_time_left": {
+                "name": "Ресурс основной щётки"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Оставшееся время сушки швабры"
+            },
+            "q7_status": {
+                "name": "Статус",
+                "state": {
+                    "charging": "Заряжается",
+                    "docking": "Стыкуется с док-станцией",
+                    "mop_airdrying": "Сушка швабры воздухом",
+                    "mop_cleaning": "Мойка швабры",
+                    "moping": "Влажная уборка",
+                    "paused": "Пауза",
+                    "sleeping": "Режим сна",
+                    "updating": "Обновление"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Ресурс датчика"
+            },
+            "side_brush_time_left": {
+                "name": "Ресурс боковой щётки"
+            },
+            "status": {
+                "name": "Состояние",
+                "state": {
+                    "air_drying_stopping": "Остановка воздушной сушки",
+                    "attaching_the_mop": "Прикрепление салфетки",
+                    "charger_disconnected": "Зарядное устройство отключено",
+                    "charging": "Заряжается",
+                    "charging_complete": "Зарядка завершена",
+                    "charging_problem": "Проблема с зарядкой",
+                    "cleaning": "Уборка",
+                    "detaching_the_mop": "Открепление салфетки",
+                    "device_offline": "Устройство не в сети",
+                    "docking": "Стыкуется с док-станцией",
+                    "egg_attack": "Режим Купидона",
+                    "emptying_the_bin": "Опорожнение мусорного контейнера",
+                    "error": "Ошибка",
+                    "going_to_target": "Едет к цели",
+                    "going_to_wash_the_mop": "Едет мыть салфетку",
+                    "idle": "Бездействие",
+                    "locked": "Заблокирован",
+                    "manual_mode": "Ручной режим",
+                    "mapping": "Составление карты",
+                    "paused": "Пауза",
+                    "remote_control_active": "Активировано дистанционное управление",
+                    "returning_home": "Возвращается к док-станции",
+                    "segment_cleaning": "Сегментная уборка",
+                    "shutting_down": "Выключение",
+                    "spot_cleaning": "Точечная уборка",
+                    "starting": "Запускается",
+                    "unknown": "Неизвестно",
+                    "updating": "Обновление",
+                    "washing_the_mop": "Моет салфетку",
+                    "zoned_cleaning": "Зональная уборка"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Общая площадь уборки"
+            },
+            "total_cleaning_count": {
+                "name": "Общее количество уборок"
+            },
+            "total_cleaning_time": {
+                "name": "Общее время уборки"
+            },
+            "vacuum_error": {
+                "name": "Ошибка пылесоса",
+                "state": {
+                    "battery_error": "Ошибка батареи",
+                    "bumper_stuck": "Бампер заклинило",
+                    "cannot_cross_carpet": "Невозможно пересечь ковер",
+                    "charging_error": "Ошибка зарядки",
+                    "clear_brush_exception": "Проверьте правильность установки водяного фильтра",
+                    "clear_brush_exception_2": "Ошибка кнопки позиционирования",
+                    "clear_water_box_exception": "Бак для чистой воды пуст",
+                    "clear_water_box_hoare": "Проверьте бак для чистой воды",
+                    "cliff_sensor_error": "Ошибка датчика обрыва",
+                    "collect_dust_error_3": "Очистка автоматически очищаемой док-станции",
+                    "compass_error": "Обнаружено сильное магнитное поле",
+                    "dirty_water_box_hoare": "Проверьте бак для грязной воды",
+                    "dock": "Док-станция не подключена к источнику питания",
+                    "dock_locator_error": "Ошибка локатора док-станции",
+                    "fan_error": "Ошибка вентилятора",
+                    "filter_blocked": "Фильтр заблокирован",
+                    "filter_screen_exception": "Очистите водяной фильтр док-станции",
+                    "internal_error": "Внутренняя ошибка",
+                    "invisible_wall_detected": "Обнаружена невидимая стена",
+                    "lidar_blocked": "Лидар заблокирован",
+                    "light_touch": "Ошибка датчика стен",
+                    "low_battery": "Низкий заряд батареи",
+                    "main_brush_jammed": "Основную щётку заклинило",
+                    "mopping_roller_1": "Возможно, заклинило моющий ролик",
+                    "mopping_roller_2": "Возможно, заклинило моющий ролик",
+                    "mopping_roller_error_2": "Ролик для мытья не опущен должным образом",
+                    "no_dustbin": "Нет контейнера для пыли",
+                    "nogo_zone_detected": "Обнаружена запретная зона",
+                    "none": "Отсутствует",
+                    "return_to_dock_fail": "Возврат на док-станцию не удался",
+                    "robot_on_carpet": "Робот на ковре",
+                    "robot_tilted": "Робот наклонен",
+                    "robot_trapped": "Робот в ловушке",
+                    "side_brush_error": "Ошибка боковой щетки",
+                    "side_brush_jammed": "Боковую щётку заклинило",
+                    "sink_strainer_hoare": "Переустановите водяной фильтр",
+                    "strainer_error": "Фильтр мокрый или заблокирован",
+                    "temperature_protection": "Защита от перегрева устройства",
+                    "vertical_bumper_pressed": "Вертикальный бампер нажат",
+                    "vibrarise_jammed": "VibraRise заклинило",
+                    "visual_sensor": "Ошибка камеры",
+                    "wall_sensor_dirty": "Датчик стен загрязнен",
+                    "wheels_jammed": "Колеса заклинило",
+                    "wheels_suspended": "Колеса подвешены"
+                }
+            },
+            "washing_left": {
+                "name": "Мытье слева"
+            },
+            "zeo_error": {
+                "name": "Ошибка",
+                "state": {
+                    "communication_error": "Ошибка связи",
+                    "door_lock_error": "Ошибка блокировки двери",
+                    "drain_error": "Ошибка слива",
+                    "drying_error_e_13": "Ошибка сушки E13",
+                    "heating_error": "Ошибка нагрева",
+                    "inverter_error": "Ошибка инвертора",
+                    "none": "Отсутствует",
+                    "refill_error": "Ошибка наполнения",
+                    "spin_error": "Перераспределить одежду",
+                    "temperature_error": "Ошибка температуры",
+                    "water_level_error": "Ошибка уровня воды"
+                }
+            },
+            "zeo_state": {
+                "name": "Состояние",
+                "state": {
+                    "cooling": "Охлаждение",
+                    "done": "Готово",
+                    "drying": "Сушка",
+                    "rinsing": "Полоскание",
+                    "soaking": "Замачивание",
+                    "spinning": "Отжим",
+                    "standby": "Ожидание",
+                    "under_delay_start": "Отложенный старт",
+                    "washing": "Мойка",
+                    "weighing": "Взвешивание"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Блокировка от детей"
+            },
+            "dnd_switch": {
+                "name": "Не беспокоить"
+            },
+            "off_peak_switch": {
+                "name": "Зарядка в непиковый период"
+            },
+            "status_indicator": {
+                "name": "Световой индикатор состояния"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "До какого времени не беспокоить"
+            },
+            "dnd_start_time": {
+                "name": "С какого времени не беспокоить"
+            },
+            "off_peak_end": {
+                "name": "Окончание непикового периода"
+            },
+            "off_peak_start": {
+                "name": "Запуск в непиковый период"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Автоматический",
+                            "balanced": "Сбалансированная",
+                            "custom": "Пользовательский",
+                            "gentle": "Бережная",
+                            "max": "Максимальная",
+                            "max_plus": "Максимальная плюс",
+                            "medium": "Средний",
+                            "off": "Выключено",
+                            "quiet": "Тихая",
+                            "silent": "Бесшумная",
+                            "smart_mode": "SmartPlan",
+                            "standard": "Стандартный",
+                            "turbo": "Турбо"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "command_failed": {
+            "message": "Ошибка при вызове {command}"
+        },
+        "home_data_fail": {
+            "message": "Не удалось получить данные Roborock о доме"
+        },
+        "invalid_credentials": {
+            "message": "Неверные учётные данные."
+        },
+        "invalid_user_agreement": {
+            "message": "Необходимо повторно принять пользовательское соглашение. Откройте приложение Roborock и примите соглашение."
+        },
+        "map_failure": {
+            "message": "Что-то пошло не так при создании карты"
+        },
+        "no_coordinators": {
+            "message": "Ни одно устройство не удалось успешно настроить"
+        },
+        "no_user_agreement": {
+            "message": "У вас нет действующего пользовательского соглашения. Откройте приложение Roborock и примите соглашение."
+        },
+        "position_not_found": {
+            "message": "Положение робота не найдено"
+        },
+        "update_data_fail": {
+            "message": "Не удалось обновить данные"
+        },
+        "update_options_failed": {
+            "message": "Не удалось обновить параметры Roborock"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Зарядная станция",
+                    "cleaned_area": "Убранная зона",
+                    "goto_path": "Путь к цели",
+                    "ignored_obstacles": "Игнорируемые препятствия",
+                    "ignored_obstacles_with_photo": "Игнорируемые препятствия с фото",
+                    "mop_path": "Путь швабры",
+                    "no_carpet_zones": "Зоны без ковров",
+                    "no_go_zones": "Запретные зоны",
+                    "no_mopping_zones": "Зоны без швабры",
+                    "obstacles": "Препятствия",
+                    "obstacles_with_photo": "Препятствия с фото",
+                    "path": "Путь",
+                    "predicted_path": "Прогнозируемый путь",
+                    "room_names": "Названия комнат",
+                    "show_background": "Показать фон",
+                    "vacuum_position": "Положение пылесоса",
+                    "virtual_walls": "Виртуальные стены",
+                    "zones": "Зоны"
+                },
+                "data_description": {
+                    "charger": "Показывать зарядную станцию на карте.",
+                    "cleaned_area": "Показывать очищенное пространство на карте.",
+                    "goto_path": "Показывать целевой путь на карте.",
+                    "ignored_obstacles": "Показывать игнорируемые препятствия на карте.",
+                    "ignored_obstacles_with_photo": "Показывать игнорируемые препятствия с фотографиями на карте.",
+                    "mop_path": "Показывать путь швабры на карте.",
+                    "no_carpet_zones": "Показывать зоны без ковров на карте.",
+                    "no_go_zones": "Показывать запретные зоны на карте.",
+                    "no_mopping_zones": "Показывать зоны без мытья на карте.",
+                    "obstacles": "Показывать препятствия на карте.",
+                    "obstacles_with_photo": "Показывать препятствия с фотографиями на карте.",
+                    "path": "Показывать путь на карте.",
+                    "predicted_path": "Показывать прогнозируемый путь на карте.",
+                    "room_names": "Показывать названия комнат на карте.",
+                    "show_background": "Добавить фон к карте.",
+                    "vacuum_position": "Показывать положение пылесоса на карте.",
+                    "virtual_walls": "Показывать виртуальные стены на карте.",
+                    "zones": "Показывать зоны на карте."
+                },
+                "description": "Укажите, какие объекты следует отобразить на карте."
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "Авто",
+                "cn": "CN",
+                "eu": "EU",
+                "ru": "RU",
+                "us": "US"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "Получает карту и информацию о комнате вашего устройства.",
+            "name": "Получить карты"
+        },
+        "get_vacuum_current_position": {
+            "description": "Получает текущую позицию пылесоса.",
+            "name": "Получить текущую позицию"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Отправляет пылесос в определенную позицию.",
+            "fields": {
+                "x": {
+                    "description": "Координаты относительно док-станции. Где x=25500,y=25500 - координаты расположения док-станции.",
+                    "name": "Координата X"
+                },
+                "y": {
+                    "description": "Координаты относительно док-станции. Где x=25500,y=25500 - координаты расположения док-станции.",
+                    "name": "Координата Y"
+                }
+            },
+            "name": "Перейти к позиции"
+        }
+    }
+}
