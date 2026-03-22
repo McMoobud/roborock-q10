@@ -1,0 +1,210 @@
+{
+    "config": {
+        "error": {
+            "invalid_code": "O código que introduciches é incorrecto, comprobao e téntao de novo.",
+            "invalid_email": "Non hai ningunha conta asociada co correo electrónico que introduciches, por favor, téntao de novo."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Código de verificación"
+                }
+            },
+            "reauth_confirm": {
+                "description": "A integración de Roborock necesita volver a autenticar a túa conta"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_cleaning": {
+                "name": "Limpando"
+            },
+            "mop_attached": {
+                "name": "Mopa acoplada"
+            },
+            "mop_drying_status": {
+                "name": "Secado da mopa"
+            },
+            "water_box_attached": {
+                "name": "Deposito de auga acoplado"
+            },
+            "water_shortage": {
+                "name": "Falta de auga"
+            }
+        },
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "Restablecer contador de filtro de aire"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Restablecer contador do cepillo principal"
+            },
+            "reset_sensor_consumable": {
+                "name": "Restablecer contador de limpeza dos sensores"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Restablecer contador do cepillo lateral"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Volume"
+            }
+        },
+        "select": {
+            "dust_collection_mode": {
+                "name": "Modo vacío",
+                "state": {
+                    "balanced": "Equilibrado",
+                    "light": "Lixeiro",
+                    "max": "Máximo",
+                    "smart": "Intelixente"
+                }
+            },
+            "mop_intensity": {
+                "name": "Intensidade do fregado",
+                "state": {
+                    "custom": "Personalizado",
+                    "custom_water_flow": "Fluxo de auga personalizado",
+                    "intense": "Intenso",
+                    "max": "Máximo",
+                    "mild": "Leve",
+                    "moderate": "Moderado",
+                    "off": "Apagado",
+                    "smart_mode": "Plan intelixente"
+                }
+            },
+            "mop_mode": {
+                "name": "Modo de fregado"
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "state": {
+                    "clean_head_too_hot": "O cabezal de limpeza demasiado quente.",
+                    "clean_tank_empty": "Depósito de limpeza baleiro",
+                    "cleaning_head_blocked": "Cabezal de limpeza bloqueado",
+                    "dirty_charging_contacts": "Limpe os contactos de carga",
+                    "dirty_tank_full": "Depósito de suciedade cheo"
+                }
+            },
+            "clean_percent": {
+                "name": "Progreso da limpeza"
+            },
+            "cleaning_area": {
+                "name": "Área de limpeza"
+            },
+            "dock_error": {
+                "name": "Erro na base de carga",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "Depósito de limpeza cheo ou bloqueado",
+                    "dirty_tank_latch_open": "Peche do depósito do lixo aberto",
+                    "duct_blockage": "Obstrución dos condutos",
+                    "no_dustbin": "Sen cubo do lixo",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Depósito de augas residuais cheo",
+                    "water_empty": "Deposito de auga baleiro"
+                }
+            },
+            "last_clean_end": {
+                "name": "Final da última limpeza"
+            },
+            "last_clean_start": {
+                "name": "Comezo da última limpeza"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Tempo restante de secado da mopa"
+            },
+            "status": {
+                "name": "Estado",
+                "state": {
+                    "charger_disconnected": "Cargador desconectado",
+                    "charging_complete": "Carga completa",
+                    "charging_problem": "Problema de carga",
+                    "cleaning": "Limpando",
+                    "device_offline": "Dispositivo sen conexión",
+                    "docking": "Acoplando á base",
+                    "emptying_the_bin": "Baleirando o lixo",
+                    "going_to_target": "Indo ao obxectivo",
+                    "going_to_wash_the_mop": "Indo a limpar a mopa",
+                    "idle": "Inactivo",
+                    "manual_mode": "Modo manual",
+                    "paused": "Pausado",
+                    "remote_control_active": "Control remoto activo",
+                    "returning_home": "Regresando á base",
+                    "segment_cleaning": "Limpeza de segmentos",
+                    "shutting_down": "Apagando",
+                    "spot_cleaning": "Limpeza de punto",
+                    "starting": "Comezando",
+                    "updating": "Actualizando",
+                    "washing_the_mop": "Lavado da mopa",
+                    "zoned_cleaning": "Limpeza por zonas"
+                }
+            },
+            "total_cleaning_time": {
+                "name": "Tempo total de limpeza"
+            },
+            "vacuum_error": {
+                "state": {
+                    "battery_error": "Erro na batería",
+                    "charging_error": "Erro de carga",
+                    "cliff_sensor_error": "Erro no sensor de desnivel",
+                    "dock": "A base de carga non está conectada á corrente",
+                    "dock_locator_error": "Erro no localizador da base",
+                    "fan_error": "Erro do ventilador",
+                    "filter_blocked": "Filtro bloqueado",
+                    "low_battery": "Batería baixa",
+                    "wheels_suspended": "Rodas suspendidas"
+                }
+            },
+            "zeo_error": {
+                "state": {
+                    "heating_error": "Erro de quecemento"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Bloqueo infantil"
+            },
+            "off_peak_switch": {
+                "name": "Carga nas horas Val"
+            },
+            "status_indicator": {
+                "name": "Luz indicadora de estado"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Fin de non molestar"
+            },
+            "dnd_start_time": {
+                "name": "Comezo de non molestar"
+            },
+            "off_peak_end": {
+                "name": "Fin do período Val"
+            },
+            "off_peak_start": {
+                "name": "Inicio do período Val"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "Equilibrado",
+                            "gentle": "Suave",
+                            "max_plus": "Máximo plus",
+                            "off": "Apagado",
+                            "quiet": "Tranquilo",
+                            "silent": "Silencioso",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

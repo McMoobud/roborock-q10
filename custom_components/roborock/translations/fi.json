@@ -5,7 +5,7 @@
         },
         "error": {
             "invalid_code": "Antamasi koodi oli virheellinen, tarkista se ja yritä uudelleen.",
-            "invalid_email": "Antamaasi sähköpostiosoitteeseen ei ole liitetty tilejä. Yritä uudelleen.",
+            "invalid_email": "Antamaasi sähköpostiosoitteeseen ei ole liitetty tiliä. Yritä uudelleen.",
             "invalid_email_format": "Sähköpostisi muotoilussa on ongelma - yritä uudelleen.",
             "unknown": "Odottamaton virhe"
         },
