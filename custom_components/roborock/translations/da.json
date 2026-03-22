@@ -1,17 +1,17 @@
 {
     "config": {
         "error": {
-            "invalid_code": "Den kode du indtastede var forkert. Tjek den og prøv igen.",
-            "invalid_email": "Der er ingen konto tilknyttet den email, du indtastede. Prøv venligst igen.",
-            "invalid_email_format": "Der er et problem med formateringen af din e-mail - prøv venligst igen.",
+            "invalid_code": "Den kode du indtastede var forkert. Tjek den og pr\u00f8v igen.",
+            "invalid_email": "Der er ingen konto tilknyttet den email, du indtastede. Pr\u00f8v venligst igen.",
+            "invalid_email_format": "Der er et problem med formateringen af din e-mail - pr\u00f8v venligst igen.",
             "unknown": "Uventet fejl"
         },
         "step": {
             "code": {
                 "data": {
-                    "code": "Bekræftelseskode"
+                    "code": "Bekr\u00e6ftelseskode"
                 },
-                "description": "Indtast den bekræftelseskode, der er sendt til din e-mail"
+                "description": "Indtast den bekr\u00e6ftelseskode, der er sendt til din e-mail"
             },
             "user": {
                 "data": {
@@ -47,59 +47,59 @@
         },
         "sensor": {
             "cleaning_area": {
-                "name": "Rengøringsareal"
+                "name": "Reng\u00f8ringsareal"
             },
             "cleaning_time": {
-                "name": "Rengøringstid"
+                "name": "Reng\u00f8ringstid"
             },
             "filter_time_left": {
                 "name": "Filter-restlevetid"
             },
             "main_brush_time_left": {
-                "name": "Hovedbørste-restlevetid"
+                "name": "Hovedb\u00f8rste-restlevetid"
             },
             "sensor_time_left": {
                 "name": "Sensor resterende tid"
             },
             "side_brush_time_left": {
-                "name": "Sidebørste-restlevetid"
+                "name": "Sideb\u00f8rste-restlevetid"
             },
             "status": {
                 "name": "Status",
                 "state": {
                     "charger_disconnected": "Oplader ikke tilsluttet",
-                    "charging_complete": "Opladning færdig",
+                    "charging_complete": "Opladning f\u00e6rdig",
                     "charging_problem": "Opladningsproblem",
-                    "cleaning": "Gør rent",
+                    "cleaning": "G\u00f8r rent",
                     "device_offline": "Enhed offline",
-                    "docking": "Kører i dock",
-                    "emptying_the_bin": "Tømmer støvbeholder",
-                    "going_to_target": "På vej mod mål",
+                    "docking": "K\u00f8rer i dock",
+                    "emptying_the_bin": "T\u00f8mmer st\u00f8vbeholder",
+                    "going_to_target": "P\u00e5 vej mod m\u00e5l",
                     "going_to_wash_the_mop": "Skal til at vaske moppen",
                     "idle": "Inaktiv",
                     "manual_mode": "Manuel tilstand",
-                    "paused": "På pause",
+                    "paused": "P\u00e5 pause",
                     "remote_control_active": "Fjernbetjening aktiv",
                     "returning_home": "Returnerer til dock",
-                    "segment_cleaning": "Segmentrengøring",
+                    "segment_cleaning": "Segmentreng\u00f8ring",
                     "shutting_down": "Lukker ned",
-                    "spot_cleaning": "Pletrengøring",
+                    "spot_cleaning": "Pletreng\u00f8ring",
                     "starting": "Starter",
                     "updating": "Opdaterer",
                     "washing_the_mop": "Vask af moppen",
-                    "zoned_cleaning": "Zoneinddelt rengøring"
+                    "zoned_cleaning": "Zoneinddelt reng\u00f8ring"
                 }
             },
             "total_cleaning_area": {
-                "name": "Samlet rengøringsareal"
+                "name": "Samlet reng\u00f8ringsareal"
             },
             "total_cleaning_time": {
-                "name": "Samlet rengøringstid"
+                "name": "Samlet reng\u00f8ringstid"
             }
         },
         "switch": {
             "child_lock": {
-                "name": "Børnelås"
+                "name": "B\u00f8rnel\u00e5s"
             },
             "dnd_switch": {
                 "name": "Forstyr ikke"
@@ -119,7 +119,7 @@
                             "max_plus": "Maks plus",
                             "off": "Fra",
                             "quiet": "Stille",
-                            "silent": "Lydløs",
+                            "silent": "Lydl\u00f8s",
                             "standard": "Standard",
                             "turbo": "Turbo"
                         }
