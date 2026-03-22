@@ -1,0 +1,244 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Ponowne uwierzytelnienie się powiodło"
+        },
+        "error": {
+            "invalid_code": "Wprowadzony kod jest nieprawidłowy, sprawdź go i spróbuj ponownie.",
+            "invalid_email": "Z wprowadzonym adresem e-mail nie jest skojarzone żadne konto, spróbuj ponownie.",
+            "invalid_email_format": "Wystąpił problem z formatowaniem wiadomości e-mail — spróbuj ponownie.",
+            "unknown": "Nieoczekiwany błąd"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Kod weryfikacyjny"
+                },
+                "description": "Wpisz kod weryfikacyjny wysłany na Twój adres e-mail"
+            },
+            "reauth_confirm": {
+                "description": "Integracja Roborock wymaga ponownego uwierzytelnienia twojego konta",
+                "title": "Autoryzacja wygasła dla {name}"
+            },
+            "user": {
+                "data": {
+                    "username": "Adres e-mail"
+                },
+                "description": "Wpisz swój adres e-mail Roborock."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "mop_attached": {
+                "name": "Mop przymocowany"
+            },
+            "mop_drying_status": {
+                "name": "Suszenie mopa"
+            },
+            "water_box_attached": {
+                "name": "Podłączony zbiornik wody"
+            },
+            "water_shortage": {
+                "name": "Brak wody"
+            }
+        },
+        "select": {
+            "mop_intensity": {
+                "name": "Intensywność mopa",
+                "state": {
+                    "custom": "niestandardowy",
+                    "extreme": "Ekstremalny",
+                    "high": "wysoki",
+                    "intense": "Wysoka",
+                    "low": "niski",
+                    "medium": "średni",
+                    "mild": "łagodna",
+                    "moderate": "umiarkowana",
+                    "off": "wyłączono",
+                    "vac_followed_by_mop": "Odkurzanie, a następnie mopowanie"
+                }
+            },
+            "mop_mode": {
+                "name": "Tryb mopa",
+                "state": {
+                    "custom": "niestandardowy",
+                    "deep": "głęboki",
+                    "deep_plus": "głęboki+",
+                    "fast": "Szybko",
+                    "standard": "normalny"
+                }
+            },
+            "program": {
+                "state": {
+                    "socks": "Skarpety",
+                    "synthetics": "Syntetyczne",
+                    "twenty_c": "20°C",
+                    "underwear": "Bielizna",
+                    "wool": "Wełna"
+                }
+            },
+            "softener_type": {
+                "name": "Typ zmiękczacza",
+                "state": {
+                    "empty": "pusto",
+                    "high": "wysoki",
+                    "low": "niski",
+                    "medium": "średni"
+                }
+            },
+            "temperature": {
+                "name": "Temperatura wody",
+                "state": {
+                    "30": "30°C",
+                    "40": "40°C",
+                    "60": "60°C",
+                    "90": "90°C",
+                    "auto": "auto"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "state": {
+                    "battery_under_10": "Bateria poniżej 10%",
+                    "low_battery": "Niski poziom baterii",
+                    "none": "brak"
+                }
+            },
+            "a01_status": {
+                "state": {
+                    "mop_washing": "mycie mopa",
+                    "updating": "Aktualizacja"
+                }
+            },
+            "cleaning_area": {
+                "name": "Obszar sprzątania"
+            },
+            "cleaning_time": {
+                "name": "Czas czyszczenia"
+            },
+            "current_room": {
+                "name": "Obecny pokój"
+            },
+            "dock_error": {
+                "name": "Błąd stacji dokowania"
+            },
+            "filter_time_left": {
+                "name": "Pozostał czas filtrowania"
+            },
+            "last_clean_end": {
+                "name": "Koniec ostatniego czyszczenia"
+            },
+            "last_clean_start": {
+                "name": "Początek ostatniego czyszczenia"
+            },
+            "main_brush_time_left": {
+                "name": "Pozostał czas szczotki głównej"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Pozostały czas suszenia mopa"
+            },
+            "sensor_time_left": {
+                "name": "Pozostał czas sensora"
+            },
+            "side_brush_time_left": {
+                "name": "Pozostał czas szczotki bocznej"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "charger_disconnected": "ładowarka odłączona",
+                    "charging_complete": "Ładowanie zakończone",
+                    "charging_problem": "Problem z ładowaniem",
+                    "cleaning": "Czyszczenie",
+                    "device_offline": "Urządzenie offline",
+                    "docking": "Dokowanie",
+                    "emptying_the_bin": "Opróżnianie kosza",
+                    "going_to_target": "zmierzam do celu",
+                    "going_to_wash_the_mop": "zmierzam umyć mopa",
+                    "idle": "brak aktywności",
+                    "manual_mode": "tryb ręczny",
+                    "paused": "wstrzymano",
+                    "remote_control_active": "zdalne sterowanie aktywne",
+                    "returning_home": "wracam do domu",
+                    "segment_cleaning": "czyszczenie segmentów",
+                    "shutting_down": "wyłączanie",
+                    "spot_cleaning": "czyszczenie punktowe",
+                    "starting": "start",
+                    "updating": "Aktualizacja",
+                    "washing_the_mop": "Mycie mopa",
+                    "zoned_cleaning": "Czyszczenie strefowe"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Całkowity obszar sprzątania"
+            },
+            "total_cleaning_count": {
+                "name": "Łącznie czyszczeń"
+            },
+            "total_cleaning_time": {
+                "name": "Całkowity czas czyszczenia"
+            },
+            "vacuum_error": {
+                "name": "Błąd odkurzacza",
+                "state": {
+                    "battery_error": "Błąd baterii",
+                    "charging_error": "Błąd ładowania",
+                    "fan_error": "Błąd wentylatora",
+                    "filter_blocked": "Filtr zablokowany",
+                    "internal_error": "Błąd wewnętrzny",
+                    "main_brush_jammed": "Główna szczotka zacięta",
+                    "none": "brak",
+                    "robot_on_carpet": "Robot na dywanie",
+                    "robot_tilted": "Robot przechylony",
+                    "robot_trapped": "Robot uwięziony"
+                }
+            },
+            "zeo_error": {
+                "state": {
+                    "none": "brak"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Zabezpieczenie przed dziećmi"
+            },
+            "dnd_switch": {
+                "name": "Nie przeszkadzać"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "zrównoważony",
+                            "custom": "niestandardowy",
+                            "gentle": "delikatny",
+                            "medium": "średni",
+                            "off": "wyłączono",
+                            "standard": "normalny",
+                            "turbo": "turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_credentials": {
+            "message": "Nieprawidłowe dane uwierzytelniające."
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "mop_path": "Scieżka mopa"
+                }
+            }
+        }
+    }
+}

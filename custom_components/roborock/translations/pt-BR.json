@@ -1,0 +1,238 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "A reautenticação foi bem-sucedida"
+        },
+        "error": {
+            "invalid_code": "O código digitado está incorreto, verifique e tente novamente.",
+            "invalid_email": "Não há nenhuma conta associada ao e-mail inserido, tente novamente.",
+            "invalid_email_format": "Há um problema com a formatação do seu e-mail - por favor, tente novamente.",
+            "unknown": "Erro inesperado"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Código de verificação"
+                },
+                "description": "Digite o código de verificação enviado para o seu e-mail"
+            },
+            "reauth_confirm": {
+                "description": "A integração do Roborock precisa autenticar novamente sua conta",
+                "title": "A autenticação expirada para {name}"
+            },
+            "user": {
+                "data": {
+                    "username": "Email"
+                },
+                "description": "Digite seu endereço de e-mail Roborock."
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "Resetar consumíveis do filtro de ar"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Resetar o consumível da escova principal"
+            },
+            "reset_sensor_consumable": {
+                "name": "Resetar o consumível do sensor"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Resetar o consumível da escova lateral"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Volume"
+            }
+        },
+        "select": {
+            "mop_intensity": {
+                "name": "Intensidade do mop",
+                "state": {
+                    "custom": "Personalizado",
+                    "intense": "Intenso",
+                    "mild": "Leve",
+                    "moderate": "Moderado",
+                    "off": "Desligado"
+                }
+            },
+            "mop_mode": {
+                "name": "Modo mop",
+                "state": {
+                    "custom": "Personalizado",
+                    "deep": "Profundo",
+                    "deep_plus": "Profundo+",
+                    "fast": "Rápido",
+                    "standard": "Padrão"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Erro"
+            },
+            "cleaning_area": {
+                "name": "Área de limpeza"
+            },
+            "cleaning_time": {
+                "name": "Tempo de limpeza"
+            },
+            "current_room": {
+                "name": "Comodo atual"
+            },
+            "filter_time_left": {
+                "name": "Tempo restante do filtro"
+            },
+            "main_brush_time_left": {
+                "name": "Tempo restante da escova principal"
+            },
+            "sensor_time_left": {
+                "name": "Tempo restante do sensor"
+            },
+            "side_brush_time_left": {
+                "name": "Tempo restante da escova lateral"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "charger_disconnected": "Carregador desconectado",
+                    "charging_complete": "Carregamento completo",
+                    "charging_problem": "Problema de carregamento",
+                    "cleaning": "Limpeza",
+                    "device_offline": "Dispositivo offline",
+                    "docking": "Atracação",
+                    "emptying_the_bin": "Esvaziando a lixeira",
+                    "going_to_target": "Indo para o alvo",
+                    "going_to_wash_the_mop": "Indo lavar o mop",
+                    "idle": "Ocioso",
+                    "manual_mode": "Modo manual",
+                    "paused": "Pausado",
+                    "remote_control_active": "Controle remoto ativo",
+                    "returning_home": "Voltando para base",
+                    "segment_cleaning": "Limpeza de segmentos",
+                    "shutting_down": "Desligando",
+                    "spot_cleaning": "Limpeza local",
+                    "starting": "Iniciando",
+                    "updating": "Atualizando",
+                    "washing_the_mop": "Lavando o mop",
+                    "zoned_cleaning": "Limpeza por zonas"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Área total de limpeza"
+            },
+            "total_cleaning_count": {
+                "name": "Contagem total de limpeza"
+            },
+            "total_cleaning_time": {
+                "name": "Tempo total de limpeza"
+            },
+            "vacuum_error": {
+                "state": {
+                    "low_battery": "Bateria fraca",
+                    "main_brush_jammed": "Escova principal emperrada",
+                    "no_dustbin": "Sem lixeira",
+                    "nogo_zone_detected": "Zona proibida detectada",
+                    "none": "Nenhum",
+                    "return_to_dock_fail": "Falha no retorno à base",
+                    "robot_on_carpet": "Robô no tapete",
+                    "robot_tilted": "Robô inclinado",
+                    "robot_trapped": "Robô preso",
+                    "side_brush_error": "Erro de escova lateral",
+                    "side_brush_jammed": "Escova lateral emperrada",
+                    "vertical_bumper_pressed": "Para-choque vertical pressionado",
+                    "vibrarise_jammed": "VibraRise emperrado",
+                    "wall_sensor_dirty": "Sensor de parede sujo",
+                    "wheels_jammed": "Rodas emperradas",
+                    "wheels_suspended": "Rodas suspensas"
+                }
+            },
+            "zeo_error": {
+                "name": "Erro"
+            },
+            "zeo_state": {
+                "name": "Estado",
+                "state": {
+                    "done": "Feito"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Bloqueio infantil"
+            },
+            "dnd_switch": {
+                "name": "Não perturbe"
+            },
+            "status_indicator": {
+                "name": "Luz indicadora de status"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Terminar Não perturbe"
+            },
+            "dnd_start_time": {
+                "name": "Começar Não perturbe"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "Balanceado",
+                            "custom": "Personalizado",
+                            "gentle": "Gentil",
+                            "max_plus": "Máximo plus",
+                            "off": "Desligado",
+                            "quiet": "Quieto",
+                            "silent": "Silencioso",
+                            "standard": "Padrão",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_user_agreement": {
+            "message": "O acordo do usuário deve ser aceito novamente. Abra seu aplicativo Roborock e aceite o acordo."
+        },
+        "no_user_agreement": {
+            "message": "Você não tem um contrato de usuário válido. Abra seu aplicativo Roborock e aceite o contrato."
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "path": "Caminho"
+                }
+            }
+        }
+    },
+    "services": {
+        "get_vacuum_current_position": {
+            "description": "Recupera a posição atual do vácuo.",
+            "name": "Obter posição atual"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Envia o vácuo para uma posição específica.",
+            "fields": {
+                "x": {
+                    "description": "As coordenadas são relativas à doca. x=25500,y=25500 é a posição da doca.",
+                    "name": "Coordenada X"
+                },
+                "y": {
+                    "name": "Coordenada Y"
+                }
+            },
+            "name": "Ir para a posição"
+        }
+    }
+}
