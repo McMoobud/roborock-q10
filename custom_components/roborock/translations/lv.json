@@ -156,7 +156,7 @@
                             "gentle": "Maigs",
                             "max_plus": "Max plus",
                             "quiet": "Kluss",
-                            "silent": "Pieklusināts",
+                            "silent": "Pieklusinats",
                             "standard": "Standarta",
                             "turbo": "Turbo"
                         }
@@ -169,8 +169,8 @@
         "step": {
             "drawables": {
                 "data": {
-                    "obstacles": "Šķēršļi",
-                    "obstacles_with_photo": "Šķēršļi ar fotogrāfiju"
+                    "obstacles": "Šķērlis",
+                    "obstacles_with_photo": "Šķērlis ar fotogrāfiju"
                 }
             }
         }
