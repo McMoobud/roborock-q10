@@ -1,0 +1,207 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "Акаунтът вече е конфигуриран",
+            "reauth_successful": "Повторната автентикация беше успешна"
+        },
+        "error": {
+            "invalid_code": "Въведения от вас код е неправилен, моля, проверете го и опитайте отново.",
+            "invalid_email": "Няма акаунт, свързан с въведения от вас имейл, моля, опитайте отново.",
+            "unknown": "Неочаквана грешка"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Код за потвърждение"
+                },
+                "description": "Въведете кода за потвърждение, изпратен на вашия имейл"
+            },
+            "reauth_confirm": {
+                "title": "Автентикацията за {name} е изтекла"
+            },
+            "user": {
+                "data": {
+                    "username": "Имейл"
+                },
+                "description": "Въведете вашия Roborock имейл адрес."
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "dust_collection_mode": {
+                "state": {
+                    "max": "Макс."
+                }
+            },
+            "mop_intensity": {
+                "state": {
+                    "max": "Макс.",
+                    "off": "Изключено"
+                }
+            },
+            "program": {
+                "state": {
+                    "custom": "Персонализирано",
+                    "panties": "Бикини",
+                    "shirts": "Ризи",
+                    "synthetics": "Синтетика",
+                    "t_shirts": "Тениски",
+                    "twenty_c": "20°C"
+                }
+            },
+            "rinse_times": {
+                "state": {
+                    "high": "4",
+                    "low": "2",
+                    "max": "5",
+                    "mid": "3",
+                    "min": "1",
+                    "none": "По подразбиране"
+                }
+            },
+            "spin_level": {
+                "state": {
+                    "high": "1000 RPM",
+                    "max": "1400 RPM",
+                    "mid": "800 RPM",
+                    "none": "По подразбиране",
+                    "very_high": "1200 RPM",
+                    "very_low": "600 RPM"
+                }
+            },
+            "temperature": {
+                "name": "Температура на водата",
+                "state": {
+                    "30": "30°C",
+                    "40": "40°C",
+                    "60": "60°C",
+                    "90": "90°C",
+                    "auto": "Автоматично"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Грешка",
+                "state": {
+                    "low_battery": "Изтощена батерия",
+                    "none": "Няма"
+                }
+            },
+            "a01_status": {
+                "name": "Статус",
+                "state": {
+                    "ready": "Готов",
+                    "unknown": "Неизвестно"
+                }
+            },
+            "dock_error": {
+                "state": {
+                    "ok": "Добре"
+                }
+            },
+            "q7_status": {
+                "name": "Статус"
+            },
+            "status": {
+                "name": "Статус",
+                "state": {
+                    "charging_complete": "Зареждането приключи",
+                    "charging_problem": "Проблем със зареждането",
+                    "cleaning": "Почистване",
+                    "device_offline": "Устройството е офлайн",
+                    "idle": "Празен ход",
+                    "unknown": "Неизвестно"
+                }
+            },
+            "vacuum_error": {
+                "state": {
+                    "clear_brush_exception": "Проверете дали водният филтър е поставен правилно",
+                    "internal_error": "Вътрешна грешка",
+                    "low_battery": "Изтощена батерия",
+                    "none": "Няма"
+                }
+            },
+            "zeo_error": {
+                "name": "Грешка",
+                "state": {
+                    "none": "Няма"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Заключване за деца"
+            },
+            "dnd_switch": {
+                "name": "Не безпокойте"
+            },
+            "off_peak_switch": {
+                "name": "Зареждане извън върховото време"
+            }
+        },
+        "time": {
+            "off_peak_end": {
+                "name": "Край на извънпиковия период"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "off": "Изключено",
+                            "silent": "Безшумен"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_credentials": {
+            "message": "Невалидни идентификационни данни."
+        },
+        "map_failure": {
+            "message": "Нещо се объркa при създаването на картата"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Зарядно устройство",
+                    "obstacles": "Препятствия",
+                    "obstacles_with_photo": "Препятствия със снимка",
+                    "path": "Път",
+                    "room_names": "Имена на стаи",
+                    "virtual_walls": "Виртуални стени",
+                    "zones": "Зони"
+                }
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "Автоматично"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "name": "Получаване на карти"
+        },
+        "set_vacuum_goto_position": {
+            "fields": {
+                "x": {
+                    "name": "X-координата"
+                },
+                "y": {
+                    "name": "Y-координата"
+                }
+            }
+        }
+    }
+}

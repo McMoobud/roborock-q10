@@ -1,0 +1,414 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "El compte ja està configurat",
+            "reauth_successful": "Re-autenticació realitzada correctament"
+        },
+        "error": {
+            "invalid_code": "El codi introduït és incorrecte, comprova'l i torna-ho a provar.",
+            "invalid_email": "No hi ha cap compte associat amb correu introduït, torna-ho a provar.",
+            "invalid_email_format": "S'ha produït un problema en la formatació del correu - torna-ho a provar.",
+            "too_frequent_code_requests": "Has provat de sol·licitar massa codis. Torna-ho a provar més tard.",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Codi de verificació"
+                },
+                "description": "Introdueix el codi de verificació enviat al teu correu electrònic"
+            },
+            "reauth_confirm": {
+                "title": "L'autenticació de {name} ha caducat"
+            },
+            "user": {
+                "data": {
+                    "username": "Correu electrònic"
+                },
+                "description": "Introdueix el correu electrònic de Roborock."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "detergent_empty": {
+                "state": {
+                    "on": "Buit"
+                }
+            },
+            "in_cleaning": {
+                "name": "Netejant"
+            },
+            "mop_attached": {
+                "name": "Baieta col·locada"
+            },
+            "mop_drying_status": {
+                "name": "Baieta assecant-se"
+            },
+            "softener_empty": {
+                "state": {
+                    "on": "Buit"
+                }
+            },
+            "water_box_attached": {
+                "name": "Caixa d'aigua col·locada"
+            },
+            "water_shortage": {
+                "name": "Poca aigua"
+            }
+        },
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "Reinicia filtre d'aire consumible"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Reinicia raspall consumible principal"
+            },
+            "reset_sensor_consumable": {
+                "name": "Reinicia sensor consumible"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Reinicia el raspall consumible lateral"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Volum"
+            }
+        },
+        "select": {
+            "detergent_type": {
+                "state": {
+                    "empty": "Buit",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitjà/na"
+                }
+            },
+            "dust_collection_mode": {
+                "state": {
+                    "balanced": "Equilibrada",
+                    "max": "Màx."
+                }
+            },
+            "mop_intensity": {
+                "name": "Intensitat de la baieta",
+                "state": {
+                    "custom": "Personalitzat",
+                    "custom_water_flow": "Flux d'aigua personalitzat",
+                    "high": "Alt/a",
+                    "intense": "Intens",
+                    "low": "Baix/a",
+                    "max": "Màx.",
+                    "medium": "Mitjà/na",
+                    "mild": "Mitjà",
+                    "min": "Mín.",
+                    "moderate": "Moderat",
+                    "off": "OFF",
+                    "standard": "Estàndard"
+                }
+            },
+            "mop_mode": {
+                "name": "Mode de la baieta",
+                "state": {
+                    "custom": "Personalitzat",
+                    "deep": "Profund",
+                    "deep_plus": "Profund+",
+                    "fast": "Ràpid",
+                    "standard": "Estàndard"
+                }
+            },
+            "selected_map": {
+                "name": "Mapa seleccionat"
+            },
+            "softener_type": {
+                "state": {
+                    "empty": "Buit",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitjà/na"
+                }
+            },
+            "temperature": {
+                "state": {
+                    "auto": "Auto"
+                }
+            },
+            "water_flow": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitjà/na"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Error",
+                "state": {
+                    "battery_under_10": "Bateria per sota del 10%",
+                    "low_battery": "Bateria baixa",
+                    "none": "Cap"
+                }
+            },
+            "a01_status": {
+                "name": "Estat",
+                "state": {
+                    "charging": "Carregant",
+                    "drying": "Assecant",
+                    "ready": "A punt",
+                    "unknown": "Desconegut",
+                    "updating": "Actualitzant",
+                    "ventilating": "Ventilant",
+                    "washing": "Netejant"
+                }
+            },
+            "clean_percent": {
+                "name": "Progrés de neteja"
+            },
+            "cleaning_area": {
+                "name": "Àrea netejada"
+            },
+            "cleaning_time": {
+                "name": "Temps de neteja"
+            },
+            "countdown": {
+                "name": "Compte enrere"
+            },
+            "dock_error": {
+                "name": "Error de connexió a la base",
+                "state": {
+                    "duct_blockage": "Conducte obstruït",
+                    "no_dustbin": "Sense contenidor",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Dipòsit d'aigües brutes ple",
+                    "water_empty": "Sense aigua"
+                }
+            },
+            "filter_time_left": {
+                "name": "Vida restant del filtre"
+            },
+            "last_clean_end": {
+                "name": "Final de l'última neteja"
+            },
+            "last_clean_start": {
+                "name": "Inici de l'última neteja"
+            },
+            "main_brush_time_left": {
+                "name": "Vida restant del respall principal"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Temps restant d'assecat de la baieta"
+            },
+            "q7_status": {
+                "state": {
+                    "charging": "Carregant",
+                    "docking": "Aparcant",
+                    "paused": "Pausat/ada",
+                    "updating": "Actualitzant"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Vida restant del sensor"
+            },
+            "side_brush_time_left": {
+                "name": "Vida restant del respall lateral"
+            },
+            "status": {
+                "name": "Estat",
+                "state": {
+                    "charger_disconnected": "Carregador desconnectat",
+                    "charging": "Carregant",
+                    "charging_complete": "Càrrega completada",
+                    "charging_problem": "Problema en la càrrega",
+                    "cleaning": "Netejant",
+                    "device_offline": "Dispositiu desconnectat",
+                    "docking": "Aparcant",
+                    "emptying_the_bin": "Buidant dipòsit",
+                    "error": "Error",
+                    "going_to_target": "Anant a l'objectiu",
+                    "going_to_wash_the_mop": "Anant a rentar baieta",
+                    "idle": "Inactiu",
+                    "manual_mode": "Mode manual",
+                    "paused": "Pausat/ada",
+                    "remote_control_active": "Control remot actiu",
+                    "returning_home": "Retornant a la base",
+                    "segment_cleaning": "Netejant segment",
+                    "shutting_down": "Apagant",
+                    "spot_cleaning": "Netejant punt",
+                    "starting": "Iniciant",
+                    "unknown": "Desconegut",
+                    "updating": "Actualitzant",
+                    "washing_the_mop": "Rentant baieta",
+                    "zoned_cleaning": "Neteja zonificada"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Àrea total netejada"
+            },
+            "total_cleaning_time": {
+                "name": "Temps total de neteja"
+            },
+            "vacuum_error": {
+                "name": "Error de l'aspirador",
+                "state": {
+                    "battery_error": "Error de bateria",
+                    "bumper_stuck": "Para-xocs enganxat",
+                    "cannot_cross_carpet": "No es pot travessar la catifa",
+                    "charging_error": "Error de càrrega",
+                    "cliff_sensor_error": "Error del sensor de precipici",
+                    "dock_locator_error": "Error de localització de la base",
+                    "fan_error": "Error del ventilador",
+                    "filter_blocked": "Filtre bloquejat",
+                    "internal_error": "Error intern",
+                    "invisible_wall_detected": "Paret invisible detectada",
+                    "lidar_blocked": "Lidar bloquejat",
+                    "low_battery": "Bateria baixa",
+                    "main_brush_jammed": "Raspall principal encallat",
+                    "no_dustbin": "Sense contenidor",
+                    "nogo_zone_detected": "Zona prohibida detectada",
+                    "none": "Cap",
+                    "return_to_dock_fail": "Error de retorn a la base",
+                    "robot_on_carpet": "Robot sobre catifa",
+                    "robot_tilted": "Robot inclinat",
+                    "robot_trapped": "Robot atrapat",
+                    "side_brush_error": "Error del raspall lateral",
+                    "side_brush_jammed": "Raspall lateral encallat",
+                    "vertical_bumper_pressed": "Para-xocs vertical premut",
+                    "vibrarise_jammed": "VibraRise encallat",
+                    "visual_sensor": "Error de càmera",
+                    "wall_sensor_dirty": "Sensor de paret brut",
+                    "wheels_jammed": "Rodes encallades",
+                    "wheels_suspended": "Rodes suspeses"
+                }
+            },
+            "washing_left": {
+                "name": "Rentat restant"
+            },
+            "zeo_error": {
+                "name": "Error",
+                "state": {
+                    "communication_error": "Error de comunicació",
+                    "door_lock_error": "Error de bloqueig de porta",
+                    "drain_error": "Error de drenatge",
+                    "drying_error_e_13": "Error en l'assecament E13",
+                    "heating_error": "Error d'escalfador",
+                    "inverter_error": "Error de l'inversor",
+                    "none": "Cap",
+                    "refill_error": "Error de càrrega",
+                    "spin_error": "Reorganitza la roba",
+                    "temperature_error": "Error de temperatura",
+                    "water_level_error": "Error de nivell d'aigua"
+                }
+            },
+            "zeo_state": {
+                "name": "Estat",
+                "state": {
+                    "cooling": "Refredant",
+                    "done": "Acabat",
+                    "drying": "Assecant",
+                    "rinsing": "Esbandint",
+                    "soaking": "Remullant",
+                    "spinning": "Centrifugant",
+                    "standby": "En espera",
+                    "under_delay_start": "Inici retardat",
+                    "washing": "Rentant",
+                    "weighing": "Pesant"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Pany infantil"
+            },
+            "dnd_switch": {
+                "name": "No molestar"
+            },
+            "off_peak_switch": {
+                "name": "Càrrega en període vall"
+            },
+            "status_indicator": {
+                "name": "Llum indicador d'estat"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Final de no molestar"
+            },
+            "dnd_start_time": {
+                "name": "Inici de no molestar"
+            },
+            "off_peak_end": {
+                "name": "Final període vall"
+            },
+            "off_peak_start": {
+                "name": "Inici període vall"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Auto",
+                            "balanced": "Equilibrada",
+                            "custom": "Personalitzat",
+                            "gentle": "Lenta",
+                            "max": "Màx.",
+                            "max_plus": "Màxima+",
+                            "medium": "Mitjà/na",
+                            "off": "OFF",
+                            "quiet": "Suau",
+                            "silent": "Silenciosa",
+                            "standard": "Estàndard",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Carregador",
+                    "cleaned_area": "Zona netejada",
+                    "goto_path": "Camí a seguir",
+                    "ignored_obstacles": "Obstacles ignorats",
+                    "ignored_obstacles_with_photo": "Obstacles ignorats amb foto",
+                    "mop_path": "Camí on fregar",
+                    "no_carpet_zones": "Zones sense catifes",
+                    "no_go_zones": "Zones prohibides",
+                    "no_mopping_zones": "Zones on no fregar",
+                    "obstacles": "Obstacles",
+                    "obstacles_with_photo": "Obstacles amb foto",
+                    "path": "Camí",
+                    "predicted_path": "Camí previst",
+                    "vacuum_position": "Posició de l'aspirador",
+                    "virtual_walls": "Parets virtuals",
+                    "zones": "Zones"
+                }
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "name": "Obté mapes"
+        },
+        "get_vacuum_current_position": {
+            "name": "Obté la posició actual"
+        },
+        "set_vacuum_goto_position": {
+            "fields": {
+                "x": {
+                    "name": "Coordenada X"
+                },
+                "y": {
+                    "name": "Coordenada Y"
+                }
+            },
+            "name": "Vés a la posició"
+        }
+    }
+}
