@@ -1,0 +1,740 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "Účet je už nakonfigurovaný",
+            "reauth_successful": "Opätovné overenie bolo úspešné",
+            "wrong_account": "Nesprávny účet: Prosím, overte sa pomocou správneho účtu."
+        },
+        "error": {
+            "invalid_code": "Zadaný kód bol nesprávny, skontrolujte ho a skúste to znova.",
+            "invalid_email": "K zadanému e-mailu nie je priradený žiadny účet, skúste to znova.",
+            "invalid_email_format": "Vyskytol sa problém s formátovaním vášho e-mailu – skúste to znova.",
+            "invalid_email_or_region": "K zadanému e-mailu nie je priradené žiadne konto alebo vo vybranej oblasti nie je žiadne konto.",
+            "too_frequent_code_requests": "Pokúsili ste sa požiadať o príliš veľa kódov. Skúste to neskôr.",
+            "unknown": "Neočakávaná chyba",
+            "unknown_roborock": "Vyskytla sa neznáma výnimka Roborock - skontrolujte, prosím, záznamy.",
+            "unknown_url": "Vyskytol sa problém s určením správnej adresy URL vášho účtu Roborock - skontrolujte, prosím, záznamy."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Overovací kód"
+                },
+                "data_description": {
+                    "code": "Overovací kód vám bol zaslaný e-mailom."
+                },
+                "description": "Zadajte overovací kód odoslaný na váš e-mail"
+            },
+            "reauth_confirm": {
+                "description": "Integrácia Roborock potrebuje opätovné overenie vášho účtu",
+                "title": "Vypršala platnosť overenia pre {name}"
+            },
+            "user": {
+                "data": {
+                    "region": "Región servera Roborock",
+                    "username": "Email"
+                },
+                "data_description": {
+                    "region": "Oblasť servera, v ktorej je zaregistrované vaše konto Roborock pri nastavovaní aplikácie. Odporúča sa automatická voľba, pokiaľ nemáte problémy.",
+                    "username": "E-mailová adresa použitá na prihlásenie do aplikácie Roborock."
+                },
+                "description": "Zadajte svoju e-mailovú adresu Roborock."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "clean_box_empty": {
+                "name": "Nádoba na čistú vodu"
+            },
+            "clean_fluid_empty": {
+                "name": "Čistiaca kvapalina"
+            },
+            "detergent_empty": {
+                "name": "Prací prostriedok",
+                "state": {
+                    "off": "Dostupné",
+                    "on": "Prázdny"
+                }
+            },
+            "dirty_box_full": {
+                "name": "Nádoba na špinavú vodu"
+            },
+            "in_cleaning": {
+                "name": "Čistenie"
+            },
+            "mop_attached": {
+                "name": "Mop je pripojený"
+            },
+            "mop_drying_status": {
+                "name": "Mop sa suší"
+            },
+            "softener_empty": {
+                "name": "Zmäkčovač",
+                "state": {
+                    "off": "Dostupné",
+                    "on": "Prázdny"
+                }
+            },
+            "water_box_attached": {
+                "name": "Zásobník na vodu je pripojený"
+            },
+            "water_shortage": {
+                "name": "Nedostatok vody"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pozastaviť"
+            },
+            "reset_air_filter_consumable": {
+                "name": "Resetujte vzduchový filter"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Resetujte hlavnú kefu"
+            },
+            "reset_sensor_consumable": {
+                "name": "Resetujte snímač"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Resetujte bočnú kefu"
+            },
+            "shutdown": {
+                "name": "Vypnutie"
+            },
+            "start": {
+                "name": "Spustiť"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Hlasitosť"
+            }
+        },
+        "select": {
+            "cleaning_mode": {
+                "name": "Režim čistenia",
+                "state": {
+                    "mop": "Iba mop",
+                    "vac_and_mop": "Vysávanie a mopovanie",
+                    "vacuum": "Iba vysávač"
+                }
+            },
+            "detergent_type": {
+                "name": "Typ pracieho prostriedku",
+                "state": {
+                    "empty": "Prázdny",
+                    "high": "Vysoká",
+                    "low": "Nízka",
+                    "medium": "Stredná"
+                }
+            },
+            "drying_mode": {
+                "name": "Režim sušenia",
+                "state": {
+                    "iron": "Žehlenie",
+                    "none": "Žiadne sušenie",
+                    "quick": "Rýchly",
+                    "store": "Uložiť",
+                    "time_dry": "Čas sušenia"
+                }
+            },
+            "dust_collection_mode": {
+                "name": "Prázdny režim",
+                "state": {
+                    "balanced": "Vyvážený",
+                    "light": "Ľahký",
+                    "max": "Max",
+                    "smart": "Inteligentný"
+                }
+            },
+            "mode": {
+                "name": "Prevádzkový režim",
+                "state": {
+                    "drain": "Odvodnenie",
+                    "dry": "Sušenie",
+                    "heavy": "Ťažké",
+                    "pre_wash": "Predpranie",
+                    "rinse_spin": "Opláchnutie a odstredenie",
+                    "spin": "Krútenie",
+                    "wash": "Umývanie",
+                    "wash_and_dry": "Umývanie a sušenie"
+                }
+            },
+            "mop_intensity": {
+                "name": "Intenzita mopovania",
+                "state": {
+                    "custom": "Vlastný",
+                    "custom_water_flow": "Vlastný prietok vody",
+                    "extreme": "Extrémne",
+                    "high": "Vysoká",
+                    "intense": "Intenzívny",
+                    "low": "Nízka",
+                    "max": "Max",
+                    "medium": "Stredná",
+                    "mild": "Ľahká",
+                    "min": "Min",
+                    "moderate": "Mierna",
+                    "off": "Neaktívny",
+                    "slight": "Mierne",
+                    "smart_mode": "SmartPlan",
+                    "standard": "Štandardný",
+                    "vac_followed_by_mop": "Vysávanie a následné mopovanie"
+                }
+            },
+            "mop_mode": {
+                "name": "Režim mopovania",
+                "state": {
+                    "custom": "Vlastný",
+                    "deep": "Hlboký",
+                    "deep_plus": "Hlboký+",
+                    "fast": "Rýchly",
+                    "smart_mode": "SmartPlan",
+                    "standard": "Štandardný"
+                }
+            },
+            "program": {
+                "name": "Prací program",
+                "state": {
+                    "air_refresh": "Osvieženie vzduchu",
+                    "anti_allergen": "Antialergénne",
+                    "anti_mites": "Proti roztočom",
+                    "baby_care": "Starostlivosť o dieťa",
+                    "bedding": "Posteľná bielizeň",
+                    "boiling_wash": "Varné umývanie",
+                    "bra": "Podprsenka",
+                    "cotton_linen": "Bavlna/Ľan",
+                    "custom": "Vlastné",
+                    "down": "Dole",
+                    "down_clean": "Čisté dole",
+                    "exo_40_60": "Exo 40/60",
+                    "gentle": "Jemný",
+                    "intensive": "Intenzívny",
+                    "new_clothes": "Nové oblečenie",
+                    "night": "Noc",
+                    "panties": "Nohavičky",
+                    "quick": "Rýchly",
+                    "rinse_and_spin": "Opláchnuť a odstrediť",
+                    "sanitize": "Dezinfikovať",
+                    "season": "Sezóna",
+                    "shirts": "Košele",
+                    "silk": "Hodváb",
+                    "socks": "Ponožky",
+                    "sportswear": "Športové oblečenie",
+                    "stain_removal": "Odstraňovanie škvŕn",
+                    "standard": "Štandard",
+                    "synthetics": "Syntetika",
+                    "t_shirts": "Tričká",
+                    "towels": "Uteráky",
+                    "twenty_c": "20°C",
+                    "underwear": "Spodná bielizeň",
+                    "warming": "Otepľovanie",
+                    "wool": "Vlna"
+                }
+            },
+            "rinse_times": {
+                "name": "Časy oplachovania",
+                "state": {
+                    "high": "4",
+                    "low": "2",
+                    "max": "5",
+                    "mid": "3",
+                    "min": "1",
+                    "none": "Predvolený"
+                }
+            },
+            "selected_map": {
+                "name": "Vybraná mapa"
+            },
+            "softener_type": {
+                "name": "Typ zmäkčovača",
+                "state": {
+                    "empty": "Prázdny",
+                    "high": "Vysoká",
+                    "low": "Nízka",
+                    "medium": "Stredná"
+                }
+            },
+            "spin_level": {
+                "name": "Úroveň odstreďovania",
+                "state": {
+                    "high": "1000 RPM",
+                    "max": "1400 RPM",
+                    "mid": "800 RPM",
+                    "none": "Predvolený",
+                    "very_high": "1200 RPM",
+                    "very_low": "600 RPM"
+                }
+            },
+            "temperature": {
+                "name": "Teplota vody",
+                "state": {
+                    "30": "30°C",
+                    "40": "40°C",
+                    "60": "60°C",
+                    "90": "90°C",
+                    "auto": "Auto",
+                    "cold": "Studený"
+                }
+            },
+            "water_flow": {
+                "name": "Prietok vody",
+                "state": {
+                    "high": "Vysoká",
+                    "low": "Nízka",
+                    "medium": "Stredná"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Chyba",
+                "state": {
+                    "battery_temperature_protection": "Teplotná ochrana batérie",
+                    "battery_temperature_protection_2": "Teplotná ochrana batérie",
+                    "battery_temperature_protection_e0": "Teplotná ochrana",
+                    "battery_under_10": "Batéria pod 10 %",
+                    "clean_head_entangled": "Zamotaná čistiaca hlava",
+                    "clean_head_too_hot": "Čistiaca hlava je príliš horúca.",
+                    "clean_tank_empty": "Nádoba na čistú vodu je prázdna",
+                    "cleaning_head_blocked": "Čistiaca hlava je zablokovaná",
+                    "dirty_charging_contacts": "Vyčistite nabíjacie kontakty",
+                    "dirty_tank_full": "Nádoba na špinavú vodu je plná",
+                    "fan_protection_e4": "Ochrana ventilátora",
+                    "fan_protection_e5": "Ochrana ventilátora",
+                    "fan_protection_e9": "Ochrana ventilátora",
+                    "low_battery": "Nízky stav batérie",
+                    "none": "Žiadny",
+                    "power_adapter_error": "Chyba napájacieho adaptéra",
+                    "temperature_protection": "Teplotná ochrana",
+                    "water_level_sensor_stuck": "Zaseknutý snímač hladiny vody."
+                }
+            },
+            "a01_status": {
+                "name": "Stav",
+                "state": {
+                    "charging": "Nabíja sa",
+                    "drying": "Suší sa",
+                    "dusting_mode": "Režim utierania prachu",
+                    "fetch_failed": "Načítanie skončilo s chybou",
+                    "fetching": "Načítam",
+                    "mop_washing": "Umývací mop",
+                    "mop_washing_paused": "Umývanie mopom pozastavené",
+                    "ready": "Pripravené",
+                    "reserving": "Rezervovanie",
+                    "self_clean_cleaning": "Samočistenie",
+                    "self_clean_deep_cleaning": "Hĺbkové samočistenie",
+                    "self_clean_dehydrating": "Samočistiace sušenie",
+                    "self_clean_rinsing": "Samočistiace oplachovanie",
+                    "unknown": "Neznámy",
+                    "updating": "Aktualizuje sa",
+                    "ventilating": "Vetranie",
+                    "washing": "Umývanie"
+                }
+            },
+            "brush_remaining": {
+                "name": "Valec vľavo"
+            },
+            "clean_percent": {
+                "name": "Priebeh upratovania"
+            },
+            "cleaning_area": {
+                "name": "Oblasť upratovania"
+            },
+            "cleaning_brush_time_left": {
+                "name": "Zostáva čas na údržbu kefky"
+            },
+            "cleaning_time": {
+                "name": "Čas upratovania"
+            },
+            "countdown": {
+                "name": "Odpočet"
+            },
+            "current_room": {
+                "name": "Aktuálna miestnosť"
+            },
+            "dock_error": {
+                "name": "Chyba doku",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "Nádoba na čistú vodu je plná alebo zablokovaná",
+                    "dirty_tank_latch_open": "Otvorená západka nádoby na špinavú vodu",
+                    "duct_blockage": "Upchatá hadička",
+                    "no_dustbin": "Chýbajúci zásobník na prach",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Nádoba na odpadovú vodu je plná",
+                    "water_empty": "Chýba voda"
+                }
+            },
+            "filter_time_left": {
+                "name": "Zostávajúci čas filtra"
+            },
+            "last_clean_end": {
+                "name": "Koniec posledného upratovania"
+            },
+            "last_clean_start": {
+                "name": "Začiatok posledného upratovania"
+            },
+            "main_brush_time_left": {
+                "name": "Zostávajúci čas hlavnej kefy"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Zostávajúci čas sušenia mopu"
+            },
+            "mop_life_time_left": {
+                "name": "Zostávajúca životnosť mopu"
+            },
+            "q7_status": {
+                "name": "Stav",
+                "state": {
+                    "charging": "Nabíja sa",
+                    "docking": "Dokovanie",
+                    "mop_airdrying": "Sušenie mopu na vzduchu",
+                    "mop_cleaning": "Čistenie mopom",
+                    "moping": "Mopovanie",
+                    "paused": "Pozastavený",
+                    "sleeping": "Úsporný režim",
+                    "sweep_moping": "Zametanie mopom",
+                    "sweep_moping_2": "Zametanie mopom",
+                    "updating": "Aktualizuje sa",
+                    "waiting_for_orders": "Čakanie na objednávky"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Zostávajúci čas snímača"
+            },
+            "side_brush_time_left": {
+                "name": "Zostávajúci čas bočnej kefy"
+            },
+            "status": {
+                "name": "Stav",
+                "state": {
+                    "air_drying_stopping": "Zastavovanie sušenia vzduchom",
+                    "attaching_the_mop": "Pripevnenie mopu",
+                    "charger_disconnected": "Nabíjačka je odpojená",
+                    "charging": "Nabíja sa",
+                    "charging_complete": "Nabíjanie je dokončené",
+                    "charging_problem": "Problém s nabíjaním",
+                    "cleaning": "Upratovanie",
+                    "detaching_the_mop": "Odpojenie mopu",
+                    "device_offline": "Zariadenie je offline",
+                    "docking": "Dokovanie",
+                    "egg_attack": "Režim Amor",
+                    "emptying_the_bin": "Vyprázdňovanie koša",
+                    "error": "Chyba",
+                    "going_to_target": "Presun k cieľu",
+                    "going_to_wash_the_mop": "Idem umyť mop",
+                    "idle": "Nečinný",
+                    "locked": "Zamknutý",
+                    "manual_mode": "Manuálny režim",
+                    "mapping": "Mapovanie",
+                    "paused": "Pozastavený",
+                    "remote_control_active": "Diaľkové ovládanie aktívne",
+                    "returning_home": "Návrat domov",
+                    "segment_cleaning": "Čistenie segmentov",
+                    "shutting_down": "Vypínanie",
+                    "spot_cleaning": "Upratovanie miesta",
+                    "starting": "Spúšťa sa",
+                    "unknown": "Neznámy",
+                    "updating": "Aktualizuje sa",
+                    "washing_the_mop": "Umývanie mopu",
+                    "zoned_cleaning": "Zónové upratovanie"
+                }
+            },
+            "strainer_time_left": {
+                "name": "Zostávajúci čas sitka"
+            },
+            "times_after_clean": {
+                "name": "Časy po čistení"
+            },
+            "total_cleaning_area": {
+                "name": "Celková plocha upratovania"
+            },
+            "total_cleaning_count": {
+                "name": "Celkový počet upratovaní"
+            },
+            "total_cleaning_time": {
+                "name": "Celkový čas upratovania"
+            },
+            "vacuum_error": {
+                "name": "Chyba vysávača",
+                "state": {
+                    "battery_error": "Chyba batérie",
+                    "bumper_stuck": "Zaseknutý nárazník",
+                    "cannot_cross_carpet": "Nemožno prejsť cez koberec",
+                    "charging_error": "Chyba nabíjania",
+                    "clear_brush_exception": "Skontrolujte, či je vodný filter správne nainštalovaný",
+                    "clear_brush_exception_2": "Chyba polohovacieho tlačidla",
+                    "clear_water_box_exception": "Prázdna nádoba na čistú vodu",
+                    "clear_water_box_hoare": "Skontrolujte nádobu na čistú vodu",
+                    "cliff_sensor_error": "Chyba snímača pádu",
+                    "collect_dust_error_3": "Vyčistite nádobu automatického vyprázdňovania",
+                    "collect_dust_error_4": "Chyba automatického vyprázdnenia doku",
+                    "compass_error": "Zistené silné magnetické pole",
+                    "dirty_water_box_hoare": "Skontrolujte nádobu na špinavú vodu",
+                    "dock": "Dok nie je pripojený k napájaniu",
+                    "dock_locator_error": "Chyba lokátora dokov",
+                    "fan_error": "Chyba ventilátora",
+                    "filter_blocked": "Filter je zablokovaný",
+                    "filter_screen_exception": "Vyčistite vodný filter doku",
+                    "internal_error": "Vnútorná chyba",
+                    "invisible_wall_detected": "Zistená neviditeľná stena",
+                    "lidar_blocked": "Lidar zablokovaný",
+                    "light_touch": "Chyba snímača steny",
+                    "low_battery": "Nízky stav batérie",
+                    "main_brush_jammed": "Hlavná kefa sa zasekla",
+                    "mopping_roller_1": "Umývací valec môže byť zaseknutý",
+                    "mopping_roller_2": "Umývací valec môže byť zaseknutý",
+                    "mopping_roller_error_2": "Umývací valec nie je správne spustený",
+                    "no_dustbin": "Chýba zásobník na prach",
+                    "nogo_zone_detected": "Zistená zóna zákazu vstupu",
+                    "none": "Žiadny",
+                    "return_to_dock_fail": "Návrat do doku zlyhal",
+                    "robot_on_carpet": "Vysávač je na koberci",
+                    "robot_tilted": "Vysávač je naklonený",
+                    "robot_trapped": "Vysávač je uväznený",
+                    "side_brush_error": "Chyba bočnej kefy",
+                    "side_brush_jammed": "Bočná kefa je zaseknutá",
+                    "sink_strainer_hoare": "Znovu nainštalujte vodný filter",
+                    "strainer_error": "Filter je mokrý alebo upchatý",
+                    "temperature_protection": "Teplotná ochrana jednotky",
+                    "vertical_bumper_pressed": "Vertikálny nárazník stlačený",
+                    "vibrarise_jammed": "VibraRise sa zasekol",
+                    "visual_sensor": "Chyba kamery",
+                    "wall_sensor_dirty": "Snímač steny je znečistený",
+                    "wheels_jammed": "Zaseknuté kolesá",
+                    "wheels_suspended": "Kolesá sú vo vzduchu"
+                }
+            },
+            "washing_left": {
+                "name": "Zostávajúce umývanie"
+            },
+            "zeo_error": {
+                "name": "Chyba",
+                "state": {
+                    "communication_error": "Chyba komunikácie",
+                    "door_lock_error": "Chyba zámku dverí",
+                    "drain_error": "Chyba odtoku",
+                    "drying_error": "Chyba sušenia: skontrolujte snímač teploty na vstupe vzduchu",
+                    "drying_error_e_12": "Chyba sušenia: skontrolujte snímač teploty na výstupe vzduchu",
+                    "drying_error_e_13": "Chyba sušenia E13",
+                    "drying_error_e_14": "Chyba sušenia: skontrolujte snímač teploty vstupného kondenzátora",
+                    "drying_error_e_15": "Chyba sušenia: skontrolujte vykurovacie teleso alebo otočný stôl",
+                    "drying_error_e_16": "Chyba sušenia: skontrolujte ventilátor sušenia",
+                    "drying_error_restart": "Chyba sušenia: reštartujte práčku",
+                    "drying_error_water_flow": "Chyba sušenia: skontrolujte prietok vody",
+                    "heating_error": "Chyba zahrievania",
+                    "inverter_error": "Chyba meniča",
+                    "none": "Žiadny",
+                    "refill_error": "Chyba pri dopĺňaní",
+                    "spin_error": "Zmeniť usporiadanie oblečenia",
+                    "temperature_error": "Chyba teploty",
+                    "water_level_error": "Chyba hladiny vody"
+                }
+            },
+            "zeo_state": {
+                "name": "Stav",
+                "state": {
+                    "aftercare": "Následná starostlivosť",
+                    "cooling": "Chladenie",
+                    "done": "Hotovo",
+                    "drying": "Sušenie",
+                    "rinsing": "Plákanie",
+                    "soaking": "Namáčanie",
+                    "spinning": "Odstreďovanie",
+                    "standby": "Pohotovostný režim",
+                    "under_delay_start": "Oneskorený štart",
+                    "waiting_for_aftercare": "Čakanie na následnú starostlivosť",
+                    "washing": "Pranie",
+                    "weighing": "Váženie"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Detský zámok"
+            },
+            "dnd_switch": {
+                "name": "Režim Nerušiť"
+            },
+            "off_peak_switch": {
+                "name": "Nabíjanie mimo špičky"
+            },
+            "sound_setting": {
+                "name": "Nastavenie zvuku"
+            },
+            "status_indicator": {
+                "name": "Kontrolka stavu"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Koniec režim Nerušiť"
+            },
+            "dnd_start_time": {
+                "name": "Začiatok režimu Nerušiť"
+            },
+            "off_peak_end": {
+                "name": "Koniec času mimo špičky"
+            },
+            "off_peak_start": {
+                "name": "Začiatok času mimo špičky"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Auto",
+                            "balanced": "Vyvážený",
+                            "custom": "Vlastný",
+                            "gentle": "Jemný",
+                            "max": "Max",
+                            "max_plus": "Max plus",
+                            "medium": "Stredná",
+                            "off": "Neaktívny",
+                            "off_raise_main_brush": "Vypnuté (zdvihnutý štetec)",
+                            "quiet": "Tichý",
+                            "silent": "Tichý",
+                            "smart_mode": "SmartPlan",
+                            "standard": "Štandardný",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "button_press_failed": {
+            "message": "Nepodarilo sa stlačiť tlačidlo"
+        },
+        "command_failed": {
+            "message": "Chyba pri volaní {command}"
+        },
+        "home_data_fail": {
+            "message": "Nepodarilo sa získať domáce údaje Roborock"
+        },
+        "invalid_credentials": {
+            "message": "Neplatné poverenia."
+        },
+        "invalid_user_agreement": {
+            "message": "Používateľská zmluva musí byť znovu prijatá. Otvorte aplikáciu Roborock a prijmite dohodu."
+        },
+        "map_failure": {
+            "message": "Pri vytváraní mapy sa niečo pokazilo"
+        },
+        "mqtt_unauthorized": {
+            "message": "Servery Roborock MQTT odmietli pripojenie z dôvodu obmedzenia rýchlosti alebo neplatných poverení. Môžete sa pokúsiť o opätovné overenie alebo počkať a znovu načítať integráciu."
+        },
+        "no_coordinators": {
+            "message": "Žiadne zariadenie sa nepodarilo úspešne nastaviť"
+        },
+        "no_user_agreement": {
+            "message": "Nemáte platnú používateľskú zmluvu. Otvorte aplikáciu Roborock a prijmite dohodu."
+        },
+        "position_not_found": {
+            "message": "Polohu vysávača sa nepodarilo určiť"
+        },
+        "segment_id_parse_error": {
+            "message": "Neplatný formát ID segmentu: {segment_id}"
+        },
+        "select_option_failed": {
+            "message": "Nepodarilo sa nastaviť vybranú možnosť"
+        },
+        "update_data_fail": {
+            "message": "Aktualizácia údajov zlyhala"
+        },
+        "update_options_failed": {
+            "message": "Nepodarilo sa aktualizovať možnosti Roborock"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "Integrácia Roborock sa nedokáže pripojiť priamo k {device_name} a vracia sa späť k API cloudu. To sa neodporúča, pretože to môže viesť k obmedzeniu rýchlosti. Prosím, sprístupnite vysávač v lokálnej sieti inštanciou Home Assistant.",
+            "title": "Použité cloudové API"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Nabíjačka",
+                    "cleaned_area": "Vyčistená oblasť",
+                    "goto_path": "Cesta k cieľu",
+                    "ignored_obstacles": "Ignorované prekážky",
+                    "ignored_obstacles_with_photo": "Ignorované prekážky s fotografiou",
+                    "mop_path": "Dráha mopu",
+                    "no_carpet_zones": "Žiadne kobercové zóny",
+                    "no_go_zones": "No-go zóny",
+                    "no_mopping_zones": "Žiadne mopovacie zóny",
+                    "obstacles": "Prekážky",
+                    "obstacles_with_photo": "Prekážky s fotografiou",
+                    "path": "Cesta",
+                    "predicted_path": "Predpokladaná cesta",
+                    "room_names": "Mená izieb",
+                    "show_background": "Zobraziť pozadie",
+                    "vacuum_position": "Poloha vysávača",
+                    "virtual_walls": "Virtuálne steny",
+                    "zones": "Zóny"
+                },
+                "data_description": {
+                    "charger": "Zobraziť nabíjačku na mape.",
+                    "cleaned_area": "Zobraziť upratanú oblasť na mape.",
+                    "goto_path": "Zobraziť cestu na mape.",
+                    "ignored_obstacles": "Zobraziť ignorované prekážky na mape.",
+                    "ignored_obstacles_with_photo": "Zobraziť ignorované prekážky s fotografiami na mape.",
+                    "mop_path": "Zobraziť cestu mopu na mape.",
+                    "no_carpet_zones": "Zobraziť na mape zóny bez kobercov.",
+                    "no_go_zones": "Zobraziť na mape zóny so zákazom vstupu.",
+                    "no_mopping_zones": "Zobraziť na mape zóny so zákazom mopovania.",
+                    "obstacles": "Zobrazenie prekážok na mape.",
+                    "obstacles_with_photo": "Zobrazte prekážky s fotografiami na mape.",
+                    "path": "Zobraziť cestu na mape.",
+                    "predicted_path": "Zobraziť predpokladanú cestu na mape.",
+                    "room_names": "Zobraziť mená izieb na mape.",
+                    "show_background": "Pridanie pozadia do mapy.",
+                    "vacuum_position": "Zobraziť polohu vysávača na mape.",
+                    "virtual_walls": "Zobraziť virtuálne steny na mape.",
+                    "zones": "Zobraziť zóny na mape."
+                },
+                "description": "Určite, ktoré prvky sa majú na mape zobrazovať."
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "Auto",
+                "cn": "CN",
+                "eu": "EU",
+                "ru": "RU",
+                "us": "US"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "Vyhľadá mapu a informácie o miestnosti vášho zariadenia.",
+            "name": "Získať mapy"
+        },
+        "get_vacuum_current_position": {
+            "description": "Načíta aktuálnu polohu vysávača.",
+            "name": "Získať aktuálnu polohu"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Odošle vysávač na konkrétne miesto.",
+            "fields": {
+                "x": {
+                    "description": "Súradnice sú relatívne voči doku. x=25500,y=25500 je poloha doku.",
+                    "name": "X-ová súradnica"
+                },
+                "y": {
+                    "description": "Súradnice sú relatívne voči doku. x=25500,y=25500 je poloha doku.",
+                    "name": "Y-ová súradnica"
+                }
+            },
+            "name": "Prejsť na pozíciu"
+        }
+    }
+}
