@@ -1,0 +1,740 @@
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "Konto ist bereits konfiguriert",
+            "reauth_successful": "Die erneute Authentifizierung war erfolgreich",
+            "wrong_account": "Falsches Konto: Bitte authentifiziere dich mit dem richtigen Konto."
+        },
+        "error": {
+            "invalid_code": "Der eingegebene Code war falsch, bitte überprüfe ihn und versuche es erneut.",
+            "invalid_email": "Mit der eingegebenen E-Mail-Adresse ist kein Konto verknüpft. Bitte versuche es erneut.",
+            "invalid_email_format": "Es gibt ein Problem mit der Formatierung deiner E-Mail. Bitte versuche es erneut.",
+            "invalid_email_or_region": "Entweder ist kein Konto mit der von dir eingegebenen E-Mail-Adresse verknüpft, oder es existiert kein Konto in der ausgewählten Region.",
+            "too_frequent_code_requests": "Du hast versucht, zu viele Codes anzufordern. Versuche es später erneut.",
+            "unknown": "Unerwarteter Fehler",
+            "unknown_roborock": "Es gab eine unbekannte Roborock-Ausnahme – bitte überprüfe deine Protokolle.",
+            "unknown_url": "Beim Ermitteln der korrekten URL für dein Roborock-Konto ist ein Problem aufgetreten – bitte überprüfe deine Protokolle."
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Bestätigungscode"
+                },
+                "data_description": {
+                    "code": "Der an deine E-Mail-Adresse gesendete Bestätigungscode."
+                },
+                "description": "Gib den Bestätigungscode ein, der an deine E-Mail-Adresse gesendet wurde"
+            },
+            "reauth_confirm": {
+                "description": "Die Roborock-Integration muss dein Konto erneut authentifizieren",
+                "title": "Authentifizierung für {name} abgelaufen"
+            },
+            "user": {
+                "data": {
+                    "region": "Roborock-Serverregion",
+                    "username": "E-Mail"
+                },
+                "data_description": {
+                    "region": "Die Serverregion, in der dein Roborock-Konto beim Einrichten der App registriert wurde. „Auto“ wird empfohlen, es sei denn, es treten Probleme auf.",
+                    "username": "Die für die Anmeldung in der Roborock-App verwendete E-Mail-Adresse."
+                },
+                "description": "Gib deine Roborock E-Mail-Adresse ein."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "clean_box_empty": {
+                "name": "Frischwassertank"
+            },
+            "clean_fluid_empty": {
+                "name": "Reinigungsflüssigkeit"
+            },
+            "detergent_empty": {
+                "name": "Waschmittel",
+                "state": {
+                    "off": "Verfügbar",
+                    "on": "Leer"
+                }
+            },
+            "dirty_box_full": {
+                "name": "Schmutzwassertank"
+            },
+            "in_cleaning": {
+                "name": "Reinigen"
+            },
+            "mop_attached": {
+                "name": "Mopp angebracht"
+            },
+            "mop_drying_status": {
+                "name": "Mopp-Trocknung"
+            },
+            "softener_empty": {
+                "name": "Weichspüler",
+                "state": {
+                    "off": "Verfügbar",
+                    "on": "Leer"
+                }
+            },
+            "water_box_attached": {
+                "name": "Wasserkasten angebracht"
+            },
+            "water_shortage": {
+                "name": "Wasserknappheit"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pausieren"
+            },
+            "reset_air_filter_consumable": {
+                "name": "Luftfilter-Verbrauchsmaterial zurücksetzen"
+            },
+            "reset_main_brush_consumable": {
+                "name": "Hauptbürsten-Verbrauchsmaterial zurücksetzen"
+            },
+            "reset_sensor_consumable": {
+                "name": "Sensor-Verbrauchsmaterial zurücksetzen"
+            },
+            "reset_side_brush_consumable": {
+                "name": "Seitenbürsten-Verbrauchsmaterial zurücksetzen"
+            },
+            "shutdown": {
+                "name": "Abschalten"
+            },
+            "start": {
+                "name": "Starten"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "Lautstärke"
+            }
+        },
+        "select": {
+            "cleaning_mode": {
+                "name": "Reinigungsmodus",
+                "state": {
+                    "mop": "Nur Wischen",
+                    "vac_and_mop": "Saugen und Wischen",
+                    "vacuum": "Nur Saugen"
+                }
+            },
+            "detergent_type": {
+                "name": "Waschmittel-Typ",
+                "state": {
+                    "empty": "Leer",
+                    "high": "Hoch",
+                    "low": "Niedrig",
+                    "medium": "Mittel"
+                }
+            },
+            "drying_mode": {
+                "name": "Trocknungsmodus",
+                "state": {
+                    "iron": "Bügelfeucht",
+                    "none": "Kein Trocknen",
+                    "quick": "Schnell",
+                    "store": "Schranktrocken",
+                    "time_dry": "Zeitgesteuertes Trocknen"
+                }
+            },
+            "dust_collection_mode": {
+                "name": "Entleerungsmodus",
+                "state": {
+                    "balanced": "Mittel",
+                    "light": "Leicht",
+                    "max": "Max.",
+                    "smart": "Smart"
+                }
+            },
+            "mode": {
+                "name": "Betriebsmodus",
+                "state": {
+                    "drain": "Abpumpen",
+                    "dry": "Trocknen",
+                    "heavy": "Stark",
+                    "pre_wash": "Vorwäsche",
+                    "rinse_spin": "Spülen & Schleudern",
+                    "spin": "Schleudern",
+                    "wash": "Waschen",
+                    "wash_and_dry": "Waschen und Trocknen"
+                }
+            },
+            "mop_intensity": {
+                "name": "Wisch-Intensität",
+                "state": {
+                    "custom": "Benutzerdefiniert",
+                    "custom_water_flow": "Benutzerdefinierter Wasserdurchfluss",
+                    "extreme": "Extrem",
+                    "high": "Hoch",
+                    "intense": "Intensiv",
+                    "low": "Niedrig",
+                    "max": "Max.",
+                    "medium": "Mittel",
+                    "mild": "Leicht",
+                    "min": "Min",
+                    "moderate": "Mäßig",
+                    "off": "Aus",
+                    "slight": "Leicht",
+                    "smart_mode": "SmartPlan",
+                    "standard": "Standard",
+                    "vac_followed_by_mop": "Saugen gefolgt von Wischen"
+                }
+            },
+            "mop_mode": {
+                "name": "Wisch-Modus",
+                "state": {
+                    "custom": "Benutzerdefiniert",
+                    "deep": "Deep",
+                    "deep_plus": "Deep+",
+                    "fast": "Schnell",
+                    "smart_mode": "SmartPlan",
+                    "standard": "Standard"
+                }
+            },
+            "program": {
+                "name": "Waschprogramm",
+                "state": {
+                    "air_refresh": "Luftauffrischung",
+                    "anti_allergen": "Anti-allergen",
+                    "anti_mites": "Anti-Milben",
+                    "baby_care": "Babypflege",
+                    "bedding": "Bettwaren",
+                    "boiling_wash": "Kochwäsche",
+                    "bra": "BH",
+                    "cotton_linen": "Baumwolle/Leinen",
+                    "custom": "Benutzerdefiniert",
+                    "down": "Daunen",
+                    "down_clean": "Daunenreinigung",
+                    "exo_40_60": "Exo 40/60",
+                    "gentle": "Schonend",
+                    "intensive": "Intensiv",
+                    "new_clothes": "Neue Kleidung",
+                    "night": "Nacht",
+                    "panties": "Höschen",
+                    "quick": "Schnell",
+                    "rinse_and_spin": "Spülen und Schleudern",
+                    "sanitize": "Desinfizieren",
+                    "season": "Saison",
+                    "shirts": "Hemden",
+                    "silk": "Seide",
+                    "socks": "Socken",
+                    "sportswear": "Sportswear",
+                    "stain_removal": "Fleckentfernung",
+                    "standard": "Standard",
+                    "synthetics": "Synthetik",
+                    "t_shirts": "T-Shirts",
+                    "towels": "Handtücher",
+                    "twenty_c": "20 °C",
+                    "underwear": "Unterwäsche",
+                    "warming": "Aufwärmen",
+                    "wool": "Wolle"
+                }
+            },
+            "rinse_times": {
+                "name": "Spülgänge",
+                "state": {
+                    "high": "4",
+                    "low": "2",
+                    "max": "5",
+                    "mid": "3",
+                    "min": "1",
+                    "none": "Standard"
+                }
+            },
+            "selected_map": {
+                "name": "Ausgewählte Karte"
+            },
+            "softener_type": {
+                "name": "Weichspüler-Typ",
+                "state": {
+                    "empty": "Leer",
+                    "high": "Hoch",
+                    "low": "Niedrig",
+                    "medium": "Mittel"
+                }
+            },
+            "spin_level": {
+                "name": "Schleuderstufe",
+                "state": {
+                    "high": "1000 U/min",
+                    "max": "1400 U/min",
+                    "mid": "800 U/min",
+                    "none": "Standard",
+                    "very_high": "1200 U/min",
+                    "very_low": "600 U/min"
+                }
+            },
+            "temperature": {
+                "name": "Wassertemperatur",
+                "state": {
+                    "30": "30 °C",
+                    "40": "40 °C",
+                    "60": "60 °C",
+                    "90": "90 °C",
+                    "auto": "Auto",
+                    "cold": "Kalt"
+                }
+            },
+            "water_flow": {
+                "name": "Wasserdurchfluss",
+                "state": {
+                    "high": "Hoch",
+                    "low": "Niedrig",
+                    "medium": "Mittel"
+                }
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "Fehler",
+                "state": {
+                    "battery_temperature_protection": "Batterietemperaturschutz",
+                    "battery_temperature_protection_2": "Batterietemperaturschutz",
+                    "battery_temperature_protection_e0": "Temperaturschutz",
+                    "battery_under_10": "Batterie unter 10 %",
+                    "clean_head_entangled": "Reinigungskopf verheddert",
+                    "clean_head_too_hot": "Reinigungskopf zu heiß.",
+                    "clean_tank_empty": "Reinigungstank leer",
+                    "cleaning_head_blocked": "Reinigungskopf blockiert",
+                    "dirty_charging_contacts": "Ladekontakte reinigen",
+                    "dirty_tank_full": "Schmutztank voll",
+                    "fan_protection_e4": "Lüfterschutz",
+                    "fan_protection_e5": "Lüfterschutz",
+                    "fan_protection_e9": "Lüfterschutz",
+                    "low_battery": "Niedriger Batteriestatus",
+                    "none": "Keine",
+                    "power_adapter_error": "Fehler am Netzteil",
+                    "temperature_protection": "Temperaturschutz",
+                    "water_level_sensor_stuck": "Wasserstandssensor klemmt."
+                }
+            },
+            "a01_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Wird geladen",
+                    "drying": "Trocknen",
+                    "dusting_mode": "Abstaubmodus",
+                    "fetch_failed": "Abrufen fehlgeschlagen",
+                    "fetching": "Abrufen",
+                    "mop_washing": "Moppwäsche",
+                    "mop_washing_paused": "Moppwäsche pausiert",
+                    "ready": "Bereit",
+                    "reserving": "Reservieren",
+                    "self_clean_cleaning": "Selbstreinigung: Reinigen",
+                    "self_clean_deep_cleaning": "Selbstreinigung: Tiefenreinigen",
+                    "self_clean_dehydrating": "Selbstreinigung: Trocknen",
+                    "self_clean_rinsing": "Selbstreinigung: Spülen",
+                    "unknown": "Unbekannt",
+                    "updating": "Aktualisierung",
+                    "ventilating": "Lüften",
+                    "washing": "Waschen"
+                }
+            },
+            "brush_remaining": {
+                "name": "Rolle links"
+            },
+            "clean_percent": {
+                "name": "Reinigungsfortschritt"
+            },
+            "cleaning_area": {
+                "name": "Reinigungsbereich"
+            },
+            "cleaning_brush_time_left": {
+                "name": "Bürstenwartung verbleibend"
+            },
+            "cleaning_time": {
+                "name": "Reinigungszeit"
+            },
+            "countdown": {
+                "name": "Countdown"
+            },
+            "current_room": {
+                "name": "Aktueller Raum"
+            },
+            "dock_error": {
+                "name": "Ladestation-Fehler",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "Reinigungstank voll oder verstopft",
+                    "dirty_tank_latch_open": "Verriegelung des Schmutztanks geöffnet",
+                    "duct_blockage": "Kanalverstopfung",
+                    "no_dustbin": "Kein Staubbehälter",
+                    "ok": "OK",
+                    "waste_water_tank_full": "Abwassertank voll",
+                    "water_empty": "Wasser leer"
+                }
+            },
+            "filter_time_left": {
+                "name": "Verbleibende Filterzeit"
+            },
+            "last_clean_end": {
+                "name": "Letztes Reinigungsende"
+            },
+            "last_clean_start": {
+                "name": "Letzter Reinigungsbeginn"
+            },
+            "main_brush_time_left": {
+                "name": "Verbleibende Zeit der Hauptbürste"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Verbleibende Zeit zum Trocknen des Mopps"
+            },
+            "mop_life_time_left": {
+                "name": "Verbleibende Lebensdauer des Mopps"
+            },
+            "q7_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Wird geladen",
+                    "docking": "Andocken",
+                    "mop_airdrying": "Lufttrocknung des Mopps",
+                    "mop_cleaning": "Mopp-Reinigung",
+                    "moping": "Wischen",
+                    "paused": "Pausiert",
+                    "sleeping": "Ruhezustand",
+                    "sweep_moping": "Fegen und Wischen",
+                    "sweep_moping_2": "Fegen und Wischen",
+                    "updating": "Aktualisierung",
+                    "waiting_for_orders": "Warten auf Befehle"
+                }
+            },
+            "sensor_time_left": {
+                "name": "Verbleibende Sensorzeit"
+            },
+            "side_brush_time_left": {
+                "name": "Verbleibende Zeit der Seitenbürste"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "air_drying_stopping": "Stoppen der Lufttrocknung",
+                    "attaching_the_mop": "Anbringen des Mopps",
+                    "charger_disconnected": "Ladegerät nicht angeschlossen",
+                    "charging": "Wird geladen",
+                    "charging_complete": "Ladevorgang abgeschlossen",
+                    "charging_problem": "Ladeproblem",
+                    "cleaning": "Reinigt",
+                    "detaching_the_mop": "Abnehmen des Mopps",
+                    "device_offline": "Gerät offline",
+                    "docking": "Andocken",
+                    "egg_attack": "Cupid-Modus",
+                    "emptying_the_bin": "Entleeren des Behälters",
+                    "error": "Fehler",
+                    "going_to_target": "Unterwegs zum Ziel",
+                    "going_to_wash_the_mop": "Unterwegs zur Moppwäsche",
+                    "idle": "Leerlauf",
+                    "locked": "Gesperrt",
+                    "manual_mode": "Manueller Modus",
+                    "mapping": "Kartenerstellung",
+                    "paused": "Pausiert",
+                    "remote_control_active": "Fernbedienung aktiv",
+                    "returning_home": "Zur Basis zurückkehren",
+                    "segment_cleaning": "Abschnittsreinigung",
+                    "shutting_down": "Herunterfahren",
+                    "spot_cleaning": "Fleckreinigung",
+                    "starting": "Startet",
+                    "unknown": "Unbekannt",
+                    "updating": "Aktualisierung",
+                    "washing_the_mop": "Moppwäsche",
+                    "zoned_cleaning": "Zonenweise Reinigung"
+                }
+            },
+            "strainer_time_left": {
+                "name": "Schmutzfänger verbleibend"
+            },
+            "times_after_clean": {
+                "name": "Anzahl nach Reinigung"
+            },
+            "total_cleaning_area": {
+                "name": "Gesamter Reinigungsbereich"
+            },
+            "total_cleaning_count": {
+                "name": "Gesamtzahl Reinigungen"
+            },
+            "total_cleaning_time": {
+                "name": "Gesamtreinigungszeit"
+            },
+            "vacuum_error": {
+                "name": "Staubsauger-Fehler",
+                "state": {
+                    "battery_error": "Batteriefehler",
+                    "bumper_stuck": "Stoßfänger klemmt",
+                    "cannot_cross_carpet": "Teppich kann nicht überquert werden",
+                    "charging_error": "Ladefehler",
+                    "clear_brush_exception": "Überprüfe, ob der Wasserfilter korrekt installiert ist",
+                    "clear_brush_exception_2": "Fehler bei der Positionierungstaste",
+                    "clear_water_box_exception": "Frischwassertank leer",
+                    "clear_water_box_hoare": "Überprüfe den Frischwassertank",
+                    "cliff_sensor_error": "Fehler des Klippensensors",
+                    "collect_dust_error_3": "Reinige die Auto-Entleerungsstation",
+                    "collect_dust_error_4": "Spannungsfehler in Auto-Entleerungsstation",
+                    "compass_error": "Starkes Magnetfeld entdeckt",
+                    "dirty_water_box_hoare": "Überprüfe den Schmutzwassertank",
+                    "dock": "Ladestation nicht an Stromversorgung angeschlossen",
+                    "dock_locator_error": "Dock-Locator-Fehler",
+                    "fan_error": "Lüfterfehler",
+                    "filter_blocked": "Filter verstopft",
+                    "filter_screen_exception": "Reinige den Wasserfilter der Ladestation",
+                    "internal_error": "Interner Fehler",
+                    "invisible_wall_detected": "Unsichtbare Wand erkannt",
+                    "lidar_blocked": "Lidar blockiert",
+                    "light_touch": "Fehler des Wandsensors",
+                    "low_battery": "Niedriger Batteriestatus",
+                    "main_brush_jammed": "Hauptbürste verklemmt",
+                    "mopping_roller_1": "Die Waschwalze ist möglicherweise verklemmt.",
+                    "mopping_roller_2": "Die Waschwalze ist möglicherweise verklemmt.",
+                    "mopping_roller_error_2": "Waschwalze nicht richtig abgesenkt",
+                    "no_dustbin": "Kein Staubbehälter",
+                    "nogo_zone_detected": "Sperrzone erkannt",
+                    "none": "Keine",
+                    "return_to_dock_fail": "Rückkehr zur Ladestation fehlgeschlagen",
+                    "robot_on_carpet": "Roboter auf Teppich",
+                    "robot_tilted": "Roboter gekippt",
+                    "robot_trapped": "Roboter festgefahren",
+                    "side_brush_error": "Seitenbürsten-Fehler",
+                    "side_brush_jammed": "Seitenbürste verklemmt",
+                    "sink_strainer_hoare": "Den Wasserfilter wieder einbauen",
+                    "strainer_error": "Filter ist nass oder verstopft",
+                    "temperature_protection": "Gerätetemperaturschutz",
+                    "vertical_bumper_pressed": "Vertikaler Stoßfänger gedrückt",
+                    "vibrarise_jammed": "VibraRise verklemmt",
+                    "visual_sensor": "Kamerafehler",
+                    "wall_sensor_dirty": "Wandsensor verschmutzt",
+                    "wheels_jammed": "Räder verklemmt",
+                    "wheels_suspended": "Räder aufgehängt"
+                }
+            },
+            "washing_left": {
+                "name": "Rest-Waschzeit"
+            },
+            "zeo_error": {
+                "name": "Fehler",
+                "state": {
+                    "communication_error": "Kommunikationsfehler",
+                    "door_lock_error": "Türschlossfehler",
+                    "drain_error": "Abflussfehler",
+                    "drying_error": "Trocknungsfehler: Lufteinlass-Temperatursensor prüfen",
+                    "drying_error_e_12": "Trocknungsfehler: Luftauslass-Temperatursensor prüfen",
+                    "drying_error_e_13": "Trocknungsfehler E13",
+                    "drying_error_e_14": "Trocknungsfehler: Kondensatoreinlass-Temperatursensor prüfen",
+                    "drying_error_e_15": "Trocknungsfehler: Heizelement oder Drehteller prüfen",
+                    "drying_error_e_16": "Trocknungsfehler: Trocknungsgebläse prüfen",
+                    "drying_error_restart": "Trocknungsfehler: Waschmaschine neu starten",
+                    "drying_error_water_flow": "Trocknungsfehler: Wasserdurchfluss prüfen",
+                    "heating_error": "Heizfehler",
+                    "inverter_error": "Wechselrichterfehler",
+                    "none": "Keine",
+                    "refill_error": "Fehler beim Nachfüllen",
+                    "spin_error": "Lappen neu ordnen",
+                    "temperature_error": "Temperaturfehler",
+                    "water_level_error": "Wasserstandsfehler"
+                }
+            },
+            "zeo_state": {
+                "name": "Zustand",
+                "state": {
+                    "aftercare": "Nachbehandlung",
+                    "cooling": "Kühlung",
+                    "done": "Fertig",
+                    "drying": "Trocknen",
+                    "rinsing": "Spülen",
+                    "soaking": "Einweichen",
+                    "spinning": "Drehen",
+                    "standby": "Standby",
+                    "under_delay_start": "Verzögerter Start",
+                    "waiting_for_aftercare": "Warten auf Nachbehandlung",
+                    "washing": "Waschen",
+                    "weighing": "Wiegen"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Kindersicherung"
+            },
+            "dnd_switch": {
+                "name": "Bitte nicht stören"
+            },
+            "off_peak_switch": {
+                "name": "Laden zum Niedertarif"
+            },
+            "sound_setting": {
+                "name": "Ton-Einstellung"
+            },
+            "status_indicator": {
+                "name": "Status-Kontrollleuchte"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "Bitte nicht stören Ende"
+            },
+            "dnd_start_time": {
+                "name": "Bitte nicht stören Beginn"
+            },
+            "off_peak_end": {
+                "name": "Niedertarif Ende"
+            },
+            "off_peak_start": {
+                "name": "Niedertarif Start"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "Auto",
+                            "balanced": "Mittel",
+                            "custom": "Benutzerdefiniert",
+                            "gentle": "Sanft",
+                            "max": "Max.",
+                            "max_plus": "Max plus",
+                            "medium": "Mittel",
+                            "off": "Aus",
+                            "off_raise_main_brush": "Aus (Bürste angehoben)",
+                            "quiet": "Ruhig",
+                            "silent": "Leise",
+                            "smart_mode": "SmartPlan",
+                            "standard": "Standard",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "button_press_failed": {
+            "message": "Taste konnte nicht gedrückt werden"
+        },
+        "command_failed": {
+            "message": "Fehler beim Aufruf von {command}"
+        },
+        "home_data_fail": {
+            "message": "Roborock-Heimdaten konnten nicht abgerufen werden"
+        },
+        "invalid_credentials": {
+            "message": "Ungültige Anmeldedaten"
+        },
+        "invalid_user_agreement": {
+            "message": "Die Benutzervereinbarung muss erneut akzeptiert werden. Öffne deine Roborock-App und akzeptiere die Vereinbarung."
+        },
+        "map_failure": {
+            "message": "Beim Erstellen der Karte ist ein Fehler aufgetreten"
+        },
+        "mqtt_unauthorized": {
+            "message": "Die Roborock-MQTT-Server haben die Verbindung aufgrund von Ratenbegrenzungen oder ungültigen Anmeldedaten abgelehnt. Du kannst entweder versuchen, dich erneut zu authentifizieren, oder warten und die Integration neu laden."
+        },
+        "no_coordinators": {
+            "message": "Keines der Geräte konnte erfolgreich eingerichtet werden"
+        },
+        "no_user_agreement": {
+            "message": "Du hast keine gültige Benutzervereinbarung. Öffne deine Roborock-App und akzeptiere die Vereinbarung."
+        },
+        "position_not_found": {
+            "message": "Roboterposition nicht gefunden"
+        },
+        "segment_id_parse_error": {
+            "message": "Ungültiges Format der Abschnitt-ID: {segment_id}"
+        },
+        "select_option_failed": {
+            "message": "Ausgewählte Option konnte nicht gesetzt werden"
+        },
+        "update_data_fail": {
+            "message": "Fehler beim Aktualisieren der Daten"
+        },
+        "update_options_failed": {
+            "message": "Roborock-Optionen konnten nicht aktualisiert werden"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "Die Roborock-Integration ist nicht in der Lage, eine direkte Verbindung zu {device_name} herzustellen und greift auf die Cloud-API zurück. Dies wird nicht empfohlen, da es zu Ratenbegrenzungen führen kann. Bitte stelle sicher, dass dein Staubsauger über das lokale Netzwerk für deine Home Assistant-Instanz erreichbar ist.",
+            "title": "Cloud-API in Verwendung"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Ladestation",
+                    "cleaned_area": "Gereinigter Bereich",
+                    "goto_path": "Zielroute",
+                    "ignored_obstacles": "Ignorierte Hindernisse",
+                    "ignored_obstacles_with_photo": "Ignorierte Hindernisse mit Foto",
+                    "mop_path": "Wischroute",
+                    "no_carpet_zones": "Teppichfreie Zonen",
+                    "no_go_zones": "Sperrzonen",
+                    "no_mopping_zones": "Wischfreie Zonen",
+                    "obstacles": "Hindernisse",
+                    "obstacles_with_photo": "Hindernisse mit Foto",
+                    "path": "Route",
+                    "predicted_path": "Vorhergesagte Route",
+                    "room_names": "Raumnamen",
+                    "show_background": "Hintergrund anzeigen",
+                    "vacuum_position": "Staubsaugerposition",
+                    "virtual_walls": "Virtuelle Wände",
+                    "zones": "Zonen"
+                },
+                "data_description": {
+                    "charger": "Die Ladestation auf der Karte anzeigen.",
+                    "cleaned_area": "Den gereinigten Bereich auf der Karte anzeigen.",
+                    "goto_path": "Die Zielroute auf der Karte anzeigen.",
+                    "ignored_obstacles": "Ignorierte Hindernisse auf der Karte anzeigen.",
+                    "ignored_obstacles_with_photo": "Ignorierte Hindernisse mit Fotos auf der Karte anzeigen.",
+                    "mop_path": "Die Wischroute auf der Karte anzeigen.",
+                    "no_carpet_zones": "Die teppichfreien Zonen auf der Karte anzeigen.",
+                    "no_go_zones": "Die Sperrzonen auf der Karte anzeigen.",
+                    "no_mopping_zones": "Die wischfreien Zonen auf der Karte anzeigen.",
+                    "obstacles": "Hindernisse auf der Karte anzeigen.",
+                    "obstacles_with_photo": "Hindernisse mit Fotos auf der Karte anzeigen.",
+                    "path": "Die Route auf der Karte anzeigen.",
+                    "predicted_path": "Die voraussichtliche Route auf der Karte anzeigen.",
+                    "room_names": "Raumnamen auf der Karte anzeigen.",
+                    "show_background": "Fügt der Karte einen Hintergrund hinzu.",
+                    "vacuum_position": "Die Staubsaugerposition auf der Karte anzeigen.",
+                    "virtual_walls": "Virtuelle Wände auf der Karte anzeigen.",
+                    "zones": "Zonen auf der Karte anzeigen."
+                },
+                "description": "Gib an, welche Features auf der Karte gezeichnet werden sollen."
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "Auto",
+                "cn": "CN",
+                "eu": "EU",
+                "ru": "RU",
+                "us": "US"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "Ruft die Karten- und Rauminformationen deines Geräts ab.",
+            "name": "Karten abrufen"
+        },
+        "get_vacuum_current_position": {
+            "description": "Ruft die aktuelle Position des Staubsaugers ab.",
+            "name": "Aktuelle Position abrufen"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Schickt den Staubsauger an eine bestimmte Stelle.",
+            "fields": {
+                "x": {
+                    "description": "Die Koordinaten sind relativ zur Ladestation. x=25500,y=25500 ist die Position der Ladestation.",
+                    "name": "X-Koordinate"
+                },
+                "y": {
+                    "description": "Die Koordinaten sind relativ zur Ladestation. x=25500,y=25500 ist die Position der Ladestation.",
+                    "name": "Y-Koordinate"
+                }
+            },
+            "name": "Position anfahren"
+        }
+    }
+}

@@ -1,0 +1,136 @@
+{
+    "config": {
+        "error": {
+            "invalid_code": "Den kode du indtastede var forkert. Tjek den og prøv igen.",
+            "invalid_email": "Der er ingen konto tilknyttet den email, du indtastede. Prøv venligst igen.",
+            "invalid_email_format": "Der er et problem med formateringen af din e-mail - prøv venligst igen.",
+            "unknown": "Uventet fejl"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "Bekræftelseskode"
+                },
+                "description": "Indtast den bekræftelseskode, der er sendt til din e-mail"
+            },
+            "user": {
+                "data": {
+                    "username": "Email"
+                },
+                "description": "Indtast din Roborock-emailadresse."
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mop_intensity": {
+                "name": "Moppeintensitet",
+                "state": {
+                    "custom": "Brugerdefineret",
+                    "custom_water_flow": "Brugerdefineret vandflow",
+                    "intense": "Intensiv",
+                    "mild": "Mild",
+                    "moderate": "Moderat",
+                    "off": "Fra"
+                }
+            },
+            "mop_mode": {
+                "name": "Moppetilstand",
+                "state": {
+                    "custom": "Brugerdefineret",
+                    "deep": "Dyb",
+                    "deep_plus": "Dyb+",
+                    "fast": "Hurtig",
+                    "standard": "Standard"
+                }
+            }
+        },
+        "sensor": {
+            "cleaning_area": {
+                "name": "Rengøringsareal"
+            },
+            "cleaning_time": {
+                "name": "Rengøringstid"
+            },
+            "filter_time_left": {
+                "name": "Filter-restlevetid"
+            },
+            "main_brush_time_left": {
+                "name": "Hovedbørste-restlevetid"
+            },
+            "sensor_time_left": {
+                "name": "Sensor resterende tid"
+            },
+            "side_brush_time_left": {
+                "name": "Sidebørste-restlevetid"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "charger_disconnected": "Oplader ikke tilsluttet",
+                    "charging_complete": "Opladning færdig",
+                    "charging_problem": "Opladningsproblem",
+                    "cleaning": "Gør rent",
+                    "device_offline": "Enhed offline",
+                    "docking": "Kører i dock",
+                    "emptying_the_bin": "Tømmer støvbeholder",
+                    "going_to_target": "På vej mod mål",
+                    "going_to_wash_the_mop": "Skal til at vaske moppen",
+                    "idle": "Inaktiv",
+                    "manual_mode": "Manuel tilstand",
+                    "paused": "På pause",
+                    "remote_control_active": "Fjernbetjening aktiv",
+                    "returning_home": "Returnerer til dock",
+                    "segment_cleaning": "Segmentrengøring",
+                    "shutting_down": "Lukker ned",
+                    "spot_cleaning": "Pletrengøring",
+                    "starting": "Starter",
+                    "updating": "Opdaterer",
+                    "washing_the_mop": "Vask af moppen",
+                    "zoned_cleaning": "Zoneinddelt rengøring"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "Samlet rengøringsareal"
+            },
+            "total_cleaning_time": {
+                "name": "Samlet rengøringstid"
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Børnelås"
+            },
+            "dnd_switch": {
+                "name": "Forstyr ikke"
+            },
+            "status_indicator": {
+                "name": "Statusindikatorlampe"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "Afbalanceret",
+                            "custom": "Brugerdefineret",
+                            "gentle": "Blid",
+                            "max_plus": "Maks plus",
+                            "off": "Fra",
+                            "quiet": "Stille",
+                            "silent": "Lydløs",
+                            "standard": "Standard",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "name": "Hent kort"
+        }
+    }
+}
