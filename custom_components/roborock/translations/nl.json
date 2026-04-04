@@ -25,7 +25,7 @@
                 "description": "Noteer de verificatiecode die gestuurd is naar je e-mailadres"
             },
             "reauth_confirm": {
-                "description": "De Roborock-integratie moet opnieuw je account verifiëren",
+                "description": "De Roborock-integratie moet opnieuw je account verifi\u00ebren",
                 "title": "Authenticatie is verlopen voor {name}"
             },
             "user": {
@@ -69,6 +69,9 @@
             }
         },
         "button": {
+            "empty_dustbin": {
+                "name": "Stofbak legen"
+            },
             "reset_air_filter_consumable": {
                 "name": "Reset verbruik luchtfilter"
             },
@@ -150,7 +153,7 @@
                     "silk": "Zijde",
                     "socks": "Sokken",
                     "towels": "Handdoeken",
-                    "twenty_c": "20°C",
+                    "twenty_c": "20\u00b0C",
                     "underwear": "Ondergoed",
                     "wool": "Wol"
                 }
@@ -187,10 +190,10 @@
             "temperature": {
                 "name": "Watertemperatuur",
                 "state": {
-                    "30": "30°C",
-                    "40": "40°C",
-                    "60": "60°C",
-                    "90": "90°C",
+                    "30": "30\u00b0C",
+                    "40": "40\u00b0C",
+                    "60": "60\u00b0C",
+                    "90": "90\u00b0C",
                     "auto": "Automatisch"
                 }
             },
@@ -352,7 +355,7 @@
                     "bumper_stuck": "Bumper vastgelopen",
                     "cannot_cross_carpet": "Kan niet over tapijt rijden",
                     "charging_error": "Error bij opladen",
-                    "clear_brush_exception": "Controleer of het waterfilter correct is geïnstalleerd",
+                    "clear_brush_exception": "Controleer of het waterfilter correct is ge\u00efnstalleerd",
                     "clear_brush_exception_2": "Fout met positioneringsknop",
                     "clear_water_box_exception": "Schoonwatertank leeg",
                     "clear_water_box_hoare": "Controleer de schoonwatertank",
@@ -486,8 +489,14 @@
         "home_data_fail": {
             "message": "Geen Roborock huisgegevens ontvangen"
         },
+        "invalid_command": {
+            "message": "Ongeldig command {command}"
+        },
         "invalid_credentials": {
             "message": "Ongeldige aanmeldingsgegevens."
+        },
+        "invalid_fan_speed": {
+            "message": "Ongeldige fan snelheid {fan_speed}"
         },
         "invalid_user_agreement": {
             "message": "Gebruikersovereenkomst moet opnieuw geaccepteerd worden. Open je Roborock app en accepteer de overeenkomst."
@@ -503,6 +512,9 @@
         },
         "position_not_found": {
             "message": "Robotpositie niet gevonden"
+        },
+        "request_fail": {
+            "message": "Kan de data niet opvragen"
         },
         "update_data_fail": {
             "message": "Gegevens bijwerken mislukt"
@@ -576,12 +588,12 @@
             "description": "Stuurt de stofzuiger naar een specifieke positie.",
             "fields": {
                 "x": {
-                    "description": "Coördinaten zijn relatief ten opzichte van het dok. x=25500,y=25500 is de positie van het dok.",
-                    "name": "X-coördinaat"
+                    "description": "Co\u00f6rdinaten zijn relatief ten opzichte van het dok. x=25500,y=25500 is de positie van het dok.",
+                    "name": "X-co\u00f6rdinaat"
                 },
                 "y": {
-                    "description": "Coördinaten zijn relatief ten opzichte van het dok. x=25500,y=25500 is de positie van het dok.",
-                    "name": "Y-coördinaat"
+                    "description": "Co\u00f6rdinaten zijn relatief ten opzichte van het dok. x=25500,y=25500 is de positie van het dok.",
+                    "name": "Y-co\u00f6rdinaat"
                 }
             },
             "name": "Ga naar positie"

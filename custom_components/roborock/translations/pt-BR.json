@@ -1,46 +1,46 @@
 {
     "config": {
         "abort": {
-            "reauth_successful": "A reautenticação foi bem-sucedida"
+            "reauth_successful": "A reautentica\u00e7\u00e3o foi bem-sucedida"
         },
         "error": {
-            "invalid_code": "O código digitado está incorreto, verifique e tente novamente.",
-            "invalid_email": "Não há nenhuma conta associada ao e-mail inserido, tente novamente.",
-            "invalid_email_format": "Há um problema com a formatação do seu e-mail - por favor, tente novamente.",
+            "invalid_code": "O c\u00f3digo digitado est\u00e1 incorreto, verifique e tente novamente.",
+            "invalid_email": "N\u00e3o h\u00e1 nenhuma conta associada ao e-mail inserido, tente novamente.",
+            "invalid_email_format": "H\u00e1 um problema com a formata\u00e7\u00e3o do seu e-mail - por favor, tente novamente.",
             "unknown": "Erro inesperado"
         },
         "step": {
             "code": {
                 "data": {
-                    "code": "Código de verificação"
+                    "code": "C\u00f3digo de verifica\u00e7\u00e3o"
                 },
-                "description": "Digite o código de verificação enviado para o seu e-mail"
+                "description": "Digite o c\u00f3digo de verifica\u00e7\u00e3o enviado para o seu e-mail"
             },
             "reauth_confirm": {
-                "description": "A integração do Roborock precisa autenticar novamente sua conta",
-                "title": "A autenticação expirada para {name}"
+                "description": "A integra\u00e7\u00e3o do Roborock precisa autenticar novamente sua conta",
+                "title": "A autentica\u00e7\u00e3o expirada para {name}"
             },
             "user": {
                 "data": {
                     "username": "Email"
                 },
-                "description": "Digite seu endereço de e-mail Roborock."
+                "description": "Digite seu endere\u00e7o de e-mail Roborock."
             }
         }
     },
     "entity": {
         "button": {
             "reset_air_filter_consumable": {
-                "name": "Resetar consumíveis do filtro de ar"
+                "name": "Resetar consum\u00edveis do filtro de ar"
             },
             "reset_main_brush_consumable": {
-                "name": "Resetar o consumível da escova principal"
+                "name": "Resetar o consum\u00edvel da escova principal"
             },
             "reset_sensor_consumable": {
-                "name": "Resetar o consumível do sensor"
+                "name": "Resetar o consum\u00edvel do sensor"
             },
             "reset_side_brush_consumable": {
-                "name": "Resetar o consumível da escova lateral"
+                "name": "Resetar o consum\u00edvel da escova lateral"
             }
         },
         "number": {
@@ -65,8 +65,8 @@
                     "custom": "Personalizado",
                     "deep": "Profundo",
                     "deep_plus": "Profundo+",
-                    "fast": "Rápido",
-                    "standard": "Padrão"
+                    "fast": "R\u00e1pido",
+                    "standard": "Padr\u00e3o"
                 }
             }
         },
@@ -75,7 +75,7 @@
                 "name": "Erro"
             },
             "cleaning_area": {
-                "name": "Área de limpeza"
+                "name": "\u00c1rea de limpeza"
             },
             "cleaning_time": {
                 "name": "Tempo de limpeza"
@@ -103,7 +103,7 @@
                     "charging_problem": "Problema de carregamento",
                     "cleaning": "Limpeza",
                     "device_offline": "Dispositivo offline",
-                    "docking": "Atracação",
+                    "docking": "Atraca\u00e7\u00e3o",
                     "emptying_the_bin": "Esvaziando a lixeira",
                     "going_to_target": "Indo para o alvo",
                     "going_to_wash_the_mop": "Indo lavar o mop",
@@ -122,7 +122,7 @@
                 }
             },
             "total_cleaning_area": {
-                "name": "Área total de limpeza"
+                "name": "\u00c1rea total de limpeza"
             },
             "total_cleaning_count": {
                 "name": "Contagem total de limpeza"
@@ -137,10 +137,10 @@
                     "no_dustbin": "Sem lixeira",
                     "nogo_zone_detected": "Zona proibida detectada",
                     "none": "Nenhum",
-                    "return_to_dock_fail": "Falha no retorno à base",
-                    "robot_on_carpet": "Robô no tapete",
-                    "robot_tilted": "Robô inclinado",
-                    "robot_trapped": "Robô preso",
+                    "return_to_dock_fail": "Falha no retorno \u00e0 base",
+                    "robot_on_carpet": "Rob\u00f4 no tapete",
+                    "robot_tilted": "Rob\u00f4 inclinado",
+                    "robot_trapped": "Rob\u00f4 preso",
                     "side_brush_error": "Erro de escova lateral",
                     "side_brush_jammed": "Escova lateral emperrada",
                     "vertical_bumper_pressed": "Para-choque vertical pressionado",
@@ -165,7 +165,7 @@
                 "name": "Bloqueio infantil"
             },
             "dnd_switch": {
-                "name": "Não perturbe"
+                "name": "N\u00e3o perturbe"
             },
             "status_indicator": {
                 "name": "Luz indicadora de status"
@@ -173,10 +173,10 @@
         },
         "time": {
             "dnd_end_time": {
-                "name": "Terminar Não perturbe"
+                "name": "Terminar N\u00e3o perturbe"
             },
             "dnd_start_time": {
-                "name": "Começar Não perturbe"
+                "name": "Come\u00e7ar N\u00e3o perturbe"
             }
         },
         "vacuum": {
@@ -187,11 +187,11 @@
                             "balanced": "Balanceado",
                             "custom": "Personalizado",
                             "gentle": "Gentil",
-                            "max_plus": "Máximo plus",
+                            "max_plus": "M\u00e1ximo plus",
                             "off": "Desligado",
                             "quiet": "Quieto",
                             "silent": "Silencioso",
-                            "standard": "Padrão",
+                            "standard": "Padr\u00e3o",
                             "turbo": "Turbo"
                         }
                     }
@@ -201,10 +201,10 @@
     },
     "exceptions": {
         "invalid_user_agreement": {
-            "message": "O acordo do usuário deve ser aceito novamente. Abra seu aplicativo Roborock e aceite o acordo."
+            "message": "O acordo do usu\u00e1rio deve ser aceito novamente. Abra seu aplicativo Roborock e aceite o acordo."
         },
         "no_user_agreement": {
-            "message": "Você não tem um contrato de usuário válido. Abra seu aplicativo Roborock e aceite o contrato."
+            "message": "Voc\u00ea n\u00e3o tem um contrato de usu\u00e1rio v\u00e1lido. Abra seu aplicativo Roborock e aceite o contrato."
         }
     },
     "options": {
@@ -218,21 +218,21 @@
     },
     "services": {
         "get_vacuum_current_position": {
-            "description": "Recupera a posição atual do vácuo.",
-            "name": "Obter posição atual"
+            "description": "Recupera a posi\u00e7\u00e3o atual do v\u00e1cuo.",
+            "name": "Obter posi\u00e7\u00e3o atual"
         },
         "set_vacuum_goto_position": {
-            "description": "Envia o vácuo para uma posição específica.",
+            "description": "Envia o v\u00e1cuo para uma posi\u00e7\u00e3o espec\u00edfica.",
             "fields": {
                 "x": {
-                    "description": "As coordenadas são relativas à doca. x=25500,y=25500 é a posição da doca.",
+                    "description": "As coordenadas s\u00e3o relativas \u00e0 doca. x=25500,y=25500 \u00e9 a posi\u00e7\u00e3o da doca.",
                     "name": "Coordenada X"
                 },
                 "y": {
                     "name": "Coordenada Y"
                 }
             },
-            "name": "Ir para a posição"
+            "name": "Ir para a posi\u00e7\u00e3o"
         }
     }
 }

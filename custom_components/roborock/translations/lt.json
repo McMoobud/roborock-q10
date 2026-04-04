@@ -1,19 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured_account": "Paskyra jau sukonfigūruota",
-            "reauth_successful": "Pakartotinis autentifikavimas buvo sėkmingas",
-            "wrong_account": "Neteisinga paskyra: patvirtinkite tapatybę naudodami tinkamą paskyrą."
+            "already_configured_account": "Paskyra jau sukonfig\u016bruota",
+            "reauth_successful": "Pakartotinis autentifikavimas buvo s\u0117kmingas",
+            "wrong_account": "Neteisinga paskyra: patvirtinkite tapatyb\u0119 naudodami tinkam\u0105 paskyr\u0105."
         },
         "error": {
-            "invalid_code": "Įvestas kodas buvo neteisingas, patikrinkite ir bandykite dar kartą.",
-            "invalid_email": "Su įvestu el. pašto adresu nėra susietos paskyros, bandykite dar kartą.",
-            "invalid_email_format": "Iškilo problema dėl el. pašto formatavimo – bandykite dar kartą.",
-            "invalid_email_or_region": "Arba nėra su įvestu el. pašto adresu susietos paskyros, arba pasirinktame regione nėra paskyros.",
-            "too_frequent_code_requests": "Bandėte pateikti per daug kodų užklausą. Vėliau bandykite dar kartą.",
-            "unknown": "Netikėta klaida",
-            "unknown_roborock": "Buvo nežinoma Roborock išimtis – patikrinkite savo žurnalus.",
-            "unknown_url": "Nustatant teisingą Roboroc“ paskyros URL kilo problema – patikrinkite žurnalus."
+            "invalid_code": "\u012evestas kodas buvo neteisingas, patikrinkite ir bandykite dar kart\u0105.",
+            "invalid_email": "Su \u012fvestu el. pa\u0161to adresu n\u0117ra susietos paskyros, bandykite dar kart\u0105.",
+            "invalid_email_format": "I\u0161kilo problema d\u0117l el. pa\u0161to formatavimo \u2013 bandykite dar kart\u0105.",
+            "invalid_email_or_region": "Arba n\u0117ra su \u012fvestu el. pa\u0161to adresu susietos paskyros, arba pasirinktame regione n\u0117ra paskyros.",
+            "too_frequent_code_requests": "Band\u0117te pateikti per daug kod\u0173 u\u017eklaus\u0105. V\u0117liau bandykite dar kart\u0105.",
+            "unknown": "Netik\u0117ta klaida",
+            "unknown_roborock": "Buvo ne\u017einoma Roborock i\u0161imtis \u2013 patikrinkite savo \u017eurnalus.",
+            "unknown_url": "Nustatant teising\u0105 Roboroc\u201c paskyros URL kilo problema \u2013 patikrinkite \u017eurnalus."
         },
         "step": {
             "code": {
@@ -21,31 +21,31 @@
                     "code": "Patvirtinimo kodas"
                 },
                 "data_description": {
-                    "code": "Patvirtinimo kodas išsiųstas jūsų el. paštu."
+                    "code": "Patvirtinimo kodas i\u0161si\u0173stas j\u016bs\u0173 el. pa\u0161tu."
                 },
-                "description": "Įveskite patvirtinimo kodą, atsiųstą el. paštu"
+                "description": "\u012eveskite patvirtinimo kod\u0105, atsi\u0173st\u0105 el. pa\u0161tu"
             },
             "reauth_confirm": {
-                "description": "„Roborock“ integracija turi iš naujo autentifikuoti paskyrą",
-                "title": "Baigėsi {name} autentifikavimo galiojimas"
+                "description": "\u201eRoborock\u201c integracija turi i\u0161 naujo autentifikuoti paskyr\u0105",
+                "title": "Baig\u0117si {name} autentifikavimo galiojimas"
             },
             "user": {
                 "data": {
                     "region": "Roborock serverio regionas",
-                    "username": "El. paštas"
+                    "username": "El. pa\u0161tas"
                 },
                 "data_description": {
-                    "region": "Serverio regionas, kuriame registruota jūsų Roborock paskyra diegiant programėlę. Rekomenduojamas nustatymas yra Automatinis, nebent kyla problemų.",
-                    "username": "El. pašto adresas, naudojamas prisijungiant prie Roborock programos."
+                    "region": "Serverio regionas, kuriame registruota j\u016bs\u0173 Roborock paskyra diegiant program\u0117l\u0119. Rekomenduojamas nustatymas yra Automatinis, nebent kyla problem\u0173.",
+                    "username": "El. pa\u0161to adresas, naudojamas prisijungiant prie Roborock programos."
                 },
-                "description": "Įveskite savo Roborock el. pašto adresą."
+                "description": "\u012eveskite savo Roborock el. pa\u0161to adres\u0105."
             }
         }
     },
     "entity": {
         "binary_sensor": {
             "clean_box_empty": {
-                "name": "Švaraus vandens dėžutė"
+                "name": "\u0160varaus vandens d\u0117\u017eut\u0117"
             },
             "clean_fluid_empty": {
                 "name": "Valymo skystis"
@@ -54,56 +54,59 @@
                 "name": "Skalbiklis",
                 "state": {
                     "off": "Prieinama",
-                    "on": "Tuščias"
+                    "on": "Tu\u0161\u010dias"
                 }
             },
             "dirty_box_full": {
-                "name": "Nešvaraus vandens dėžė"
+                "name": "Ne\u0161varaus vandens d\u0117\u017e\u0117"
             },
             "in_cleaning": {
                 "name": "Valymas"
             },
             "mop_attached": {
-                "name": "Pritvirtinta šluostė"
+                "name": "Pritvirtinta \u0161luost\u0117"
             },
             "mop_drying_status": {
-                "name": "Šluostės džiovinimas"
+                "name": "\u0160luost\u0117s d\u017eiovinimas"
             },
             "softener_empty": {
-                "name": "Minkštiklis",
+                "name": "Mink\u0161tiklis",
                 "state": {
                     "off": "Prieinama",
-                    "on": "Tuščias"
+                    "on": "Tu\u0161\u010dias"
                 }
             },
             "water_box_attached": {
-                "name": "Pridedama vandens dėžė"
+                "name": "Pridedama vandens d\u0117\u017e\u0117"
             },
             "water_shortage": {
-                "name": "Vandens trūkumas"
+                "name": "Vandens tr\u016bkumas"
             }
         },
         "button": {
+            "empty_dustbin": {
+                "name": "Tu\u0161\u010dia \u0161iuk\u0161liad\u0117\u017e\u0117"
+            },
             "pause": {
-                "name": "Pauzė"
+                "name": "Pauz\u0117"
             },
             "reset_air_filter_consumable": {
-                "name": "Iš naujo nustatykite oro filtro eksploatacines medžiagas"
+                "name": "I\u0161 naujo nustatykite oro filtro eksploatacines med\u017eiagas"
             },
             "reset_main_brush_consumable": {
-                "name": "Iš naujo nustatykite pagrindinio šepečio eksploatacines medžiagas"
+                "name": "I\u0161 naujo nustatykite pagrindinio \u0161epe\u010dio eksploatacines med\u017eiagas"
             },
             "reset_sensor_consumable": {
-                "name": "Iš naujo nustatykite sunaudojamą jutiklį"
+                "name": "I\u0161 naujo nustatykite sunaudojam\u0105 jutikl\u012f"
             },
             "reset_side_brush_consumable": {
-                "name": "Iš naujo nustatykite eksploatacines šoninio šepetėlio medžiagas"
+                "name": "I\u0161 naujo nustatykite eksploatacines \u0161oninio \u0161epet\u0117lio med\u017eiagas"
             },
             "shutdown": {
-                "name": "Išjungimas"
+                "name": "I\u0161jungti"
             },
             "start": {
-                "name": "Pradėti"
+                "name": "Prad\u0117ti"
             }
         },
         "number": {
@@ -113,83 +116,83 @@
         },
         "select": {
             "cleaning_mode": {
-                "name": "Valymo režimas",
+                "name": "Valymo re\u017eimas",
                 "state": {
-                    "mop": "Tik šluostė",
-                    "vac_and_mop": "Dulkių siurbimas ir šluostė",
-                    "vacuum": "Tik dulkių siurblys"
+                    "mop": "Tik \u0161luost\u0117",
+                    "vac_and_mop": "Dulki\u0173 siurbimas ir \u0161luost\u0117",
+                    "vacuum": "Tik dulki\u0173 siurblys"
                 }
             },
             "detergent_type": {
                 "name": "Skalbiklio tipas",
                 "state": {
-                    "empty": "Tuščias",
-                    "high": "Aukštas",
-                    "low": "Žemas",
+                    "empty": "Tu\u0161\u010dias",
+                    "high": "Auk\u0161tas",
+                    "low": "\u017demas",
                     "medium": "Vidutinis"
                 }
             },
             "drying_mode": {
-                "name": "Džiovinimo režimas",
+                "name": "D\u017eiovinimo re\u017eimas",
                 "state": {
-                    "iron": "Geležis",
-                    "none": "Be džiovinimo",
+                    "iron": "Gele\u017eis",
+                    "none": "Be d\u017eiovinimo",
                     "quick": "Greita",
-                    "store": "Parduotuvė",
-                    "time_dry": "Džiūvimo laikas"
+                    "store": "Parduotuv\u0117",
+                    "time_dry": "D\u017ei\u016bvimo laikas"
                 }
             },
             "dust_collection_mode": {
-                "name": "Tuščias režimas",
+                "name": "Tu\u0161\u010dias re\u017eimas",
                 "state": {
                     "balanced": "Subalansuotas",
-                    "light": "Šviesa",
+                    "light": "\u0160viesa",
                     "max": "Max",
-                    "smart": "Išmanusis"
+                    "smart": "I\u0161manusis"
                 }
             },
             "mode": {
-                "name": "Veikimo režimas",
+                "name": "Veikimo re\u017eimas",
                 "state": {
-                    "drain": "Nutekėjimas",
+                    "drain": "Nutek\u0117jimas",
                     "dry": "Sausas",
                     "heavy": "Sunkus",
-                    "pre_wash": "Išankstinis skalbimas",
-                    "rinse_spin": "Skalauti ir gręžti",
+                    "pre_wash": "I\u0161ankstinis skalbimas",
+                    "rinse_spin": "Skalauti ir gr\u0119\u017eti",
                     "spin": "Sukimas",
                     "wash": "Skalbti",
-                    "wash_and_dry": "Skalbti ir džiovinti"
+                    "wash_and_dry": "Skalbti ir d\u017eiovinti"
                 }
             },
             "mop_intensity": {
-                "name": "Šluostės intensyvumas",
+                "name": "\u0160luost\u0117s intensyvumas",
                 "state": {
                     "custom": "Pasirinktinis",
                     "custom_water_flow": "Pasirinktinis vandens srautas",
                     "extreme": "Ekstremalus",
-                    "high": "Aukštas",
+                    "high": "Auk\u0161tas",
                     "intense": "Intensyvus",
-                    "low": "Žemas",
+                    "low": "\u017demas",
                     "max": "Max",
                     "medium": "Vidutinis",
-                    "mild": "Švelnus",
+                    "mild": "\u0160velnus",
                     "min": "Min",
                     "moderate": "Vidutinis",
-                    "off": "Išjungta",
+                    "off": "I\u0161jungta",
                     "slight": "Nedidelis",
-                    "smart_mode": "Išmanusis planas",
+                    "smart_mode": "I\u0161manusis planas",
                     "standard": "Standartinis",
-                    "vac_followed_by_mop": "Siurbimas, po to šluostė"
+                    "vac_followed_by_mop": "Siurbimas, po to \u0161luost\u0117"
                 }
             },
             "mop_mode": {
-                "name": "Šluostės režimas",
+                "name": "\u0160luost\u0117s re\u017eimas",
                 "state": {
                     "custom": "Pasirinktinis",
                     "deep": "Giliai",
                     "deep_plus": "Giliai+",
                     "fast": "Greitai",
-                    "smart_mode": "Išmanusis planas",
+                    "smart_mode": "I\u0161manusis planas",
                     "standard": "Standartinis"
                 }
             },
@@ -198,37 +201,37 @@
                 "state": {
                     "air_refresh": "Oro gaivinimas",
                     "anti_allergen": "Antialerginis",
-                    "anti_mites": "Nuo erkių",
-                    "baby_care": "Kūdikių priežiūra",
-                    "bedding": "Patalynė",
+                    "anti_mites": "Nuo erki\u0173",
+                    "baby_care": "K\u016bdiki\u0173 prie\u017ei\u016bra",
+                    "bedding": "Patalyn\u0117",
                     "boiling_wash": "Verdantis plovimas",
-                    "bra": "Liemenėlė",
-                    "cotton_linen": "Medvilnė/Linas",
+                    "bra": "Liemen\u0117l\u0117",
+                    "cotton_linen": "Medviln\u0117/Linas",
                     "custom": "Pasirinktinis",
-                    "down": "Žemyn",
-                    "down_clean": "Švarus žemyn",
+                    "down": "\u017demyn",
+                    "down_clean": "\u0160varus \u017eemyn",
                     "exo_40_60": "Exo 40/60",
-                    "gentle": "Švelnus",
+                    "gentle": "\u0160velnus",
                     "intensive": "Intensyvus",
-                    "new_clothes": "Nauji drabužiai",
+                    "new_clothes": "Nauji drabu\u017eiai",
                     "night": "Naktis",
-                    "panties": "Kelnaitės",
+                    "panties": "Kelnait\u0117s",
                     "quick": "Greita",
                     "rinse_and_spin": "Skalauti ir sukti",
                     "sanitize": "Dezinfekuoti",
                     "season": "Sezonas",
-                    "shirts": "Marškiniai",
-                    "silk": "Šilkas",
-                    "socks": "Kojinės",
-                    "sportswear": "Sportinė apranga",
-                    "stain_removal": "Dėmių šalinimas",
+                    "shirts": "Mar\u0161kiniai",
+                    "silk": "\u0160ilkas",
+                    "socks": "Kojin\u0117s",
+                    "sportswear": "Sportin\u0117 apranga",
+                    "stain_removal": "D\u0117mi\u0173 \u0161alinimas",
                     "standard": "Standartinis",
                     "synthetics": "Sintetika",
-                    "t_shirts": "Marškinėliai",
-                    "towels": "Rankšluosčiai",
-                    "twenty_c": "20°C",
-                    "underwear": "Apatiniai drabužiai",
-                    "warming": "Šildymas",
+                    "t_shirts": "Mar\u0161kin\u0117liai",
+                    "towels": "Rank\u0161luos\u010diai",
+                    "twenty_c": "20\u00b0C",
+                    "underwear": "Apatiniai drabu\u017eiai",
+                    "warming": "\u0160ildymas",
                     "wool": "Vilna"
                 }
             },
@@ -244,14 +247,14 @@
                 }
             },
             "selected_map": {
-                "name": "Pasirinktas žemėlapis"
+                "name": "Pasirinktas \u017eem\u0117lapis"
             },
             "softener_type": {
-                "name": "Minkštiklio tipas",
+                "name": "Mink\u0161tiklio tipas",
                 "state": {
-                    "empty": "Tuščias",
-                    "high": "Aukštas",
-                    "low": "Žemas",
+                    "empty": "Tu\u0161\u010dias",
+                    "high": "Auk\u0161tas",
+                    "low": "\u017demas",
                     "medium": "Vidutinis"
                 }
             },
@@ -267,21 +270,21 @@
                 }
             },
             "temperature": {
-                "name": "Vandens temperatūra",
+                "name": "Vandens temperat\u016bra",
                 "state": {
-                    "30": "30°C",
-                    "40": "40°C",
-                    "60": "60°C",
-                    "90": "90°C",
+                    "30": "30\u00b0C",
+                    "40": "40\u00b0C",
+                    "60": "60\u00b0C",
+                    "90": "90\u00b0C",
                     "auto": "Automatinis",
-                    "cold": "Šalta"
+                    "cold": "\u0160alta"
                 }
             },
             "water_flow": {
                 "name": "Vandens srautas",
                 "state": {
-                    "high": "Aukštas",
-                    "low": "Žemas",
+                    "high": "Auk\u0161tas",
+                    "low": "\u017demas",
                     "medium": "Vidutinis"
                 }
             }
@@ -290,50 +293,50 @@
             "a01_error": {
                 "name": "Klaida",
                 "state": {
-                    "battery_temperature_protection": "Baterijos temperatūros apsauga",
-                    "battery_temperature_protection_2": "Baterijos temperatūros apsauga",
-                    "battery_temperature_protection_e0": "Temperatūros apsauga",
-                    "battery_under_10": "Baterija mažiau nei 10 %",
-                    "clean_head_entangled": "Valymo galvutė įsipainiojusi",
-                    "clean_head_too_hot": "Valymo galvutė per karšta.",
-                    "clean_tank_empty": "Išvalykite tuščią baką",
-                    "cleaning_head_blocked": "Užblokuota valymo galvutė",
-                    "dirty_charging_contacts": "Nuvalykite įkrovimo kontaktus",
-                    "dirty_tank_full": "Nešvarus bakas pilnas",
+                    "battery_temperature_protection": "Baterijos temperat\u016bros apsauga",
+                    "battery_temperature_protection_2": "Baterijos temperat\u016bros apsauga",
+                    "battery_temperature_protection_e0": "Temperat\u016bros apsauga",
+                    "battery_under_10": "Baterija ma\u017eiau nei 10 %",
+                    "clean_head_entangled": "Valymo galvut\u0117 \u012fsipainiojusi",
+                    "clean_head_too_hot": "Valymo galvut\u0117 per kar\u0161ta.",
+                    "clean_tank_empty": "I\u0161valykite tu\u0161\u010di\u0105 bak\u0105",
+                    "cleaning_head_blocked": "U\u017eblokuota valymo galvut\u0117",
+                    "dirty_charging_contacts": "Nuvalykite \u012fkrovimo kontaktus",
+                    "dirty_tank_full": "Ne\u0161varus bakas pilnas",
                     "fan_protection_e4": "Ventiliatoriaus apsauga",
                     "fan_protection_e5": "Ventiliatoriaus apsauga",
                     "fan_protection_e9": "Ventiliatoriaus apsauga",
                     "low_battery": "Senka baterija",
-                    "none": "Nė vienas",
+                    "none": "N\u0117 vienas",
                     "power_adapter_error": "Maitinimo adapterio klaida",
-                    "temperature_protection": "Temperatūros apsauga",
-                    "water_level_sensor_stuck": "Užstrigo vandens lygio jutiklis."
+                    "temperature_protection": "Temperat\u016bros apsauga",
+                    "water_level_sensor_stuck": "U\u017estrigo vandens lygio jutiklis."
                 }
             },
             "a01_status": {
-                "name": "Būsena",
+                "name": "B\u016bsena",
                 "state": {
-                    "charging": "Įkrovimas",
-                    "drying": "Džiovinimas",
-                    "dusting_mode": "Dulkių šalinimo režimas",
+                    "charging": "\u012ekrovimas",
+                    "drying": "D\u017eiovinimas",
+                    "dusting_mode": "Dulki\u0173 \u0161alinimo re\u017eimas",
                     "fetch_failed": "Gauti nepavyko",
                     "fetching": "Parsisiuntimas",
-                    "mop_washing": "Plauna šluostę",
-                    "mop_washing_paused": "Šluostės plovimas pristabdytas",
-                    "ready": "Paruošta",
+                    "mop_washing": "Plauna \u0161luost\u0119",
+                    "mop_washing_paused": "\u0160luost\u0117s plovimas pristabdytas",
+                    "ready": "Paruo\u0161ta",
                     "reserving": "Rezervavimas",
-                    "self_clean_cleaning": "Savaime išsivalantis valymas",
+                    "self_clean_cleaning": "Savaime i\u0161sivalantis valymas",
                     "self_clean_deep_cleaning": "Savaiminis giluminis valymas",
-                    "self_clean_dehydrating": "Savaiminio valymo džiovinimas",
+                    "self_clean_dehydrating": "Savaiminio valymo d\u017eiovinimas",
                     "self_clean_rinsing": "Savaiminis skalavimas",
-                    "unknown": "Nežinomas",
+                    "unknown": "Ne\u017einomas",
                     "updating": "Atnaujinama",
-                    "ventilating": "Vėdinimas",
+                    "ventilating": "V\u0117dinimas",
                     "washing": "Skalbimas"
                 }
             },
             "brush_remaining": {
-                "name": "Ritinėlis į kairę"
+                "name": "Ritin\u0117lis \u012f kair\u0119"
             },
             "clean_percent": {
                 "name": "Valymo eiga"
@@ -342,27 +345,27 @@
                 "name": "Valymo zona"
             },
             "cleaning_brush_time_left": {
-                "name": "Likęs techninės priežiūros šepečio laikas"
+                "name": "Lik\u0119s technin\u0117s prie\u017ei\u016bros \u0161epe\u010dio laikas"
             },
             "cleaning_time": {
                 "name": "Valymo laikas"
             },
             "countdown": {
-                "name": "Atgalinis skaičiavimas"
+                "name": "Atgalinis skai\u010diavimas"
             },
             "current_room": {
                 "name": "Dabartinis kambarys"
             },
             "dock_error": {
-                "name": "Stotelės klaida",
+                "name": "Stotel\u0117s klaida",
                 "state": {
-                    "cleaning_tank_full_or_blocked": "Valymo bakas pilnas arba užsikimšęs",
-                    "dirty_tank_latch_open": "Nešvarus bako fiksatorius atidarytas",
-                    "duct_blockage": "Kanalo užsikimšimas",
-                    "no_dustbin": "Nėra šiukšliadėžės",
+                    "cleaning_tank_full_or_blocked": "Valymo bakas pilnas arba u\u017esikim\u0161\u0119s",
+                    "dirty_tank_latch_open": "Ne\u0161varus bako fiksatorius atidarytas",
+                    "duct_blockage": "Kanalo u\u017esikim\u0161imas",
+                    "no_dustbin": "N\u0117ra \u0161iuk\u0161liad\u0117\u017e\u0117s",
                     "ok": "Gerai",
-                    "waste_water_tank_full": "Pilnas nuotekų bakas",
-                    "water_empty": "Vanduo tuščias"
+                    "waste_water_tank_full": "Pilnas nuotek\u0173 bakas",
+                    "water_empty": "Vanduo tu\u0161\u010dias"
                 }
             },
             "filter_time_left": {
@@ -375,73 +378,73 @@
                 "name": "Prasideda paskutinis valymas"
             },
             "main_brush_time_left": {
-                "name": "Liko pagrindinio šepečio laikas"
+                "name": "Liko pagrindinio \u0161epe\u010dio laikas"
             },
             "mop_drying_remaining_time": {
-                "name": "Likęs šluostės džiovinimo laikas"
+                "name": "Lik\u0119s \u0161luost\u0117s d\u017eiovinimo laikas"
             },
             "mop_life_time_left": {
-                "name": "Likęs šluostės naudojimo laikas"
+                "name": "Lik\u0119s \u0161luost\u0117s naudojimo laikas"
             },
             "q7_status": {
-                "name": "Būsena",
+                "name": "B\u016bsena",
                 "state": {
-                    "charging": "Įkrovimas",
-                    "docking": "Statosi prie stotelės",
-                    "mop_airdrying": "Šluostės džiovinimas oru",
-                    "mop_cleaning": "Šluosčių valymas",
-                    "moping": "Šluostymas",
+                    "charging": "\u012ekrovimas",
+                    "docking": "Statosi prie stotel\u0117s",
+                    "mop_airdrying": "\u0160luost\u0117s d\u017eiovinimas oru",
+                    "mop_cleaning": "\u0160luos\u010di\u0173 valymas",
+                    "moping": "\u0160luostymas",
                     "paused": "Pristabdyta",
                     "sleeping": "Miegas",
-                    "sweep_moping": "Šlavimo šluostė",
-                    "sweep_moping_2": "Šlavimo šluostė",
+                    "sweep_moping": "\u0160lavimo \u0161luost\u0117",
+                    "sweep_moping_2": "\u0160lavimo \u0161luost\u0117",
                     "updating": "Atnaujinama",
-                    "waiting_for_orders": "Laukiama užsakymų"
+                    "waiting_for_orders": "Laukiama u\u017esakym\u0173"
                 }
             },
             "sensor_time_left": {
                 "name": "Liko jutiklio laikas"
             },
             "side_brush_time_left": {
-                "name": "Liko šoninio šepetėlio laikas"
+                "name": "Liko \u0161oninio \u0161epet\u0117lio laikas"
             },
             "status": {
-                "name": "Būsena",
+                "name": "B\u016bsena",
                 "state": {
-                    "air_drying_stopping": "Oro džiovinimo sustabdymas",
-                    "attaching_the_mop": "Šluostės pritvirtinimas",
-                    "charger_disconnected": "Įkroviklis atjungtas",
-                    "charging": "Įkrovimas",
-                    "charging_complete": "Įkrovimas baigtas",
-                    "charging_problem": "Įkrovimo problema",
+                    "air_drying_stopping": "Oro d\u017eiovinimo sustabdymas",
+                    "attaching_the_mop": "\u0160luost\u0117s pritvirtinimas",
+                    "charger_disconnected": "\u012ekroviklis atjungtas",
+                    "charging": "\u012ekrovimas",
+                    "charging_complete": "\u012ekrovimas baigtas",
+                    "charging_problem": "\u012ekrovimo problema",
                     "cleaning": "Valymas",
-                    "detaching_the_mop": "Šluostės nuėmimas",
-                    "device_offline": "Prietaisas neprisijungęs",
-                    "docking": "Statosi prie stotelės",
-                    "egg_attack": "Kupidono režimas",
-                    "emptying_the_bin": "Šiukšliadėžės ištuštinimas",
+                    "detaching_the_mop": "\u0160luost\u0117s nu\u0117mimas",
+                    "device_offline": "Prietaisas neprisijung\u0119s",
+                    "docking": "Statosi prie stotel\u0117s",
+                    "egg_attack": "Kupidono re\u017eimas",
+                    "emptying_the_bin": "\u0160iuk\u0161liad\u0117\u017e\u0117s i\u0161tu\u0161tinimas",
                     "error": "Klaida",
-                    "going_to_target": "Eina į tikslą",
-                    "going_to_wash_the_mop": "Eina plauti šluostės",
+                    "going_to_target": "Eina \u012f tiksl\u0105",
+                    "going_to_wash_the_mop": "Eina plauti \u0161luost\u0117s",
                     "idle": "Nedaroma nieko",
-                    "locked": "Užrakinta",
-                    "manual_mode": "Rankinis režimas",
-                    "mapping": "Žemėlapių sudarymas",
+                    "locked": "U\u017erakinta",
+                    "manual_mode": "Rankinis re\u017eimas",
+                    "mapping": "\u017dem\u0117lapi\u0173 sudarymas",
                     "paused": "Pristabdyta",
                     "remote_control_active": "Nuotolinio valdymo pultas aktyvus",
-                    "returning_home": "Grįžimas namo",
-                    "segment_cleaning": "Segmentų valymas",
-                    "shutting_down": "Išsijungia",
-                    "spot_cleaning": "Taškų valymas",
+                    "returning_home": "Gr\u012f\u017eimas namo",
+                    "segment_cleaning": "Segment\u0173 valymas",
+                    "shutting_down": "I\u0161sijungia",
+                    "spot_cleaning": "Ta\u0161k\u0173 valymas",
                     "starting": "Pradedama",
-                    "unknown": "Nežinomas",
+                    "unknown": "Ne\u017einomas",
                     "updating": "Atnaujinama",
-                    "washing_the_mop": "Plaunama šluostė",
+                    "washing_the_mop": "Plaunama \u0161luost\u0117",
                     "zoned_cleaning": "Zoninis valymas"
                 }
             },
             "strainer_time_left": {
-                "name": "Likęs filtro laikas"
+                "name": "Lik\u0119s filtro laikas"
             },
             "times_after_clean": {
                 "name": "Laikas po valymo"
@@ -450,58 +453,58 @@
                 "name": "Bendras valymo plotas"
             },
             "total_cleaning_count": {
-                "name": "Bendras valymo skaičius"
+                "name": "Bendras valymo skai\u010dius"
             },
             "total_cleaning_time": {
                 "name": "Bendras valymo laikas"
             },
             "vacuum_error": {
-                "name": "Dulkių siurblio klaida",
+                "name": "Dulki\u0173 siurblio klaida",
                 "state": {
                     "battery_error": "Akumuliatoriaus klaida",
-                    "bumper_stuck": "Buferis užstrigo",
+                    "bumper_stuck": "Buferis u\u017estrigo",
                     "cannot_cross_carpet": "Negalima kirsti kilimo",
-                    "charging_error": "Įkrovimo klaida",
+                    "charging_error": "\u012ekrovimo klaida",
                     "clear_brush_exception": "Patikrinkite, ar tinkamai sumontuotas vandens filtras",
-                    "clear_brush_exception_2": "Padėties nustatymo mygtuko klaida",
-                    "clear_water_box_exception": "Švaraus vandens bakas tuščias",
-                    "clear_water_box_hoare": "Patikrinkite švaraus vandens baką",
+                    "clear_brush_exception_2": "Pad\u0117ties nustatymo mygtuko klaida",
+                    "clear_water_box_exception": "\u0160varaus vandens bakas tu\u0161\u010dias",
+                    "clear_water_box_hoare": "Patikrinkite \u0161varaus vandens bak\u0105",
                     "cliff_sensor_error": "Uolos jutiklio klaida",
-                    "collect_dust_error_3": "Išvalykite automatiškai išsituštinančią stotelę",
-                    "collect_dust_error_4": "Automatinio ištuštinimo doko įtampos klaida",
+                    "collect_dust_error_3": "I\u0161valykite automati\u0161kai i\u0161situ\u0161tinan\u010di\u0105 stotel\u0119",
+                    "collect_dust_error_4": "Automatinio i\u0161tu\u0161tinimo doko \u012ftampos klaida",
                     "compass_error": "Aptiktas stiprus magnetinis laukas",
-                    "dirty_water_box_hoare": "Patikrinkite nešvaraus vandens baką",
-                    "dock": "Stotelė neprijungta prie maitinimo",
-                    "dock_locator_error": "Stotelės vietos nustatymo klaida",
+                    "dirty_water_box_hoare": "Patikrinkite ne\u0161varaus vandens bak\u0105",
+                    "dock": "Stotel\u0117 neprijungta prie maitinimo",
+                    "dock_locator_error": "Stotel\u0117s vietos nustatymo klaida",
                     "fan_error": "Ventiliatoriaus klaida",
-                    "filter_blocked": "Filtras užblokuotas",
-                    "filter_screen_exception": "Išvalykite stotelės vandens filtrą",
-                    "internal_error": "Vidinė klaida",
+                    "filter_blocked": "Filtras u\u017eblokuotas",
+                    "filter_screen_exception": "I\u0161valykite stotel\u0117s vandens filtr\u0105",
+                    "internal_error": "Vidin\u0117 klaida",
                     "invisible_wall_detected": "Aptikta nematoma siena",
-                    "lidar_blocked": "Lidaras užblokuotas",
+                    "lidar_blocked": "Lidaras u\u017eblokuotas",
                     "light_touch": "Sieninio jutiklio klaida",
                     "low_battery": "Senka baterija",
-                    "main_brush_jammed": "Užstrigo pagrindinis šepetys",
-                    "mopping_roller_1": "Gali būti užstrigęs plovimo volelis",
-                    "mopping_roller_2": "Gali būti užstrigęs plovimo volelis",
+                    "main_brush_jammed": "U\u017estrigo pagrindinis \u0161epetys",
+                    "mopping_roller_1": "Gali b\u016bti u\u017estrig\u0119s plovimo volelis",
+                    "mopping_roller_2": "Gali b\u016bti u\u017estrig\u0119s plovimo volelis",
                     "mopping_roller_error_2": "Netinkamai nuleistas plovimo volelis",
-                    "no_dustbin": "Jokios šiukšliadėžės",
-                    "nogo_zone_detected": "Aptikta draudžiama zona",
-                    "none": "Nė vienas",
-                    "return_to_dock_fail": "Grįžti į stotelę nepavyko",
+                    "no_dustbin": "Jokios \u0161iuk\u0161liad\u0117\u017e\u0117s",
+                    "nogo_zone_detected": "Aptikta draud\u017eiama zona",
+                    "none": "N\u0117 vienas",
+                    "return_to_dock_fail": "Gr\u012f\u017eti \u012f stotel\u0119 nepavyko",
                     "robot_on_carpet": "Robotas ant kilimo",
-                    "robot_tilted": "Robotas pasviręs",
-                    "robot_trapped": "Robotas įstrigęs",
-                    "side_brush_error": "Šoninio šepečio klaida",
-                    "side_brush_jammed": "Užstrigo šoninis šepetys",
-                    "sink_strainer_hoare": "Iš naujo įdėkite vandens filtrą",
-                    "strainer_error": "Filtras šlapias arba užsikimšęs",
-                    "temperature_protection": "Prietaiso temperatūros apsauga",
+                    "robot_tilted": "Robotas pasvir\u0119s",
+                    "robot_trapped": "Robotas \u012fstrig\u0119s",
+                    "side_brush_error": "\u0160oninio \u0161epe\u010dio klaida",
+                    "side_brush_jammed": "U\u017estrigo \u0161oninis \u0161epetys",
+                    "sink_strainer_hoare": "I\u0161 naujo \u012fd\u0117kite vandens filtr\u0105",
+                    "strainer_error": "Filtras \u0161lapias arba u\u017esikim\u0161\u0119s",
+                    "temperature_protection": "Prietaiso temperat\u016bros apsauga",
                     "vertical_bumper_pressed": "Prispaustas vertikalus buferis",
-                    "vibrarise_jammed": "„VibraRise“ užstrigo",
+                    "vibrarise_jammed": "\u201eVibraRise\u201c u\u017estrigo",
                     "visual_sensor": "Kameros klaida",
-                    "wall_sensor_dirty": "Sieninis jutiklis nešvarus",
-                    "wheels_jammed": "Užstrigo ratai",
+                    "wall_sensor_dirty": "Sieninis jutiklis ne\u0161varus",
+                    "wheels_jammed": "U\u017estrigo ratai",
                     "wheels_suspended": "Pakabinami ratai"
                 }
             },
@@ -512,58 +515,58 @@
                 "name": "Klaida",
                 "state": {
                     "communication_error": "Sujungimo klaida",
-                    "door_lock_error": "Durų spynos klaida",
-                    "drain_error": "Išleidimo klaida",
-                    "drying_error": "Džiovinimo klaida: patikrinkite oro įleidimo temperatūros jutiklį",
-                    "drying_error_e_12": "Džiovinimo klaida: patikrinkite oro išleidimo temperatūros jutiklį",
-                    "drying_error_e_13": "Džiovinimo klaida E13",
-                    "drying_error_e_14": "Džiovinimo klaida: patikrinkite įleidimo kondensatoriaus temperatūros jutiklį",
-                    "drying_error_e_15": "Džiovinimo klaida: patikrinkite kaitinimo elementą arba sukamąjį padėklą",
-                    "drying_error_e_16": "Džiovinimo klaida: patikrinkite džiovinimo ventiliatorių",
-                    "drying_error_restart": "Džiovinimo klaida: paleiskite skalbimo mašiną iš naujo",
-                    "drying_error_water_flow": "Džiovinimo klaida: patikrinkite vandens srautą",
-                    "heating_error": "Šildymo klaida",
+                    "door_lock_error": "Dur\u0173 spynos klaida",
+                    "drain_error": "I\u0161leidimo klaida",
+                    "drying_error": "D\u017eiovinimo klaida: patikrinkite oro \u012fleidimo temperat\u016bros jutikl\u012f",
+                    "drying_error_e_12": "D\u017eiovinimo klaida: patikrinkite oro i\u0161leidimo temperat\u016bros jutikl\u012f",
+                    "drying_error_e_13": "D\u017eiovinimo klaida E13",
+                    "drying_error_e_14": "D\u017eiovinimo klaida: patikrinkite \u012fleidimo kondensatoriaus temperat\u016bros jutikl\u012f",
+                    "drying_error_e_15": "D\u017eiovinimo klaida: patikrinkite kaitinimo element\u0105 arba sukam\u0105j\u012f pad\u0117kl\u0105",
+                    "drying_error_e_16": "D\u017eiovinimo klaida: patikrinkite d\u017eiovinimo ventiliatori\u0173",
+                    "drying_error_restart": "D\u017eiovinimo klaida: paleiskite skalbimo ma\u0161in\u0105 i\u0161 naujo",
+                    "drying_error_water_flow": "D\u017eiovinimo klaida: patikrinkite vandens sraut\u0105",
+                    "heating_error": "\u0160ildymo klaida",
                     "inverter_error": "Inverterio klaida",
-                    "none": "Nė vienas",
+                    "none": "N\u0117 vienas",
                     "refill_error": "Papildymo klaida",
-                    "spin_error": "Pertvarkykite drabužius",
-                    "temperature_error": "Temperatūros klaida",
+                    "spin_error": "Pertvarkykite drabu\u017eius",
+                    "temperature_error": "Temperat\u016bros klaida",
                     "water_level_error": "Vandens lygio klaida"
                 }
             },
             "zeo_state": {
-                "name": "Būsena",
+                "name": "B\u016bsena",
                 "state": {
-                    "aftercare": "Priežiūra po procedūros",
-                    "cooling": "Vėsinimas",
+                    "aftercare": "Prie\u017ei\u016bra po proced\u016bros",
+                    "cooling": "V\u0117sinimas",
                     "done": "Atlikta",
-                    "drying": "Džiovinimas",
+                    "drying": "D\u017eiovinimas",
                     "rinsing": "Skalavimas",
                     "soaking": "Mirkymas",
                     "spinning": "Verpimo",
-                    "standby": "Budėjimo režimas",
-                    "under_delay_start": "Atidėtas startas",
-                    "waiting_for_aftercare": "Laukiama tolesnės priežiūros",
+                    "standby": "Bud\u0117jimo re\u017eimas",
+                    "under_delay_start": "Atid\u0117tas startas",
+                    "waiting_for_aftercare": "Laukiama tolesn\u0117s prie\u017ei\u016bros",
                     "washing": "Skalbimas",
-                    "weighing": "Svėrimas"
+                    "weighing": "Sv\u0117rimas"
                 }
             }
         },
         "switch": {
             "child_lock": {
-                "name": "Užraktas nuo vaikų"
+                "name": "U\u017eraktas nuo vaik\u0173"
             },
             "dnd_switch": {
                 "name": "Netrukdyti"
             },
             "off_peak_switch": {
-                "name": "Įkrovimas ne piko metu"
+                "name": "\u012ekrovimas ne piko metu"
             },
             "sound_setting": {
                 "name": "Garso nustatymas"
             },
             "status_indicator": {
-                "name": "Būsenos indikatoriaus lemputė"
+                "name": "B\u016bsenos indikatoriaus lemput\u0117"
             }
         },
         "time": {
@@ -571,13 +574,13 @@
                 "name": "Netrukdyti pabaiga"
             },
             "dnd_start_time": {
-                "name": "Pradėkite netrukdyti"
+                "name": "Prad\u0117kite netrukdyti"
             },
             "off_peak_end": {
                 "name": "Ne piko pabaiga"
             },
             "off_peak_start": {
-                "name": "Pradžia ne piko metu"
+                "name": "Prad\u017eia ne piko metu"
             }
         },
         "vacuum": {
@@ -588,15 +591,15 @@
                             "auto": "Automatinis",
                             "balanced": "Subalansuotas",
                             "custom": "Pasirinktinis",
-                            "gentle": "Švelnus",
+                            "gentle": "\u0160velnus",
                             "max": "Max",
                             "max_plus": "Max plius",
                             "medium": "Vidutinis",
-                            "off": "Išjungta",
-                            "off_raise_main_brush": "Išjungta (pakelta šepetys)",
+                            "off": "I\u0161jungta",
+                            "off_raise_main_brush": "I\u0161jungta (pakelta \u0161epetys)",
                             "quiet": "Tyliai",
                             "silent": "Tyli",
-                            "smart_mode": "Išmanusis planas",
+                            "smart_mode": "I\u0161manusis planas",
                             "standard": "Standartinis",
                             "turbo": "Turbo"
                         }
@@ -613,28 +616,37 @@
             "message": "Klaida skambinant {command}"
         },
         "home_data_fail": {
-            "message": "Nepavyko gauti Roborock namų duomenų"
+            "message": "Nepavyko gauti Roborock nam\u0173 duomen\u0173"
+        },
+        "invalid_command": {
+            "message": "Neteisinga komanda {command}"
         },
         "invalid_credentials": {
             "message": "Netinkami kredencialai."
         },
+        "invalid_fan_speed": {
+            "message": "Neteisingas ventiliatoriaus greitis: {fan_speed}"
+        },
         "invalid_user_agreement": {
-            "message": "Naudotojo sutartis turi būti priimta dar kartą. Atidarykite Roborock programą ir sutikite su sutartimi."
+            "message": "Naudotojo sutartis turi b\u016bti priimta dar kart\u0105. Atidarykite Roborock program\u0105 ir sutikite su sutartimi."
         },
         "map_failure": {
-            "message": "Kuriant žemėlapį įvyko klaida"
+            "message": "Kuriant \u017eem\u0117lap\u012f \u012fvyko klaida"
         },
         "mqtt_unauthorized": {
-            "message": "Roborock MQTT serveriai atmetė ryšį dėl greičio apribojimo arba negaliojančių prisijungimo duomenų. Galite pabandyti iš naujo autentifikuotis arba palaukti ir iš naujo įkelti integraciją."
+            "message": "Roborock MQTT serveriai atmet\u0117 ry\u0161\u012f d\u0117l grei\u010dio apribojimo arba negaliojan\u010di\u0173 prisijungimo duomen\u0173. Galite pabandyti i\u0161 naujo autentifikuotis arba palaukti ir i\u0161 naujo \u012fkelti integracij\u0105."
         },
         "no_coordinators": {
-            "message": "Jokių prietaisų nepavyko sėkmingai nustatyti"
+            "message": "Joki\u0173 prietais\u0173 nepavyko s\u0117kmingai nustatyti"
         },
         "no_user_agreement": {
-            "message": "Jūs neturite galiojančios vartotojo sutarties. Atidarykite Roborock programą ir sutikite su sutartimi."
+            "message": "J\u016bs neturite galiojan\u010dios vartotojo sutarties. Atidarykite Roborock program\u0105 ir sutikite su sutartimi."
         },
         "position_not_found": {
-            "message": "Roboto padėtis nerasta"
+            "message": "Roboto pad\u0117tis nerasta"
+        },
+        "request_fail": {
+            "message": "Nepavyko pateikti duomen\u0173 u\u017eklausos"
         },
         "segment_id_parse_error": {
             "message": "Neteisingas segmento ID formatas: {segment_id}"
@@ -643,15 +655,15 @@
             "message": "Nepavyko nustatyti pasirinktos parinkties"
         },
         "update_data_fail": {
-            "message": "Nepavyko atnaujinti duomenų"
+            "message": "Nepavyko atnaujinti duomen\u0173"
         },
         "update_options_failed": {
-            "message": "Nepavyko atnaujinti Roborock parinkčių"
+            "message": "Nepavyko atnaujinti Roborock parink\u010di\u0173"
         }
     },
     "issues": {
         "cloud_api_used": {
-            "description": "Roborock integracija negali tiesiogiai prisijungti prie {device_name} ir grįžta prie debesies API. Tai nerekomenduojama, nes gali būti ribojamas greitis. Padarykite savo dulkių siurblį prieinamą vietiniame tinkle per Home Assistant instanciją.",
+            "description": "Roborock integracija negali tiesiogiai prisijungti prie {device_name} ir gr\u012f\u017eta prie debesies API. Tai nerekomenduojama, nes gali b\u016bti ribojamas greitis. Padarykite savo dulki\u0173 siurbl\u012f prieinam\u0105 vietiniame tinkle per Home Assistant instancij\u0105.",
             "title": "Naudojama debesies API"
         }
     },
@@ -659,46 +671,46 @@
         "step": {
             "drawables": {
                 "data": {
-                    "charger": "Įkroviklis",
-                    "cleaned_area": "Išvalytas plotas",
-                    "goto_path": "Eiti į kelią",
-                    "ignored_obstacles": "Nepaisoma kliūčių",
-                    "ignored_obstacles_with_photo": "Nepaisoma kliūčių su nuotrauka",
-                    "mop_path": "Šluostės kelias",
-                    "no_carpet_zones": "Nėra kilimų zonų",
-                    "no_go_zones": "Draudžiamos zonos",
-                    "no_mopping_zones": "Nėra valymo zonų",
-                    "obstacles": "Kliūtys",
-                    "obstacles_with_photo": "Kliūtys su nuotrauka",
+                    "charger": "\u012ekroviklis",
+                    "cleaned_area": "I\u0161valytas plotas",
+                    "goto_path": "Eiti \u012f keli\u0105",
+                    "ignored_obstacles": "Nepaisoma kli\u016b\u010di\u0173",
+                    "ignored_obstacles_with_photo": "Nepaisoma kli\u016b\u010di\u0173 su nuotrauka",
+                    "mop_path": "\u0160luost\u0117s kelias",
+                    "no_carpet_zones": "N\u0117ra kilim\u0173 zon\u0173",
+                    "no_go_zones": "Draud\u017eiamos zonos",
+                    "no_mopping_zones": "N\u0117ra valymo zon\u0173",
+                    "obstacles": "Kli\u016btys",
+                    "obstacles_with_photo": "Kli\u016btys su nuotrauka",
                     "path": "Kelias",
                     "predicted_path": "Numatytas kelias",
-                    "room_names": "Kambarių pavadinimai",
-                    "show_background": "Rodyti foną",
+                    "room_names": "Kambari\u0173 pavadinimai",
+                    "show_background": "Rodyti fon\u0105",
                     "vacuum_position": "Siurblio pozicija",
                     "virtual_walls": "Virtualios sienos",
                     "zones": "Zonos"
                 },
                 "data_description": {
-                    "charger": "Žemėlapyje parodykite įkroviklį.",
-                    "cleaned_area": "Žemėlapyje parodykite išvalytą plotą.",
-                    "goto_path": "Rodyti maršrutą žemėlapyje.",
-                    "ignored_obstacles": "Rodyti nepaisomas kliūtis žemėlapyje.",
-                    "ignored_obstacles_with_photo": "Rodyti nepaisomas kliūtis su nuotraukomis žemėlapyje.",
-                    "mop_path": "Žemėlapyje parodykite šluostės kelią.",
-                    "no_carpet_zones": "Žemėlapyje parodykite zonas be kilimų.",
-                    "no_go_zones": "Rodyti draudžiamas zonas žemėlapyje.",
-                    "no_mopping_zones": "Žemėlapyje parodykite zonas, kuriose draudžiama šluoti.",
-                    "obstacles": "Rodyti kliūtis žemėlapyje.",
-                    "obstacles_with_photo": "Rodyti kliūtis su nuotraukomis žemėlapyje.",
-                    "path": "Žemėlapyje parodykite kelią.",
-                    "predicted_path": "Žemėlapyje parodykite numatytą kelią.",
-                    "room_names": "Rodyti kambarių pavadinimus žemėlapyje.",
-                    "show_background": "Pridėti foną prie žemėlapio.",
-                    "vacuum_position": "Žemėlapyje parodykite dulkių siurblio padėtį.",
-                    "virtual_walls": "Rodyti virtualias sienas žemėlapyje.",
-                    "zones": "Rodyti zonas žemėlapyje."
+                    "charger": "\u017dem\u0117lapyje parodykite \u012fkrovikl\u012f.",
+                    "cleaned_area": "\u017dem\u0117lapyje parodykite i\u0161valyt\u0105 plot\u0105.",
+                    "goto_path": "Rodyti mar\u0161rut\u0105 \u017eem\u0117lapyje.",
+                    "ignored_obstacles": "Rodyti nepaisomas kli\u016btis \u017eem\u0117lapyje.",
+                    "ignored_obstacles_with_photo": "Rodyti nepaisomas kli\u016btis su nuotraukomis \u017eem\u0117lapyje.",
+                    "mop_path": "\u017dem\u0117lapyje parodykite \u0161luost\u0117s keli\u0105.",
+                    "no_carpet_zones": "\u017dem\u0117lapyje parodykite zonas be kilim\u0173.",
+                    "no_go_zones": "Rodyti draud\u017eiamas zonas \u017eem\u0117lapyje.",
+                    "no_mopping_zones": "\u017dem\u0117lapyje parodykite zonas, kuriose draud\u017eiama \u0161luoti.",
+                    "obstacles": "Rodyti kli\u016btis \u017eem\u0117lapyje.",
+                    "obstacles_with_photo": "Rodyti kli\u016btis su nuotraukomis \u017eem\u0117lapyje.",
+                    "path": "\u017dem\u0117lapyje parodykite keli\u0105.",
+                    "predicted_path": "\u017dem\u0117lapyje parodykite numatyt\u0105 keli\u0105.",
+                    "room_names": "Rodyti kambari\u0173 pavadinimus \u017eem\u0117lapyje.",
+                    "show_background": "Prid\u0117ti fon\u0105 prie \u017eem\u0117lapio.",
+                    "vacuum_position": "\u017dem\u0117lapyje parodykite dulki\u0173 siurblio pad\u0117t\u012f.",
+                    "virtual_walls": "Rodyti virtualias sienas \u017eem\u0117lapyje.",
+                    "zones": "Rodyti zonas \u017eem\u0117lapyje."
                 },
-                "description": "Nurodykite, kuriuos subjektus piešti žemėlapyje."
+                "description": "Nurodykite, kuriuos subjektus pie\u0161ti \u017eem\u0117lapyje."
             }
         }
     },
@@ -715,26 +727,26 @@
     },
     "services": {
         "get_maps": {
-            "description": "Nuskaito jūsų įrenginio žemėlapį ir kambario informaciją.",
-            "name": "Gaukite žemėlapius"
+            "description": "Nuskaito j\u016bs\u0173 \u012frenginio \u017eem\u0117lap\u012f ir kambario informacij\u0105.",
+            "name": "Gaukite \u017eem\u0117lapius"
         },
         "get_vacuum_current_position": {
-            "description": "Nuskaito esamą dulkių siurblio padėtį.",
-            "name": "Gaukite dabartinę poziciją"
+            "description": "Nuskaito esam\u0105 dulki\u0173 siurblio pad\u0117t\u012f.",
+            "name": "Gaukite dabartin\u0119 pozicij\u0105"
         },
         "set_vacuum_goto_position": {
-            "description": "Siunčia dulkių siurblį į tam tikrą vietą.",
+            "description": "Siun\u010dia dulki\u0173 siurbl\u012f \u012f tam tikr\u0105 viet\u0105.",
             "fields": {
                 "x": {
-                    "description": "Koordinatės yra susijusios su doku. x=25500,y=25500 yra doko padėtis.",
-                    "name": "X-koordinatė"
+                    "description": "Koordinat\u0117s yra susijusios su doku. x=25500,y=25500 yra doko pad\u0117tis.",
+                    "name": "X-koordinat\u0117"
                 },
                 "y": {
-                    "description": "Koordinatės yra susijusios su doku. x=25500,y=25500 yra doko padėtis.",
-                    "name": "Y-koordinatė"
+                    "description": "Koordinat\u0117s yra susijusios su doku. x=25500,y=25500 yra doko pad\u0117tis.",
+                    "name": "Y-koordinat\u0117"
                 }
             },
-            "name": "Eiti į poziciją"
+            "name": "Eiti \u012f pozicij\u0105"
         }
     }
 }

@@ -8,12 +8,6 @@ from datetime import timedelta
 import logging
 from typing import Any
 
-# Apply Q10 runtime patch before any coordinator imports.
-# This extends Q10Status with additional DPS fields (consumables, stats, fault)
-# so the DpsDataConverter picks them up when the StatusTrait is initialized.
-from . import q10_patch as _q10_patch
-_q10_patch.apply()
-
 from roborock import (
     RoborockException,
     RoborockInvalidCredentials,
@@ -45,15 +39,16 @@ from .const import (
 )
 from .coordinator import (
     RoborockB01Q7UpdateCoordinator,
+    RoborockB01Q10UpdateCoordinator,
     RoborockConfigEntry,
     RoborockCoordinators,
     RoborockDataUpdateCoordinator,
     RoborockDataUpdateCoordinatorA01,
     RoborockDataUpdateCoordinatorB01,
     RoborockWashingMachineUpdateCoordinator,
-    RoborockB01Q10UpdateCoordinator,
     RoborockWetDryVacUpdateCoordinator,
 )
+from .models import get_device_info
 from .roborock_storage import CacheStore, async_cleanup_map_storage
 from .services import async_setup_services
 
@@ -137,8 +132,22 @@ async def async_setup_entry(hass: HomeAssistant, entry: RoborockConfigEntry) -> 
     devices = await device_manager.get_devices()
     _LOGGER.debug("Device manager found %d devices", len(devices))
 
+    # Register all discovered devices in the device registry so we can
+    # check the disabled state before creating coordinators.
+    device_registry = dr.async_get(hass)
+    for device in devices:
+        device_registry.async_get_or_create(
+            config_entry_id=entry.entry_id,
+            **get_device_info(device),
+        )
+
+    enabled_devices = [
+        device for device in devices if not _is_device_disabled(device_registry, device)
+    ]
+    _LOGGER.debug("%d of %d devices are enabled", len(enabled_devices), len(devices))
+
     coordinators = await asyncio.gather(
-        *build_setup_functions(hass, entry, devices, user_data),
+        *build_setup_functions(hass, entry, enabled_devices, user_data),
         return_exceptions=True,
     )
     v1_coords = [
@@ -161,19 +170,33 @@ async def async_setup_entry(hass: HomeAssistant, entry: RoborockConfigEntry) -> 
         for coord in coordinators
         if isinstance(coord, RoborockB01Q10UpdateCoordinator)
     ]
-    if len(v1_coords) + len(a01_coords) + len(b01_q7_coords) + len(b01_q10_coords) == 0:
+    if (
+        len(v1_coords) + len(a01_coords) + len(b01_q7_coords) + len(b01_q10_coords) == 0
+        and enabled_devices
+    ):
         raise ConfigEntryNotReady(
             "No devices were able to successfully setup",
             translation_domain=DOMAIN,
             translation_key="no_coordinators",
         )
-    entry.runtime_data = RoborockCoordinators(v1_coords, a01_coords, b01_q7_coords, b01_q10_coords)
+    entry.runtime_data = RoborockCoordinators(
+        v1_coords, a01_coords, b01_q7_coords, b01_q10_coords
+    )
 
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
 
     _remove_stale_devices(hass, entry, devices)
 
     return True
+
+
+def _is_device_disabled(
+    device_registry: dr.DeviceRegistry,
+    device: RoborockDevice,
+) -> bool:
+    """Check if a device is disabled in the device registry."""
+    device_entry = device_registry.async_get_device(identifiers={(DOMAIN, device.duid)})
+    return device_entry is not None and device_entry.disabled
 
 
 def _remove_stale_devices(
@@ -187,6 +210,8 @@ def _remove_stale_devices(
         device_registry, config_entry_id=entry.entry_id
     )
     for device in device_entries:
+        # Remove any devices that are no longer in the account.
+        # The API returns all devices, even if they are offline
         device_duids = {
             identifier[1].replace("_dock", "") for identifier in device.identifiers
         }
@@ -210,8 +235,10 @@ async def async_migrate_entry(hass: HomeAssistant, entry: RoborockConfigEntry) -
         entry.minor_version,
     )
     if entry.version > 1:
+        # Downgrade from future version
         return False
 
+    # 1->2: Migrate from unique id as email address to unique id as rruid
     if entry.minor_version == 1:
         user_data = UserData.from_dict(entry.data[CONF_USER_DATA])
         _LOGGER.debug("Updating unique id to %s", user_data.rruid)
@@ -237,6 +264,7 @@ def build_setup_functions(
         RoborockDataUpdateCoordinator
         | RoborockDataUpdateCoordinatorA01
         | RoborockDataUpdateCoordinatorB01
+        | RoborockB01Q10UpdateCoordinator
         | None,
     ]
 ]:
@@ -245,6 +273,7 @@ def build_setup_functions(
         RoborockDataUpdateCoordinator
         | RoborockDataUpdateCoordinatorA01
         | RoborockDataUpdateCoordinatorB01
+        | RoborockB01Q10UpdateCoordinator
     ] = []
     for device in devices:
         _LOGGER.debug("Creating device %s: %s", device.name, device)
@@ -286,11 +315,13 @@ def build_setup_functions(
 async def setup_coordinator(
     coordinator: RoborockDataUpdateCoordinator
     | RoborockDataUpdateCoordinatorA01
-    | RoborockDataUpdateCoordinatorB01,
+    | RoborockDataUpdateCoordinatorB01
+    | RoborockB01Q10UpdateCoordinator,
 ) -> (
     RoborockDataUpdateCoordinator
     | RoborockDataUpdateCoordinatorA01
     | RoborockDataUpdateCoordinatorB01
+    | RoborockB01Q10UpdateCoordinator
     | None
 ):
     """Set up a single coordinator."""

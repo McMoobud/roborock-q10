@@ -1,1 +1,530 @@
-{"config":{"abort":{"already_configured_account":"アカウントはすでに設定されています","reauth_successful":"再認証に成功しました","wrong_account":"アカウントが間違っています: 正しいアカウントで認証してください。"},"error":{"invalid_code":"入力したコードは間違っています。確認してもう一度お試しください。","invalid_email":"入力したメールアドレスに関連付けられたアカウントはありません。もう一度お試しください。","invalid_email_format":"Eメールの形式に問題があります - もう一度試してください。","too_frequent_code_requests":"リクエストしたコードが多すぎます。しばらくしてからもう一度お試しください。","unknown":"予期しないエラー","unknown_roborock":"不明な Roborock 例外が発生しました。ログを確認してください。","unknown_url":"Roborock アカウントの正しい URL を判別する際に問題が発生しました。ログを確認してください。"},"step":{"code":{"data":{"code":"確認コード"},"data_description":{"code":"あなたのEメールに送信された認証コード。"},"description":"メールに送信された確認コードを入力してください"},"reauth_confirm":{"description":"Roborock 統合ではアカウントを再認証する必要があります","title":"{name} の認証の有効期限が切れました"},"user":{"data":{"username":"Eメール"},"data_description":{"username":"Roborock アプリにサインインするために使用されるメール アドレス。"},"description":"Roborock のメール アドレスを入力します。"}}},"entity":{"binary_sensor":{"in_cleaning":{"name":"クリーニング"},"mop_attached":{"name":"モップ取り付け済"},"mop_drying_status":{"name":"モップ乾燥"},"water_box_attached":{"name":"水ボックス取り付け済"},"water_shortage":{"name":"水不足"}},"button":{"reset_air_filter_consumable":{"name":"エアフィルター消耗部品のリセット"},"reset_main_brush_consumable":{"name":"メインブラシ消耗部品のリセット"},"reset_sensor_consumable":{"name":"センサー消耗部品のリセット"},"reset_side_brush_consumable":{"name":"サイドブラシ消耗部品のリセット"}},"number":{"volume":{"name":"ボリューム"}},"select":{"dust_collection_mode":{"name":"空モード","state":{"balanced":"バランス","light":"ライト","max":"最大","smart":"スマート"}},"mop_intensity":{"name":"モップの強さ","state":{"custom":"カスタム","custom_water_flow":"カスタム水流","extreme":"極端に強い","high":"高","intense":"激しい","low":"低","max":"最大","medium":"中","mild":"マイルド","moderate":"適度","off":"オフ","smart_mode":"スマートプラン","vac_followed_by_mop":"掃除機をかけた後モップをかける"}},"mop_mode":{"name":"モップモード","state":{"custom":"カスタム","deep":"水拭き強力モード","deep_plus":"水拭き超強力モード","fast":"速い","smart_mode":"スマートプラン","standard":"標準"}},"selected_map":{"name":"選択したマップ"}},"sensor":{"a01_error":{"name":"エラー","state":{"battery_temperature_protection":"バッテリー温度保護","battery_temperature_protection_2":"バッテリー温度保護","battery_temperature_protection_e0":"温度保護","battery_under_10":"バッテリー残量10%未満","clean_head_entangled":"クリーニングヘッドが絡まる","clean_head_too_hot":"クリーニングヘッドが熱すぎます。","clean_tank_empty":"クリーンタンクが空","cleaning_head_blocked":"クリーニングヘッドが詰まった","dirty_charging_contacts":"充電接点を清掃する","dirty_tank_full":"汚れたタンクがいっぱい","fan_protection_e4":"ファン保護","fan_protection_e5":"ファン保護","fan_protection_e9":"ファン保護","low_battery":"バッテリー残量低下","none":"なし","power_adapter_error":"電源アダプタエラー","temperature_protection":"温度保護","water_level_sensor_stuck":"水位センサーが動かなくなりました。"}},"a01_status":{"name":"ステータス","state":{"drying":"ドライ","dusting_mode":"ダスティングモード","fetch_failed":"取得に失敗しました","fetching":"フェッチ","mop_washing":"洗濯モップ","mop_washing_paused":"モップ洗浄を一時停止","ready":"準備完了","reserving":"予約","unknown":"不明","updating":"更新中","ventilating":"換気","washing":"洗浄"}},"brush_remaining":{"name":"ローラー左"},"clean_percent":{"name":"クリーニングの進捗状況"},"cleaning_area":{"name":"清掃エリア"},"cleaning_brush_time_left":{"name":"メンテナンスブラシの残り時間"},"cleaning_time":{"name":"清掃時間"},"countdown":{"name":"カウントダウン"},"current_room":{"name":"現在の部屋"},"dock_error":{"name":"ドックエラー","state":{"cleaning_tank_full_or_blocked":"洗浄タンクが満杯または詰まっている","dirty_tank_latch_open":"汚水タンクのラッチが開いている","duct_blockage":"ダクトの詰まり","no_dustbin":"ダストボックスなし","ok":"OK","waste_water_tank_full":"汚水タンク満タン","water_empty":"給水が空です"}},"filter_time_left":{"name":"フィルター残り時間"},"last_clean_end":{"name":"前回の掃除終了"},"last_clean_start":{"name":"前回の掃除開始"},"main_brush_time_left":{"name":"メインブラシの残り時間"},"mop_drying_remaining_time":{"name":"モップ乾燥残り時間"},"mop_life_time_left":{"name":"モップの残り寿命"},"q7_status":{"name":"状態","state":{"charging":"充電中","docking":"ドッキング","mop_airdrying":"モップで自然乾燥","mop_cleaning":"モップ洗浄","moping":"モップ掛け","paused":"一時停止","sleeping":"スリープ","sweep_moping":"モップがけ","sweep_moping_2":"モップがけ","updating":"更新中","waiting_for_orders":"注文待ち"}},"sensor_time_left":{"name":"センサー残り時間"},"side_brush_time_left":{"name":"サイドブラシの残り時間"},"status":{"name":"状態","state":{"air_drying_stopping":"送風乾燥停止","attaching_the_mop":"モップの取り付け","charger_disconnected":"充電器の接続解除","charging":"充電中","charging_complete":"充電完了","charging_problem":"充電の問題","cleaning":"クリーニング","detaching_the_mop":"モップの取り外し","device_offline":"デバイスがオフライン","docking":"ドッキング","egg_attack":"キューピッドモード","emptying_the_bin":"ダストボックスを空にする","error":"エラー","going_to_target":"ターゲットに向かう","going_to_wash_the_mop":"モップ洗浄に行きます","idle":"待機中","locked":"ロック済","manual_mode":"マニュアルモード","mapping":"マッピング","paused":"一時停止","remote_control_active":"リモートコントロールがアクティブ","returning_home":"帰宅中","segment_cleaning":"セグメントのクリーニング","shutting_down":"シャットダウン中","spot_cleaning":"スポット掃除","starting":"起動中","unknown":"不明","updating":"更新中","washing_the_mop":"モップ洗浄","zoned_cleaning":"ゾーン清掃"}},"strainer_time_left":{"name":"ストレーナー残り時間"},"total_cleaning_area":{"name":"総清掃面積"},"total_cleaning_count":{"name":"総クリーニング回数"},"total_cleaning_time":{"name":"総クリーニング時間"},"vacuum_error":{"name":"吸引エラー","state":{"battery_error":"バッテリーエラー","bumper_stuck":"バンパーが動かなくなった","cannot_cross_carpet":"カーペットが越えられない","charging_error":"充電エラー","clear_brush_exception":"給水フィルターが正しく取り付けられていることを確認してください","clear_brush_exception_2":"位置確認ボタンのエラー","clear_water_box_exception":"給水タンクが空です","clear_water_box_hoare":"給水タンクを確認してください","cliff_sensor_error":"段差センサーエラー","collect_dust_error_3":"自動ゴミ収集ドックを掃除する","compass_error":"強い磁場を検出","dirty_water_box_hoare":"汚水タンクを確認してください","dock":"ドックが電源に接続されていません","dock_locator_error":"ドックロケーターエラー","fan_error":"ファンエラー","filter_blocked":"フィルターがブロックされました","filter_screen_exception":"ドックの給水フィルターを掃除する","internal_error":"内部エラー","invisible_wall_detected":"見えない壁を検出しました","lidar_blocked":"レーザー光がブロックされました","light_touch":"壁センサーエラー","low_battery":"バッテリー残量低下","main_brush_jammed":"メインブラシが詰まっている","mopping_roller_1":"洗浄ローラーが詰まっている可能性があります","mopping_roller_2":"洗浄ローラーが詰まっている可能性があります","mopping_roller_error_2":"洗浄ローラーが適切に下がっていない","no_dustbin":"ダストボックスなし","nogo_zone_detected":"進入禁止エリアが検出されました","none":"なし","return_to_dock_fail":"ドックへの復帰失敗","robot_on_carpet":"カーペットの上のロボット","robot_tilted":"ロボットが傾いている","robot_trapped":"閉じ込められたロボット","side_brush_error":"サイドブラシエラー","side_brush_jammed":"サイドブラシが詰まっている","sink_strainer_hoare":"水フィルターを再び取り付ける","strainer_error":"フィルターが濡れているか詰まっています","temperature_protection":"ユニット温度保護","vertical_bumper_pressed":"垂直バンパーを押した状態","vibrarise_jammed":"高速デュアル振動が詰まっている","visual_sensor":"カメラエラー","wall_sensor_dirty":"ウォールセンサーが汚れている","wheels_jammed":"車輪が詰まっている","wheels_suspended":"車輪がサスペンド"}},"washing_left":{"name":"洗濯残り"},"zeo_error":{"name":"エラー","state":{"communication_error":"通信エラー","door_lock_error":"ドアロックエラー","drain_error":"排水エラー","drying_error_e_13":"乾燥エラー E13","heating_error":"加熱エラー","inverter_error":"インバータエラー","none":"なし","refill_error":"補充エラー","spin_error":"クロスを整理する","temperature_error":"温度エラー","water_level_error":"水位エラー"}},"zeo_state":{"name":"状態","state":{"cooling":"冷却","done":"完了","drying":"ドライ","rinsing":"すすぎ","soaking":"つけおき","spinning":"紡績","under_delay_start":"遅延スタート","washing":"洗浄","weighing":"計量"}}},"switch":{"child_lock":{"name":"チャイルドロック"},"dnd_switch":{"name":"おやすみモード"},"off_peak_switch":{"name":"オフピーク充電"},"status_indicator":{"name":"ステータス表示灯"}},"time":{"dnd_end_time":{"name":"おやすみモード終了"},"dnd_start_time":{"name":"おやすみモード開始"},"off_peak_end":{"name":"オフピーク終了"},"off_peak_start":{"name":"オフピーク開始"}},"vacuum":{"roborock":{"state_attributes":{"fan_speed":{"state":{"auto":"自動","balanced":"バランス","custom":"カスタム","gentle":"優しい","max":"最大","max_plus":"最大プラス","medium":"中","off":"オフ","quiet":"静音","silent":"サイレント","smart_mode":"スマートプラン","standard":"標準","turbo":"ターボ"}}}}}},"exceptions":{"command_failed":{"message":"{command}の呼び出し中にエラーが発生しました"},"home_data_fail":{"message":"Roborock ホーム データの取得に失敗しました"},"invalid_credentials":{"message":"認証情報が無効です。"},"invalid_user_agreement":{"message":"ユーザー契約に再度同意する必要があります。Roborock アプリを開いて、利用規約に同意してください。"},"map_failure":{"message":"マップの作成中に問題が発生しました"},"mqtt_unauthorized":{"message":"Roborock MQTTサーバーは、レート制限または無効な認証情報のため接続を拒否しました。再認証を試みるか、しばらく待ってから統合を再読み込みしてください。"},"no_coordinators":{"message":"正常にセットアップできたデバイスはありません"},"no_user_agreement":{"message":"有効なユーザー契約がありません。Roborock アプリを開いて利用規約に同意してください。"},"position_not_found":{"message":"ロボットの位置が見つかりません"},"update_data_fail":{"message":"データの更新に失敗しました"},"update_options_failed":{"message":"Roborock オプションの更新に失敗しました"}},"issues":{"cloud_api_used":{"description":"Roborock統合は直接接続できません {device_name} クラウドAPIにフォールバックします。これはレート制限につながる可能性があるため、推奨されません。Home Assistantインスタンスからローカルネットワーク上で掃除機にアクセスできるようにしてください。","title":"使用されるクラウドAPI"}},"options":{"step":{"drawables":{"data":{"charger":"充電器","cleaned_area":"清掃エリア","goto_path":"移動パス","ignored_obstacles":"無視された障害","ignored_obstacles_with_photo":"写真で無視された障害物","mop_path":"モップパス","no_carpet_zones":"カーペット禁止ゾーン","no_go_zones":"侵入禁止エリア","no_mopping_zones":"モップがけ禁止ゾーン","obstacles":"障害","obstacles_with_photo":"写真付き障害物","path":"パス","predicted_path":"予測経路","room_names":"部屋名","show_background":"背景を表示","vacuum_position":"掃除機の位置","virtual_walls":"バーチャルウォール","zones":"ゾーン"},"data_description":{"charger":"地図上に充電器を表示します。","cleaned_area":"清掃したエリアを地図上に表示します。","goto_path":"地図上に目的地までの経路を表示します。","ignored_obstacles":"無視された障害物を地図上に表示します。","ignored_obstacles_with_photo":"無視された障害物を地図上に写真で表示します。","mop_path":"モップ経路を地図上に表示します。","no_carpet_zones":"地図上にカーペット禁止区域を表示します。","no_go_zones":"地図上に立入禁止区域を表示します。","no_mopping_zones":"地図上にモップ禁止区域を表示します。","obstacles":"地図上に障害物を表示する。","obstacles_with_photo":"地図上に障害物を写真付きで表示","path":"地図上にパスを表示します。","predicted_path":"地図上に予測進路を表示する。","room_names":"地図上に部屋名を表示します。","show_background":"マップに背景を追加します。","vacuum_position":"掃除機の位置を地図上に表示する。","virtual_walls":"地図上に仮想の壁を表示する。","zones":"地図上にゾーンを表示"},"description":"地図上に描画する特徴を指定します。"}}},"services":{"get_maps":{"description":"デバイスの地図と部屋の情報を取得します。","name":"マップの取得"},"get_vacuum_current_position":{"description":"掃除機の現在の位置を取得します。","name":"現在の位置を取得"},"set_vacuum_goto_position":{"description":"掃除機を特定の位置に送る。","fields":{"x":{"description":"座標はドックを基準とします。x=25500、y=25500 はドックの位置です。","name":"X座標"},"y":{"description":"座標はドックを基準とします。x=25500、y=25500 はドックの位置です。","name":"Y座標"}},"name":"ポジションに移動"}}}
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "\u30a2\u30ab\u30a6\u30f3\u30c8\u306f\u3059\u3067\u306b\u8a2d\u5b9a\u3055\u308c\u3066\u3044\u307e\u3059",
+            "reauth_successful": "\u518d\u8a8d\u8a3c\u306b\u6210\u529f\u3057\u307e\u3057\u305f",
+            "wrong_account": "\u30a2\u30ab\u30a6\u30f3\u30c8\u304c\u9593\u9055\u3063\u3066\u3044\u307e\u3059: \u6b63\u3057\u3044\u30a2\u30ab\u30a6\u30f3\u30c8\u3067\u8a8d\u8a3c\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "error": {
+            "invalid_code": "\u5165\u529b\u3057\u305f\u30b3\u30fc\u30c9\u306f\u9593\u9055\u3063\u3066\u3044\u307e\u3059\u3002\u78ba\u8a8d\u3057\u3066\u3082\u3046\u4e00\u5ea6\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002",
+            "invalid_email": "\u5165\u529b\u3057\u305f\u30e1\u30fc\u30eb\u30a2\u30c9\u30ec\u30b9\u306b\u95a2\u9023\u4ed8\u3051\u3089\u308c\u305f\u30a2\u30ab\u30a6\u30f3\u30c8\u306f\u3042\u308a\u307e\u305b\u3093\u3002\u3082\u3046\u4e00\u5ea6\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002",
+            "invalid_email_format": "E\u30e1\u30fc\u30eb\u306e\u5f62\u5f0f\u306b\u554f\u984c\u304c\u3042\u308a\u307e\u3059 - \u3082\u3046\u4e00\u5ea6\u8a66\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+            "too_frequent_code_requests": "\u30ea\u30af\u30a8\u30b9\u30c8\u3057\u305f\u30b3\u30fc\u30c9\u304c\u591a\u3059\u304e\u307e\u3059\u3002\u3057\u3070\u3089\u304f\u3057\u3066\u304b\u3089\u3082\u3046\u4e00\u5ea6\u304a\u8a66\u3057\u304f\u3060\u3055\u3044\u3002",
+            "unknown": "\u4e88\u671f\u3057\u306a\u3044\u30a8\u30e9\u30fc",
+            "unknown_roborock": "\u4e0d\u660e\u306a Roborock \u4f8b\u5916\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u30ed\u30b0\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+            "unknown_url": "Roborock \u30a2\u30ab\u30a6\u30f3\u30c8\u306e\u6b63\u3057\u3044 URL \u3092\u5224\u5225\u3059\u308b\u969b\u306b\u554f\u984c\u304c\u767a\u751f\u3057\u307e\u3057\u305f\u3002\u30ed\u30b0\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "\u78ba\u8a8d\u30b3\u30fc\u30c9"
+                },
+                "data_description": {
+                    "code": "\u3042\u306a\u305f\u306eE\u30e1\u30fc\u30eb\u306b\u9001\u4fe1\u3055\u308c\u305f\u8a8d\u8a3c\u30b3\u30fc\u30c9\u3002"
+                },
+                "description": "\u30e1\u30fc\u30eb\u306b\u9001\u4fe1\u3055\u308c\u305f\u78ba\u8a8d\u30b3\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044"
+            },
+            "reauth_confirm": {
+                "description": "Roborock \u7d71\u5408\u3067\u306f\u30a2\u30ab\u30a6\u30f3\u30c8\u3092\u518d\u8a8d\u8a3c\u3059\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059",
+                "title": "{name} \u306e\u8a8d\u8a3c\u306e\u6709\u52b9\u671f\u9650\u304c\u5207\u308c\u307e\u3057\u305f"
+            },
+            "user": {
+                "data": {
+                    "username": "E\u30e1\u30fc\u30eb"
+                },
+                "data_description": {
+                    "username": "Roborock \u30a2\u30d7\u30ea\u306b\u30b5\u30a4\u30f3\u30a4\u30f3\u3059\u308b\u305f\u3081\u306b\u4f7f\u7528\u3055\u308c\u308b\u30e1\u30fc\u30eb \u30a2\u30c9\u30ec\u30b9\u3002"
+                },
+                "description": "Roborock \u306e\u30e1\u30fc\u30eb \u30a2\u30c9\u30ec\u30b9\u3092\u5165\u529b\u3057\u307e\u3059\u3002"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_cleaning": {
+                "name": "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0"
+            },
+            "mop_attached": {
+                "name": "\u30e2\u30c3\u30d7\u53d6\u308a\u4ed8\u3051\u6e08"
+            },
+            "mop_drying_status": {
+                "name": "\u30e2\u30c3\u30d7\u4e7e\u71e5"
+            },
+            "water_box_attached": {
+                "name": "\u6c34\u30dc\u30c3\u30af\u30b9\u53d6\u308a\u4ed8\u3051\u6e08"
+            },
+            "water_shortage": {
+                "name": "\u6c34\u4e0d\u8db3"
+            }
+        },
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "\u30a8\u30a2\u30d5\u30a3\u30eb\u30bf\u30fc\u6d88\u8017\u90e8\u54c1\u306e\u30ea\u30bb\u30c3\u30c8"
+            },
+            "reset_main_brush_consumable": {
+                "name": "\u30e1\u30a4\u30f3\u30d6\u30e9\u30b7\u6d88\u8017\u90e8\u54c1\u306e\u30ea\u30bb\u30c3\u30c8"
+            },
+            "reset_sensor_consumable": {
+                "name": "\u30bb\u30f3\u30b5\u30fc\u6d88\u8017\u90e8\u54c1\u306e\u30ea\u30bb\u30c3\u30c8"
+            },
+            "reset_side_brush_consumable": {
+                "name": "\u30b5\u30a4\u30c9\u30d6\u30e9\u30b7\u6d88\u8017\u90e8\u54c1\u306e\u30ea\u30bb\u30c3\u30c8"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "\u30dc\u30ea\u30e5\u30fc\u30e0"
+            }
+        },
+        "select": {
+            "dust_collection_mode": {
+                "name": "\u7a7a\u30e2\u30fc\u30c9",
+                "state": {
+                    "balanced": "\u30d0\u30e9\u30f3\u30b9",
+                    "light": "\u30e9\u30a4\u30c8",
+                    "max": "\u6700\u5927",
+                    "smart": "\u30b9\u30de\u30fc\u30c8"
+                }
+            },
+            "mop_intensity": {
+                "name": "\u30e2\u30c3\u30d7\u306e\u5f37\u3055",
+                "state": {
+                    "custom": "\u30ab\u30b9\u30bf\u30e0",
+                    "custom_water_flow": "\u30ab\u30b9\u30bf\u30e0\u6c34\u6d41",
+                    "extreme": "\u6975\u7aef\u306b\u5f37\u3044",
+                    "high": "\u9ad8",
+                    "intense": "\u6fc0\u3057\u3044",
+                    "low": "\u4f4e",
+                    "max": "\u6700\u5927",
+                    "medium": "\u4e2d",
+                    "mild": "\u30de\u30a4\u30eb\u30c9",
+                    "moderate": "\u9069\u5ea6",
+                    "off": "\u30aa\u30d5",
+                    "smart_mode": "\u30b9\u30de\u30fc\u30c8\u30d7\u30e9\u30f3",
+                    "vac_followed_by_mop": "\u6383\u9664\u6a5f\u3092\u304b\u3051\u305f\u5f8c\u30e2\u30c3\u30d7\u3092\u304b\u3051\u308b"
+                }
+            },
+            "mop_mode": {
+                "name": "\u30e2\u30c3\u30d7\u30e2\u30fc\u30c9",
+                "state": {
+                    "custom": "\u30ab\u30b9\u30bf\u30e0",
+                    "deep": "\u6c34\u62ed\u304d\u5f37\u529b\u30e2\u30fc\u30c9",
+                    "deep_plus": "\u6c34\u62ed\u304d\u8d85\u5f37\u529b\u30e2\u30fc\u30c9",
+                    "fast": "\u901f\u3044",
+                    "smart_mode": "\u30b9\u30de\u30fc\u30c8\u30d7\u30e9\u30f3",
+                    "standard": "\u6a19\u6e96"
+                }
+            },
+            "selected_map": {
+                "name": "\u9078\u629e\u3057\u305f\u30de\u30c3\u30d7"
+            }
+        },
+        "sensor": {
+            "a01_error": {
+                "name": "\u30a8\u30e9\u30fc",
+                "state": {
+                    "battery_temperature_protection": "\u30d0\u30c3\u30c6\u30ea\u30fc\u6e29\u5ea6\u4fdd\u8b77",
+                    "battery_temperature_protection_2": "\u30d0\u30c3\u30c6\u30ea\u30fc\u6e29\u5ea6\u4fdd\u8b77",
+                    "battery_temperature_protection_e0": "\u6e29\u5ea6\u4fdd\u8b77",
+                    "battery_under_10": "\u30d0\u30c3\u30c6\u30ea\u30fc\u6b8b\u91cf10%\u672a\u6e80",
+                    "clean_head_entangled": "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30d8\u30c3\u30c9\u304c\u7d61\u307e\u308b",
+                    "clean_head_too_hot": "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30d8\u30c3\u30c9\u304c\u71b1\u3059\u304e\u307e\u3059\u3002",
+                    "clean_tank_empty": "\u30af\u30ea\u30fc\u30f3\u30bf\u30f3\u30af\u304c\u7a7a",
+                    "cleaning_head_blocked": "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u30d8\u30c3\u30c9\u304c\u8a70\u307e\u3063\u305f",
+                    "dirty_charging_contacts": "\u5145\u96fb\u63a5\u70b9\u3092\u6e05\u6383\u3059\u308b",
+                    "dirty_tank_full": "\u6c5a\u308c\u305f\u30bf\u30f3\u30af\u304c\u3044\u3063\u3071\u3044",
+                    "fan_protection_e4": "\u30d5\u30a1\u30f3\u4fdd\u8b77",
+                    "fan_protection_e5": "\u30d5\u30a1\u30f3\u4fdd\u8b77",
+                    "fan_protection_e9": "\u30d5\u30a1\u30f3\u4fdd\u8b77",
+                    "low_battery": "\u30d0\u30c3\u30c6\u30ea\u30fc\u6b8b\u91cf\u4f4e\u4e0b",
+                    "none": "\u306a\u3057",
+                    "power_adapter_error": "\u96fb\u6e90\u30a2\u30c0\u30d7\u30bf\u30a8\u30e9\u30fc",
+                    "temperature_protection": "\u6e29\u5ea6\u4fdd\u8b77",
+                    "water_level_sensor_stuck": "\u6c34\u4f4d\u30bb\u30f3\u30b5\u30fc\u304c\u52d5\u304b\u306a\u304f\u306a\u308a\u307e\u3057\u305f\u3002"
+                }
+            },
+            "a01_status": {
+                "name": "\u30b9\u30c6\u30fc\u30bf\u30b9",
+                "state": {
+                    "drying": "\u30c9\u30e9\u30a4",
+                    "dusting_mode": "\u30c0\u30b9\u30c6\u30a3\u30f3\u30b0\u30e2\u30fc\u30c9",
+                    "fetch_failed": "\u53d6\u5f97\u306b\u5931\u6557\u3057\u307e\u3057\u305f",
+                    "fetching": "\u30d5\u30a7\u30c3\u30c1",
+                    "mop_washing": "\u6d17\u6fef\u30e2\u30c3\u30d7",
+                    "mop_washing_paused": "\u30e2\u30c3\u30d7\u6d17\u6d44\u3092\u4e00\u6642\u505c\u6b62",
+                    "ready": "\u6e96\u5099\u5b8c\u4e86",
+                    "reserving": "\u4e88\u7d04",
+                    "unknown": "\u4e0d\u660e",
+                    "updating": "\u66f4\u65b0\u4e2d",
+                    "ventilating": "\u63db\u6c17",
+                    "washing": "\u6d17\u6d44"
+                }
+            },
+            "brush_remaining": {
+                "name": "\u30ed\u30fc\u30e9\u30fc\u5de6"
+            },
+            "clean_percent": {
+                "name": "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u306e\u9032\u6357\u72b6\u6cc1"
+            },
+            "cleaning_area": {
+                "name": "\u6e05\u6383\u30a8\u30ea\u30a2"
+            },
+            "cleaning_brush_time_left": {
+                "name": "\u30e1\u30f3\u30c6\u30ca\u30f3\u30b9\u30d6\u30e9\u30b7\u306e\u6b8b\u308a\u6642\u9593"
+            },
+            "cleaning_time": {
+                "name": "\u6e05\u6383\u6642\u9593"
+            },
+            "countdown": {
+                "name": "\u30ab\u30a6\u30f3\u30c8\u30c0\u30a6\u30f3"
+            },
+            "current_room": {
+                "name": "\u73fe\u5728\u306e\u90e8\u5c4b"
+            },
+            "dock_error": {
+                "name": "\u30c9\u30c3\u30af\u30a8\u30e9\u30fc",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "\u6d17\u6d44\u30bf\u30f3\u30af\u304c\u6e80\u676f\u307e\u305f\u306f\u8a70\u307e\u3063\u3066\u3044\u308b",
+                    "dirty_tank_latch_open": "\u6c5a\u6c34\u30bf\u30f3\u30af\u306e\u30e9\u30c3\u30c1\u304c\u958b\u3044\u3066\u3044\u308b",
+                    "duct_blockage": "\u30c0\u30af\u30c8\u306e\u8a70\u307e\u308a",
+                    "no_dustbin": "\u30c0\u30b9\u30c8\u30dc\u30c3\u30af\u30b9\u306a\u3057",
+                    "ok": "OK",
+                    "waste_water_tank_full": "\u6c5a\u6c34\u30bf\u30f3\u30af\u6e80\u30bf\u30f3",
+                    "water_empty": "\u7d66\u6c34\u304c\u7a7a\u3067\u3059"
+                }
+            },
+            "filter_time_left": {
+                "name": "\u30d5\u30a3\u30eb\u30bf\u30fc\u6b8b\u308a\u6642\u9593"
+            },
+            "last_clean_end": {
+                "name": "\u524d\u56de\u306e\u6383\u9664\u7d42\u4e86"
+            },
+            "last_clean_start": {
+                "name": "\u524d\u56de\u306e\u6383\u9664\u958b\u59cb"
+            },
+            "main_brush_time_left": {
+                "name": "\u30e1\u30a4\u30f3\u30d6\u30e9\u30b7\u306e\u6b8b\u308a\u6642\u9593"
+            },
+            "mop_drying_remaining_time": {
+                "name": "\u30e2\u30c3\u30d7\u4e7e\u71e5\u6b8b\u308a\u6642\u9593"
+            },
+            "mop_life_time_left": {
+                "name": "\u30e2\u30c3\u30d7\u306e\u6b8b\u308a\u5bff\u547d"
+            },
+            "q7_status": {
+                "name": "\u72b6\u614b",
+                "state": {
+                    "charging": "\u5145\u96fb\u4e2d",
+                    "docking": "\u30c9\u30c3\u30ad\u30f3\u30b0",
+                    "mop_airdrying": "\u30e2\u30c3\u30d7\u3067\u81ea\u7136\u4e7e\u71e5",
+                    "mop_cleaning": "\u30e2\u30c3\u30d7\u6d17\u6d44",
+                    "moping": "\u30e2\u30c3\u30d7\u639b\u3051",
+                    "paused": "\u4e00\u6642\u505c\u6b62",
+                    "sleeping": "\u30b9\u30ea\u30fc\u30d7",
+                    "sweep_moping": "\u30e2\u30c3\u30d7\u304c\u3051",
+                    "sweep_moping_2": "\u30e2\u30c3\u30d7\u304c\u3051",
+                    "updating": "\u66f4\u65b0\u4e2d",
+                    "waiting_for_orders": "\u6ce8\u6587\u5f85\u3061"
+                }
+            },
+            "sensor_time_left": {
+                "name": "\u30bb\u30f3\u30b5\u30fc\u6b8b\u308a\u6642\u9593"
+            },
+            "side_brush_time_left": {
+                "name": "\u30b5\u30a4\u30c9\u30d6\u30e9\u30b7\u306e\u6b8b\u308a\u6642\u9593"
+            },
+            "status": {
+                "name": "\u72b6\u614b",
+                "state": {
+                    "air_drying_stopping": "\u9001\u98a8\u4e7e\u71e5\u505c\u6b62",
+                    "attaching_the_mop": "\u30e2\u30c3\u30d7\u306e\u53d6\u308a\u4ed8\u3051",
+                    "charger_disconnected": "\u5145\u96fb\u5668\u306e\u63a5\u7d9a\u89e3\u9664",
+                    "charging": "\u5145\u96fb\u4e2d",
+                    "charging_complete": "\u5145\u96fb\u5b8c\u4e86",
+                    "charging_problem": "\u5145\u96fb\u306e\u554f\u984c",
+                    "cleaning": "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0",
+                    "detaching_the_mop": "\u30e2\u30c3\u30d7\u306e\u53d6\u308a\u5916\u3057",
+                    "device_offline": "\u30c7\u30d0\u30a4\u30b9\u304c\u30aa\u30d5\u30e9\u30a4\u30f3",
+                    "docking": "\u30c9\u30c3\u30ad\u30f3\u30b0",
+                    "egg_attack": "\u30ad\u30e5\u30fc\u30d4\u30c3\u30c9\u30e2\u30fc\u30c9",
+                    "emptying_the_bin": "\u30c0\u30b9\u30c8\u30dc\u30c3\u30af\u30b9\u3092\u7a7a\u306b\u3059\u308b",
+                    "error": "\u30a8\u30e9\u30fc",
+                    "going_to_target": "\u30bf\u30fc\u30b2\u30c3\u30c8\u306b\u5411\u304b\u3046",
+                    "going_to_wash_the_mop": "\u30e2\u30c3\u30d7\u6d17\u6d44\u306b\u884c\u304d\u307e\u3059",
+                    "idle": "\u5f85\u6a5f\u4e2d",
+                    "locked": "\u30ed\u30c3\u30af\u6e08",
+                    "manual_mode": "\u30de\u30cb\u30e5\u30a2\u30eb\u30e2\u30fc\u30c9",
+                    "mapping": "\u30de\u30c3\u30d4\u30f3\u30b0",
+                    "paused": "\u4e00\u6642\u505c\u6b62",
+                    "remote_control_active": "\u30ea\u30e2\u30fc\u30c8\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u304c\u30a2\u30af\u30c6\u30a3\u30d6",
+                    "returning_home": "\u5e30\u5b85\u4e2d",
+                    "segment_cleaning": "\u30bb\u30b0\u30e1\u30f3\u30c8\u306e\u30af\u30ea\u30fc\u30cb\u30f3\u30b0",
+                    "shutting_down": "\u30b7\u30e3\u30c3\u30c8\u30c0\u30a6\u30f3\u4e2d",
+                    "spot_cleaning": "\u30b9\u30dd\u30c3\u30c8\u6383\u9664",
+                    "starting": "\u8d77\u52d5\u4e2d",
+                    "unknown": "\u4e0d\u660e",
+                    "updating": "\u66f4\u65b0\u4e2d",
+                    "washing_the_mop": "\u30e2\u30c3\u30d7\u6d17\u6d44",
+                    "zoned_cleaning": "\u30be\u30fc\u30f3\u6e05\u6383"
+                }
+            },
+            "strainer_time_left": {
+                "name": "\u30b9\u30c8\u30ec\u30fc\u30ca\u30fc\u6b8b\u308a\u6642\u9593"
+            },
+            "total_cleaning_area": {
+                "name": "\u7dcf\u6e05\u6383\u9762\u7a4d"
+            },
+            "total_cleaning_count": {
+                "name": "\u7dcf\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u56de\u6570"
+            },
+            "total_cleaning_time": {
+                "name": "\u7dcf\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u6642\u9593"
+            },
+            "vacuum_error": {
+                "name": "\u5438\u5f15\u30a8\u30e9\u30fc",
+                "state": {
+                    "battery_error": "\u30d0\u30c3\u30c6\u30ea\u30fc\u30a8\u30e9\u30fc",
+                    "bumper_stuck": "\u30d0\u30f3\u30d1\u30fc\u304c\u52d5\u304b\u306a\u304f\u306a\u3063\u305f",
+                    "cannot_cross_carpet": "\u30ab\u30fc\u30da\u30c3\u30c8\u304c\u8d8a\u3048\u3089\u308c\u306a\u3044",
+                    "charging_error": "\u5145\u96fb\u30a8\u30e9\u30fc",
+                    "clear_brush_exception": "\u7d66\u6c34\u30d5\u30a3\u30eb\u30bf\u30fc\u304c\u6b63\u3057\u304f\u53d6\u308a\u4ed8\u3051\u3089\u308c\u3066\u3044\u308b\u3053\u3068\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044",
+                    "clear_brush_exception_2": "\u4f4d\u7f6e\u78ba\u8a8d\u30dc\u30bf\u30f3\u306e\u30a8\u30e9\u30fc",
+                    "clear_water_box_exception": "\u7d66\u6c34\u30bf\u30f3\u30af\u304c\u7a7a\u3067\u3059",
+                    "clear_water_box_hoare": "\u7d66\u6c34\u30bf\u30f3\u30af\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044",
+                    "cliff_sensor_error": "\u6bb5\u5dee\u30bb\u30f3\u30b5\u30fc\u30a8\u30e9\u30fc",
+                    "collect_dust_error_3": "\u81ea\u52d5\u30b4\u30df\u53ce\u96c6\u30c9\u30c3\u30af\u3092\u6383\u9664\u3059\u308b",
+                    "compass_error": "\u5f37\u3044\u78c1\u5834\u3092\u691c\u51fa",
+                    "dirty_water_box_hoare": "\u6c5a\u6c34\u30bf\u30f3\u30af\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044",
+                    "dock": "\u30c9\u30c3\u30af\u304c\u96fb\u6e90\u306b\u63a5\u7d9a\u3055\u308c\u3066\u3044\u307e\u305b\u3093",
+                    "dock_locator_error": "\u30c9\u30c3\u30af\u30ed\u30b1\u30fc\u30bf\u30fc\u30a8\u30e9\u30fc",
+                    "fan_error": "\u30d5\u30a1\u30f3\u30a8\u30e9\u30fc",
+                    "filter_blocked": "\u30d5\u30a3\u30eb\u30bf\u30fc\u304c\u30d6\u30ed\u30c3\u30af\u3055\u308c\u307e\u3057\u305f",
+                    "filter_screen_exception": "\u30c9\u30c3\u30af\u306e\u7d66\u6c34\u30d5\u30a3\u30eb\u30bf\u30fc\u3092\u6383\u9664\u3059\u308b",
+                    "internal_error": "\u5185\u90e8\u30a8\u30e9\u30fc",
+                    "invisible_wall_detected": "\u898b\u3048\u306a\u3044\u58c1\u3092\u691c\u51fa\u3057\u307e\u3057\u305f",
+                    "lidar_blocked": "\u30ec\u30fc\u30b6\u30fc\u5149\u304c\u30d6\u30ed\u30c3\u30af\u3055\u308c\u307e\u3057\u305f",
+                    "light_touch": "\u58c1\u30bb\u30f3\u30b5\u30fc\u30a8\u30e9\u30fc",
+                    "low_battery": "\u30d0\u30c3\u30c6\u30ea\u30fc\u6b8b\u91cf\u4f4e\u4e0b",
+                    "main_brush_jammed": "\u30e1\u30a4\u30f3\u30d6\u30e9\u30b7\u304c\u8a70\u307e\u3063\u3066\u3044\u308b",
+                    "mopping_roller_1": "\u6d17\u6d44\u30ed\u30fc\u30e9\u30fc\u304c\u8a70\u307e\u3063\u3066\u3044\u308b\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059",
+                    "mopping_roller_2": "\u6d17\u6d44\u30ed\u30fc\u30e9\u30fc\u304c\u8a70\u307e\u3063\u3066\u3044\u308b\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059",
+                    "mopping_roller_error_2": "\u6d17\u6d44\u30ed\u30fc\u30e9\u30fc\u304c\u9069\u5207\u306b\u4e0b\u304c\u3063\u3066\u3044\u306a\u3044",
+                    "no_dustbin": "\u30c0\u30b9\u30c8\u30dc\u30c3\u30af\u30b9\u306a\u3057",
+                    "nogo_zone_detected": "\u9032\u5165\u7981\u6b62\u30a8\u30ea\u30a2\u304c\u691c\u51fa\u3055\u308c\u307e\u3057\u305f",
+                    "none": "\u306a\u3057",
+                    "return_to_dock_fail": "\u30c9\u30c3\u30af\u3078\u306e\u5fa9\u5e30\u5931\u6557",
+                    "robot_on_carpet": "\u30ab\u30fc\u30da\u30c3\u30c8\u306e\u4e0a\u306e\u30ed\u30dc\u30c3\u30c8",
+                    "robot_tilted": "\u30ed\u30dc\u30c3\u30c8\u304c\u50be\u3044\u3066\u3044\u308b",
+                    "robot_trapped": "\u9589\u3058\u8fbc\u3081\u3089\u308c\u305f\u30ed\u30dc\u30c3\u30c8",
+                    "side_brush_error": "\u30b5\u30a4\u30c9\u30d6\u30e9\u30b7\u30a8\u30e9\u30fc",
+                    "side_brush_jammed": "\u30b5\u30a4\u30c9\u30d6\u30e9\u30b7\u304c\u8a70\u307e\u3063\u3066\u3044\u308b",
+                    "sink_strainer_hoare": "\u6c34\u30d5\u30a3\u30eb\u30bf\u30fc\u3092\u518d\u3073\u53d6\u308a\u4ed8\u3051\u308b",
+                    "strainer_error": "\u30d5\u30a3\u30eb\u30bf\u30fc\u304c\u6fe1\u308c\u3066\u3044\u308b\u304b\u8a70\u307e\u3063\u3066\u3044\u307e\u3059",
+                    "temperature_protection": "\u30e6\u30cb\u30c3\u30c8\u6e29\u5ea6\u4fdd\u8b77",
+                    "vertical_bumper_pressed": "\u5782\u76f4\u30d0\u30f3\u30d1\u30fc\u3092\u62bc\u3057\u305f\u72b6\u614b",
+                    "vibrarise_jammed": "\u9ad8\u901f\u30c7\u30e5\u30a2\u30eb\u632f\u52d5\u304c\u8a70\u307e\u3063\u3066\u3044\u308b",
+                    "visual_sensor": "\u30ab\u30e1\u30e9\u30a8\u30e9\u30fc",
+                    "wall_sensor_dirty": "\u30a6\u30a9\u30fc\u30eb\u30bb\u30f3\u30b5\u30fc\u304c\u6c5a\u308c\u3066\u3044\u308b",
+                    "wheels_jammed": "\u8eca\u8f2a\u304c\u8a70\u307e\u3063\u3066\u3044\u308b",
+                    "wheels_suspended": "\u8eca\u8f2a\u304c\u30b5\u30b9\u30da\u30f3\u30c9"
+                }
+            },
+            "washing_left": {
+                "name": "\u6d17\u6fef\u6b8b\u308a"
+            },
+            "zeo_error": {
+                "name": "\u30a8\u30e9\u30fc",
+                "state": {
+                    "communication_error": "\u901a\u4fe1\u30a8\u30e9\u30fc",
+                    "door_lock_error": "\u30c9\u30a2\u30ed\u30c3\u30af\u30a8\u30e9\u30fc",
+                    "drain_error": "\u6392\u6c34\u30a8\u30e9\u30fc",
+                    "drying_error_e_13": "\u4e7e\u71e5\u30a8\u30e9\u30fc E13",
+                    "heating_error": "\u52a0\u71b1\u30a8\u30e9\u30fc",
+                    "inverter_error": "\u30a4\u30f3\u30d0\u30fc\u30bf\u30a8\u30e9\u30fc",
+                    "none": "\u306a\u3057",
+                    "refill_error": "\u88dc\u5145\u30a8\u30e9\u30fc",
+                    "spin_error": "\u30af\u30ed\u30b9\u3092\u6574\u7406\u3059\u308b",
+                    "temperature_error": "\u6e29\u5ea6\u30a8\u30e9\u30fc",
+                    "water_level_error": "\u6c34\u4f4d\u30a8\u30e9\u30fc"
+                }
+            },
+            "zeo_state": {
+                "name": "\u72b6\u614b",
+                "state": {
+                    "cooling": "\u51b7\u5374",
+                    "done": "\u5b8c\u4e86",
+                    "drying": "\u30c9\u30e9\u30a4",
+                    "rinsing": "\u3059\u3059\u304e",
+                    "soaking": "\u3064\u3051\u304a\u304d",
+                    "spinning": "\u7d21\u7e3e",
+                    "under_delay_start": "\u9045\u5ef6\u30b9\u30bf\u30fc\u30c8",
+                    "washing": "\u6d17\u6d44",
+                    "weighing": "\u8a08\u91cf"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "\u30c1\u30e3\u30a4\u30eb\u30c9\u30ed\u30c3\u30af"
+            },
+            "dnd_switch": {
+                "name": "\u304a\u3084\u3059\u307f\u30e2\u30fc\u30c9"
+            },
+            "off_peak_switch": {
+                "name": "\u30aa\u30d5\u30d4\u30fc\u30af\u5145\u96fb"
+            },
+            "status_indicator": {
+                "name": "\u30b9\u30c6\u30fc\u30bf\u30b9\u8868\u793a\u706f"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "\u304a\u3084\u3059\u307f\u30e2\u30fc\u30c9\u7d42\u4e86"
+            },
+            "dnd_start_time": {
+                "name": "\u304a\u3084\u3059\u307f\u30e2\u30fc\u30c9\u958b\u59cb"
+            },
+            "off_peak_end": {
+                "name": "\u30aa\u30d5\u30d4\u30fc\u30af\u7d42\u4e86"
+            },
+            "off_peak_start": {
+                "name": "\u30aa\u30d5\u30d4\u30fc\u30af\u958b\u59cb"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "auto": "\u81ea\u52d5",
+                            "balanced": "\u30d0\u30e9\u30f3\u30b9",
+                            "custom": "\u30ab\u30b9\u30bf\u30e0",
+                            "gentle": "\u512a\u3057\u3044",
+                            "max": "\u6700\u5927",
+                            "max_plus": "\u6700\u5927\u30d7\u30e9\u30b9",
+                            "medium": "\u4e2d",
+                            "off": "\u30aa\u30d5",
+                            "quiet": "\u9759\u97f3",
+                            "silent": "\u30b5\u30a4\u30ec\u30f3\u30c8",
+                            "smart_mode": "\u30b9\u30de\u30fc\u30c8\u30d7\u30e9\u30f3",
+                            "standard": "\u6a19\u6e96",
+                            "turbo": "\u30bf\u30fc\u30dc"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "command_failed": {
+            "message": "{command}\u306e\u547c\u3073\u51fa\u3057\u4e2d\u306b\u30a8\u30e9\u30fc\u304c\u767a\u751f\u3057\u307e\u3057\u305f"
+        },
+        "home_data_fail": {
+            "message": "Roborock \u30db\u30fc\u30e0 \u30c7\u30fc\u30bf\u306e\u53d6\u5f97\u306b\u5931\u6557\u3057\u307e\u3057\u305f"
+        },
+        "invalid_credentials": {
+            "message": "\u8a8d\u8a3c\u60c5\u5831\u304c\u7121\u52b9\u3067\u3059\u3002"
+        },
+        "invalid_user_agreement": {
+            "message": "\u30e6\u30fc\u30b6\u30fc\u5951\u7d04\u306b\u518d\u5ea6\u540c\u610f\u3059\u308b\u5fc5\u8981\u304c\u3042\u308a\u307e\u3059\u3002Roborock \u30a2\u30d7\u30ea\u3092\u958b\u3044\u3066\u3001\u5229\u7528\u898f\u7d04\u306b\u540c\u610f\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "map_failure": {
+            "message": "\u30de\u30c3\u30d7\u306e\u4f5c\u6210\u4e2d\u306b\u554f\u984c\u304c\u767a\u751f\u3057\u307e\u3057\u305f"
+        },
+        "mqtt_unauthorized": {
+            "message": "Roborock MQTT\u30b5\u30fc\u30d0\u30fc\u306f\u3001\u30ec\u30fc\u30c8\u5236\u9650\u307e\u305f\u306f\u7121\u52b9\u306a\u8a8d\u8a3c\u60c5\u5831\u306e\u305f\u3081\u63a5\u7d9a\u3092\u62d2\u5426\u3057\u307e\u3057\u305f\u3002\u518d\u8a8d\u8a3c\u3092\u8a66\u307f\u308b\u304b\u3001\u3057\u3070\u3089\u304f\u5f85\u3063\u3066\u304b\u3089\u7d71\u5408\u3092\u518d\u8aad\u307f\u8fbc\u307f\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "no_coordinators": {
+            "message": "\u6b63\u5e38\u306b\u30bb\u30c3\u30c8\u30a2\u30c3\u30d7\u3067\u304d\u305f\u30c7\u30d0\u30a4\u30b9\u306f\u3042\u308a\u307e\u305b\u3093"
+        },
+        "no_user_agreement": {
+            "message": "\u6709\u52b9\u306a\u30e6\u30fc\u30b6\u30fc\u5951\u7d04\u304c\u3042\u308a\u307e\u305b\u3093\u3002Roborock \u30a2\u30d7\u30ea\u3092\u958b\u3044\u3066\u5229\u7528\u898f\u7d04\u306b\u540c\u610f\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+        },
+        "position_not_found": {
+            "message": "\u30ed\u30dc\u30c3\u30c8\u306e\u4f4d\u7f6e\u304c\u898b\u3064\u304b\u308a\u307e\u305b\u3093"
+        },
+        "update_data_fail": {
+            "message": "\u30c7\u30fc\u30bf\u306e\u66f4\u65b0\u306b\u5931\u6557\u3057\u307e\u3057\u305f"
+        },
+        "update_options_failed": {
+            "message": "Roborock \u30aa\u30d7\u30b7\u30e7\u30f3\u306e\u66f4\u65b0\u306b\u5931\u6557\u3057\u307e\u3057\u305f"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "Roborock\u7d71\u5408\u306f\u76f4\u63a5\u63a5\u7d9a\u3067\u304d\u307e\u305b\u3093 {device_name} \u30af\u30e9\u30a6\u30c9API\u306b\u30d5\u30a9\u30fc\u30eb\u30d0\u30c3\u30af\u3057\u307e\u3059\u3002\u3053\u308c\u306f\u30ec\u30fc\u30c8\u5236\u9650\u306b\u3064\u306a\u304c\u308b\u53ef\u80fd\u6027\u304c\u3042\u308b\u305f\u3081\u3001\u63a8\u5968\u3055\u308c\u307e\u305b\u3093\u3002Home Assistant\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u304b\u3089\u30ed\u30fc\u30ab\u30eb\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u4e0a\u3067\u6383\u9664\u6a5f\u306b\u30a2\u30af\u30bb\u30b9\u3067\u304d\u308b\u3088\u3046\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+            "title": "\u4f7f\u7528\u3055\u308c\u308b\u30af\u30e9\u30a6\u30c9API"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "\u5145\u96fb\u5668",
+                    "cleaned_area": "\u6e05\u6383\u30a8\u30ea\u30a2",
+                    "goto_path": "\u79fb\u52d5\u30d1\u30b9",
+                    "ignored_obstacles": "\u7121\u8996\u3055\u308c\u305f\u969c\u5bb3",
+                    "ignored_obstacles_with_photo": "\u5199\u771f\u3067\u7121\u8996\u3055\u308c\u305f\u969c\u5bb3\u7269",
+                    "mop_path": "\u30e2\u30c3\u30d7\u30d1\u30b9",
+                    "no_carpet_zones": "\u30ab\u30fc\u30da\u30c3\u30c8\u7981\u6b62\u30be\u30fc\u30f3",
+                    "no_go_zones": "\u4fb5\u5165\u7981\u6b62\u30a8\u30ea\u30a2",
+                    "no_mopping_zones": "\u30e2\u30c3\u30d7\u304c\u3051\u7981\u6b62\u30be\u30fc\u30f3",
+                    "obstacles": "\u969c\u5bb3",
+                    "obstacles_with_photo": "\u5199\u771f\u4ed8\u304d\u969c\u5bb3\u7269",
+                    "path": "\u30d1\u30b9",
+                    "predicted_path": "\u4e88\u6e2c\u7d4c\u8def",
+                    "room_names": "\u90e8\u5c4b\u540d",
+                    "show_background": "\u80cc\u666f\u3092\u8868\u793a",
+                    "vacuum_position": "\u6383\u9664\u6a5f\u306e\u4f4d\u7f6e",
+                    "virtual_walls": "\u30d0\u30fc\u30c1\u30e3\u30eb\u30a6\u30a9\u30fc\u30eb",
+                    "zones": "\u30be\u30fc\u30f3"
+                },
+                "data_description": {
+                    "charger": "\u5730\u56f3\u4e0a\u306b\u5145\u96fb\u5668\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "cleaned_area": "\u6e05\u6383\u3057\u305f\u30a8\u30ea\u30a2\u3092\u5730\u56f3\u4e0a\u306b\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "goto_path": "\u5730\u56f3\u4e0a\u306b\u76ee\u7684\u5730\u307e\u3067\u306e\u7d4c\u8def\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "ignored_obstacles": "\u7121\u8996\u3055\u308c\u305f\u969c\u5bb3\u7269\u3092\u5730\u56f3\u4e0a\u306b\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "ignored_obstacles_with_photo": "\u7121\u8996\u3055\u308c\u305f\u969c\u5bb3\u7269\u3092\u5730\u56f3\u4e0a\u306b\u5199\u771f\u3067\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "mop_path": "\u30e2\u30c3\u30d7\u7d4c\u8def\u3092\u5730\u56f3\u4e0a\u306b\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "no_carpet_zones": "\u5730\u56f3\u4e0a\u306b\u30ab\u30fc\u30da\u30c3\u30c8\u7981\u6b62\u533a\u57df\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "no_go_zones": "\u5730\u56f3\u4e0a\u306b\u7acb\u5165\u7981\u6b62\u533a\u57df\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "no_mopping_zones": "\u5730\u56f3\u4e0a\u306b\u30e2\u30c3\u30d7\u7981\u6b62\u533a\u57df\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "obstacles": "\u5730\u56f3\u4e0a\u306b\u969c\u5bb3\u7269\u3092\u8868\u793a\u3059\u308b\u3002",
+                    "obstacles_with_photo": "\u5730\u56f3\u4e0a\u306b\u969c\u5bb3\u7269\u3092\u5199\u771f\u4ed8\u304d\u3067\u8868\u793a",
+                    "path": "\u5730\u56f3\u4e0a\u306b\u30d1\u30b9\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "predicted_path": "\u5730\u56f3\u4e0a\u306b\u4e88\u6e2c\u9032\u8def\u3092\u8868\u793a\u3059\u308b\u3002",
+                    "room_names": "\u5730\u56f3\u4e0a\u306b\u90e8\u5c4b\u540d\u3092\u8868\u793a\u3057\u307e\u3059\u3002",
+                    "show_background": "\u30de\u30c3\u30d7\u306b\u80cc\u666f\u3092\u8ffd\u52a0\u3057\u307e\u3059\u3002",
+                    "vacuum_position": "\u6383\u9664\u6a5f\u306e\u4f4d\u7f6e\u3092\u5730\u56f3\u4e0a\u306b\u8868\u793a\u3059\u308b\u3002",
+                    "virtual_walls": "\u5730\u56f3\u4e0a\u306b\u4eee\u60f3\u306e\u58c1\u3092\u8868\u793a\u3059\u308b\u3002",
+                    "zones": "\u5730\u56f3\u4e0a\u306b\u30be\u30fc\u30f3\u3092\u8868\u793a"
+                },
+                "description": "\u5730\u56f3\u4e0a\u306b\u63cf\u753b\u3059\u308b\u7279\u5fb4\u3092\u6307\u5b9a\u3057\u307e\u3059\u3002"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "description": "\u30c7\u30d0\u30a4\u30b9\u306e\u5730\u56f3\u3068\u90e8\u5c4b\u306e\u60c5\u5831\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+            "name": "\u30de\u30c3\u30d7\u306e\u53d6\u5f97"
+        },
+        "get_vacuum_current_position": {
+            "description": "\u6383\u9664\u6a5f\u306e\u73fe\u5728\u306e\u4f4d\u7f6e\u3092\u53d6\u5f97\u3057\u307e\u3059\u3002",
+            "name": "\u73fe\u5728\u306e\u4f4d\u7f6e\u3092\u53d6\u5f97"
+        },
+        "set_vacuum_goto_position": {
+            "description": "\u6383\u9664\u6a5f\u3092\u7279\u5b9a\u306e\u4f4d\u7f6e\u306b\u9001\u308b\u3002",
+            "fields": {
+                "x": {
+                    "description": "\u5ea7\u6a19\u306f\u30c9\u30c3\u30af\u3092\u57fa\u6e96\u3068\u3057\u307e\u3059\u3002x=25500\u3001y=25500 \u306f\u30c9\u30c3\u30af\u306e\u4f4d\u7f6e\u3067\u3059\u3002",
+                    "name": "X\u5ea7\u6a19"
+                },
+                "y": {
+                    "description": "\u5ea7\u6a19\u306f\u30c9\u30c3\u30af\u3092\u57fa\u6e96\u3068\u3057\u307e\u3059\u3002x=25500\u3001y=25500 \u306f\u30c9\u30c3\u30af\u306e\u4f4d\u7f6e\u3067\u3059\u3002",
+                    "name": "Y\u5ea7\u6a19"
+                }
+            },
+            "name": "\u30dd\u30b8\u30b7\u30e7\u30f3\u306b\u79fb\u52d5"
+        }
+    }
+}

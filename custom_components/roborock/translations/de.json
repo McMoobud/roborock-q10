@@ -84,6 +84,9 @@
             }
         },
         "button": {
+            "empty_dustbin": {
+                "name": "Staubbeh\u00e4lter entleeren"
+            },
             "pause": {
                 "name": "Pausieren"
             },
@@ -100,7 +103,7 @@
                 "name": "Seitenb\u00fcrsten-Verbrauchsmaterial zur\u00fccksetzen"
             },
             "shutdown": {
-                "name": "Abschalten"
+                "name": "Ausschalten"
             },
             "start": {
                 "name": "Starten"
@@ -615,8 +618,14 @@
         "home_data_fail": {
             "message": "Roborock-Heimdaten konnten nicht abgerufen werden"
         },
+        "invalid_command": {
+            "message": "Ung\u00fcltiger Befehl {command}"
+        },
         "invalid_credentials": {
             "message": "Ung\u00fcltige Anmeldedaten"
+        },
+        "invalid_fan_speed": {
+            "message": "Ung\u00fcltige Saugkraft: {fan_speed}"
         },
         "invalid_user_agreement": {
             "message": "Die Benutzervereinbarung muss erneut akzeptiert werden. \u00d6ffne deine Roborock-App und akzeptiere die Vereinbarung."
@@ -635,6 +644,9 @@
         },
         "position_not_found": {
             "message": "Roboterposition nicht gefunden"
+        },
+        "request_fail": {
+            "message": "Datenabfrage fehlgeschlagen"
         },
         "segment_id_parse_error": {
             "message": "Ung\u00fcltiges Format der Abschnitt-ID: {segment_id}"

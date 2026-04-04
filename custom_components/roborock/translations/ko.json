@@ -1,1 +1,292 @@
-{"config":{"abort":{"already_configured_account":"계정이 이미 구성되었습니다","reauth_successful":"재인증에 성공했습니다"},"error":{"invalid_code":"입력한 코드가 올바르지 않습니다. 확인하고 다시 시도하십시오.","invalid_email":"입력한 이메일과 연결된 계정이 없습니다. 다시 시도하십시오.","invalid_email_format":"이메일 형식에 문제가 있습니다. 다시 시도해 주세요.","invalid_email_or_region":"입력하신 이메일과 연결된 계정이 없거나, 선택하신 지역에는 계정이 없습니다.","unknown":"예기치 못한 오류"},"step":{"code":{"data":{"code":"인증 코드"},"description":"이메일로 전송된 인증 코드를 입력하세요."},"reauth_confirm":{"description":"Roborock 통합구성요소를 사용하려면 계정을 다시 인증해야 합니다.","title":"{name}의 인증이 만료되었습니다"},"user":{"data":{"region":"로보락 서버 지역","username":"이메일"},"data_description":{"region":"앱을 설정할 때 사용자의 로보락 계정이 등록되는 서버 지역입니다. 문제가 없는 경우 자동 설정을 사용하는 것을 권장합니다."},"description":"Roborock 이메일 주소를 입력하세요."}}},"entity":{"binary_sensor":{"in_cleaning":{"name":"청소 중"},"mop_attached":{"name":"물걸레 부착"},"mop_drying_status":{"name":"물걸레 건조"},"water_box_attached":{"name":"물통 부착"},"water_shortage":{"name":"물 부족"}},"button":{"reset_air_filter_consumable":{"name":"공기 필터 소모품 재설정"},"reset_main_brush_consumable":{"name":"메인 브러시 소모품 재설정"},"reset_sensor_consumable":{"name":"센서 소모품 재설정"},"reset_side_brush_consumable":{"name":"사이드 브러시 소모품 재설정"}},"number":{"volume":{"name":"음량"}},"select":{"mop_intensity":{"name":"물걸레 강도","state":{"custom":"사용자 정의","custom_water_flow":"맞춤형 물 흐름","intense":"강하게","mild":"약하게","moderate":"보통","off":"꺼짐"}},"mop_mode":{"name":"물걸레 모드","state":{"custom":"사용자 정의","deep":"심층","deep_plus":"심층 플러스","fast":"빠름","standard":"표준"}}},"sensor":{"a01_status":{"state":{"charging":"충전 중"}},"clean_percent":{"name":"청소 진행 상황"},"cleaning_area":{"name":"청소 영역"},"cleaning_time":{"name":"청소 시간"},"countdown":{"name":"카운트다운"},"dock_error":{"name":"충전대 오류","state":{"cleaning_tank_full_or_blocked":"청소 탱크가 가득 찼거나 막혔습니다.","dirty_tank_latch_open":"더러운 탱크 래치 열림","duct_blockage":"덕트 막힘","no_dustbin":"먼지봉투 없음","ok":"확인","waste_water_tank_full":"오수 탱크 가득 참","water_empty":"물이 비어 있음"}},"filter_time_left":{"name":"필터 남은 시간"},"last_clean_end":{"name":"마지막 청소 종료"},"last_clean_start":{"name":"마지막 청소 시작"},"main_brush_time_left":{"name":"메인 브러시 남은 시간"},"mop_drying_remaining_time":{"name":"물걸레 건조 남은 시간"},"sensor_time_left":{"name":"센서 남은 시간"},"side_brush_time_left":{"name":"사이드 브러시 남은 시간"},"status":{"name":"상태","state":{"charger_disconnected":"충전기 연결 끊김","charging_complete":"충전 완료","charging_problem":"충전 문제","cleaning":"청소 중","device_offline":"기기 오프라인","docking":"도킹 중","emptying_the_bin":"휴지통 비우는 중","going_to_target":"목적지로 이동 중","going_to_wash_the_mop":"물걸레 세척하러 이동 중","idle":"유휴 중","manual_mode":"수동 모드","paused":"일시중지","remote_control_active":"원격 제어 활성화","returning_home":"충전대로 복귀 중","segment_cleaning":"세그먼트 청소","shutting_down":"종료 중","spot_cleaning":"스팟 청소","starting":"시작 중","updating":"업데이트 중","washing_the_mop":"물걸레 세척 중","zoned_cleaning":"구역 청소"}},"total_cleaning_area":{"name":"총 청소 면적"},"total_cleaning_time":{"name":"총 청소 시간"},"vacuum_error":{"name":"로봇청소기 오류","state":{"battery_error":"배터리 오류","bumper_stuck":"범퍼 끼임","cannot_cross_carpet":"카펫을 건널 수 없음","charging_error":"충전 오류","cliff_sensor_error":"추락방지센서 오류","dock_locator_error":"충전대 위치 찾기 오류","fan_error":"팬 오류","filter_blocked":"필터 막힘","internal_error":"내부 오류","invisible_wall_detected":"가상 벽 감지됨","lidar_blocked":"라이다 센서 막힘","low_battery":"배터리 부족","main_brush_jammed":"메인 브러시 걸림","no_dustbin":"먼지봉투 없음","nogo_zone_detected":"출입 금지 구역 감지됨","none":"없음","return_to_dock_fail":"충전대로 복귀 실패","robot_on_carpet":"카펫 위의 로봇","robot_tilted":"로봇 기울어짐","robot_trapped":"로봇 갇힘","side_brush_error":"사이드 브러시 오류","side_brush_jammed":"사이드 브러시 걸림","vertical_bumper_pressed":"수직 범퍼 눌림","vibrarise_jammed":"VibraRise 걸림","wall_sensor_dirty":"벽 센서 더러움","wheels_jammed":"바퀴 걸림","wheels_suspended":"바퀴 정지됨"}},"zeo_error":{"name":"오류","state":{"communication_error":"통신 오류","door_lock_error":"문 잠금 오류","drain_error":"배수 오류","drying_error_e_13":"건조 오류 E13"}},"zeo_state":{"name":"상태"}},"switch":{"child_lock":{"name":"차일드 락"},"dnd_switch":{"name":"방해 금지"},"off_peak_switch":{"name":"사용량이 적은 시간대 충전"},"status_indicator":{"name":"상태 표시등"}},"time":{"dnd_end_time":{"name":"방해 금지 종료"},"dnd_start_time":{"name":"방해 금지 시작"},"off_peak_end":{"name":"오프 피크 끝"},"off_peak_start":{"name":"오프 피크 시작"}},"vacuum":{"roborock":{"state_attributes":{"fan_speed":{"state":{"balanced":"균형 잡힘","custom":"사용자 정의","gentle":"저소음","max_plus":"최대 플러스","off":"꺼짐","quiet":"저소음","silent":"저소음","standard":"표준","turbo":"터보"}}}}}},"exceptions":{"invalid_user_agreement":{"message":"사용자 계약을 다시 수락해야 합니다. Roborock 앱을 열고 계약을 수락하세요."},"no_user_agreement":{"message":"유효한 사용자 계약이 없습니다. Roborock 앱을 열고 계약에 동의하세요."}},"selector":{"region":{"options":{"auto":"자동","cn":"CN","eu":"EU","ru":"RU","us":"US"}}}}
+{
+    "config": {
+        "abort": {
+            "already_configured_account": "\uacc4\uc815\uc774 \uc774\ubbf8 \uad6c\uc131\ub418\uc5c8\uc2b5\ub2c8\ub2e4",
+            "reauth_successful": "\uc7ac\uc778\uc99d\uc5d0 \uc131\uacf5\ud588\uc2b5\ub2c8\ub2e4"
+        },
+        "error": {
+            "invalid_code": "\uc785\ub825\ud55c \ucf54\ub4dc\uac00 \uc62c\ubc14\ub974\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4. \ud655\uc778\ud558\uace0 \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc2ed\uc2dc\uc624.",
+            "invalid_email": "\uc785\ub825\ud55c \uc774\uba54\uc77c\uacfc \uc5f0\uacb0\ub41c \uacc4\uc815\uc774 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc2ed\uc2dc\uc624.",
+            "invalid_email_format": "\uc774\uba54\uc77c \ud615\uc2dd\uc5d0 \ubb38\uc81c\uac00 \uc788\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud574 \uc8fc\uc138\uc694.",
+            "invalid_email_or_region": "\uc785\ub825\ud558\uc2e0 \uc774\uba54\uc77c\uacfc \uc5f0\uacb0\ub41c \uacc4\uc815\uc774 \uc5c6\uac70\ub098, \uc120\ud0dd\ud558\uc2e0 \uc9c0\uc5ed\uc5d0\ub294 \uacc4\uc815\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.",
+            "unknown": "\uc608\uae30\uce58 \ubabb\ud55c \uc624\ub958"
+        },
+        "step": {
+            "code": {
+                "data": {
+                    "code": "\uc778\uc99d \ucf54\ub4dc"
+                },
+                "description": "\uc774\uba54\uc77c\ub85c \uc804\uc1a1\ub41c \uc778\uc99d \ucf54\ub4dc\ub97c \uc785\ub825\ud558\uc138\uc694."
+            },
+            "reauth_confirm": {
+                "description": "Roborock \ud1b5\ud569\uad6c\uc131\uc694\uc18c\ub97c \uc0ac\uc6a9\ud558\ub824\uba74 \uacc4\uc815\uc744 \ub2e4\uc2dc \uc778\uc99d\ud574\uc57c \ud569\ub2c8\ub2e4.",
+                "title": "{name}\uc758 \uc778\uc99d\uc774 \ub9cc\ub8cc\ub418\uc5c8\uc2b5\ub2c8\ub2e4"
+            },
+            "user": {
+                "data": {
+                    "region": "\ub85c\ubcf4\ub77d \uc11c\ubc84 \uc9c0\uc5ed",
+                    "username": "\uc774\uba54\uc77c"
+                },
+                "data_description": {
+                    "region": "\uc571\uc744 \uc124\uc815\ud560 \ub54c \uc0ac\uc6a9\uc790\uc758 \ub85c\ubcf4\ub77d \uacc4\uc815\uc774 \ub4f1\ub85d\ub418\ub294 \uc11c\ubc84 \uc9c0\uc5ed\uc785\ub2c8\ub2e4. \ubb38\uc81c\uac00 \uc5c6\ub294 \uacbd\uc6b0 \uc790\ub3d9 \uc124\uc815\uc744 \uc0ac\uc6a9\ud558\ub294 \uac83\uc744 \uad8c\uc7a5\ud569\ub2c8\ub2e4."
+                },
+                "description": "Roborock \uc774\uba54\uc77c \uc8fc\uc18c\ub97c \uc785\ub825\ud558\uc138\uc694."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "in_cleaning": {
+                "name": "\uccad\uc18c \uc911"
+            },
+            "mop_attached": {
+                "name": "\ubb3c\uac78\ub808 \ubd80\ucc29"
+            },
+            "mop_drying_status": {
+                "name": "\ubb3c\uac78\ub808 \uac74\uc870"
+            },
+            "water_box_attached": {
+                "name": "\ubb3c\ud1b5 \ubd80\ucc29"
+            },
+            "water_shortage": {
+                "name": "\ubb3c \ubd80\uc871"
+            }
+        },
+        "button": {
+            "reset_air_filter_consumable": {
+                "name": "\uacf5\uae30 \ud544\ud130 \uc18c\ubaa8\ud488 \uc7ac\uc124\uc815"
+            },
+            "reset_main_brush_consumable": {
+                "name": "\uba54\uc778 \ube0c\ub7ec\uc2dc \uc18c\ubaa8\ud488 \uc7ac\uc124\uc815"
+            },
+            "reset_sensor_consumable": {
+                "name": "\uc13c\uc11c \uc18c\ubaa8\ud488 \uc7ac\uc124\uc815"
+            },
+            "reset_side_brush_consumable": {
+                "name": "\uc0ac\uc774\ub4dc \ube0c\ub7ec\uc2dc \uc18c\ubaa8\ud488 \uc7ac\uc124\uc815"
+            }
+        },
+        "number": {
+            "volume": {
+                "name": "\uc74c\ub7c9"
+            }
+        },
+        "select": {
+            "mop_intensity": {
+                "name": "\ubb3c\uac78\ub808 \uac15\ub3c4",
+                "state": {
+                    "custom": "\uc0ac\uc6a9\uc790 \uc815\uc758",
+                    "custom_water_flow": "\ub9de\ucda4\ud615 \ubb3c \ud750\ub984",
+                    "intense": "\uac15\ud558\uac8c",
+                    "mild": "\uc57d\ud558\uac8c",
+                    "moderate": "\ubcf4\ud1b5",
+                    "off": "\uaebc\uc9d0"
+                }
+            },
+            "mop_mode": {
+                "name": "\ubb3c\uac78\ub808 \ubaa8\ub4dc",
+                "state": {
+                    "custom": "\uc0ac\uc6a9\uc790 \uc815\uc758",
+                    "deep": "\uc2ec\uce35",
+                    "deep_plus": "\uc2ec\uce35 \ud50c\ub7ec\uc2a4",
+                    "fast": "\ube60\ub984",
+                    "standard": "\ud45c\uc900"
+                }
+            }
+        },
+        "sensor": {
+            "a01_status": {
+                "state": {
+                    "charging": "\ucda9\uc804 \uc911"
+                }
+            },
+            "clean_percent": {
+                "name": "\uccad\uc18c \uc9c4\ud589 \uc0c1\ud669"
+            },
+            "cleaning_area": {
+                "name": "\uccad\uc18c \uc601\uc5ed"
+            },
+            "cleaning_time": {
+                "name": "\uccad\uc18c \uc2dc\uac04"
+            },
+            "countdown": {
+                "name": "\uce74\uc6b4\ud2b8\ub2e4\uc6b4"
+            },
+            "dock_error": {
+                "name": "\ucda9\uc804\ub300 \uc624\ub958",
+                "state": {
+                    "cleaning_tank_full_or_blocked": "\uccad\uc18c \ud0f1\ud06c\uac00 \uac00\ub4dd \ucc3c\uac70\ub098 \ub9c9\ud614\uc2b5\ub2c8\ub2e4.",
+                    "dirty_tank_latch_open": "\ub354\ub7ec\uc6b4 \ud0f1\ud06c \ub798\uce58 \uc5f4\ub9bc",
+                    "duct_blockage": "\ub355\ud2b8 \ub9c9\ud798",
+                    "no_dustbin": "\uba3c\uc9c0\ubd09\ud22c \uc5c6\uc74c",
+                    "ok": "\ud655\uc778",
+                    "waste_water_tank_full": "\uc624\uc218 \ud0f1\ud06c \uac00\ub4dd \ucc38",
+                    "water_empty": "\ubb3c\uc774 \ube44\uc5b4 \uc788\uc74c"
+                }
+            },
+            "filter_time_left": {
+                "name": "\ud544\ud130 \ub0a8\uc740 \uc2dc\uac04"
+            },
+            "last_clean_end": {
+                "name": "\ub9c8\uc9c0\ub9c9 \uccad\uc18c \uc885\ub8cc"
+            },
+            "last_clean_start": {
+                "name": "\ub9c8\uc9c0\ub9c9 \uccad\uc18c \uc2dc\uc791"
+            },
+            "main_brush_time_left": {
+                "name": "\uba54\uc778 \ube0c\ub7ec\uc2dc \ub0a8\uc740 \uc2dc\uac04"
+            },
+            "mop_drying_remaining_time": {
+                "name": "\ubb3c\uac78\ub808 \uac74\uc870 \ub0a8\uc740 \uc2dc\uac04"
+            },
+            "sensor_time_left": {
+                "name": "\uc13c\uc11c \ub0a8\uc740 \uc2dc\uac04"
+            },
+            "side_brush_time_left": {
+                "name": "\uc0ac\uc774\ub4dc \ube0c\ub7ec\uc2dc \ub0a8\uc740 \uc2dc\uac04"
+            },
+            "status": {
+                "name": "\uc0c1\ud0dc",
+                "state": {
+                    "charger_disconnected": "\ucda9\uc804\uae30 \uc5f0\uacb0 \ub04a\uae40",
+                    "charging_complete": "\ucda9\uc804 \uc644\ub8cc",
+                    "charging_problem": "\ucda9\uc804 \ubb38\uc81c",
+                    "cleaning": "\uccad\uc18c \uc911",
+                    "device_offline": "\uae30\uae30 \uc624\ud504\ub77c\uc778",
+                    "docking": "\ub3c4\ud0b9 \uc911",
+                    "emptying_the_bin": "\ud734\uc9c0\ud1b5 \ube44\uc6b0\ub294 \uc911",
+                    "going_to_target": "\ubaa9\uc801\uc9c0\ub85c \uc774\ub3d9 \uc911",
+                    "going_to_wash_the_mop": "\ubb3c\uac78\ub808 \uc138\ucc99\ud558\ub7ec \uc774\ub3d9 \uc911",
+                    "idle": "\uc720\ud734 \uc911",
+                    "manual_mode": "\uc218\ub3d9 \ubaa8\ub4dc",
+                    "paused": "\uc77c\uc2dc\uc911\uc9c0",
+                    "remote_control_active": "\uc6d0\uaca9 \uc81c\uc5b4 \ud65c\uc131\ud654",
+                    "returning_home": "\ucda9\uc804\ub300\ub85c \ubcf5\uadc0 \uc911",
+                    "segment_cleaning": "\uc138\uadf8\uba3c\ud2b8 \uccad\uc18c",
+                    "shutting_down": "\uc885\ub8cc \uc911",
+                    "spot_cleaning": "\uc2a4\ud31f \uccad\uc18c",
+                    "starting": "\uc2dc\uc791 \uc911",
+                    "updating": "\uc5c5\ub370\uc774\ud2b8 \uc911",
+                    "washing_the_mop": "\ubb3c\uac78\ub808 \uc138\ucc99 \uc911",
+                    "zoned_cleaning": "\uad6c\uc5ed \uccad\uc18c"
+                }
+            },
+            "total_cleaning_area": {
+                "name": "\ucd1d \uccad\uc18c \uba74\uc801"
+            },
+            "total_cleaning_time": {
+                "name": "\ucd1d \uccad\uc18c \uc2dc\uac04"
+            },
+            "vacuum_error": {
+                "name": "\ub85c\ubd07\uccad\uc18c\uae30 \uc624\ub958",
+                "state": {
+                    "battery_error": "\ubc30\ud130\ub9ac \uc624\ub958",
+                    "bumper_stuck": "\ubc94\ud37c \ub07c\uc784",
+                    "cannot_cross_carpet": "\uce74\ud3ab\uc744 \uac74\ub110 \uc218 \uc5c6\uc74c",
+                    "charging_error": "\ucda9\uc804 \uc624\ub958",
+                    "cliff_sensor_error": "\ucd94\ub77d\ubc29\uc9c0\uc13c\uc11c \uc624\ub958",
+                    "dock_locator_error": "\ucda9\uc804\ub300 \uc704\uce58 \ucc3e\uae30 \uc624\ub958",
+                    "fan_error": "\ud32c \uc624\ub958",
+                    "filter_blocked": "\ud544\ud130 \ub9c9\ud798",
+                    "internal_error": "\ub0b4\ubd80 \uc624\ub958",
+                    "invisible_wall_detected": "\uac00\uc0c1 \ubcbd \uac10\uc9c0\ub428",
+                    "lidar_blocked": "\ub77c\uc774\ub2e4 \uc13c\uc11c \ub9c9\ud798",
+                    "low_battery": "\ubc30\ud130\ub9ac \ubd80\uc871",
+                    "main_brush_jammed": "\uba54\uc778 \ube0c\ub7ec\uc2dc \uac78\ub9bc",
+                    "no_dustbin": "\uba3c\uc9c0\ubd09\ud22c \uc5c6\uc74c",
+                    "nogo_zone_detected": "\ucd9c\uc785 \uae08\uc9c0 \uad6c\uc5ed \uac10\uc9c0\ub428",
+                    "none": "\uc5c6\uc74c",
+                    "return_to_dock_fail": "\ucda9\uc804\ub300\ub85c \ubcf5\uadc0 \uc2e4\ud328",
+                    "robot_on_carpet": "\uce74\ud3ab \uc704\uc758 \ub85c\ubd07",
+                    "robot_tilted": "\ub85c\ubd07 \uae30\uc6b8\uc5b4\uc9d0",
+                    "robot_trapped": "\ub85c\ubd07 \uac07\ud798",
+                    "side_brush_error": "\uc0ac\uc774\ub4dc \ube0c\ub7ec\uc2dc \uc624\ub958",
+                    "side_brush_jammed": "\uc0ac\uc774\ub4dc \ube0c\ub7ec\uc2dc \uac78\ub9bc",
+                    "vertical_bumper_pressed": "\uc218\uc9c1 \ubc94\ud37c \ub20c\ub9bc",
+                    "vibrarise_jammed": "VibraRise \uac78\ub9bc",
+                    "wall_sensor_dirty": "\ubcbd \uc13c\uc11c \ub354\ub7ec\uc6c0",
+                    "wheels_jammed": "\ubc14\ud034 \uac78\ub9bc",
+                    "wheels_suspended": "\ubc14\ud034 \uc815\uc9c0\ub428"
+                }
+            },
+            "zeo_error": {
+                "name": "\uc624\ub958",
+                "state": {
+                    "communication_error": "\ud1b5\uc2e0 \uc624\ub958",
+                    "door_lock_error": "\ubb38 \uc7a0\uae08 \uc624\ub958",
+                    "drain_error": "\ubc30\uc218 \uc624\ub958",
+                    "drying_error_e_13": "\uac74\uc870 \uc624\ub958 E13"
+                }
+            },
+            "zeo_state": {
+                "name": "\uc0c1\ud0dc"
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "\ucc28\uc77c\ub4dc \ub77d"
+            },
+            "dnd_switch": {
+                "name": "\ubc29\ud574 \uae08\uc9c0"
+            },
+            "off_peak_switch": {
+                "name": "\uc0ac\uc6a9\ub7c9\uc774 \uc801\uc740 \uc2dc\uac04\ub300 \ucda9\uc804"
+            },
+            "status_indicator": {
+                "name": "\uc0c1\ud0dc \ud45c\uc2dc\ub4f1"
+            }
+        },
+        "time": {
+            "dnd_end_time": {
+                "name": "\ubc29\ud574 \uae08\uc9c0 \uc885\ub8cc"
+            },
+            "dnd_start_time": {
+                "name": "\ubc29\ud574 \uae08\uc9c0 \uc2dc\uc791"
+            },
+            "off_peak_end": {
+                "name": "\uc624\ud504 \ud53c\ud06c \ub05d"
+            },
+            "off_peak_start": {
+                "name": "\uc624\ud504 \ud53c\ud06c \uc2dc\uc791"
+            }
+        },
+        "vacuum": {
+            "roborock": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "balanced": "\uade0\ud615 \uc7a1\ud798",
+                            "custom": "\uc0ac\uc6a9\uc790 \uc815\uc758",
+                            "gentle": "\uc800\uc18c\uc74c",
+                            "max_plus": "\ucd5c\ub300 \ud50c\ub7ec\uc2a4",
+                            "off": "\uaebc\uc9d0",
+                            "quiet": "\uc800\uc18c\uc74c",
+                            "silent": "\uc800\uc18c\uc74c",
+                            "standard": "\ud45c\uc900",
+                            "turbo": "\ud130\ubcf4"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_user_agreement": {
+            "message": "\uc0ac\uc6a9\uc790 \uacc4\uc57d\uc744 \ub2e4\uc2dc \uc218\ub77d\ud574\uc57c \ud569\ub2c8\ub2e4. Roborock \uc571\uc744 \uc5f4\uace0 \uacc4\uc57d\uc744 \uc218\ub77d\ud558\uc138\uc694."
+        },
+        "no_user_agreement": {
+            "message": "\uc720\ud6a8\ud55c \uc0ac\uc6a9\uc790 \uacc4\uc57d\uc774 \uc5c6\uc2b5\ub2c8\ub2e4. Roborock \uc571\uc744 \uc5f4\uace0 \uacc4\uc57d\uc5d0 \ub3d9\uc758\ud558\uc138\uc694."
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "auto": "\uc790\ub3d9",
+                "cn": "CN",
+                "eu": "EU",
+                "ru": "RU",
+                "us": "US"
+            }
+        }
+    }
+}

@@ -1,31 +1,31 @@
 {
     "config": {
         "abort": {
-            "already_configured_account": "El compte ja està configurat",
-            "reauth_successful": "Re-autenticació realitzada correctament"
+            "already_configured_account": "El compte ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "invalid_code": "El codi introduït és incorrecte, comprova'l i torna-ho a provar.",
-            "invalid_email": "No hi ha cap compte associat amb correu introduït, torna-ho a provar.",
-            "invalid_email_format": "S'ha produït un problema en la formatació del correu - torna-ho a provar.",
-            "too_frequent_code_requests": "Has provat de sol·licitar massa codis. Torna-ho a provar més tard.",
+            "invalid_code": "El codi introdu\u00eft \u00e9s incorrecte, comprova'l i torna-ho a provar.",
+            "invalid_email": "No hi ha cap compte associat amb correu introdu\u00eft, torna-ho a provar.",
+            "invalid_email_format": "S'ha produ\u00eft un problema en la formataci\u00f3 del correu - torna-ho a provar.",
+            "too_frequent_code_requests": "Has provat de sol\u00b7licitar massa codis. Torna-ho a provar m\u00e9s tard.",
             "unknown": "Error inesperat"
         },
         "step": {
             "code": {
                 "data": {
-                    "code": "Codi de verificació"
+                    "code": "Codi de verificaci\u00f3"
                 },
-                "description": "Introdueix el codi de verificació enviat al teu correu electrònic"
+                "description": "Introdueix el codi de verificaci\u00f3 enviat al teu correu electr\u00f2nic"
             },
             "reauth_confirm": {
-                "title": "L'autenticació de {name} ha caducat"
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "user": {
                 "data": {
-                    "username": "Correu electrònic"
+                    "username": "Correu electr\u00f2nic"
                 },
-                "description": "Introdueix el correu electrònic de Roborock."
+                "description": "Introdueix el correu electr\u00f2nic de Roborock."
             }
         }
     },
@@ -40,7 +40,7 @@
                 "name": "Netejant"
             },
             "mop_attached": {
-                "name": "Baieta col·locada"
+                "name": "Baieta col\u00b7locada"
             },
             "mop_drying_status": {
                 "name": "Baieta assecant-se"
@@ -51,7 +51,7 @@
                 }
             },
             "water_box_attached": {
-                "name": "Caixa d'aigua col·locada"
+                "name": "Caixa d'aigua col\u00b7locada"
             },
             "water_shortage": {
                 "name": "Poca aigua"
@@ -82,13 +82,13 @@
                     "empty": "Buit",
                     "high": "Alt/a",
                     "low": "Baix/a",
-                    "medium": "Mitjà/na"
+                    "medium": "Mitj\u00e0/na"
                 }
             },
             "dust_collection_mode": {
                 "state": {
                     "balanced": "Equilibrada",
-                    "max": "Màx."
+                    "max": "M\u00e0x."
                 }
             },
             "mop_intensity": {
@@ -99,13 +99,13 @@
                     "high": "Alt/a",
                     "intense": "Intens",
                     "low": "Baix/a",
-                    "max": "Màx.",
-                    "medium": "Mitjà/na",
-                    "mild": "Mitjà",
-                    "min": "Mín.",
+                    "max": "M\u00e0x.",
+                    "medium": "Mitj\u00e0/na",
+                    "mild": "Mitj\u00e0",
+                    "min": "M\u00edn.",
                     "moderate": "Moderat",
                     "off": "OFF",
-                    "standard": "Estàndard"
+                    "standard": "Est\u00e0ndard"
                 }
             },
             "mop_mode": {
@@ -114,8 +114,8 @@
                     "custom": "Personalitzat",
                     "deep": "Profund",
                     "deep_plus": "Profund+",
-                    "fast": "Ràpid",
-                    "standard": "Estàndard"
+                    "fast": "R\u00e0pid",
+                    "standard": "Est\u00e0ndard"
                 }
             },
             "selected_map": {
@@ -126,7 +126,7 @@
                     "empty": "Buit",
                     "high": "Alt/a",
                     "low": "Baix/a",
-                    "medium": "Mitjà/na"
+                    "medium": "Mitj\u00e0/na"
                 }
             },
             "temperature": {
@@ -138,7 +138,7 @@
                 "state": {
                     "high": "Alt/a",
                     "low": "Baix/a",
-                    "medium": "Mitjà/na"
+                    "medium": "Mitj\u00e0/na"
                 }
             }
         },
@@ -164,10 +164,10 @@
                 }
             },
             "clean_percent": {
-                "name": "Progrés de neteja"
+                "name": "Progr\u00e9s de neteja"
             },
             "cleaning_area": {
-                "name": "Àrea netejada"
+                "name": "\u00c0rea netejada"
             },
             "cleaning_time": {
                 "name": "Temps de neteja"
@@ -176,12 +176,12 @@
                 "name": "Compte enrere"
             },
             "dock_error": {
-                "name": "Error de connexió a la base",
+                "name": "Error de connexi\u00f3 a la base",
                 "state": {
-                    "duct_blockage": "Conducte obstruït",
+                    "duct_blockage": "Conducte obstru\u00eft",
                     "no_dustbin": "Sense contenidor",
                     "ok": "Ok",
-                    "waste_water_tank_full": "Dipòsit d'aigües brutes ple",
+                    "waste_water_tank_full": "Dip\u00f2sit d'aig\u00fces brutes ple",
                     "water_empty": "Sense aigua"
                 }
             },
@@ -189,10 +189,10 @@
                 "name": "Vida restant del filtre"
             },
             "last_clean_end": {
-                "name": "Final de l'última neteja"
+                "name": "Final de l'\u00faltima neteja"
             },
             "last_clean_start": {
-                "name": "Inici de l'última neteja"
+                "name": "Inici de l'\u00faltima neteja"
             },
             "main_brush_time_left": {
                 "name": "Vida restant del respall principal"
@@ -219,12 +219,12 @@
                 "state": {
                     "charger_disconnected": "Carregador desconnectat",
                     "charging": "Carregant",
-                    "charging_complete": "Càrrega completada",
-                    "charging_problem": "Problema en la càrrega",
+                    "charging_complete": "C\u00e0rrega completada",
+                    "charging_problem": "Problema en la c\u00e0rrega",
                     "cleaning": "Netejant",
                     "device_offline": "Dispositiu desconnectat",
                     "docking": "Aparcant",
-                    "emptying_the_bin": "Buidant dipòsit",
+                    "emptying_the_bin": "Buidant dip\u00f2sit",
                     "error": "Error",
                     "going_to_target": "Anant a l'objectiu",
                     "going_to_wash_the_mop": "Anant a rentar baieta",
@@ -244,7 +244,7 @@
                 }
             },
             "total_cleaning_area": {
-                "name": "Àrea total netejada"
+                "name": "\u00c0rea total netejada"
             },
             "total_cleaning_time": {
                 "name": "Temps total de neteja"
@@ -255,9 +255,9 @@
                     "battery_error": "Error de bateria",
                     "bumper_stuck": "Para-xocs enganxat",
                     "cannot_cross_carpet": "No es pot travessar la catifa",
-                    "charging_error": "Error de càrrega",
+                    "charging_error": "Error de c\u00e0rrega",
                     "cliff_sensor_error": "Error del sensor de precipici",
-                    "dock_locator_error": "Error de localització de la base",
+                    "dock_locator_error": "Error de localitzaci\u00f3 de la base",
                     "fan_error": "Error del ventilador",
                     "filter_blocked": "Filtre bloquejat",
                     "internal_error": "Error intern",
@@ -276,7 +276,7 @@
                     "side_brush_jammed": "Raspall lateral encallat",
                     "vertical_bumper_pressed": "Para-xocs vertical premut",
                     "vibrarise_jammed": "VibraRise encallat",
-                    "visual_sensor": "Error de càmera",
+                    "visual_sensor": "Error de c\u00e0mera",
                     "wall_sensor_dirty": "Sensor de paret brut",
                     "wheels_jammed": "Rodes encallades",
                     "wheels_suspended": "Rodes suspeses"
@@ -288,14 +288,14 @@
             "zeo_error": {
                 "name": "Error",
                 "state": {
-                    "communication_error": "Error de comunicació",
+                    "communication_error": "Error de comunicaci\u00f3",
                     "door_lock_error": "Error de bloqueig de porta",
                     "drain_error": "Error de drenatge",
                     "drying_error_e_13": "Error en l'assecament E13",
                     "heating_error": "Error d'escalfador",
                     "inverter_error": "Error de l'inversor",
                     "none": "Cap",
-                    "refill_error": "Error de càrrega",
+                    "refill_error": "Error de c\u00e0rrega",
                     "spin_error": "Reorganitza la roba",
                     "temperature_error": "Error de temperatura",
                     "water_level_error": "Error de nivell d'aigua"
@@ -325,7 +325,7 @@
                 "name": "No molestar"
             },
             "off_peak_switch": {
-                "name": "Càrrega en període vall"
+                "name": "C\u00e0rrega en per\u00edode vall"
             },
             "status_indicator": {
                 "name": "Llum indicador d'estat"
@@ -339,10 +339,10 @@
                 "name": "Inici de no molestar"
             },
             "off_peak_end": {
-                "name": "Final període vall"
+                "name": "Final per\u00edode vall"
             },
             "off_peak_start": {
-                "name": "Inici període vall"
+                "name": "Inici per\u00edode vall"
             }
         },
         "vacuum": {
@@ -354,13 +354,13 @@
                             "balanced": "Equilibrada",
                             "custom": "Personalitzat",
                             "gentle": "Lenta",
-                            "max": "Màx.",
-                            "max_plus": "Màxima+",
-                            "medium": "Mitjà/na",
+                            "max": "M\u00e0x.",
+                            "max_plus": "M\u00e0xima+",
+                            "medium": "Mitj\u00e0/na",
                             "off": "OFF",
                             "quiet": "Suau",
                             "silent": "Silenciosa",
-                            "standard": "Estàndard",
+                            "standard": "Est\u00e0ndard",
                             "turbo": "Turbo"
                         }
                     }
@@ -374,18 +374,18 @@
                 "data": {
                     "charger": "Carregador",
                     "cleaned_area": "Zona netejada",
-                    "goto_path": "Camí a seguir",
+                    "goto_path": "Cam\u00ed a seguir",
                     "ignored_obstacles": "Obstacles ignorats",
                     "ignored_obstacles_with_photo": "Obstacles ignorats amb foto",
-                    "mop_path": "Camí on fregar",
+                    "mop_path": "Cam\u00ed on fregar",
                     "no_carpet_zones": "Zones sense catifes",
                     "no_go_zones": "Zones prohibides",
                     "no_mopping_zones": "Zones on no fregar",
                     "obstacles": "Obstacles",
                     "obstacles_with_photo": "Obstacles amb foto",
-                    "path": "Camí",
-                    "predicted_path": "Camí previst",
-                    "vacuum_position": "Posició de l'aspirador",
+                    "path": "Cam\u00ed",
+                    "predicted_path": "Cam\u00ed previst",
+                    "vacuum_position": "Posici\u00f3 de l'aspirador",
                     "virtual_walls": "Parets virtuals",
                     "zones": "Zones"
                 }
@@ -394,10 +394,10 @@
     },
     "services": {
         "get_maps": {
-            "name": "Obté mapes"
+            "name": "Obt\u00e9 mapes"
         },
         "get_vacuum_current_position": {
-            "name": "Obté la posició actual"
+            "name": "Obt\u00e9 la posici\u00f3 actual"
         },
         "set_vacuum_goto_position": {
             "fields": {
@@ -408,7 +408,7 @@
                     "name": "Coordenada Y"
                 }
             },
-            "name": "Vés a la posició"
+            "name": "V\u00e9s a la posici\u00f3"
         }
     }
 }

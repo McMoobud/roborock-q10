@@ -1,42 +1,42 @@
 {
     "config": {
         "abort": {
-            "already_configured_account": "Hesap zaten yapılandırılmış",
-            "reauth_successful": "Yeniden kimlik doğrulama başarılı oldu",
-            "wrong_account": "Yanlış hesap: Lütfen doğru hesapla giriş yapın."
+            "already_configured_account": "Hesap zaten yap\u0131land\u0131r\u0131lm\u0131\u015f",
+            "reauth_successful": "Yeniden kimlik do\u011frulama ba\u015far\u0131l\u0131 oldu",
+            "wrong_account": "Yanl\u0131\u015f hesap: L\u00fctfen do\u011fru hesapla giri\u015f yap\u0131n."
         },
         "error": {
-            "invalid_code": "Girdiğiniz kod yanlıştı, lütfen kontrol edin ve tekrar deneyin.",
-            "invalid_email": "Girdiğiniz e-posta ile ilişkili bir hesap yok, lütfen tekrar deneyin.",
-            "invalid_email_format": "E-postanızın biçimlendirilmesiyle ilgili bir sorun var - lütfen tekrar deneyin.",
-            "invalid_email_or_region": "Girdiğiniz e-posta adresiyle ilişkilendirilmiş bir hesap yok ya da seçilen bölgede bir hesap bulunmuyor.",
-            "too_frequent_code_requests": "Çok fazla kod talep etmeye çalıştınız. Daha sonra tekrar deneyin.",
+            "invalid_code": "Girdi\u011finiz kod yanl\u0131\u015ft\u0131, l\u00fctfen kontrol edin ve tekrar deneyin.",
+            "invalid_email": "Girdi\u011finiz e-posta ile ili\u015fkili bir hesap yok, l\u00fctfen tekrar deneyin.",
+            "invalid_email_format": "E-postan\u0131z\u0131n bi\u00e7imlendirilmesiyle ilgili bir sorun var - l\u00fctfen tekrar deneyin.",
+            "invalid_email_or_region": "Girdi\u011finiz e-posta adresiyle ili\u015fkilendirilmi\u015f bir hesap yok ya da se\u00e7ilen b\u00f6lgede bir hesap bulunmuyor.",
+            "too_frequent_code_requests": "\u00c7ok fazla kod talep etmeye \u00e7al\u0131\u015ft\u0131n\u0131z. Daha sonra tekrar deneyin.",
             "unknown": "Beklenmeyen hata",
-            "unknown_roborock": "Bilinmeyen bir Roborock istisnası oluştu - lütfen kayıtlarınızı kontrol edin.",
-            "unknown_url": "Roborock hesabınız için doğru URL belirlenirken bir sorun oluştu - lütfen günlüklerinizi kontrol edin."
+            "unknown_roborock": "Bilinmeyen bir Roborock istisnas\u0131 olu\u015ftu - l\u00fctfen kay\u0131tlar\u0131n\u0131z\u0131 kontrol edin.",
+            "unknown_url": "Roborock hesab\u0131n\u0131z i\u00e7in do\u011fru URL belirlenirken bir sorun olu\u015ftu - l\u00fctfen g\u00fcnl\u00fcklerinizi kontrol edin."
         },
         "step": {
             "code": {
                 "data": {
-                    "code": "Doğrulama kodu"
+                    "code": "Do\u011frulama kodu"
                 },
                 "data_description": {
-                    "code": "Doğrulama kodu e-postanıza gönderildi."
+                    "code": "Do\u011frulama kodu e-postan\u0131za g\u00f6nderildi."
                 },
-                "description": "E-postanıza gönderilen doğrulama kodunu yazın"
+                "description": "E-postan\u0131za g\u00f6nderilen do\u011frulama kodunu yaz\u0131n"
             },
             "reauth_confirm": {
-                "description": "Roborock entegrasyonunun hesabınızı yeniden doğrulaması gerekiyor",
-                "title": "{name} için kimlik doğrulamanın süresi doldu"
+                "description": "Roborock entegrasyonunun hesab\u0131n\u0131z\u0131 yeniden do\u011frulamas\u0131 gerekiyor",
+                "title": "{name} i\u00e7in kimlik do\u011frulaman\u0131n s\u00fcresi doldu"
             },
             "user": {
                 "data": {
-                    "region": "Roborock sunucu bölgesi",
+                    "region": "Roborock sunucu b\u00f6lgesi",
                     "username": "E-posta"
                 },
                 "data_description": {
-                    "region": "Uygulamayı kurarken Roborock hesabınızın kayıtlı olduğu sunucu bölgesi. Sorun yaşamıyorsanız Otomatik seçeneğini kullanmanız önerilir.",
-                    "username": "Roborock uygulamasında oturum açmak için kullanılan e-posta adresi."
+                    "region": "Uygulamay\u0131 kurarken Roborock hesab\u0131n\u0131z\u0131n kay\u0131tl\u0131 oldu\u011fu sunucu b\u00f6lgesi. Sorun ya\u015fam\u0131yorsan\u0131z Otomatik se\u00e7ene\u011fini kullanman\u0131z \u00f6nerilir.",
+                    "username": "Roborock uygulamas\u0131nda oturum a\u00e7mak i\u00e7in kullan\u0131lan e-posta adresi."
                 },
                 "description": "Roborock e-posta adresinizi girin."
             }
@@ -48,13 +48,13 @@
                 "name": "Temiz su kutusu"
             },
             "clean_fluid_empty": {
-                "name": "Temizleme sıvısı"
+                "name": "Temizleme s\u0131v\u0131s\u0131"
             },
             "detergent_empty": {
                 "name": "Deterjan",
                 "state": {
                     "off": "Mevcut",
-                    "on": "Boş"
+                    "on": "Bo\u015f"
                 }
             },
             "dirty_box_full": {
@@ -64,46 +64,46 @@
                 "name": "Temizleniyor"
             },
             "mop_attached": {
-                "name": "Paspas takılı"
+                "name": "Paspas tak\u0131l\u0131"
             },
             "mop_drying_status": {
-                "name": "Paspaslanıyor"
+                "name": "Paspaslan\u0131yor"
             },
             "softener_empty": {
-                "name": "Yumuşatıcı",
+                "name": "Yumu\u015fat\u0131c\u0131",
                 "state": {
                     "off": "Mevcut",
-                    "on": "Boş"
+                    "on": "Bo\u015f"
                 }
             },
             "water_box_attached": {
-                "name": "Su kutusu takılı"
+                "name": "Su kutusu tak\u0131l\u0131"
             },
             "water_shortage": {
-                "name": "Su sıkıntısı"
+                "name": "Su s\u0131k\u0131nt\u0131s\u0131"
             }
         },
         "button": {
+            "empty_dustbin": {
+                "name": "Bo\u015f \u00e7\u00f6p kutusu"
+            },
             "pause": {
                 "name": "Duraklat"
             },
             "reset_air_filter_consumable": {
-                "name": "Hava filtresi sarf malzemesini sıfırlayın"
+                "name": "Hava filtresi sarf malzemesini s\u0131f\u0131rlay\u0131n"
             },
             "reset_main_brush_consumable": {
-                "name": "Ana fırça sarf malzemesini sıfırlayın"
+                "name": "Ana f\u0131r\u00e7a sarf malzemesini s\u0131f\u0131rlay\u0131n"
             },
             "reset_sensor_consumable": {
-                "name": "Sensör sarf malzemesini sıfırlayın"
+                "name": "Sens\u00f6r sarf malzemesini s\u0131f\u0131rlay\u0131n"
             },
             "reset_side_brush_consumable": {
-                "name": "Yan fırça sarf malzemesini sıfırlayın"
-            },
-            "shutdown": {
-                "name": "Kapat"
+                "name": "Yan f\u0131r\u00e7a sarf malzemesini s\u0131f\u0131rlay\u0131n"
             },
             "start": {
-                "name": "Başlat"
+                "name": "Ba\u015flat"
             }
         },
         "number": {
@@ -116,172 +116,172 @@
                 "name": "Temizleme modu",
                 "state": {
                     "mop": "Sadece paspas",
-                    "vac_and_mop": "Süpürme ve paspas",
-                    "vacuum": "Sadece süpürme"
+                    "vac_and_mop": "S\u00fcp\u00fcrme ve paspas",
+                    "vacuum": "Sadece s\u00fcp\u00fcrme"
                 }
             },
             "detergent_type": {
-                "name": "Deterjan türü",
+                "name": "Deterjan t\u00fcr\u00fc",
                 "state": {
-                    "empty": "Boş",
-                    "high": "Yüksek",
-                    "low": "Düşük",
+                    "empty": "Bo\u015f",
+                    "high": "Y\u00fcksek",
+                    "low": "D\u00fc\u015f\u00fck",
                     "medium": "Orta"
                 }
             },
             "drying_mode": {
                 "name": "Kurutma modu",
                 "state": {
-                    "iron": "Ütü",
+                    "iron": "\u00dct\u00fc",
                     "none": "Kurutma yok",
-                    "quick": "Hızlı",
-                    "store": "Mağaza",
+                    "quick": "H\u0131zl\u0131",
+                    "store": "Ma\u011faza",
                     "time_dry": "Kuru zaman"
                 }
             },
             "dust_collection_mode": {
-                "name": "Boş mod",
+                "name": "Bo\u015f mod",
                 "state": {
                     "balanced": "Dengeli",
-                    "light": "Işık",
+                    "light": "I\u015f\u0131k",
                     "max": "Maksimum",
-                    "smart": "Akıllı"
+                    "smart": "Ak\u0131ll\u0131"
                 }
             },
             "mode": {
-                "name": "Çalışma modu",
+                "name": "\u00c7al\u0131\u015fma modu",
                 "state": {
                     "drain": "Tahliye",
                     "dry": "Kuru",
-                    "heavy": "Ağır",
-                    "pre_wash": "Ön yıkama",
-                    "rinse_spin": "Durulayın ve sıkın",
+                    "heavy": "A\u011f\u0131r",
+                    "pre_wash": "\u00d6n y\u0131kama",
+                    "rinse_spin": "Durulay\u0131n ve s\u0131k\u0131n",
                     "spin": "Kurutma",
-                    "wash": "Yıkama",
-                    "wash_and_dry": "Yıkayın ve kurutun"
+                    "wash": "Y\u0131kama",
+                    "wash_and_dry": "Y\u0131kay\u0131n ve kurutun"
                 }
             },
             "mop_intensity": {
-                "name": "Paspas yoğunluğu",
+                "name": "Paspas yo\u011funlu\u011fu",
                 "state": {
-                    "custom": "Kişiselleştirilmiş",
-                    "custom_water_flow": "Özel su akışı",
-                    "extreme": "Aşırı",
-                    "high": "Yüksek",
-                    "intense": "Yoğun",
-                    "low": "Düşük",
+                    "custom": "Ki\u015fiselle\u015ftirilmi\u015f",
+                    "custom_water_flow": "\u00d6zel su ak\u0131\u015f\u0131",
+                    "extreme": "A\u015f\u0131r\u0131",
+                    "high": "Y\u00fcksek",
+                    "intense": "Yo\u011fun",
+                    "low": "D\u00fc\u015f\u00fck",
                     "max": "Maksimum",
                     "medium": "Orta",
                     "mild": "Hafif",
                     "min": "Minimum",
-                    "moderate": "Ilımlı",
-                    "off": "Kapalı",
+                    "moderate": "Il\u0131ml\u0131",
+                    "off": "Kapal\u0131",
                     "slight": "Hafif",
-                    "smart_mode": "Akıllı Plan",
+                    "smart_mode": "Ak\u0131ll\u0131 Plan",
                     "standard": "Standart",
-                    "vac_followed_by_mop": "Önce süpürme, sonra paspaslama"
+                    "vac_followed_by_mop": "\u00d6nce s\u00fcp\u00fcrme, sonra paspaslama"
                 }
             },
             "mop_mode": {
                 "name": "Paspas modu",
                 "state": {
-                    "custom": "Kişiselleştirilmiş",
+                    "custom": "Ki\u015fiselle\u015ftirilmi\u015f",
                     "deep": "Derin",
                     "deep_plus": "Derin+",
-                    "fast": "Hızlı",
-                    "smart_mode": "Akıllı Plan",
+                    "fast": "H\u0131zl\u0131",
+                    "smart_mode": "Ak\u0131ll\u0131 Plan",
                     "standard": "Standart"
                 }
             },
             "program": {
-                "name": "Yıkama programı",
+                "name": "Y\u0131kama program\u0131",
                 "state": {
                     "air_refresh": "Hava tazeleme",
-                    "anti_allergen": "Alerji önleyici",
-                    "anti_mites": "Akarlara karşı",
-                    "baby_care": "Bebek bakımı",
-                    "bedding": "Yatak takımı",
-                    "boiling_wash": "Kaynar suyla yıkama",
+                    "anti_allergen": "Alerji \u00f6nleyici",
+                    "anti_mites": "Akarlara kar\u015f\u0131",
+                    "baby_care": "Bebek bak\u0131m\u0131",
+                    "bedding": "Yatak tak\u0131m\u0131",
+                    "boiling_wash": "Kaynar suyla y\u0131kama",
                     "bra": "Sutyen",
                     "cotton_linen": "Pamuk/Keten",
-                    "custom": "Kişiselleştirilmiş",
-                    "down": "Aşağı",
-                    "down_clean": "Aşağıya doğru temizleyin",
+                    "custom": "Ki\u015fiselle\u015ftirilmi\u015f",
+                    "down": "A\u015fa\u011f\u0131",
+                    "down_clean": "A\u015fa\u011f\u0131ya do\u011fru temizleyin",
                     "exo_40_60": "Exo 40/60",
                     "gentle": "Nazik",
-                    "intensive": "Yoğun",
-                    "new_clothes": "Yeni kıyafetler",
+                    "intensive": "Yo\u011fun",
+                    "new_clothes": "Yeni k\u0131yafetler",
                     "night": "Gece",
-                    "panties": "Külot",
-                    "quick": "Hızlı",
-                    "rinse_and_spin": "Durulayın ve sıkın",
+                    "panties": "K\u00fclot",
+                    "quick": "H\u0131zl\u0131",
+                    "rinse_and_spin": "Durulay\u0131n ve s\u0131k\u0131n",
                     "sanitize": "Dezenfekte et",
                     "season": "Sezon",
-                    "shirts": "Gömlekler",
-                    "silk": "İpek",
-                    "socks": "Çorap",
+                    "shirts": "G\u00f6mlekler",
+                    "silk": "\u0130pek",
+                    "socks": "\u00c7orap",
                     "sportswear": "Spor giyim",
-                    "stain_removal": "Leke çıkarma",
+                    "stain_removal": "Leke \u00e7\u0131karma",
                     "standard": "Standart",
                     "synthetics": "Sentetikler",
-                    "t_shirts": "Tişörtler",
+                    "t_shirts": "Ti\u015f\u00f6rtler",
                     "towels": "Havlular",
-                    "twenty_c": "20°C",
-                    "underwear": "İç çamaşırı",
-                    "warming": "Isınıyor",
-                    "wool": "Yün"
+                    "twenty_c": "20\u00b0C",
+                    "underwear": "\u0130\u00e7 \u00e7ama\u015f\u0131r\u0131",
+                    "warming": "Is\u0131n\u0131yor",
+                    "wool": "Y\u00fcn"
                 }
             },
             "rinse_times": {
-                "name": "Durulama süreleri",
+                "name": "Durulama s\u00fcreleri",
                 "state": {
                     "high": "4",
                     "low": "2",
                     "max": "5",
                     "mid": "3",
                     "min": "1",
-                    "none": "Varsayılan"
+                    "none": "Varsay\u0131lan"
                 }
             },
             "selected_map": {
-                "name": "Seçilen harita"
+                "name": "Se\u00e7ilen harita"
             },
             "softener_type": {
-                "name": "Yumuşatıcı tipi",
+                "name": "Yumu\u015fat\u0131c\u0131 tipi",
                 "state": {
-                    "empty": "Boş",
-                    "high": "Yüksek",
-                    "low": "Düşük",
+                    "empty": "Bo\u015f",
+                    "high": "Y\u00fcksek",
+                    "low": "D\u00fc\u015f\u00fck",
                     "medium": "Orta"
                 }
             },
             "spin_level": {
-                "name": "Sıkma devri",
+                "name": "S\u0131kma devri",
                 "state": {
                     "high": "1000 Devir/dakika",
                     "max": "1400 Devir/dakika",
                     "mid": "800 Devir/dakika",
-                    "none": "Varsayılan",
+                    "none": "Varsay\u0131lan",
                     "very_high": "1200 Devir/dakika",
                     "very_low": "600 Devir/dakika"
                 }
             },
             "temperature": {
-                "name": "Su sıcaklığı",
+                "name": "Su s\u0131cakl\u0131\u011f\u0131",
                 "state": {
-                    "30": "30°C",
-                    "40": "40°C",
-                    "60": "60°C",
-                    "90": "90°C",
+                    "30": "30\u00b0C",
+                    "40": "40\u00b0C",
+                    "60": "60\u00b0C",
+                    "90": "90\u00b0C",
                     "auto": "Otomatik",
-                    "cold": "Soğuk"
+                    "cold": "So\u011fuk"
                 }
             },
             "water_flow": {
-                "name": "Su akışı",
+                "name": "Su ak\u0131\u015f\u0131",
                 "state": {
-                    "high": "Yüksek",
-                    "low": "Düşük",
+                    "high": "Y\u00fcksek",
+                    "low": "D\u00fc\u015f\u00fck",
                     "medium": "Orta"
                 }
             }
@@ -290,46 +290,46 @@
             "a01_error": {
                 "name": "Hata",
                 "state": {
-                    "battery_temperature_protection": "Pil sıcaklığı koruması",
-                    "battery_temperature_protection_2": "Pil sıcaklığı koruması",
-                    "battery_temperature_protection_e0": "Sıcaklık koruması",
-                    "battery_under_10": "Pil %10'un altında",
-                    "clean_head_entangled": "Temizleme başlığı dolaşmış",
-                    "clean_head_too_hot": "Temizleme başlığı çok sıcak.",
-                    "clean_tank_empty": "Tankı temizleyin",
-                    "cleaning_head_blocked": "Temizleme başlığı tıkalı",
-                    "dirty_charging_contacts": "Şarj temas noktalarını temizleyin",
+                    "battery_temperature_protection": "Pil s\u0131cakl\u0131\u011f\u0131 korumas\u0131",
+                    "battery_temperature_protection_2": "Pil s\u0131cakl\u0131\u011f\u0131 korumas\u0131",
+                    "battery_temperature_protection_e0": "S\u0131cakl\u0131k korumas\u0131",
+                    "battery_under_10": "Pil %10'un alt\u0131nda",
+                    "clean_head_entangled": "Temizleme ba\u015fl\u0131\u011f\u0131 dola\u015fm\u0131\u015f",
+                    "clean_head_too_hot": "Temizleme ba\u015fl\u0131\u011f\u0131 \u00e7ok s\u0131cak.",
+                    "clean_tank_empty": "Tank\u0131 temizleyin",
+                    "cleaning_head_blocked": "Temizleme ba\u015fl\u0131\u011f\u0131 t\u0131kal\u0131",
+                    "dirty_charging_contacts": "\u015earj temas noktalar\u0131n\u0131 temizleyin",
                     "dirty_tank_full": "Kirli tank dolu",
-                    "fan_protection_e4": "Fan koruması",
-                    "fan_protection_e5": "Fan koruması",
-                    "fan_protection_e9": "Fan koruması",
-                    "low_battery": "Düşük pil",
-                    "none": "Hiçbiri",
-                    "power_adapter_error": "Güç adaptörü hatası",
-                    "temperature_protection": "Sıcaklık koruması",
-                    "water_level_sensor_stuck": "Su seviye sensörü sıkışmış."
+                    "fan_protection_e4": "Fan korumas\u0131",
+                    "fan_protection_e5": "Fan korumas\u0131",
+                    "fan_protection_e9": "Fan korumas\u0131",
+                    "low_battery": "D\u00fc\u015f\u00fck pil",
+                    "none": "Hi\u00e7biri",
+                    "power_adapter_error": "G\u00fc\u00e7 adapt\u00f6r\u00fc hatas\u0131",
+                    "temperature_protection": "S\u0131cakl\u0131k korumas\u0131",
+                    "water_level_sensor_stuck": "Su seviye sens\u00f6r\u00fc s\u0131k\u0131\u015fm\u0131\u015f."
                 }
             },
             "a01_status": {
                 "name": "Durum",
                 "state": {
-                    "charging": "Şarj oluyor",
+                    "charging": "\u015earj oluyor",
                     "drying": "Kurutuluyor",
                     "dusting_mode": "Toz alma modu",
-                    "fetch_failed": "Getirme başarısız oldu",
+                    "fetch_failed": "Getirme ba\u015far\u0131s\u0131z oldu",
                     "fetching": "Getiriliyor",
-                    "mop_washing": "Yıkama paspası",
-                    "mop_washing_paused": "Paspas yıkama duraklatıldı",
-                    "ready": "Hazır",
+                    "mop_washing": "Y\u0131kama paspas\u0131",
+                    "mop_washing_paused": "Paspas y\u0131kama duraklat\u0131ld\u0131",
+                    "ready": "Haz\u0131r",
                     "reserving": "Rezervasyon",
                     "self_clean_cleaning": "Kendi kendini temizleme",
                     "self_clean_deep_cleaning": "Kendi kendini temizleyen derinlemesine temizlik",
                     "self_clean_dehydrating": "Kendi kendini temizleyen kurutma",
                     "self_clean_rinsing": "Kendi kendini temizleyen durulama",
                     "unknown": "Bilinmeyen",
-                    "updating": "Güncelleniyor",
-                    "ventilating": "Havalandırılıyor",
-                    "washing": "Yıkanıyor"
+                    "updating": "G\u00fcncelleniyor",
+                    "ventilating": "Havaland\u0131r\u0131l\u0131yor",
+                    "washing": "Y\u0131kan\u0131yor"
                 }
             },
             "brush_remaining": {
@@ -339,244 +339,244 @@
                 "name": "Temizlik ilerlemesi"
             },
             "cleaning_area": {
-                "name": "Temizleme alanı"
+                "name": "Temizleme alan\u0131"
             },
             "cleaning_brush_time_left": {
-                "name": "Bakım fırçasının kullanım süresi kaldı"
+                "name": "Bak\u0131m f\u0131r\u00e7as\u0131n\u0131n kullan\u0131m s\u00fcresi kald\u0131"
             },
             "cleaning_time": {
-                "name": "Temizlik süresi"
+                "name": "Temizlik s\u00fcresi"
             },
             "countdown": {
-                "name": "Geri Sayım"
+                "name": "Geri Say\u0131m"
             },
             "current_room": {
                 "name": "Mevcut oda"
             },
             "dock_error": {
-                "name": "Dock hatası",
+                "name": "Dock hatas\u0131",
                 "state": {
-                    "cleaning_tank_full_or_blocked": "Temizleme tankı dolu veya tıkalı",
-                    "dirty_tank_latch_open": "Kirli tank mandalı açık",
-                    "duct_blockage": "Kanal tıkanıklığı",
-                    "no_dustbin": "Çöp kovası yok",
+                    "cleaning_tank_full_or_blocked": "Temizleme tank\u0131 dolu veya t\u0131kal\u0131",
+                    "dirty_tank_latch_open": "Kirli tank mandal\u0131 a\u00e7\u0131k",
+                    "duct_blockage": "Kanal t\u0131kan\u0131kl\u0131\u011f\u0131",
+                    "no_dustbin": "\u00c7\u00f6p kovas\u0131 yok",
                     "ok": "Tamam",
-                    "waste_water_tank_full": "Atık su deposu dolu",
+                    "waste_water_tank_full": "At\u0131k su deposu dolu",
                     "water_empty": "Su bitti"
                 }
             },
             "filter_time_left": {
-                "name": "Kalan filtre süresi"
+                "name": "Kalan filtre s\u00fcresi"
             },
             "last_clean_end": {
                 "name": "Son bitirilen temizlik"
             },
             "last_clean_start": {
-                "name": "Son temizlik başlangıcı"
+                "name": "Son temizlik ba\u015flang\u0131c\u0131"
             },
             "main_brush_time_left": {
-                "name": "Kalan ana fırça süresi"
+                "name": "Kalan ana f\u0131r\u00e7a s\u00fcresi"
             },
             "mop_drying_remaining_time": {
-                "name": "Paspas kurutma kalan süresi"
+                "name": "Paspas kurutma kalan s\u00fcresi"
             },
             "mop_life_time_left": {
-                "name": "Paspasın kalan kullanım ömrü"
+                "name": "Paspas\u0131n kalan kullan\u0131m \u00f6mr\u00fc"
             },
             "q7_status": {
                 "name": "Durum",
                 "state": {
-                    "charging": "Şarj oluyor",
-                    "docking": "Yanaşıyorum",
+                    "charging": "\u015earj oluyor",
+                    "docking": "Yana\u015f\u0131yorum",
                     "mop_airdrying": "Paspas hava kurutma",
-                    "mop_cleaning": "Paspas temizliği",
+                    "mop_cleaning": "Paspas temizli\u011fi",
                     "moping": "Paspaslama",
                     "paused": "Durduruldu",
                     "sleeping": "Uyku",
-                    "sweep_moping": "Süpürme paspaslama",
-                    "sweep_moping_2": "Süpürme paspaslama",
-                    "updating": "Güncelleniyor",
-                    "waiting_for_orders": "Siparişleri bekliyorum"
+                    "sweep_moping": "S\u00fcp\u00fcrme paspaslama",
+                    "sweep_moping_2": "S\u00fcp\u00fcrme paspaslama",
+                    "updating": "G\u00fcncelleniyor",
+                    "waiting_for_orders": "Sipari\u015fleri bekliyorum"
                 }
             },
             "sensor_time_left": {
-                "name": "Kalan sensör süresi"
+                "name": "Kalan sens\u00f6r s\u00fcresi"
             },
             "side_brush_time_left": {
-                "name": "Kalan yan fırça süresi"
+                "name": "Kalan yan f\u0131r\u00e7a s\u00fcresi"
             },
             "status": {
                 "name": "Durum",
                 "state": {
-                    "air_drying_stopping": "Hava kurumasını durdurma",
-                    "attaching_the_mop": "Paspası tak",
-                    "charger_disconnected": "Şarj cihazının bağlantısı kesildi",
-                    "charging": "Şarj oluyor",
-                    "charging_complete": "Şarj tamamlandı",
-                    "charging_problem": "Şarj sorunu",
+                    "air_drying_stopping": "Hava kurumas\u0131n\u0131 durdurma",
+                    "attaching_the_mop": "Paspas\u0131 tak",
+                    "charger_disconnected": "\u015earj cihaz\u0131n\u0131n ba\u011flant\u0131s\u0131 kesildi",
+                    "charging": "\u015earj oluyor",
+                    "charging_complete": "\u015earj tamamland\u0131",
+                    "charging_problem": "\u015earj sorunu",
                     "cleaning": "Temizleniyor",
-                    "detaching_the_mop": "Paspası çıkart",
-                    "device_offline": "Cihaz çevrimdışı",
-                    "docking": "Yanaşıyorum",
-                    "egg_attack": "Aşk tanrısı modu",
-                    "emptying_the_bin": "Hazneyi boşaltıyorum",
+                    "detaching_the_mop": "Paspas\u0131 \u00e7\u0131kart",
+                    "device_offline": "Cihaz \u00e7evrimd\u0131\u015f\u0131",
+                    "docking": "Yana\u015f\u0131yorum",
+                    "egg_attack": "A\u015fk tanr\u0131s\u0131 modu",
+                    "emptying_the_bin": "Hazneyi bo\u015falt\u0131yorum",
                     "error": "Hata",
                     "going_to_target": "Hedefe gidiyorum",
-                    "going_to_wash_the_mop": "Paspası yıkamaya gidiyorum",
-                    "idle": "Boşta",
+                    "going_to_wash_the_mop": "Paspas\u0131 y\u0131kamaya gidiyorum",
+                    "idle": "Bo\u015fta",
                     "locked": "Kilitli",
                     "manual_mode": "Manuel mod",
                     "mapping": "Haritalama",
                     "paused": "Durduruldu",
                     "remote_control_active": "Uzaktan kumanda etkin",
-                    "returning_home": "Şarj istasyonuna dönüyor",
-                    "segment_cleaning": "Segment temizliği",
-                    "shutting_down": "Kapatılıyor",
+                    "returning_home": "\u015earj istasyonuna d\u00f6n\u00fcyor",
+                    "segment_cleaning": "Segment temizli\u011fi",
+                    "shutting_down": "Kapat\u0131l\u0131yor",
                     "spot_cleaning": "Noktasal temizlik",
-                    "starting": "Başlatılıyor",
+                    "starting": "Ba\u015flat\u0131l\u0131yor",
                     "unknown": "Bilinmeyen",
-                    "updating": "Güncelleniyor",
-                    "washing_the_mop": "Paspas yıkama",
-                    "zoned_cleaning": "Alan Temizliği"
+                    "updating": "G\u00fcncelleniyor",
+                    "washing_the_mop": "Paspas y\u0131kama",
+                    "zoned_cleaning": "Alan Temizli\u011fi"
                 }
             },
             "strainer_time_left": {
-                "name": "Süzgeç süresi kaldı"
+                "name": "S\u00fczge\u00e7 s\u00fcresi kald\u0131"
             },
             "times_after_clean": {
                 "name": "Temizlikten sonraki zamanlar"
             },
             "total_cleaning_area": {
-                "name": "Toplam temizlik alanı"
+                "name": "Toplam temizlik alan\u0131"
             },
             "total_cleaning_count": {
-                "name": "Toplam temizlik sayısı"
+                "name": "Toplam temizlik say\u0131s\u0131"
             },
             "total_cleaning_time": {
-                "name": "Toplam temizlik süresi"
+                "name": "Toplam temizlik s\u00fcresi"
             },
             "vacuum_error": {
-                "name": "Vakum hatası",
+                "name": "Vakum hatas\u0131",
                 "state": {
-                    "battery_error": "Pil hatası",
-                    "bumper_stuck": "Tampon sıkışmış",
-                    "cannot_cross_carpet": "Halı geçilemez",
-                    "charging_error": "Şarj hatası",
-                    "clear_brush_exception": "Su filtresinin doğru şekilde takıldığını kontrol edin",
-                    "clear_brush_exception_2": "Konumlandırma düğmesi hatası",
-                    "clear_water_box_exception": "Temiz su deposu boş",
+                    "battery_error": "Pil hatas\u0131",
+                    "bumper_stuck": "Tampon s\u0131k\u0131\u015fm\u0131\u015f",
+                    "cannot_cross_carpet": "Hal\u0131 ge\u00e7ilemez",
+                    "charging_error": "\u015earj hatas\u0131",
+                    "clear_brush_exception": "Su filtresinin do\u011fru \u015fekilde tak\u0131ld\u0131\u011f\u0131n\u0131 kontrol edin",
+                    "clear_brush_exception_2": "Konumland\u0131rma d\u00fc\u011fmesi hatas\u0131",
+                    "clear_water_box_exception": "Temiz su deposu bo\u015f",
                     "clear_water_box_hoare": "Temiz su deposunu kontrol edin",
-                    "cliff_sensor_error": "Uçurum sensörü hatası",
-                    "collect_dust_error_3": "Otomatik boşaltma yuvasını temizle",
-                    "compass_error": "Güçlü manyetik alan algılandı",
+                    "cliff_sensor_error": "U\u00e7urum sens\u00f6r\u00fc hatas\u0131",
+                    "collect_dust_error_3": "Otomatik bo\u015faltma yuvas\u0131n\u0131 temizle",
+                    "compass_error": "G\u00fc\u00e7l\u00fc manyetik alan alg\u0131land\u0131",
                     "dirty_water_box_hoare": "Kirli su deposunu kontrol edin",
-                    "dock": "Bağlantı istasyonu güce bağlı değil",
-                    "dock_locator_error": "Dock bulucu hatası",
-                    "fan_error": "Fan hatası",
-                    "filter_blocked": "Filtre tıkandı",
-                    "filter_screen_exception": "Bağlantı noktası su filtresini temizleyin",
+                    "dock": "Ba\u011flant\u0131 istasyonu g\u00fcce ba\u011fl\u0131 de\u011fil",
+                    "dock_locator_error": "Dock bulucu hatas\u0131",
+                    "fan_error": "Fan hatas\u0131",
+                    "filter_blocked": "Filtre t\u0131kand\u0131",
+                    "filter_screen_exception": "Ba\u011flant\u0131 noktas\u0131 su filtresini temizleyin",
                     "internal_error": "Dahili hata",
-                    "invisible_wall_detected": "Görünmez duvar algılandı",
+                    "invisible_wall_detected": "G\u00f6r\u00fcnmez duvar alg\u0131land\u0131",
                     "lidar_blocked": "Lidar engellendi",
-                    "light_touch": "Duvar sensörü hatası",
-                    "low_battery": "Düşük pil",
-                    "main_brush_jammed": "Ana fırça sıkışmış",
-                    "mopping_roller_1": "Yıkama silindiri sıkışmış olabilir",
-                    "mopping_roller_2": "Yıkama silindiri sıkışmış olabilir",
-                    "mopping_roller_error_2": "Yıkama silindiri düzgün şekilde indirilmemiş",
-                    "no_dustbin": "Çöp kovası yok",
-                    "nogo_zone_detected": "Yasak bölge algılandı",
-                    "none": "Hiçbiri",
-                    "return_to_dock_fail": "Dock'a geri dönemedi",
-                    "robot_on_carpet": "Robot halı üzerinde",
-                    "robot_tilted": "Robot eğildi",
-                    "robot_trapped": "Robot kapana kısıldı",
-                    "side_brush_error": "Yan fırça hatası",
-                    "side_brush_jammed": "Yan fırça sıkışmış",
-                    "sink_strainer_hoare": "Su filtresini yeniden takın",
-                    "strainer_error": "Filtre ıslak veya tıkalı",
-                    "temperature_protection": "Ünite sıcaklık koruması",
+                    "light_touch": "Duvar sens\u00f6r\u00fc hatas\u0131",
+                    "low_battery": "D\u00fc\u015f\u00fck pil",
+                    "main_brush_jammed": "Ana f\u0131r\u00e7a s\u0131k\u0131\u015fm\u0131\u015f",
+                    "mopping_roller_1": "Y\u0131kama silindiri s\u0131k\u0131\u015fm\u0131\u015f olabilir",
+                    "mopping_roller_2": "Y\u0131kama silindiri s\u0131k\u0131\u015fm\u0131\u015f olabilir",
+                    "mopping_roller_error_2": "Y\u0131kama silindiri d\u00fczg\u00fcn \u015fekilde indirilmemi\u015f",
+                    "no_dustbin": "\u00c7\u00f6p kovas\u0131 yok",
+                    "nogo_zone_detected": "Yasak b\u00f6lge alg\u0131land\u0131",
+                    "none": "Hi\u00e7biri",
+                    "return_to_dock_fail": "Dock'a geri d\u00f6nemedi",
+                    "robot_on_carpet": "Robot hal\u0131 \u00fczerinde",
+                    "robot_tilted": "Robot e\u011fildi",
+                    "robot_trapped": "Robot kapana k\u0131s\u0131ld\u0131",
+                    "side_brush_error": "Yan f\u0131r\u00e7a hatas\u0131",
+                    "side_brush_jammed": "Yan f\u0131r\u00e7a s\u0131k\u0131\u015fm\u0131\u015f",
+                    "sink_strainer_hoare": "Su filtresini yeniden tak\u0131n",
+                    "strainer_error": "Filtre \u0131slak veya t\u0131kal\u0131",
+                    "temperature_protection": "\u00dcnite s\u0131cakl\u0131k korumas\u0131",
                     "vertical_bumper_pressed": "Dikey tampon preslendi",
-                    "vibrarise_jammed": "VibraRise sıkışmış",
-                    "visual_sensor": "Kamera hatası",
-                    "wall_sensor_dirty": "Duvar sensörü kirli",
-                    "wheels_jammed": "Tekerlekler sıkışmış",
-                    "wheels_suspended": "Tekerlekler askıya alındı"
+                    "vibrarise_jammed": "VibraRise s\u0131k\u0131\u015fm\u0131\u015f",
+                    "visual_sensor": "Kamera hatas\u0131",
+                    "wall_sensor_dirty": "Duvar sens\u00f6r\u00fc kirli",
+                    "wheels_jammed": "Tekerlekler s\u0131k\u0131\u015fm\u0131\u015f",
+                    "wheels_suspended": "Tekerlekler ask\u0131ya al\u0131nd\u0131"
                 }
             },
             "washing_left": {
-                "name": "Sol yıkama"
+                "name": "Sol y\u0131kama"
             },
             "zeo_error": {
                 "name": "Hata",
                 "state": {
-                    "communication_error": "İletişim hatası",
-                    "door_lock_error": "Kapı kilidi hatası",
-                    "drain_error": "Boşaltma hatası",
-                    "drying_error": "Kurutma hatası: Hava giriş sıcaklık sensörünü kontrol edin",
-                    "drying_error_e_12": "Kurutma hatası: Hava çıkış sıcaklık sensörünü kontrol edin",
-                    "drying_error_e_13": "Kurutma hatası E13",
-                    "drying_error_e_14": "Kurutma hatası: giriş kondenser sıcaklık sensörünü kontrol edin",
-                    "drying_error_e_15": "Kurutma hatası: Isıtma elemanını veya döner tablası kontrol edin",
-                    "drying_error_e_16": "Kurutma hatası: Kurutma fanını kontrol edin",
-                    "drying_error_restart": "Kurutma hatası: Çamaşır makinesini yeniden başlatın",
-                    "drying_error_water_flow": "Kurutma hatası: su akışını kontrol edin",
-                    "heating_error": "Isıtma hatası",
-                    "inverter_error": "İnvertör hatası",
-                    "none": "Hiçbiri",
-                    "refill_error": "Yeniden doldurma hatası",
-                    "spin_error": "Giysileri yeniden düzenleyin",
-                    "temperature_error": "Sıcaklık hatası",
-                    "water_level_error": "Su seviyesi hatası"
+                    "communication_error": "\u0130leti\u015fim hatas\u0131",
+                    "door_lock_error": "Kap\u0131 kilidi hatas\u0131",
+                    "drain_error": "Bo\u015faltma hatas\u0131",
+                    "drying_error": "Kurutma hatas\u0131: Hava giri\u015f s\u0131cakl\u0131k sens\u00f6r\u00fcn\u00fc kontrol edin",
+                    "drying_error_e_12": "Kurutma hatas\u0131: Hava \u00e7\u0131k\u0131\u015f s\u0131cakl\u0131k sens\u00f6r\u00fcn\u00fc kontrol edin",
+                    "drying_error_e_13": "Kurutma hatas\u0131 E13",
+                    "drying_error_e_14": "Kurutma hatas\u0131: giri\u015f kondenser s\u0131cakl\u0131k sens\u00f6r\u00fcn\u00fc kontrol edin",
+                    "drying_error_e_15": "Kurutma hatas\u0131: Is\u0131tma eleman\u0131n\u0131 veya d\u00f6ner tablas\u0131 kontrol edin",
+                    "drying_error_e_16": "Kurutma hatas\u0131: Kurutma fan\u0131n\u0131 kontrol edin",
+                    "drying_error_restart": "Kurutma hatas\u0131: \u00c7ama\u015f\u0131r makinesini yeniden ba\u015flat\u0131n",
+                    "drying_error_water_flow": "Kurutma hatas\u0131: su ak\u0131\u015f\u0131n\u0131 kontrol edin",
+                    "heating_error": "Is\u0131tma hatas\u0131",
+                    "inverter_error": "\u0130nvert\u00f6r hatas\u0131",
+                    "none": "Hi\u00e7biri",
+                    "refill_error": "Yeniden doldurma hatas\u0131",
+                    "spin_error": "Giysileri yeniden d\u00fczenleyin",
+                    "temperature_error": "S\u0131cakl\u0131k hatas\u0131",
+                    "water_level_error": "Su seviyesi hatas\u0131"
                 }
             },
             "zeo_state": {
                 "name": "Durum",
                 "state": {
-                    "aftercare": "Bakım sonrası",
-                    "cooling": "Soğutuluyor",
+                    "aftercare": "Bak\u0131m sonras\u0131",
+                    "cooling": "So\u011futuluyor",
                     "done": "Bitti",
                     "drying": "Kurutma",
                     "rinsing": "Durulama",
                     "soaking": "Islatma",
-                    "spinning": "Döndürme",
+                    "spinning": "D\u00f6nd\u00fcrme",
                     "standby": "Bekleme modu",
-                    "under_delay_start": "Gecikmeli başlat",
-                    "waiting_for_aftercare": "Bakım sonrası için bekleme",
-                    "washing": "Yıkama",
-                    "weighing": "Tartım"
+                    "under_delay_start": "Gecikmeli ba\u015flat",
+                    "waiting_for_aftercare": "Bak\u0131m sonras\u0131 i\u00e7in bekleme",
+                    "washing": "Y\u0131kama",
+                    "weighing": "Tart\u0131m"
                 }
             }
         },
         "switch": {
             "child_lock": {
-                "name": "Çoçuk kilidi"
+                "name": "\u00c7o\u00e7uk kilidi"
             },
             "dnd_switch": {
-                "name": "Rahatsız etmeyin"
+                "name": "Rahats\u0131z etmeyin"
             },
             "off_peak_switch": {
-                "name": "Zayıf şarj kapalı"
+                "name": "Zay\u0131f \u015farj kapal\u0131"
             },
             "sound_setting": {
-                "name": "Ses ayarları"
+                "name": "Ses ayarlar\u0131"
             },
             "status_indicator": {
-                "name": "Durum gösterge ışığı"
+                "name": "Durum g\u00f6sterge \u0131\u015f\u0131\u011f\u0131"
             }
         },
         "time": {
             "dnd_end_time": {
-                "name": "Rahatsız etmeyini bitirin"
+                "name": "Rahats\u0131z etmeyini bitirin"
             },
             "dnd_start_time": {
-                "name": "Rahatsız etmeyini başlatın"
+                "name": "Rahats\u0131z etmeyini ba\u015flat\u0131n"
             },
             "off_peak_end": {
-                "name": "Zayıf şarj sonu"
+                "name": "Zay\u0131f \u015farj sonu"
             },
             "off_peak_start": {
-                "name": "Zayıf şarj başlangıcı"
+                "name": "Zay\u0131f \u015farj ba\u015flang\u0131c\u0131"
             }
         },
         "vacuum": {
@@ -586,16 +586,16 @@
                         "state": {
                             "auto": "Otomatik",
                             "balanced": "Dengeli",
-                            "custom": "Kişiselleştirilmiş",
+                            "custom": "Ki\u015fiselle\u015ftirilmi\u015f",
                             "gentle": "Nazik",
                             "max": "Maksimum",
-                            "max_plus": "Maks artı",
+                            "max_plus": "Maks art\u0131",
                             "medium": "Orta",
-                            "off": "Kapalı",
-                            "off_raise_main_brush": "Kapalı (kaldırılmış fırça)",
+                            "off": "Kapal\u0131",
+                            "off_raise_main_brush": "Kapal\u0131 (kald\u0131r\u0131lm\u0131\u015f f\u0131r\u00e7a)",
                             "quiet": "Sessiz",
                             "silent": "Sessiz",
-                            "smart_mode": "Akıllı Plan",
+                            "smart_mode": "Ak\u0131ll\u0131 Plan",
                             "standard": "Standart",
                             "turbo": "Turbo"
                         }
@@ -606,98 +606,98 @@
     },
     "exceptions": {
         "button_press_failed": {
-            "message": "Düğmeye basılamadı"
+            "message": "D\u00fc\u011fmeye bas\u0131lamad\u0131"
         },
         "command_failed": {
-            "message": "{command} çağrılırken hata oluştu"
+            "message": "{command} \u00e7a\u011fr\u0131l\u0131rken hata olu\u015ftu"
         },
         "home_data_fail": {
-            "message": "Roborock ev verileri alınamadı"
+            "message": "Roborock ev verileri al\u0131namad\u0131"
         },
         "invalid_credentials": {
-            "message": "Geçersiz kimlik bilgileri."
+            "message": "Ge\u00e7ersiz kimlik bilgileri."
         },
         "invalid_user_agreement": {
-            "message": "Kullanıcı sözleşmesinin tekrar kabul edilmesi gerekiyor. Roborock uygulamanızı açın ve sözleşmeyi kabul edin."
+            "message": "Kullan\u0131c\u0131 s\u00f6zle\u015fmesinin tekrar kabul edilmesi gerekiyor. Roborock uygulaman\u0131z\u0131 a\u00e7\u0131n ve s\u00f6zle\u015fmeyi kabul edin."
         },
         "map_failure": {
-            "message": "Harita oluşturulurken bir şeyler ters gitti"
+            "message": "Harita olu\u015fturulurken bir \u015feyler ters gitti"
         },
         "mqtt_unauthorized": {
-            "message": "Roborock MQTT sunucuları, hız sınırlaması veya geçersiz kimlik bilgileri nedeniyle bağlantıyı reddetti. Yeniden kimlik doğrulamayı deneyebilir veya bekleyip entegrasyonu yeniden yükleyebilirsiniz."
+            "message": "Roborock MQTT sunucular\u0131, h\u0131z s\u0131n\u0131rlamas\u0131 veya ge\u00e7ersiz kimlik bilgileri nedeniyle ba\u011flant\u0131y\u0131 reddetti. Yeniden kimlik do\u011frulamay\u0131 deneyebilir veya bekleyip entegrasyonu yeniden y\u00fckleyebilirsiniz."
         },
         "no_coordinators": {
-            "message": "Hiçbir cihaz başarıyla kurulamadı"
+            "message": "Hi\u00e7bir cihaz ba\u015far\u0131yla kurulamad\u0131"
         },
         "no_user_agreement": {
-            "message": "Geçerli bir kullanıcı sözleşmeniz yok. Roborock uygulamanızı açın ve sözleşmeyi kabul edin."
+            "message": "Ge\u00e7erli bir kullan\u0131c\u0131 s\u00f6zle\u015fmeniz yok. Roborock uygulaman\u0131z\u0131 a\u00e7\u0131n ve s\u00f6zle\u015fmeyi kabul edin."
         },
         "position_not_found": {
-            "message": "Robotun konumu bulunamadı."
+            "message": "Robotun konumu bulunamad\u0131."
         },
         "segment_id_parse_error": {
-            "message": "Geçersiz segment kimliği formatı: {segment_id}"
+            "message": "Ge\u00e7ersiz segment kimli\u011fi format\u0131: {segment_id}"
         },
         "select_option_failed": {
-            "message": "Seçilen seçeneği ayarlama başarısız oldu"
+            "message": "Se\u00e7ilen se\u00e7ene\u011fi ayarlama ba\u015far\u0131s\u0131z oldu"
         },
         "update_data_fail": {
-            "message": "Veriler güncellenemedi."
+            "message": "Veriler g\u00fcncellenemedi."
         },
         "update_options_failed": {
-            "message": "Roborock seçenekleri güncellenemedi"
+            "message": "Roborock se\u00e7enekleri g\u00fcncellenemedi"
         }
     },
     "issues": {
         "cloud_api_used": {
-            "description": "Roborock entegrasyonu doğrudan bağlanamıyor {device_name} ve bulut API'sine geri dönülmesi. Bu, hız sınırlamasına yol açabileceğinden önerilmez. Lütfen elektrikli süpürgenizi Home Assistant örneğiniz aracılığıyla yerel ağda erişilebilir hale getirin.",
-            "title": "Kullanılan Bulut API'si"
+            "description": "Roborock entegrasyonu do\u011frudan ba\u011flanam\u0131yor {device_name} ve bulut API'sine geri d\u00f6n\u00fclmesi. Bu, h\u0131z s\u0131n\u0131rlamas\u0131na yol a\u00e7abilece\u011finden \u00f6nerilmez. L\u00fctfen elektrikli s\u00fcp\u00fcrgenizi Home Assistant \u00f6rne\u011finiz arac\u0131l\u0131\u011f\u0131yla yerel a\u011fda eri\u015filebilir hale getirin.",
+            "title": "Kullan\u0131lan Bulut API'si"
         }
     },
     "options": {
         "step": {
             "drawables": {
                 "data": {
-                    "charger": "Şarj cihazı",
+                    "charger": "\u015earj cihaz\u0131",
                     "cleaned_area": "Temizlenen alan",
                     "goto_path": "Gidilecek yol",
-                    "ignored_obstacles": "Göz ardı edilen engeller",
-                    "ignored_obstacles_with_photo": "Fotoğrafla engeller görmezden gelindi",
+                    "ignored_obstacles": "G\u00f6z ard\u0131 edilen engeller",
+                    "ignored_obstacles_with_photo": "Foto\u011frafla engeller g\u00f6rmezden gelindi",
                     "mop_path": "Paspas yolu",
-                    "no_carpet_zones": "Halı bölgesi yok",
-                    "no_go_zones": "Girilmesi yasak bölgeler",
-                    "no_mopping_zones": "Paspas bölgesi yok",
+                    "no_carpet_zones": "Hal\u0131 b\u00f6lgesi yok",
+                    "no_go_zones": "Girilmesi yasak b\u00f6lgeler",
+                    "no_mopping_zones": "Paspas b\u00f6lgesi yok",
                     "obstacles": "Engeller",
-                    "obstacles_with_photo": "Fotoğraflı engeller",
+                    "obstacles_with_photo": "Foto\u011frafl\u0131 engeller",
                     "path": "Yol",
                     "predicted_path": "Tahmin edilen yol",
                     "room_names": "Oda isimleri",
-                    "show_background": "Arka planı göster",
+                    "show_background": "Arka plan\u0131 g\u00f6ster",
                     "vacuum_position": "Vakum konumu",
                     "virtual_walls": "Sanal duvarlar",
-                    "zones": "Bölgeler"
+                    "zones": "B\u00f6lgeler"
                 },
                 "data_description": {
-                    "charger": "Şarj cihazını haritada göster.",
-                    "cleaned_area": "Temizlenen alanı haritada gösterin.",
-                    "goto_path": "Haritada gidilecek yolu göster.",
-                    "ignored_obstacles": "Haritada göz ardı edilen engelleri göster.",
-                    "ignored_obstacles_with_photo": "Haritada görmezden gelinen engelleri fotoğraflarla gösterin.",
-                    "mop_path": "Haritada paspas yolunu göster.",
-                    "no_carpet_zones": "Haritada halı yasak bölgelerini göster.",
-                    "no_go_zones": "Haritada yasak bölgeleri göster.",
-                    "no_mopping_zones": "Haritada paspas yasak bölgelerini göster.",
-                    "obstacles": "Haritada engelleri göster.",
-                    "obstacles_with_photo": "Haritada engelleri fotoğraflarla göster.",
-                    "path": "Haritada yolu göster.",
-                    "predicted_path": "Tahmini yolu haritada göster.",
-                    "room_names": "Oda isimlerini haritada göster.",
+                    "charger": "\u015earj cihaz\u0131n\u0131 haritada g\u00f6ster.",
+                    "cleaned_area": "Temizlenen alan\u0131 haritada g\u00f6sterin.",
+                    "goto_path": "Haritada gidilecek yolu g\u00f6ster.",
+                    "ignored_obstacles": "Haritada g\u00f6z ard\u0131 edilen engelleri g\u00f6ster.",
+                    "ignored_obstacles_with_photo": "Haritada g\u00f6rmezden gelinen engelleri foto\u011fraflarla g\u00f6sterin.",
+                    "mop_path": "Haritada paspas yolunu g\u00f6ster.",
+                    "no_carpet_zones": "Haritada hal\u0131 yasak b\u00f6lgelerini g\u00f6ster.",
+                    "no_go_zones": "Haritada yasak b\u00f6lgeleri g\u00f6ster.",
+                    "no_mopping_zones": "Haritada paspas yasak b\u00f6lgelerini g\u00f6ster.",
+                    "obstacles": "Haritada engelleri g\u00f6ster.",
+                    "obstacles_with_photo": "Haritada engelleri foto\u011fraflarla g\u00f6ster.",
+                    "path": "Haritada yolu g\u00f6ster.",
+                    "predicted_path": "Tahmini yolu haritada g\u00f6ster.",
+                    "room_names": "Oda isimlerini haritada g\u00f6ster.",
                     "show_background": "Haritaya bir arka plan ekleyin.",
-                    "vacuum_position": "Vakumun konumunu haritada göster.",
-                    "virtual_walls": "Haritada sanal duvarları göster.",
-                    "zones": "Haritada bölgeleri göster."
+                    "vacuum_position": "Vakumun konumunu haritada g\u00f6ster.",
+                    "virtual_walls": "Haritada sanal duvarlar\u0131 g\u00f6ster.",
+                    "zones": "Haritada b\u00f6lgeleri g\u00f6ster."
                 },
-                "description": "Haritada hangi özelliklerin çizileceğini belirtin."
+                "description": "Haritada hangi \u00f6zelliklerin \u00e7izilece\u011fini belirtin."
             }
         }
     },
@@ -714,23 +714,23 @@
     },
     "services": {
         "get_maps": {
-            "description": "Cihazınızın haritasını ve oda bilgilerini alır.",
-            "name": "Haritaları al"
+            "description": "Cihaz\u0131n\u0131z\u0131n haritas\u0131n\u0131 ve oda bilgilerini al\u0131r.",
+            "name": "Haritalar\u0131 al"
         },
         "get_vacuum_current_position": {
-            "description": "Vakumun mevcut konumunu alır.",
+            "description": "Vakumun mevcut konumunu al\u0131r.",
             "name": "Mevcut pozisyonu al"
         },
         "set_vacuum_goto_position": {
-            "description": "Vakumu belirli bir konuma gönderir.",
+            "description": "Vakumu belirli bir konuma g\u00f6nderir.",
             "fields": {
                 "x": {
-                    "description": "Koordinatlar iskeleye göredir. x=25500,y=25500 iskele konumudur.",
-                    "name": "X koordinatı"
+                    "description": "Koordinatlar iskeleye g\u00f6redir. x=25500,y=25500 iskele konumudur.",
+                    "name": "X koordinat\u0131"
                 },
                 "y": {
-                    "description": "Koordinatlar iskeleye göredir. x=25500,y=25500 iskele konumudur.",
-                    "name": "Y koordinatı"
+                    "description": "Koordinatlar iskeleye g\u00f6redir. x=25500,y=25500 iskele konumudur.",
+                    "name": "Y koordinat\u0131"
                 }
             },
             "name": "Pozisyona git"

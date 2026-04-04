@@ -1,30 +1,30 @@
 {
     "config": {
         "abort": {
-            "reauth_successful": "Ponowne uwierzytelnienie się powiodło"
+            "reauth_successful": "Ponowne uwierzytelnienie si\u0119 powiod\u0142o"
         },
         "error": {
-            "invalid_code": "Wprowadzony kod jest nieprawidłowy, sprawdź go i spróbuj ponownie.",
-            "invalid_email": "Z wprowadzonym adresem e-mail nie jest skojarzone żadne konto, spróbuj ponownie.",
-            "invalid_email_format": "Wystąpił problem z formatowaniem wiadomości e-mail — spróbuj ponownie.",
-            "unknown": "Nieoczekiwany błąd"
+            "invalid_code": "Wprowadzony kod jest nieprawid\u0142owy, sprawd\u017a go i spr\u00f3buj ponownie.",
+            "invalid_email": "Z wprowadzonym adresem e-mail nie jest skojarzone \u017cadne konto, spr\u00f3buj ponownie.",
+            "invalid_email_format": "Wyst\u0105pi\u0142 problem z formatowaniem wiadomo\u015bci e-mail \u2014 spr\u00f3buj ponownie.",
+            "unknown": "Nieoczekiwany b\u0142\u0105d"
         },
         "step": {
             "code": {
                 "data": {
                     "code": "Kod weryfikacyjny"
                 },
-                "description": "Wpisz kod weryfikacyjny wysłany na Twój adres e-mail"
+                "description": "Wpisz kod weryfikacyjny wys\u0142any na Tw\u00f3j adres e-mail"
             },
             "reauth_confirm": {
                 "description": "Integracja Roborock wymaga ponownego uwierzytelnienia twojego konta",
-                "title": "Autoryzacja wygasła dla {name}"
+                "title": "Autoryzacja wygas\u0142a dla {name}"
             },
             "user": {
                 "data": {
                     "username": "Adres e-mail"
                 },
-                "description": "Wpisz swój adres e-mail Roborock."
+                "description": "Wpisz sw\u00f3j adres e-mail Roborock."
             }
         }
     },
@@ -37,7 +37,7 @@
                 "name": "Suszenie mopa"
             },
             "water_box_attached": {
-                "name": "Podłączony zbiornik wody"
+                "name": "Pod\u0142\u0105czony zbiornik wody"
             },
             "water_shortage": {
                 "name": "Brak wody"
@@ -45,26 +45,26 @@
         },
         "select": {
             "mop_intensity": {
-                "name": "Intensywność mopa",
+                "name": "Intensywno\u015b\u0107 mopa",
                 "state": {
                     "custom": "niestandardowy",
                     "extreme": "Ekstremalny",
                     "high": "wysoki",
                     "intense": "Wysoka",
                     "low": "niski",
-                    "medium": "średni",
-                    "mild": "łagodna",
+                    "medium": "\u015bredni",
+                    "mild": "\u0142agodna",
                     "moderate": "umiarkowana",
-                    "off": "wyłączono",
-                    "vac_followed_by_mop": "Odkurzanie, a następnie mopowanie"
+                    "off": "wy\u0142\u0105czono",
+                    "vac_followed_by_mop": "Odkurzanie, a nast\u0119pnie mopowanie"
                 }
             },
             "mop_mode": {
                 "name": "Tryb mopa",
                 "state": {
                     "custom": "niestandardowy",
-                    "deep": "głęboki",
-                    "deep_plus": "głęboki+",
+                    "deep": "g\u0142\u0119boki",
+                    "deep_plus": "g\u0142\u0119boki+",
                     "fast": "Szybko",
                     "standard": "normalny"
                 }
@@ -73,27 +73,27 @@
                 "state": {
                     "socks": "Skarpety",
                     "synthetics": "Syntetyczne",
-                    "twenty_c": "20°C",
+                    "twenty_c": "20\u00b0C",
                     "underwear": "Bielizna",
-                    "wool": "Wełna"
+                    "wool": "We\u0142na"
                 }
             },
             "softener_type": {
-                "name": "Typ zmiękczacza",
+                "name": "Typ zmi\u0119kczacza",
                 "state": {
                     "empty": "pusto",
                     "high": "wysoki",
                     "low": "niski",
-                    "medium": "średni"
+                    "medium": "\u015bredni"
                 }
             },
             "temperature": {
                 "name": "Temperatura wody",
                 "state": {
-                    "30": "30°C",
-                    "40": "40°C",
-                    "60": "60°C",
-                    "90": "90°C",
+                    "30": "30\u00b0C",
+                    "40": "40\u00b0C",
+                    "60": "60\u00b0C",
+                    "90": "90\u00b0C",
                     "auto": "auto"
                 }
             }
@@ -101,7 +101,7 @@
         "sensor": {
             "a01_error": {
                 "state": {
-                    "battery_under_10": "Bateria poniżej 10%",
+                    "battery_under_10": "Bateria poni\u017cej 10%",
                     "low_battery": "Niski poziom baterii",
                     "none": "brak"
                 }
@@ -113,57 +113,57 @@
                 }
             },
             "cleaning_area": {
-                "name": "Obszar sprzątania"
+                "name": "Obszar sprz\u0105tania"
             },
             "cleaning_time": {
                 "name": "Czas czyszczenia"
             },
             "current_room": {
-                "name": "Obecny pokój"
+                "name": "Obecny pok\u00f3j"
             },
             "dock_error": {
-                "name": "Błąd stacji dokowania"
+                "name": "B\u0142\u0105d stacji dokowania"
             },
             "filter_time_left": {
-                "name": "Pozostał czas filtrowania"
+                "name": "Pozosta\u0142 czas filtrowania"
             },
             "last_clean_end": {
                 "name": "Koniec ostatniego czyszczenia"
             },
             "last_clean_start": {
-                "name": "Początek ostatniego czyszczenia"
+                "name": "Pocz\u0105tek ostatniego czyszczenia"
             },
             "main_brush_time_left": {
-                "name": "Pozostał czas szczotki głównej"
+                "name": "Pozosta\u0142 czas szczotki g\u0142\u00f3wnej"
             },
             "mop_drying_remaining_time": {
-                "name": "Pozostały czas suszenia mopa"
+                "name": "Pozosta\u0142y czas suszenia mopa"
             },
             "sensor_time_left": {
-                "name": "Pozostał czas sensora"
+                "name": "Pozosta\u0142 czas sensora"
             },
             "side_brush_time_left": {
-                "name": "Pozostał czas szczotki bocznej"
+                "name": "Pozosta\u0142 czas szczotki bocznej"
             },
             "status": {
                 "name": "Status",
                 "state": {
-                    "charger_disconnected": "ładowarka odłączona",
-                    "charging_complete": "Ładowanie zakończone",
-                    "charging_problem": "Problem z ładowaniem",
+                    "charger_disconnected": "\u0142adowarka od\u0142\u0105czona",
+                    "charging_complete": "\u0141adowanie zako\u0144czone",
+                    "charging_problem": "Problem z \u0142adowaniem",
                     "cleaning": "Czyszczenie",
-                    "device_offline": "Urządzenie offline",
+                    "device_offline": "Urz\u0105dzenie offline",
                     "docking": "Dokowanie",
-                    "emptying_the_bin": "Opróżnianie kosza",
+                    "emptying_the_bin": "Opr\u00f3\u017cnianie kosza",
                     "going_to_target": "zmierzam do celu",
-                    "going_to_wash_the_mop": "zmierzam umyć mopa",
-                    "idle": "brak aktywności",
-                    "manual_mode": "tryb ręczny",
+                    "going_to_wash_the_mop": "zmierzam umy\u0107 mopa",
+                    "idle": "brak aktywno\u015bci",
+                    "manual_mode": "tryb r\u0119czny",
                     "paused": "wstrzymano",
                     "remote_control_active": "zdalne sterowanie aktywne",
                     "returning_home": "wracam do domu",
-                    "segment_cleaning": "czyszczenie segmentów",
-                    "shutting_down": "wyłączanie",
+                    "segment_cleaning": "czyszczenie segment\u00f3w",
+                    "shutting_down": "wy\u0142\u0105czanie",
                     "spot_cleaning": "czyszczenie punktowe",
                     "starting": "start",
                     "updating": "Aktualizacja",
@@ -172,27 +172,27 @@
                 }
             },
             "total_cleaning_area": {
-                "name": "Całkowity obszar sprzątania"
+                "name": "Ca\u0142kowity obszar sprz\u0105tania"
             },
             "total_cleaning_count": {
-                "name": "Łącznie czyszczeń"
+                "name": "\u0141\u0105cznie czyszcze\u0144"
             },
             "total_cleaning_time": {
-                "name": "Całkowity czas czyszczenia"
+                "name": "Ca\u0142kowity czas czyszczenia"
             },
             "vacuum_error": {
-                "name": "Błąd odkurzacza",
+                "name": "B\u0142\u0105d odkurzacza",
                 "state": {
-                    "battery_error": "Błąd baterii",
-                    "charging_error": "Błąd ładowania",
-                    "fan_error": "Błąd wentylatora",
+                    "battery_error": "B\u0142\u0105d baterii",
+                    "charging_error": "B\u0142\u0105d \u0142adowania",
+                    "fan_error": "B\u0142\u0105d wentylatora",
                     "filter_blocked": "Filtr zablokowany",
-                    "internal_error": "Błąd wewnętrzny",
-                    "main_brush_jammed": "Główna szczotka zacięta",
+                    "internal_error": "B\u0142\u0105d wewn\u0119trzny",
+                    "main_brush_jammed": "G\u0142\u00f3wna szczotka zaci\u0119ta",
                     "none": "brak",
                     "robot_on_carpet": "Robot na dywanie",
                     "robot_tilted": "Robot przechylony",
-                    "robot_trapped": "Robot uwięziony"
+                    "robot_trapped": "Robot uwi\u0119ziony"
                 }
             },
             "zeo_error": {
@@ -203,10 +203,10 @@
         },
         "switch": {
             "child_lock": {
-                "name": "Zabezpieczenie przed dziećmi"
+                "name": "Zabezpieczenie przed dzie\u0107mi"
             },
             "dnd_switch": {
-                "name": "Nie przeszkadzać"
+                "name": "Nie przeszkadza\u0107"
             }
         },
         "vacuum": {
@@ -214,11 +214,11 @@
                 "state_attributes": {
                     "fan_speed": {
                         "state": {
-                            "balanced": "zrównoważony",
+                            "balanced": "zr\u00f3wnowa\u017cony",
                             "custom": "niestandardowy",
                             "gentle": "delikatny",
-                            "medium": "średni",
-                            "off": "wyłączono",
+                            "medium": "\u015bredni",
+                            "off": "wy\u0142\u0105czono",
                             "standard": "normalny",
                             "turbo": "turbo"
                         }
@@ -229,14 +229,14 @@
     },
     "exceptions": {
         "invalid_credentials": {
-            "message": "Nieprawidłowe dane uwierzytelniające."
+            "message": "Nieprawid\u0142owe dane uwierzytelniaj\u0105ce."
         }
     },
     "options": {
         "step": {
             "drawables": {
                 "data": {
-                    "mop_path": "Ścieżka mopa"
+                    "mop_path": "Scie\u017cka mopa"
                 }
             }
         }

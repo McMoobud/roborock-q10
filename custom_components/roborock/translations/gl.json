@@ -1,17 +1,17 @@
 {
     "config": {
         "error": {
-            "invalid_code": "O código que introduciches é incorrecto, comprobao e téntao de novo.",
-            "invalid_email": "Non hai ningunha conta asociada co correo electrónico que introduciches, por favor, téntao de novo."
+            "invalid_code": "O c\u00f3digo que introduciches \u00e9 incorrecto, comprobao e t\u00e9ntao de novo.",
+            "invalid_email": "Non hai ningunha conta asociada co correo electr\u00f3nico que introduciches, por favor, t\u00e9ntao de novo."
         },
         "step": {
             "code": {
                 "data": {
-                    "code": "Código de verificación"
+                    "code": "C\u00f3digo de verificaci\u00f3n"
                 }
             },
             "reauth_confirm": {
-                "description": "A integración de Roborock necesita volver a autenticar a túa conta"
+                "description": "A integraci\u00f3n de Roborock necesita volver a autenticar a t\u00faa conta"
             }
         }
     },
@@ -54,11 +54,11 @@
         },
         "select": {
             "dust_collection_mode": {
-                "name": "Modo vacío",
+                "name": "Modo vac\u00edo",
                 "state": {
                     "balanced": "Equilibrado",
                     "light": "Lixeiro",
-                    "max": "Máximo",
+                    "max": "M\u00e1ximo",
                     "smart": "Intelixente"
                 }
             },
@@ -68,7 +68,7 @@
                     "custom": "Personalizado",
                     "custom_water_flow": "Fluxo de auga personalizado",
                     "intense": "Intenso",
-                    "max": "Máximo",
+                    "max": "M\u00e1ximo",
                     "mild": "Leve",
                     "moderate": "Moderado",
                     "off": "Apagado",
@@ -83,35 +83,35 @@
             "a01_error": {
                 "state": {
                     "clean_head_too_hot": "O cabezal de limpeza demasiado quente.",
-                    "clean_tank_empty": "Depósito de limpeza baleiro",
+                    "clean_tank_empty": "Dep\u00f3sito de limpeza baleiro",
                     "cleaning_head_blocked": "Cabezal de limpeza bloqueado",
                     "dirty_charging_contacts": "Limpe os contactos de carga",
-                    "dirty_tank_full": "Depósito de suciedade cheo"
+                    "dirty_tank_full": "Dep\u00f3sito de suciedade cheo"
                 }
             },
             "clean_percent": {
                 "name": "Progreso da limpeza"
             },
             "cleaning_area": {
-                "name": "Área de limpeza"
+                "name": "\u00c1rea de limpeza"
             },
             "dock_error": {
                 "name": "Erro na base de carga",
                 "state": {
-                    "cleaning_tank_full_or_blocked": "Depósito de limpeza cheo ou bloqueado",
-                    "dirty_tank_latch_open": "Peche do depósito do lixo aberto",
-                    "duct_blockage": "Obstrución dos condutos",
+                    "cleaning_tank_full_or_blocked": "Dep\u00f3sito de limpeza cheo ou bloqueado",
+                    "dirty_tank_latch_open": "Peche do dep\u00f3sito do lixo aberto",
+                    "duct_blockage": "Obstruci\u00f3n dos condutos",
                     "no_dustbin": "Sen cubo do lixo",
                     "ok": "Ok",
-                    "waste_water_tank_full": "Depósito de augas residuais cheo",
+                    "waste_water_tank_full": "Dep\u00f3sito de augas residuais cheo",
                     "water_empty": "Deposito de auga baleiro"
                 }
             },
             "last_clean_end": {
-                "name": "Final da última limpeza"
+                "name": "Final da \u00faltima limpeza"
             },
             "last_clean_start": {
-                "name": "Comezo da última limpeza"
+                "name": "Comezo da \u00faltima limpeza"
             },
             "mop_drying_remaining_time": {
                 "name": "Tempo restante de secado da mopa"
@@ -123,8 +123,8 @@
                     "charging_complete": "Carga completa",
                     "charging_problem": "Problema de carga",
                     "cleaning": "Limpando",
-                    "device_offline": "Dispositivo sen conexión",
-                    "docking": "Acoplando á base",
+                    "device_offline": "Dispositivo sen conexi\u00f3n",
+                    "docking": "Acoplando \u00e1 base",
                     "emptying_the_bin": "Baleirando o lixo",
                     "going_to_target": "Indo ao obxectivo",
                     "going_to_wash_the_mop": "Indo a limpar a mopa",
@@ -132,7 +132,7 @@
                     "manual_mode": "Modo manual",
                     "paused": "Pausado",
                     "remote_control_active": "Control remoto activo",
-                    "returning_home": "Regresando á base",
+                    "returning_home": "Regresando \u00e1 base",
                     "segment_cleaning": "Limpeza de segmentos",
                     "shutting_down": "Apagando",
                     "spot_cleaning": "Limpeza de punto",
@@ -147,14 +147,14 @@
             },
             "vacuum_error": {
                 "state": {
-                    "battery_error": "Erro na batería",
+                    "battery_error": "Erro na bater\u00eda",
                     "charging_error": "Erro de carga",
                     "cliff_sensor_error": "Erro no sensor de desnivel",
-                    "dock": "A base de carga non está conectada á corrente",
+                    "dock": "A base de carga non est\u00e1 conectada \u00e1 corrente",
                     "dock_locator_error": "Erro no localizador da base",
                     "fan_error": "Erro do ventilador",
                     "filter_blocked": "Filtro bloqueado",
-                    "low_battery": "Batería baixa",
+                    "low_battery": "Bater\u00eda baixa",
                     "wheels_suspended": "Rodas suspendidas"
                 }
             },
@@ -183,10 +183,10 @@
                 "name": "Comezo de non molestar"
             },
             "off_peak_end": {
-                "name": "Fin do período Val"
+                "name": "Fin do per\u00edodo Val"
             },
             "off_peak_start": {
-                "name": "Inicio do período Val"
+                "name": "Inicio do per\u00edodo Val"
             }
         },
         "vacuum": {
@@ -196,7 +196,7 @@
                         "state": {
                             "balanced": "Equilibrado",
                             "gentle": "Suave",
-                            "max_plus": "Máximo plus",
+                            "max_plus": "M\u00e1ximo plus",
                             "off": "Apagado",
                             "quiet": "Tranquilo",
                             "silent": "Silencioso",

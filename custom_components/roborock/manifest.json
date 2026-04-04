@@ -1,7 +1,10 @@
 {
   "domain": "roborock",
   "name": "Roborock",
-  "codeowners": ["@Lash-L", "@allenporter"],
+  "codeowners": [
+    "@Lash-L",
+    "@allenporter"
+  ],
   "config_flow": true,
   "dhcp": [
     {
@@ -17,11 +20,13 @@
   "documentation": "https://www.home-assistant.io/integrations/roborock",
   "integration_type": "hub",
   "iot_class": "local_polling",
-  "loggers": ["roborock"],
+  "loggers": [
+    "roborock"
+  ],
   "quality_scale": "silver",
-  "version": "2026.3.2-q10",
   "requirements": [
-    "python-roborock==4.17.1",
+    "python-roborock==5.0.0",
     "vacuum-map-parser-roborock==0.1.4"
-  ]
+  ],
+  "version": "2026.4.1-q10"
 }
