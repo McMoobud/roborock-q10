@@ -1,3 +1,5 @@
+> **⚠️ Deprecated & archived (2026-07-31).** Home Assistant **core 2026.8** now has full native Roborock Q10 support — a dedicated `RoborockB01Q10UpdateCoordinator` and 12 native Q10 sensors (a superset of this component's 11), running on `python-roborock 5.31.1`. **This custom component is no longer needed and should not be installed** (it also pins `python-roborock` back to 5.0.0, holding back the whole integration). To migrate: remove `custom_components/roborock/` and restart — core takes over. This repo is kept read-only for historical reference.
+
 # Roborock Q10 S5+ Custom Component for Home Assistant
 
 Custom integration for the **Roborock Q10 S5+** (B01 series) that adds Q10 sensor entities missing from the core Home Assistant integration.
